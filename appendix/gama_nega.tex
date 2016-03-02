@@ -1,0 +1,47 @@
+\begin{proof}
+For simplification, let $\delta_i=1$ if $i=N+1$ and 0 otherwise, and  ${\theta _{ij}} = {\alpha ''_{ij}}\left( {1 - {\delta _j}} \right)/\psi_{ii}^{ - 1}$. Eq. \eqref{eq:train_loss} can be written as:
+\begin{equation}\label{eq:loss_simple}
+%\begin{split}
+{\xi _i}(\gamma ,\beta )=\mathop {\max }\limits_{n} \bigg \{ {\varepsilon _{n{y_i}}} - 1 + \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{in}}} \right)}}{{\psi _{ii}^{ - 1}}} + {\theta _{in}}{\gamma _n} 
+- {\theta _{i{y_i}}}{\gamma _{{y_i}}} + \left( {{\delta _n} - {\delta _{{y_i}}}} \right)\sum\limits_k {\frac{{{{\alpha ''}_{ik}}{\beta _k}}}{{\psi_{ii}^{ - 1}}}}  \bigg\}
+%\end{split}
+\end{equation}
+When $\mathbf{\gamma}=\mathbf{\beta} = \mathbf{0}$, from Eq. \eqref{eq:loss_simple} we can get:
+\begin{equation*}
+{\bar \xi _i} = \mathop {\max }\limits_n \left[ { {\varepsilon _{n{y_i}}}-1 + \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{in}}} \right)}}{{\psi _{ii}^{ - 1}}}} \right]
+\end{equation*}
+To obtain the optimal value of $\gamma$ and $\beta$, we have to seek the saddle point of the Lagrangian problem in \eqref{eq:dual} by finding the minimum for the prime variables $\left\{ \gamma, \beta, \xi \right\}$ and the maximum for the dual variables $\eta $. To find the minimum of the primal problem, we require:
+\begin{equation*}
+\frac{{\partial L}}{{\partial {\xi _i}}} = 1 - \sum\limits_n {{\eta _{in}}}  = 0 \to \sum\limits_n {{\eta _{in}}}  = 1
+\end{equation*}
+Similarly, for $\gamma$ and $\beta$, we require:
+\begin{eqnarray}\label{eq:opt_gama}
+\frac{{\partial L}}{{\partial {\gamma _n}}} &=& {\lambda _1}{\gamma _n} + \sum\limits_i {{\eta _{in}}{\theta _{in}}}  - \sum\limits_{i,n = {y_i}} {\left( {\sum\limits_q {{\eta _{iq}}} } \right){\theta _{in}}{\gamma _n}}  \nonumber\\
+&=_1 &{\lambda _1}{\gamma _n} + \sum\limits_i {{\eta _{in}}{\theta _{in}}}  - \sum\limits_i {{\varepsilon _{n{y_i}}}{\theta _{in}}}  = 0  \nonumber\\
+&\Rightarrow & \gamma _n^* = \frac{1}{{{\lambda _1}}}\sum\limits_i {\left( {{\varepsilon _{n{y_i}}} - {\eta _{in}}} \right){\theta _{in}}}
+\end{eqnarray}
+In $=_1$ we use the facts that $\sum_n\eta_{in}=1$ and use $\varepsilon_{ny_i}$ to replace it.
+\begin{eqnarray}\label{eq:opt_beta}
+\frac{{\partial L}}{{\partial {\beta _n}}} &=& {\lambda _2}{\beta _n} + \left[ {\sum\limits_{i,n} {\frac{{{\eta _{in}}{{\alpha ''}_{in}}}}{{\psi_{ii}^{ - 1}}}\left( {{\delta _n} - {\delta _{{y_i}}}} \right)} } \right] = 0 \nonumber \\
+&\Rightarrow &\beta _n^* = \frac{1}{{{\lambda _2}}}\sum\limits_{i,n} {\frac{{{\eta _{in}}{{\alpha ''}_{in}}}}{{\psi _{ii}^{ - 1}}}\left( {{\delta _{{y_i}}} - {\delta _n}} \right)}
+\end{eqnarray}
+As the strong duality holds,the primal and dual objectives coincide. Plug Eq \eqref{eq:opt_gama} and \eqref{eq:opt_beta} into Eq. \eqref{eq:dual}, we have:
+\begin{equation*}
+\sum\limits_{i,n} {{\eta _{in}}\left[ {1 - {\varepsilon _{n{y_i}}} + {{\hat Y}_{in}}\left( {\gamma^* ,\beta^* } \right) - {{\hat Y}_{i{y_i}}}\left( {\gamma^* ,\beta^* } \right) - {\xi _i^*}} \right]}=0
+\end{equation*}
+Expand the equation above, we have:
+\begin{eqnarray}\nonumber
+\sum\limits_{i,n} {{\eta _{in}}\left[ { {\varepsilon _{n,{y_i}}}-1 + \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{in}}} \right)}}{{\psi_{ii}^{ - 1}}} - {\xi _i}} \right]} \nonumber
+= {\lambda _1}\sum\limits_r {{{\left\| {\gamma _r^*} \right\|}^2}}  + {\lambda _2}\sum\limits_r {{{\left\| {\beta _r^*} \right\|}^2}}  \ge 0\nonumber
+\end{eqnarray}
+Rearranging the above, we obtain:
+\begin{eqnarray}\label{eq:link1}
+\sum\limits_{i,n} {{\eta _{in}}\left[ { {\varepsilon _{n,{y_i}}} -1+ \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{in}}} \right)}}{{\psi_{ii}^{ - 1}}}} \right]} 
+ \ge \sum\limits_{i,n} {{\eta _{in}}{\xi _i}}  = \sum\limits_i {{\xi _i}}
+\end{eqnarray}
+The left-hand side of Inequation \eqref{eq:link1} can be bounded by:
+\begin{eqnarray}
+&&\sum\limits_{i,n} {{\eta _{in}}\left[ { {\varepsilon _{n{y_i}}}-1 + \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{in}}} \right)}}{{\psi_{ii}^{ - 1}}}} \right]} \nonumber\\ &&\le \sum\limits_i {\left( {\sum\limits_n {{\eta _{in}}\mathop {\max }\limits_r \left\{ { {\varepsilon _{r{y_i}}} -1 + \frac{{\left( {{{\alpha '}_{i{y_i}}} - {{\alpha '}_{ir}}} \right)}}{{\psi_{ii}^{ - 1}}}} \right\}} } \right)}  \nonumber\\
+&&= \sum\limits_i {\left( {\sum\limits_n {{\eta _{in}}{{\bar \xi }_i}} } \right)}  = \sum\limits_i {\bar \xi_i }
+\end{eqnarray}
+\end{proof} 
