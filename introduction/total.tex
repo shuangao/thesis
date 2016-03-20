@@ -1,0 +1,15 @@
+\chapter{Introduction}
+With the explosive image resources people uploaded every day, image recognition becomes a very hot topic and has draw many attentions in recent years. Every year, there are many inspiring results in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). 
+With development of recognition technology, many IT companies want to use image recognition techniques to serve their customers and some interesting applications have been developed, such as HowOld from Microsoft and Im2Calories from Google.
+
+In order to successfully capture the diversity of different objects around us, many recognition models contain thousands or sometimes even millions of parameters and require large amount of training images to tune these parameters as well.
+Unfortunately, for some real applications, it is often difficult and cost to collect large set of training images. Moreover, most algorithms require that the training examples should be aligned with a prototype, which is commonly done by hand. In the real applications, collecting and fully annotating these images can be extremely expensive and could have a significant impact on the over cost of the whole system. As more companies pay attention to the individual customer experience, personalized service system become more important in recent years. For image recognition, one application of personalization can be learning the categories defined by individuals. The challenge of the self-defined categories learning comes from two aspects:
+\begin{enumerate}
+	\item Flexibility: people could define any categories they want. The recognition algorithm should be more dynamic to adapt the new categories.
+	\item Rare learning examples: it is almost impossible to get abundant images from the self-defined categories and the algorithm should be able to learn the new categories from just a few examples.
+\end{enumerate} 
+
+On the other hand, recognition is one of the most important part of our human visual system. We can recognize various kinds of materials (apple, orange, grape), objects (vehicles, buildings) and natural scenes (forests, mountain). At the age of six, human can recognize about $10^4$ object categories\cite{biederman1987recognition}. 
+Our human can learn and recognize a new object with just a glance, which means we can capture the diversity of forms and appearances of a objects with just a handful examples. It could be ideal if we can find a way to train a new category with few examples.
+\section{Overview for Image Recogntion}
+\input{introduction/chall.tex}

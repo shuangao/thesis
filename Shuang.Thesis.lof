@@ -1,35 +1,8 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Major procedure for image recognition.\relax }}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Feature extraction using SIFT.\relax }}{4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces General Scheme of Auto Encoders. L1 is the input layer, possibly raw-pixel intensities. L2 is the compressed learned latent representation and L3 is the reconstruction of the given L1 layer from L2 layer. AutoEncoders tries to minimize the difference between L1 and L3 layers with some sparsity constraint.\relax }}{5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The architecture of ALEXNET (adapted from \cite {krizhevsky2012imagenet}).\relax }}{5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Convolution operation with $3\times 3$ kernel, stride 1 and padding 1. $\otimes $ denotes the convolutional operator.\relax }}{10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces $2\times 2$ pooling layer with stride 2 and padding 0.\relax }}{11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces { Standard Neural Net }}}{12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {After Dropout}}}{12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Inception Module. $n\times n$ stands for size $n$ receptive field, $n\times n\_reduce$ stands for the $1\times 1$ convolutional layer before the $n\times n$ convolution layer and $pool\_proj$ is another $1\times 1$ convolutional layer after the MAX pooling layer. The output layer concatenates all its input layers.\relax }}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Crop area from original image\relax }}{15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Center}}}{15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Center mirror}}}{15}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Up-left}}}{15}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Up-left mirror}}}{15}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Up-right}}}{15}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Up-right mirror}}}{15}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Bottom-left}}}{15}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Bottom-left mirror}}}{15}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Bottom-right}}}{15}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Bottom-right mirror}}}{15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Different data argumentation methods\relax }}{17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Red casting}}}{17}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Green casting}}}{17}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Blue casting}}}{17}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {RGB casting}}}{17}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Vignette}}}{17}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {More vignette}}}{17}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Horizontal stretch}}}{17}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {More horizontal stretch}}}{17}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Vertical stretch}}}{17}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {More vertical stretch}}}{17}
-\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Rotation}}}{17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Visualization of some feature maps of different GoogLeNet models in different layers for the same input image. 64 feature maps of each layer are shown. Conv1 is the first convolutional layer and Inception\_5b is the last convolutional layer. \relax }}{18}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{11}
 \addvspace {10\p@ }

@@ -1,0 +1,82 @@
+In this section, we review the major procedures for image recognition. 
+The procedure of the image recognition method consists of three parts: image preprocess, feature extraction and classification.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=.8]{introduction/fig/IRflow.png}
+	\caption{Major procedure for image recognition.}\label{fig:intro:irflow}
+\end{figure}
+\subsection{Preprocess}
+After receiving the raw data of a image from the sensor, preprocess generates a new image from the source image. This new image is similar to the source image, but differs from it considering certain apsects, e.g. the new image has smoother edge, better contrast and less noise. 
+Here, some \textit{pixel operations} and \textit{local operations} are used to improve the contrast and remove the noise.  
+
+Another important operation of preprecess is segmentation according to the object, i.e. finding the region of interest. Images used for recognition should be aligned, making the target object appear in the central of the image and remove those irrelevant area.
+
+The result of preprocess has great impact on the final result of the recognition. Clear and noise free images can make the feature extraction more effective and significantly improve the final classification accuracy.
+
+\subsection{Feature Extraction}
+ Feature extraction is a type of dimensionality reduction that efficiently represents interesting parts of an image as a compact feature vector. The feature vector is then used for either training the classifier or recognition. Therefore, feature extraction is the most important part for image recognition. The quality of the features extracted from a image have great impact on the recognition result. There are two major streams for feature extraction: one is the hand engineered method and the other one is representation learning method.
+\subsubsection{Hand Engineered Feature}
+Hand engineered features are low level and local features.
+Low level features are extracted according to some optical properties of an image. These features are low level / local features. There is a widely agreement that local features are an efficient tool for object representation due to their robustness with respect to occlusion and geometrical transformations \cite{van2006coloring}. Common low level hand engineered features include Histogram of Oriented Gradients (HOG) \cite{dalal2005histograms}, Scale Invariant Feature Transform (SIFT) \cite{lowe1999object}, Speeded Up Robust Features (SURF) \cite{bay2006surf}, Local Binary Patterns (LBP) \cite{ojala2002multiresolution}, and color histograms \cite{birchfield1998elliptical}. Feature descriptors obtain from these low level features refer to a pattern or distinct structure found in an image, such as a point, edge, or small image patch. They are usually associated with an image patch that differs from its immediate surroundings by texture, color, or intensity. What the feature actually represents does not matter, just that it is distinct from its surroundings.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.6]{introduction/fig/sift.jpg}
+	\caption{Feature extraction using SIFT.}\label{fig:intro:sift}
+\end{figure}
+These low level features can be used directly for recognition. However, since they just represent certain local properties of an image and are not discriminative enough for recognition, discriminative high level features can be further learned by combining the low level features. 
+
+\subsubsection{Representation Learning}
+Representation learning is mainly described by Deep Learning 
+algorithms or Auto Encoders. The ideas is to learn a group of filters that are able to discern one category of images from the another category with some supervised or unsupervised algorithm. 
+Learning representation from an image can start from either low level features (Auto Encoders) or raw pixels of an image (Deep Learning).
+\begin{figure}
+	\centering
+	\includegraphics[scale=.3]{introduction/fig/sparsecoding.png}
+	\caption{General Scheme of Auto Encoders. L1 is the input layer, possibly raw-pixel intensities. L2 is the compressed learned latent representation and L3 is the reconstruction of the given L1 layer from L2 layer. AutoEncoders tries to minimize the difference between L1 and L3 layers with some sparsity constraint.}\label{fig:intro:sparse}
+\end{figure}
+
+Auto Encoders are widely used to combine different types of low level feature. The outputs of the Auto Encoders are some latent representations. These latent representations are learned from the given images that have lowest possible reconstruction error. Even though the high level representations from Auto Encoders are learned by minimizing the reconstruction errors, they are still not robust enough to handle all kinds of variance of the objects.
+
+Currently, Deep Learning is the most popular approach for learning representations. It has been widely used for all kinds of image recognition tasks and achieved the state-of-the-art performance on some large scale image recognition tasks, such as ILSVRC and The PASCAL Visual Object Classes Challenge (PASCAL VOC). 
+\begin{figure}
+	\centering
+	\includegraphics[scale=.3]{introduction/fig/alexnet.png}
+	\caption{The architecture of ALEXNET (adapted from \cite{krizhevsky2012imagenet}).}\label{fig:intro:alex}
+\end{figure}
+
+Convolutional Neural Networks (CNN) is the most popular deep learning model for the image recognition tasks. The first deep CNN that had great success on image recognition is the LeNet proposed by Y.LeCan in 1989 \cite{lecun1989backpropagation}. Backpropagation was applied to Convolutional Neural networks with adaptive connections. This combination, incorporating with Max-Pooling and speeding up on graphics cards has become an important part for  many modern, competition-winning, feedforward, visual Deep Learners. 
+
+A CNN consists of a number of convolutional and subsampling layers optionally followed by fully connected layers.
+\begin{itemize}
+	\item \textbf{Convolutional Layer} is the core building block of a Convolutional Network, and its output volume can be interpreted as holding neurons arranged in a 3D volume. The input to a convolutional layer is a $m \times m \times r$ image where $m$ is the height and width of the image and $r$ is the number of channels, e.g. an RGB image has $r=3$.
+	
+	\item \textbf{Pooling Layer} is widely used in all kinds of CNN architecture for dimensional reduction and computational efficiency. In general, two kinds of pooling strategy, Max Pooling and Average Pooling, are commonly used in CNN architecture. Average pooling was often used historically but has recently fallen out of favor compared to the max pooling operation, which has been shown to work better in practice \cite{malmaud2015s} \cite{szegedy2014going}. Max Pooling is been widely used in all kinds CNN architectures \cite{boureau2010theoretical} \cite{yang2009linear}. 
+	
+	\item \textbf{Fully Connected (FC) Layer} has full connections to all activations in the previous layer, as seen in regular Neural Networks. Recent work show that FC layers with Rectified Linear Units and Dropout can greatly improve the learning speed as well as avoid overfitting for deep CNNs \cite{hinton2012improving} \cite{nair2010rectified}.
+	
+\end{itemize}
+
+Two typical techniques, Rectified Linear Units (ReLUs) for Activation and DropOut, are also extensively used in CNN. 4Recent work show that FC layers with Rectified Linear Units and Dropout can greatly improve the learning speed as well as avoid overfitting for deep CNNs \cite{hinton2012improving} \cite{nair2010rectified}.
+\begin{itemize}
+	\item \textbf{Rectified Linear Units (ReLUs) for Activation} is used as the activation function in CNN and can be written as 
+	\begin{equation}
+	\sum\limits_i^N {\sigma (x - i + 0.5)}  \approx \log (1 + {e^x})
+	\end{equation}
+	where $\sigma(x)$ is the sigmoid function. In practice, Rectified Linear Units use the function 
+	\begin{equation}
+	f(x) = \log (1 + {e^x}) \approx \max(x,0) 
+	\end{equation}\label{eq:intro:relu}
+	Recent work show that FC layers with Rectified Linear Units and Dropout can greatly improve the learning speed as well as avoid overfitting for deep CNNs \cite{hinton2012improving} \cite{nair2010rectified}.
+	
+	\item \textbf{DropOut}. In FC layer, nodes are connected to each other and this leads to a large number of parameters. Generally, larger number of parameters means more power for Neural Networks and more easily prone to overfitting. Dropout is a technique for addressing this problem. 	The key idea is to randomly drop units (along with their connections) from the neural network during training \cite{srivastava2014dropout}. Technically, DropOut can be interpreted as adding extra noise into the training procedure. Without actually adding noise, FC layer with DropOut is tolerant of higher level of noise (20 \%-50\%). Randomly dropping out the nodes, for any node in FC layer, it can't rely on the other nodes to adjust its result. By eliminating the co-adaptation of hidden units, DropOut becomes a technique that can be applied to any general domain and improve the performance of neural nets.   
+\end{itemize}
+
+In addition, a good CNN model is a reasonable combination of these layers and techniques and contains million or even billions of parameters, which is particularly suitable for those difficult large scale image recognition tasks. However, due to its size of parameters, the CNN model should be trained from scratch with a huge image database to avoid overfitting.
+
+\subsubsection{Classification}
+
+
+
+
+

@@ -4,32 +4,22 @@
 \contentsline {chapter}{List of Figures}{vii}
 \contentsline {chapter}{List of Tables}{viii}
 \contentsline {chapter}{List of Appendices}{ix}
-\contentsline {chapter}{\numberline {1}Transfer}{1}
-\contentsline {section}{\numberline {1.1}Issues in Transfer Learning}{1}
-\contentsline {section}{\numberline {1.2}Related Work}{2}
-\contentsline {subsection}{\numberline {1.2.1}LS-SVM Classifier}{2}
-\contentsline {subsection}{\numberline {1.2.2}ASVM \& PMT-SVM}{3}
-\contentsline {subsection}{\numberline {1.2.3}Multi-KT}{4}
-\contentsline {subsection}{\numberline {1.2.4}MULTIpLE}{5}
-\contentsline {chapter}{\numberline {2}Convolutional NN}{7}
-\contentsline {section}{\numberline {2.1}Background: brief history and recent achievments}{7}
-\contentsline {subsection}{\numberline {2.1.1}Early work with Convlutional Neural Networks}{7}
-\contentsline {subsection}{\numberline {2.1.2}Recent achievements with Convlutional Neural Networks}{8}
-\contentsline {section}{\numberline {2.2}CNN layers:conv/pool/norm etc}{9}
-\contentsline {subsection}{\numberline {2.2.1}Convolutional Layer}{9}
-\contentsline {subsection}{\numberline {2.2.2}Pooling Layer}{9}
-\contentsline {subsection}{\numberline {2.2.3}Fully Connected Layer}{11}
-\contentsline {subsubsection}{Rectified Linear Units (ReLUs) for Activation}{11}
-\contentsline {subsubsection}{DropOut}{12}
-\contentsline {section}{\numberline {2.3}Datasets}{12}
-\contentsline {subsection}{\numberline {2.3.1}Models}{12}
-\contentsline {subsection}{\numberline {2.3.2}Food Datasets}{13}
-\contentsline {subsection}{\numberline {2.3.3}Data Argumentation}{14}
-\contentsline {section}{\numberline {2.4}Experimental Discuss}{16}
-\contentsline {subsection}{\numberline {2.4.1}Pre-training and Fine-tuning}{16}
-\contentsline {subsection}{\numberline {2.4.2}Learning across the datasets}{19}
-\contentsline {chapter}{Bibliography}{23}
-\contentsline {chapter}{\numberline {A}Proofs of Theorems}{29}
-\contentsline {section}{\numberline {A.1}Proof of Theorem1}{29}
-\contentsline {section}{\numberline {A.2}Configuration of GoogLeNet}{30}
-\contentsline {chapter}{Curriculum Vitae}{32}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Overview for Image Recogntion}{2}
+\contentsline {subsection}{\numberline {1.1.1}Preprocess}{2}
+\contentsline {subsection}{\numberline {1.1.2}Feature Extraction}{3}
+\contentsline {subsubsection}{Hand Engineered Feature}{3}
+\contentsline {subsubsection}{Representation Learning}{3}
+\contentsline {subsubsection}{Classification}{7}
+\contentsline {chapter}{\numberline {2}Transfer}{8}
+\contentsline {section}{\numberline {2.1}Issues in Transfer Learning}{8}
+\contentsline {section}{\numberline {2.2}Related Work}{9}
+\contentsline {subsection}{\numberline {2.2.1}LS-SVM Classifier}{9}
+\contentsline {subsection}{\numberline {2.2.2}ASVM \& PMT-SVM}{10}
+\contentsline {subsection}{\numberline {2.2.3}Multi-KT}{11}
+\contentsline {subsection}{\numberline {2.2.4}MULTIpLE}{12}
+\contentsline {chapter}{Bibliography}{14}
+\contentsline {chapter}{\numberline {A}Proofs of Theorems}{18}
+\contentsline {section}{\numberline {A.1}Proof of Theorem1}{18}
+\contentsline {section}{\numberline {A.2}Configuration of GoogLeNet}{19}
+\contentsline {chapter}{Curriculum Vitae}{21}

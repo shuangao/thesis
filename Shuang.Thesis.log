@@ -1,22 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  1 DEC 2015 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.20)  20 MAR 2016 15:33
 entering extended mode
-**Shuang*Thesis.tex
-("D:\LaTex_Files\My Thesis\Shuang Thesis.tex"
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("D:\MiKTeX 2.9\tex\latex\base\report.cls"
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("D:\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+**Shuang.Thesis.tex
+(Shuang.Thesis.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -31,37 +22,37 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("D:\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count88
 \c@@ppsavesec=\count89
 \c@@ppsaveapp=\count90
 )
-("D:\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("D:\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("D:\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-("D:\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("D:\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count91
@@ -69,24 +60,24 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("D:\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("D:\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("D:\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen105
 ))
-("D:\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-("D:\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count92
@@ -127,7 +118,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("D:\MiKTeX 2.9\tex\latex\smartref\smartref.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\smartref\smartref.sty"
 Package: smartref 2002/02/28 v1.9 Increase reference capability (deep reference
 )
 \c@@smartlistlen=\count104
@@ -135,11 +126,11 @@ Package: smartref 2002/02/28 v1.9 Increase reference capability (deep reference
 \c@@currsmartlistplace=\count106
 \sm@rtintern@ltok=\toks20
 )
-("D:\MiKTeX 2.9\tex\latex\smartref\byname.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\smartref\byname.sty"
 Package: byname 2001/07/12 v1.1 Increase reference capability (reference by nam
 e)
 )
-("D:\MiKTeX 2.9\tex\latex\txfonts\txfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\txfonts.sty"
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -215,10 +206,10 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
 LaTeX Info: Redefining \not on input line 1043.
 )
-("D:\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("D:\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
 \cftparskip=\skip46
@@ -258,14 +249,14 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cfttabindent=\skip78
 \cfttabnumwidth=\skip79
 )
-("D:\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-("D:\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
 
-("D:\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen114
 \captionmargin@=\dimen115
@@ -289,23 +280,23 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \sf@top=\skip83
 \sf@bottom=\skip84
 )
-("D:\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
-Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count115
 )
-("D:\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen122
 \extrarowheight=\dimen123
 \NC@list=\toks21
 \extratabsurround=\skip85
 \backup@length=\skip86
 )
-("D:\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("D:\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count116
 \float@exts=\toks22
@@ -313,13 +304,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box29
 )
-("D:\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks24
 \c@algorithm=\count117
 )
-("D:\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count118
 \c@ALC@line=\count119
@@ -328,15 +319,15 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip87
 \algorithmicindent=\skip88
 )
-("D:\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-("D:\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 142.
 )
-("D:\MiKTeX 2.9\tex\latex\soul\soul.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\soul\soul.sty"
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks25
 \SOUL@lasttoken=\toks26
@@ -348,28 +339,28 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen125
 \SOUL@ulht=\dimen126
 )
-("D:\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-("D:\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("D:\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("D:\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -378,11 +369,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("D:\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("D:\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -408,21 +399,19 @@ Defining \chapterref ...
 \c@appdepth=\count124
 \cftbeforeapptitleskip=\skip93
 \cftafterapptitleskip=\skip94
-("D:\LaTex_Files\My Thesis\Shuang Thesis.aux"
-("D:\LaTex_Files\My Thesis\transfer/total.aux"
+(Shuang.Thesis.aux (introduction/total.aux) (transfer/total.aux
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
-) ("D:\LaTex_Files\My Thesis\cnn/total.aux")
-("D:\LaTex_Files\My Thesis\appendix/appendixa.aux"))
+) (appendix/appendixa.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 343.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 343
 .
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 343.
@@ -434,7 +423,7 @@ LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 343.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 343
 .
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 343.
@@ -442,7 +431,7 @@ LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 343.
 LaTeX Font Info:    Try loading font information for OMX+txex on input line 343
 .
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 343.
@@ -450,17 +439,17 @@ LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 343.
 LaTeX Font Info:    Try loading font information for U+txexa on input line 343.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 343.
 LaTeX Font Info:    Try loading font information for OT1+txr on input line 343.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
 File: ot1txr.fd 2000/12/15 v3.1
 )
-("D:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
 \scratchdimen=\dimen127
@@ -480,38 +469,38 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+txmia on input line 356.
 
- ("D:\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsya on input line 356.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\utxsya.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsya.fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyb on input line 356.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\utxsyb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsyb.fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyc on input line 356.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for OMS+txr on input line 356.
 
 
-("D:\MiKTeX 2.9\tex\latex\txfonts\omstxr.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omstxr.fd"
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 356.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/aoshuang/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Overfull \hbox (40.69499pt too wide) in paragraph at lines 358--358
 [][]   [] 
  []
@@ -526,292 +515,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--364
 
  []
 
-[3] [4] ("D:\LaTex_Files\My Thesis\Shuang Thesis.toc" [5])
+[3] [4] (Shuang.Thesis.toc [5])
 \tf@toc=\write3
- [6]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.lof")
+ [6] (Shuang.Thesis.lof)
 \tf@lof=\write4
- [7]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.lot"
-Overfull \hbox (2.30612pt too wide) in paragraph at lines 7--7
- [][] []\OT1/txr/m/n/12 Cosine sim-i-lar-ity of the lay-ers be-tween fine-tuned
- mod-els and pre-trained model 
+ [7] (Shuang.Thesis.lot)
+\tf@lot=\write5
+[8] (Shuang.Thesis.app)
+\tf@app=\write6
+ [9] (introduction/total.tex
+Chapter 1.
+[1
+
+
+] (introduction/chall.tex
+<introduction/fig/IRflow.png, id=38, 499.11469pt x 286.82156pt>
+File: introduction/fig/IRflow.png Graphic file (type png)
+
+<use introduction/fig/IRflow.png>
+Package pdftex.def Info: introduction/fig/IRflow.png used on input line 6.
+(pdftex.def)             Requested size: 399.29228pt x 229.45755pt.
+ [2 <./introduction/fig/IRflow.png>]
+<introduction/fig/sift.jpg, id=43, 595.22375pt x 300.12125pt>
+File: introduction/fig/sift.jpg Graphic file (type jpg)
+
+<use introduction/fig/sift.jpg>
+Package pdftex.def Info: introduction/fig/sift.jpg used on input line 24.
+(pdftex.def)             Requested size: 357.13701pt x 180.07413pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<introduction/fig/sparsecoding.png, id=44, 689.57625pt x 767.86874pt>
+File: introduction/fig/sparsecoding.png Graphic file (type png)
+
+<use introduction/fig/sparsecoding.png>
+Package pdftex.def Info: introduction/fig/sparsecoding.png used on input line 3
+5.
+(pdftex.def)             Requested size: 206.87447pt x 230.3624pt.
+ [3]
+<introduction/fig/alexnet.png, id=48, 1606.0pt x 539.01375pt>
+File: introduction/fig/alexnet.png Graphic file (type png)
+
+<use introduction/fig/alexnet.png>
+Package pdftex.def Info: introduction/fig/alexnet.png used on input line 44.
+(pdftex.def)             Requested size: 481.80373pt x 161.70537pt.
+
+Overfull \hbox (30.11623pt too wide) in paragraph at lines 44--45
+ [][] 
  []
 
-)
-\tf@lot=\write5
- [8] ("D:\LaTex_Files\My Thesis\Shuang Thesis.app")
-\tf@app=\write6
- [9]
-("D:\LaTex_Files\My Thesis\transfer/total.tex"
-Chapter 1.
-("D:\LaTex_Files\My Thesis\transfer/gama_works.tex" [1
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 52.
+[4 <./introduction/fig/sift.jpg>] [5 <./introduction/fig/sparsecoding.png (PNG 
+copy)> <./introduction/fig/alexnet.png>] [6])) [7] (transfer/total.tex
+Chapter 2.
+(transfer/gama_works.tex [8
 
 
-])
-("D:\LaTex_Files\My Thesis\transfer/others.tex" [2]
-<transfer/fig/pmt-svm.png, id=42, 356.83313pt x 245.41687pt>
+
+]) (transfer/others.tex [9]
+<transfer/fig/pmt-svm.png, id=70, 356.83313pt x 245.41687pt>
 File: transfer/fig/pmt-svm.png Graphic file (type png)
 
 <use transfer/fig/pmt-svm.png>
 Package pdftex.def Info: transfer/fig/pmt-svm.png used on input line 69.
 (pdftex.def)             Requested size: 214.10152pt x 147.25125pt.
- [3] [4 <D:/LaTex_Files/My Thesis/transfer/fig/pmt-svm.png>] [5])) [6] ("D:\LaT
-ex_Files\My Thesis\cnn/total.tex"
-Chapter 2.
-("D:\LaTex_Files\My Thesis\cnn/bg.tex" [7
+ [10] [11 <./transfer/fig/pmt-svm.png>] [12]))
+[13] (Shuang.Thesis.bbl [14
 
 
-
-]
-Underfull \vbox (badness 4096) has occurred while \output is active []
-
- [8])
-("D:\LaTex_Files\My Thesis\cnn/layers.tex"
-<cnn/fig/conv.png, id=67, 729.47531pt x 390.70969pt>
-File: cnn/fig/conv.png Graphic file (type png)
- <use cnn/fig/conv.png>
-Package pdftex.def Info: cnn/fig/conv.png used on input line 12.
-(pdftex.def)             Requested size: 437.68855pt x 234.42761pt.
-
-[9] <cnn/fig/pool.png, id=72, 535.2497pt x 274.02374pt>
-File: cnn/fig/pool.png Graphic file (type png)
- <use cnn/fig/pool.png>
-Package pdftex.def Info: cnn/fig/pool.png used on input line 25.
-(pdftex.def)             Requested size: 428.20033pt x 219.21928pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <D:/LaTex_Files/My Thesis/cnn/fig/conv.png>]
-<cnn/fig/net.png, id=77, 241.65282pt x 257.46187pt>
-File: cnn/fig/net.png Graphic file (type png)
- <use cnn/fig/net.png>
-Package pdftex.def Info: cnn/fig/net.png used on input line 47.
-(pdftex.def)             Requested size: 135.50761pt x 144.378pt.
-
-<cnn/fig/dropnet.png, id=78, 250.68657pt x 259.7203pt>
-File: cnn/fig/dropnet.png Graphic file (type png)
-
-<use cnn/fig/dropnet.png>
-Package pdftex.def Info: cnn/fig/dropnet.png used on input line 48.
-(pdftex.def)             Requested size: 135.50761pt x 140.39746pt.
-) [11 <D:/LaTex_Files/My Thesis/cnn/fig/pool.png>]
-("D:\LaTex_Files\My Thesis\cnn/expsetup.tex" [12 <D:/LaTex_Files/My Thesis/cnn/
-fig/net.png> <D:/LaTex_Files/My Thesis/cnn/fig/dropnet.png>]
-<cnn/fig/inception.pdf, id=85, 572.1375pt x 279.0425pt>
-File: cnn/fig/inception.pdf Graphic file (type pdf)
-
-<use cnn/fig/inception.pdf>
-Package pdftex.def Info: cnn/fig/inception.pdf used on input line 17.
-(pdftex.def)             Requested size: 400.49352pt x 195.3284pt.
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 24.
- [13 <D:/LaTex_Files/My Thesis/cnn/fig/inception.pdf>] [14] <cnn/fig/crop00.png
-, id=100, 256.96pt x 256.96pt>
-File: cnn/fig/crop00.png Graphic file (type png)
-
-<use cnn/fig/crop00.png>
-Package pdftex.def Info: cnn/fig/crop00.png used on input line 42.
-(pdftex.def)             Requested size: 97.56052pt x 97.55954pt.
-
-<cnn/fig/crop4.png, id=101, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop4.png Graphic file (type png)
- <use cnn/fig/crop4.png>
-Package pdftex.def Info: cnn/fig/crop4.png used on input line 43.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop9.png, id=102, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop9.png Graphic file (type png)
- <use cnn/fig/crop9.png>
-Package pdftex.def Info: cnn/fig/crop9.png used on input line 44.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop0.png, id=103, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop0.png Graphic file (type png)
- <use cnn/fig/crop0.png>
-Package pdftex.def Info: cnn/fig/crop0.png used on input line 47.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop5.png, id=104, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop5.png Graphic file (type png)
- <use cnn/fig/crop5.png>
-Package pdftex.def Info: cnn/fig/crop5.png used on input line 48.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop1.png, id=105, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop1.png Graphic file (type png)
- <use cnn/fig/crop1.png>
-Package pdftex.def Info: cnn/fig/crop1.png used on input line 48.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop6.png, id=106, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop6.png Graphic file (type png)
- <use cnn/fig/crop6.png>
-Package pdftex.def Info: cnn/fig/crop6.png used on input line 49.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop2.png, id=107, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop2.png Graphic file (type png)
- <use cnn/fig/crop2.png>
-Package pdftex.def Info: cnn/fig/crop2.png used on input line 51.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop7.png, id=108, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop7.png Graphic file (type png)
- <use cnn/fig/crop7.png>
-Package pdftex.def Info: cnn/fig/crop7.png used on input line 52.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop3.png, id=109, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop3.png Graphic file (type png)
- <use cnn/fig/crop3.png>
-Package pdftex.def Info: cnn/fig/crop3.png used on input line 52.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop8.png, id=110, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop8.png Graphic file (type png)
- <use cnn/fig/crop8.png>
-Package pdftex.def Info: cnn/fig/crop8.png used on input line 53.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
- [15 <D:/LaTex_Files/My Thesis/cnn/fig/crop00.png (PNG copy)> <D:/LaTex_Files/M
-y Thesis/cnn/fig/crop4.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop9.
-png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop0.png (PNG copy)> <D:/LaT
-ex_Files/My Thesis/cnn/fig/crop5.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/
-fig/crop1.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop6.png (PNG copy
-)> <D:/LaTex_Files/My Thesis/cnn/fig/crop2.png (PNG copy)> <D:/LaTex_Files/My T
-hesis/cnn/fig/crop7.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop3.png
- (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop8.png (PNG copy)>]
-<cnn/fig/org.png, id=114, 578.16pt x 431.4519pt>
-File: cnn/fig/org.png Graphic file (type png)
- <use cnn/fig/org.png>
-Package pdftex.def Info: cnn/fig/org.png used on input line 70.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/red.png, id=115, 578.16pt x 431.4519pt>
-File: cnn/fig/red.png Graphic file (type png)
- <use cnn/fig/red.png>
-Package pdftex.def Info: cnn/fig/red.png used on input line 71.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/green.png, id=116, 578.16pt x 431.4519pt>
-File: cnn/fig/green.png Graphic file (type png)
- <use cnn/fig/green.png>
-Package pdftex.def Info: cnn/fig/green.png used on input line 72.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/blue.png, id=117, 578.16pt x 431.4519pt>
-File: cnn/fig/blue.png Graphic file (type png)
- <use cnn/fig/blue.png>
-Package pdftex.def Info: cnn/fig/blue.png used on input line 73.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/rgb.png, id=118, 578.16pt x 431.4519pt>
-File: cnn/fig/rgb.png Graphic file (type png)
- <use cnn/fig/rgb.png>
-Package pdftex.def Info: cnn/fig/rgb.png used on input line 74.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/v1.png, id=119, 578.16pt x 431.4519pt>
-File: cnn/fig/v1.png Graphic file (type png)
- <use cnn/fig/v1.png>
-Package pdftex.def Info: cnn/fig/v1.png used on input line 75.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/v2.png, id=120, 578.16pt x 431.4519pt>
-File: cnn/fig/v2.png Graphic file (type png)
- <use cnn/fig/v2.png>
-Package pdftex.def Info: cnn/fig/v2.png used on input line 76.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s1.png, id=121, 578.16pt x 431.4519pt>
-File: cnn/fig/s1.png Graphic file (type png)
- <use cnn/fig/s1.png>
-Package pdftex.def Info: cnn/fig/s1.png used on input line 77.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s2.png, id=122, 578.16pt x 431.4519pt>
-File: cnn/fig/s2.png Graphic file (type png)
- <use cnn/fig/s2.png>
-Package pdftex.def Info: cnn/fig/s2.png used on input line 78.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s4.png, id=123, 578.16pt x 431.4519pt>
-File: cnn/fig/s4.png Graphic file (type png)
- <use cnn/fig/s4.png>
-Package pdftex.def Info: cnn/fig/s4.png used on input line 79.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s3.png, id=124, 578.16pt x 431.4519pt>
-File: cnn/fig/s3.png Graphic file (type png)
- <use cnn/fig/s3.png>
-Package pdftex.def Info: cnn/fig/s3.png used on input line 80.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/rota.png, id=125, 578.16pt x 431.4519pt>
-File: cnn/fig/rota.png Graphic file (type png)
- <use cnn/fig/rota.png>
-Package pdftex.def Info: cnn/fig/rota.png used on input line 81.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-)
-("D:\LaTex_Files\My Thesis\cnn/discuss.tex"
-<cnn/fig/sashimi.png, id=126, 727.96968pt x 319.1925pt>
-File: cnn/fig/sashimi.png Graphic file (type png)
-
-<use cnn/fig/sashimi.png>
-Package pdftex.def Info: cnn/fig/sashimi.png used on input line 50.
-(pdftex.def)             Requested size: 363.98395pt x 159.59586pt.
- [16] [17 <D:/LaTex_Files/My Thesis/cnn/fig/org.png> <D:/LaTex_Files/My Thesis/
-cnn/fig/red.png> <D:/LaTex_Files/My Thesis/cnn/fig/green.png> <D:/LaTex_Files/M
-y Thesis/cnn/fig/blue.png> <D:/LaTex_Files/My Thesis/cnn/fig/rgb.png> <D:/LaTex
-_Files/My Thesis/cnn/fig/v1.png> <D:/LaTex_Files/My Thesis/cnn/fig/v2.png> <D:/
-LaTex_Files/My Thesis/cnn/fig/s1.png> <D:/LaTex_Files/My Thesis/cnn/fig/s2.png>
- <D:/LaTex_Files/My Thesis/cnn/fig/s4.png> <D:/LaTex_Files/My Thesis/cnn/fig/s3
-.png> <D:/LaTex_Files/My Thesis/cnn/fig/rota.png>]
-[18 <D:/LaTex_Files/My Thesis/cnn/fig/sashimi.png>] [19] [20]
-Underfull \vbox (badness 1178) has occurred while \output is active []
-
- [21]))
-[22] ("D:\LaTex_Files\My Thesis\Shuang Thesis.bbl" [23
-
-
-]
-Missing character: There is no Ê in font txr!
-Missing character: There is no ¹ in font txr!
- [24] [25]
-Underfull \hbox (badness 1107) in paragraph at lines 253--258
+] [15]
+Underfull \hbox (badness 1107) in paragraph at lines 132--137
 []\OT1/txr/m/n/12 Nitish Sri-vas-tava, Ge-of-frey Hin-ton, Alex Krizhevsky, Ily
 a Sutskever, and Rus-lan
  []
 
-[26] [27]) [28] ("D:\LaTex_Files\My Thesis\appendix/appendixa.tex"
+[16]) [17] (appendix/appendixa.tex
 Appendix A.
-("D:\LaTex_Files\My Thesis\appendix/gama_nega.tex"
+(appendix/gama_nega.tex
 
-LaTeX Warning: Reference `eq:train_loss' on page 29 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:dual' on page 29 undefined on input line 13.
-
-[29
+LaTeX Warning: Reference `eq:train_loss' on page 18 undefined on input line 2.
 
 
-]
+LaTeX Warning: Reference `eq:dual' on page 18 undefined on input line 13.
 
-LaTeX Warning: Reference `eq:dual' on page 30 undefined on input line 28.
-
-) [30] ("D:\LaTex_Files\My Thesis\cnn/googlenet.tex") [31]) [32
-
-
+[18
 
 
 ]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.aux"
-("D:\LaTex_Files\My Thesis\transfer/total.aux")
-("D:\LaTex_Files\My Thesis\cnn/total.aux")
-("D:\LaTex_Files\My Thesis\appendix/appendixa.aux"))
+
+LaTeX Warning: Reference `eq:dual' on page 19 undefined on input line 28.
+
+) [19] (cnn/googlenet.tex) [20]) [21
+
+
+
+
+] (Shuang.Thesis.aux
+(introduction/total.aux) (transfer/total.aux) (appendix/appendixa.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -820,24 +622,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5681 strings out of 493921
- 80634 string characters out of 3152883
- 249980 words of memory out of 3000000
- 8748 multiletter control sequences out of 15000+200000
- 53903 words of font info for 128 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 44i,22n,52p,1868b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/MiKTeX 2.9/fonts/type1/pub
-lic/txfonts/rtxb.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><D:/Mi
-KTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><D:/MiKTeX 2.9/fonts/type1/public/
-txfonts/rtxsc.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><D:/MiKTeX
- 2.9/fonts/type1/public/txfonts/txsy.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfo
-nts/txsyc.pfb><D:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/MiKTeX 2.9/fo
-nts/type1/urw/times/utmr8a.pfb><D:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on "Shuang Thesis.pdf" (41 pages, 10159166 bytes).
+ 5491 strings out of 493673
+ 79061 string characters out of 3141520
+ 263024 words of memory out of 3000000
+ 8652 multiletter control sequences out of 15000+200000
+ 46195 words of font info for 111 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 44i,22n,42p,1177b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/txfonts/rtxsc.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/txfonts/txex.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
+s/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Shuang.Thesis.pdf (30 pages, 450325 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
