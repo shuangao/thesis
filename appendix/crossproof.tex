@@ -1,0 +1,122 @@
+\begin{theorem}[An extension of \cite{cawley2006leave}]
+	Given a dataset $D=\{(x_i,y_i)|i=1,...,l\}$, the solution of a LS-SVM on $D$ can be written as:
+	
+	\begin{equation}\label{eq:app:orgmatrix}
+	\left[ {\begin{array}{*{20}{c}}
+		{K  + \frac{1}{C}{\rm I}}\\
+		1^T
+		\end{array}\begin{array}{*{20}{c}}
+		1\\
+		0
+		\end{array}} \right]\left[ {\begin{array}{*{20}{c}}
+		\alpha \\
+		b
+		\end{array}} \right] = \left[ \begin{array}{l}
+	y\\
+	0
+	\end{array} \right]
+	\end{equation}
+	Assume that $D^{(n)} = \{(x_i,y_i)|i=1,...,n\}$ is a subset of $D$ and $D\backslash D^{(n)}$ is the complement of $D^{(n)}$ in $D$ , The unbiased leave out error of a LS-SVM trained from $D\backslash D^{(n)}$ on $D^{(n)}$ can be estimated as:
+	
+	\begin{equation*}%\label{eq:nout}
+	ERR_{leave-out} = \left( {{S_n} - sS_{(l - n + 1)}^{ - 1}{s^T}} \right){\left[ {{\alpha _1},...,{\alpha _n}} \right]^T}
+	\end{equation*}
+	Where $\left[\alpha_1,...,\alpha_n\right]$ is the first $n$ rows of $\alpha$ in \eqref{eq:app:orgmatrix}. $S_n$, $s$ and $S_{(l - n + 1)}$ are the square blocks of matrix:
+	
+	\begin{equation*}
+	\left[ {\begin{array}{c|c}
+		{{S_{n }}} &s\\ \hline
+		{{s^T}}&{{S_{(l - n + 1)}}}
+		\end{array}} \right] =\left[ {\begin{array}{*{20}{c}}
+		{K  + \frac{1}{C}{\rm I}}\\
+		1^T
+		\end{array}\begin{array}{*{20}{c}}
+		1\\
+		0
+		\end{array}} \right]
+	\end{equation*}
+\end{theorem}
+\begin{proof}
+	Following the result of Eq. \eqref{eq:app:orgmatrix} and noticing that the matrix of the left hand in Eq. \eqref{eq:app:orgmatrix} is symmetrical, it can be written as follow:
+	
+	\begin{equation}\label{eq:app:block}
+	\left[ {\begin{array}{*{20}{c}}
+		{K  + \frac{1}{C}{\rm I}}\\
+		1^T
+		\end{array}\begin{array}{*{20}{c}}
+		1\\
+		0
+		\end{array}} \right] = \left[ {\begin{array}{c|c}
+		{{S_{n }}} &s\\ \hline
+		{{s^T}}&{{S_{(l - n + 1)}}}
+		\end{array}} \right] 
+	\end{equation}
+	Where $S_{n} \in R^{n \times n}$, $s \in R^{n\times (l-n+1)}$ and $S_{(l - n + 1)} \in R^{(l - n + 1) \times (l - n + 1) }$.
+	
+	For the first round of the cross validation situation, assume the first $n$ examples are used as the validation set. In this case, let $\left[ {{\alpha ^{ - 1}},{b^{ - 1}}} \right] \in R^{l-n+1}$ denote the optimal parameters for a LS-SVM $f^{-1}$ trained on the rest of the samples and they can be found by:
+	
+	\begin{equation}\label{eq:app:ab,l-n+1}
+	\left[ \begin{array}{l}
+	{\alpha ^{ - 1}}\\
+	{b^{ - 1}}
+	\end{array} \right]{\rm{ = S}}_{(l - n + 1)}^{ - 1}{\left[ {{y_{n + 1}},...,{y_l},0} \right]^T}
+	\end{equation}
+	The prediction of $f^{-1}$ on the validation set $\hat{Y} = \left[\hat{y}_1,...,\hat{y}_n\right]$ is given by:
+	
+	\begin{equation}\label{eq:app:predict}
+	\left[ {\hat {{y}}_1,...,\hat {{y}}}_n \right]^T = s\left[ {\begin{array}{*{20}{c}}
+		\alpha^{-1} \\
+		b^{-1}
+		\end{array}} \right] = sS_{(l - n + 1)}^{ - 1}{\left[ {{y_{n + 1}},...,{y_l},0} \right]^T}
+	\end{equation}
+	Moreover, the last $l-n+1$ rows in Eq. \eqref{eq:app:orgmatrix} can be represented as $\left[ {\begin{array}{*{20}{c}}{{s^T}}&{{S_{l - n + 1}}}\end{array}} \right] \left[ {\alpha ,b}\right] ^T= \left[ {{y_{n + 1}},...,{y_l},0} \right]^T$. So
+	
+	\begin{equation}\label{eq:app:yestimate}
+	\begin{array}{l}
+	\hat{Y}={\left[ {\hat {{y}}_1,...,\hat {{y}}}_n \right]^T} = sS_{(l - n + 1)}^{ - 1}\left[ {\begin{array}{*{20}{c}}
+		{{s^T}}&{{S_{l - n + 1}}}
+		\end{array}} \right]\left[ {\begin{array}{*{20}{c}}
+		\alpha \\
+		b
+		\end{array}} \right]\\
+	= sS_{(l - n + 1)}^{ - 1}{s^T}{\left[ {{\alpha _1},...,{\alpha _n}} \right]^T} + s{\left[ {{\alpha _{n + 1}},...,{\alpha _l},b} \right]^T}
+	\end{array}
+	\end{equation}
+	Then first $n$ rows in Eq. \eqref{eq:app:orgmatrix} can be represented as:
+	
+	\begin{equation}\label{eq:app:ytrue}
+	Y={\left[ {{y_1},...{y_n}} \right]^T} = \left[ {\begin{array}{*{20}{c}}
+		{{S_n}}&s
+		\end{array}} \right]\left[ {\begin{array}{*{20}{c}}
+		\alpha \\
+		b
+		\end{array}} \right] = {S_n}{\left[ {{\alpha _1},...,{\alpha _n}} \right]^T} + s{\left[ {{\alpha _{n + 1}},...,{\alpha _l},b} \right]^T}
+	\end{equation}
+	Thus, combining \eqref{eq:app:yestimate} and \eqref{eq:app:ytrue}, we have the following equation:
+	
+	\begin{equation}
+	\begin{array}{l}
+	\hat Y = Y - {S_n}{\left[ {{\alpha _1},...,{\alpha _n}} \right]^T} + sS_{(l - n + 1)}^{ - 1}{s^T}{\left[ {{\alpha _1},...,{\alpha _n}} \right]^T}\\
+	= Y - \left( {{S_n} - sS_{(l - n + 1)}^{ - 1}{s^T}} \right){\left[ {{\alpha _1},...,{\alpha _n}} \right]^T}
+	\end{array}
+	\end{equation}
+	According to block matrix inversion lemma
+	
+	\begin{equation}%\label{}
+	{\left[ {\begin{array}{*{20}{c}}
+			{{S_n}}\\
+			{{s^T}}
+			\end{array}\begin{array}{*{20}{c}}
+			s\\
+			{{S_{(l - n + 1)}}}
+			\end{array}} \right]^{ - 1}} = \left[ {\begin{array}{*{20}{c}}
+		{{\kappa ^{ - 1}}}&{ - {\kappa ^{ - 1}}sS_{(l - n + 1)}^{ - 1}}\\
+		{ - {S_{(l - n + 1)}}{s^T}{\kappa ^{ - 1}}}&{S_{(l - n + 1)}^{ - 1} + S_{(l - n + 1)}^{ - 1}{s^T}{\kappa ^{ - 1}}sS_{(l - n + 1)}^{ - 1}}
+		\end{array}} \right]
+	\end{equation}
+	Where $\kappa  = \left( {{S_n} - sS_{(l - n + 1)}^{ - 1}{s^T}} \right)$. We have:
+	
+	\begin{equation}%\label{eq:nout}
+	Y - \hat Y = {\kappa}{\left[ {{\alpha _1},...,{\alpha _n}} \right]^T}
+	\end{equation}
+\end{proof}

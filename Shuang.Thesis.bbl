@@ -1,15 +1,32 @@
 \begin{thebibliography}{10}
 
+\bibitem{aizerman1964probability}
+MA~Aizerman, È~М Braverman, and LI~Rozonoer.
+\newblock Probability problem of pattern recognition learning and potential
+  functions method.
+\newblock {\em Avtomat. i Telemekh}, 25(9):1307--1323, 1964.
+
 \bibitem{aytar2011tabula}
 Yusuf Aytar and Andrew Zisserman.
 \newblock Tabula rasa: Model transfer for object category detection.
 \newblock In {\em Computer Vision (ICCV), 2011 IEEE International Conference
   on}, pages 2252--2259. IEEE, 2011.
 
+\bibitem{bakker2003task}
+Bart Bakker and Tom Heskes.
+\newblock Task clustering and gating for bayesian multitask learning.
+\newblock {\em The Journal of Machine Learning Research}, 4:83--99, 2003.
+
 \bibitem{bay2006surf}
 Herbert Bay, Tinne Tuytelaars, and Luc Van~Gool.
 \newblock Surf: Speeded up robust features.
 \newblock In {\em Computer vision--ECCV 2006}, pages 404--417. Springer, 2006.
+
+\bibitem{ben2010theory}
+Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and
+  Jennifer~Wortman Vaughan.
+\newblock A theory of learning from different domains.
+\newblock {\em Machine learning}, 79(1-2):151--175, 2010.
 
 \bibitem{biederman1987recognition}
 Irving Biederman.
@@ -22,6 +39,12 @@ Stan Birchfield.
   histograms.
 \newblock In {\em Computer Vision and Pattern Recognition, 1998. Proceedings.
   1998 IEEE Computer Society Conference on}, pages 232--237. IEEE, 1998.
+
+\bibitem{bottou2010large}
+L{\'e}on Bottou.
+\newblock Large-scale machine learning with stochastic gradient descent.
+\newblock In {\em Proceedings of COMPSTAT'2010}, pages 177--186. Springer,
+  2010.
 
 \bibitem{boureau2010theoretical}
 Y-Lan Boureau, Jean Ponce, and Yann LeCun.
@@ -41,11 +64,36 @@ Gavin~C Cawley.
 \newblock In {\em Neural Networks, 2006. IJCNN'06. International Joint
   Conference on}, pages 1661--1668. IEEE, 2006.
 
+\bibitem{Chatfield14}
+K.~Chatfield, K.~Simonyan, A.~Vedaldi, and A.~Zisserman.
+\newblock Return of the devil in the details: Delving deep into convolutional
+  nets.
+\newblock In {\em British Machine Vision Conference}, 2014.
+
+\bibitem{coates2011analysis}
+Adam Coates, Andrew~Y Ng, and Honglak Lee.
+\newblock An analysis of single-layer networks in unsupervised feature
+  learning.
+\newblock In {\em International conference on artificial intelligence and
+  statistics}, pages 215--223, 2011.
+
 \bibitem{crammer2002algorithmic}
 Koby Crammer and Yoram Singer.
 \newblock On the algorithmic implementation of multiclass kernel-based vector
   machines.
 \newblock {\em The Journal of Machine Learning Research}, 2:265--292, 2002.
+
+\bibitem{cristianini2000introduction}
+Nello Cristianini and John Shawe-Taylor.
+\newblock {\em An introduction to support vector machines and other
+  kernel-based learning methods}.
+\newblock Cambridge university press, 2000.
+
+\bibitem{dai2007boosting}
+Wenyuan Dai, Qiang Yang, Gui-Rong Xue, and Yong Yu.
+\newblock Boosting for transfer learning.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, pages 193--200. ACM, 2007.
 
 \bibitem{dalal2005histograms}
 Navneet Dalal and Bill Triggs.
@@ -53,11 +101,33 @@ Navneet Dalal and Bill Triggs.
 \newblock In {\em Computer Vision and Pattern Recognition, 2005. CVPR 2005.
   IEEE Computer Society Conference on}, volume~1, pages 886--893. IEEE, 2005.
 
+\bibitem{daume2009frustratingly}
+Hal Daum{\'e}~III.
+\newblock Frustratingly easy domain adaptation.
+\newblock {\em arXiv preprint arXiv:0907.1815}, 2009.
+
 \bibitem{davis2009deep}
 Jesse Davis and Pedro Domingos.
 \newblock Deep transfer via second-order markov logic.
 \newblock In {\em Proceedings of the 26th annual international conference on
   machine learning}, pages 217--224. ACM, 2009.
+
+\bibitem{evgeniou2007multi}
+A~Evgeniou and Massimiliano Pontil.
+\newblock Multi-task feature learning.
+\newblock {\em Advances in neural information processing systems}, 19:41, 2007.
+
+\bibitem{evgeniou2004regularized}
+Theodoros Evgeniou and Massimiliano Pontil.
+\newblock Regularized multi--task learning.
+\newblock In {\em Proceedings of the tenth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 109--117. ACM, 2004.
+
+\bibitem{fei2006one}
+Li~Fei-Fei, Rob Fergus, and Pietro Perona.
+\newblock One-shot learning of object categories.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 28(4):594--611, 2006.
 
 \bibitem{hinton2012improving}
 Geoffrey~E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and
@@ -66,11 +136,64 @@ Geoffrey~E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and
   detectors.
 \newblock {\em arXiv preprint arXiv:1207.0580}, 2012.
 
+\bibitem{hoffman2013one}
+Judy Hoffman, Eric Tzeng, Jeff Donahue, Yangqing Jia, Kate Saenko, and Trevor
+  Darrell.
+\newblock One-shot adaptation of supervised deep convolutional models.
+\newblock {\em arXiv preprint arXiv:1312.6204}, 2013.
+
+\bibitem{hsieh2008dual}
+Cho-Jui Hsieh, Kai-Wei Chang, Chih-Jen Lin, S~Sathiya Keerthi, and
+  Sellamanickam Sundararajan.
+\newblock A dual coordinate descent method for large-scale linear svm.
+\newblock In {\em Proceedings of the 25th international conference on Machine
+  learning}, pages 408--415. ACM, 2008.
+
+\bibitem{jiang2007instance}
+Jing Jiang and ChengXiang Zhai.
+\newblock Instance weighting for domain adaptation in nlp.
+\newblock In {\em ACL}, volume~7, pages 264--271, 2007.
+
+\bibitem{jie2011multiclass}
+Luo Jie, Tatiana Tommasi, and Barbara Caputo.
+\newblock Multiclass transfer learning from unconstrained priors.
+\newblock In {\em Computer Vision (ICCV), 2011 IEEE International Conference
+  on}, pages 1863--1870. IEEE, 2011.
+
+\bibitem{johansen1990maximum}
+S{\o}ren Johansen and Katarina Juselius.
+\newblock Maximum likelihood estimation and inference on cointegration—with
+  applications to the demand for money.
+\newblock {\em Oxford Bulletin of Economics and statistics}, 52(2):169--210,
+  1990.
+
+\bibitem{keerthi2003asymptotic}
+S~Sathiya Keerthi and Chih-Jen Lin.
+\newblock Asymptotic behaviors of support vector machines with gaussian kernel.
+\newblock {\em Neural computation}, 15(7):1667--1689, 2003.
+
+\bibitem{kifer2004detecting}
+Daniel Kifer, Shai Ben-David, and Johannes Gehrke.
+\newblock Detecting change in data streams.
+\newblock In {\em Proceedings of the Thirtieth international conference on Very
+  large data bases-Volume 30}, pages 180--191. VLDB Endowment, 2004.
+
 \bibitem{krizhevsky2012imagenet}
 Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   1097--1105, 2012.
+
+\bibitem{kuhlmann2007graph}
+Gregory Kuhlmann and Peter Stone.
+\newblock Graph-based domain mapping for transfer learning in general games.
+\newblock In {\em Machine Learning: ECML 2007}, pages 188--200. Springer, 2007.
+
+\bibitem{kuzborskij2013stability}
+Ilja Kuzborskij and Francesco Orabona.
+\newblock Stability and hypothesis transfer learning.
+\newblock In {\em Proceedings of the 30th International Conference on Machine
+  Learning}, pages 942--950, 2013.
 
 \bibitem{kuzborskij2013n}
 Ilja Kuzborskij, Francesco Orabona, and Barbara Caputo.
@@ -83,6 +206,12 @@ Yann LeCun, Bernhard Boser, John~S Denker, Donnie Henderson, Richard~E Howard,
   Wayne Hubbard, and Lawrence~D Jackel.
 \newblock Backpropagation applied to handwritten zip code recognition.
 \newblock {\em Neural computation}, 1(4):541--551, 1989.
+
+\bibitem{liao2005logistic}
+Xuejun Liao, Ya~Xue, and Lawrence Carin.
+\newblock Logistic regression with an auxiliary data source.
+\newblock In {\em Proceedings of the 22nd international conference on Machine
+  learning}, pages 505--512. ACM, 2005.
 
 \bibitem{lim2012transfer}
 Joseph~Jaewhan Lim.
@@ -101,6 +230,11 @@ David~G Lowe.
 \newblock Object recognition from local scale-invariant features.
 \newblock In {\em Computer vision, 1999. The proceedings of the seventh IEEE
   international conference on}, volume~2, pages 1150--1157. Ieee, 1999.
+
+\bibitem{lu2015transfer}
+Jie Lu, Vahid Behbood, Peng Hao, Hua Zuo, Shan Xue, and Guangquan Zhang.
+\newblock Transfer learning using computational intelligence: a survey.
+\newblock {\em Knowledge-Based Systems}, 80:14--23, 2015.
 
 \bibitem{malmaud2015s}
 Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew
@@ -128,6 +262,34 @@ Sinno~Jialin Pan and Qiang Yang.
 \newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
   22(10):1345--1359, 2010.
 
+\bibitem{platt1998sequential}
+John Platt et~al.
+\newblock Sequential minimal optimization: A fast algorithm for training
+  support vector machines.
+\newblock 1998.
+
+\bibitem{rifkin2004defense}
+Ryan Rifkin and Aldebaro Klautau.
+\newblock In defense of one-vs-all classification.
+\newblock {\em The Journal of Machine Learning Research}, 5:101--141, 2004.
+
+\bibitem{rosenstein2005transfer}
+Michael~T Rosenstein, Zvika Marx, Leslie~Pack Kaelbling, and Thomas~G
+  Dietterich.
+\newblock To transfer or not to transfer.
+\newblock In {\em NIPS 2005 Workshop on Transfer Learning}, volume 898, 2005.
+
+\bibitem{schuldt2004recognizing}
+Christian Sch{\"u}ldt, Ivan Laptev, and Barbara Caputo.
+\newblock Recognizing human actions: a local svm approach.
+\newblock In {\em Pattern Recognition, 2004. ICPR 2004. Proceedings of the 17th
+  International Conference on}, volume~3, pages 32--36. IEEE, 2004.
+
+\bibitem{shalev2011pegasos}
+Shai Shalev-Shwartz, Yoram Singer, Nathan Srebro, and Andrew Cotter.
+\newblock Pegasos: Primal estimated sub-gradient solver for svm.
+\newblock {\em Mathematical programming}, 127(1):3--30, 2011.
+
 \bibitem{srivastava2014dropout}
 Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
   Salakhutdinov.
@@ -146,6 +308,11 @@ Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
 \newblock Going deeper with convolutions.
 \newblock {\em arXiv preprint arXiv:1409.4842}, 2014.
 
+\bibitem{talvitie2007experts}
+Erik Talvitie and Satinder~P Singh.
+\newblock An experts algorithm for transfer learning.
+\newblock In {\em IJCAI}, pages 1065--1070, 2007.
+
 \bibitem{tommasi2010safety}
 Tatiana Tommasi, Francesco Orabona, and Barbara Caputo.
 \newblock Safety in numbers: Learning categories from few examples with multi
@@ -160,10 +327,33 @@ Tatiana Tommasi, Francesco Orabona, and Barbara Caputo.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 36(5):928--941, 2014.
 
+\bibitem{torrey2009transfer}
+Lisa Torrey and Jude Shavlik.
+\newblock Transfer learning.
+\newblock {\em Handbook of Research on Machine Learning Applications and
+  Trends: Algorithms, Methods, and Techniques}, 1:242, 2009.
+
+\bibitem{torrey2005using}
+Lisa Torrey, Trevor Walker, Jude Shavlik, and Richard Maclin.
+\newblock Using advice to transfer knowledge acquired in one reinforcement
+  learning task to another.
+\newblock In {\em Machine Learning: ECML 2005}, pages 412--424. Springer, 2005.
+
+\bibitem{tsoumakas2006multi}
+Grigorios Tsoumakas and Ioannis Katakis.
+\newblock Multi-label classification: An overview.
+\newblock {\em Dept. of Informatics, Aristotle University of Thessaloniki,
+  Greece}, 2006.
+
 \bibitem{van2006coloring}
 Joost Van De~Weijer and Cordelia Schmid.
 \newblock Coloring local feature extraction.
 \newblock In {\em Computer Vision--ECCV 2006}, pages 334--348. Springer, 2006.
+
+\bibitem{vapnik2000bounds}
+Vladimir Vapnik and Olivier Chapelle.
+\newblock Bounds on error expectation for support vector machines.
+\newblock {\em Neural computation}, 12(9):2013--2036, 2000.
 
 \bibitem{wang2014active}
 Xuezhi Wang, Tzu-Kuo Huang, and Jeff Schneider.
@@ -189,6 +379,24 @@ Jun Yang, Rong Yan, and Alexander~G Hauptmann.
 \newblock Cross-domain video concept detection using adaptive svms.
 \newblock In {\em Proceedings of the 15th international conference on
   Multimedia}, pages 188--197. ACM, 2007.
+
+\bibitem{yosinski2014transferable}
+Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson.
+\newblock How transferable are features in deep neural networks?
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  3320--3328, 2014.
+
+\bibitem{zeiler2014visualizing}
+Matthew~D Zeiler and Rob Fergus.
+\newblock Visualizing and understanding convolutional networks.
+\newblock In {\em Computer Vision--ECCV 2014}, pages 818--833. Springer, 2014.
+
+\bibitem{NIPS2014_Zhou}
+Bolei Zhou, Agata Lapedriza, Jianxiong Xiao, Antonio Torralba, and Aude Oliva.
+\newblock Learning deep features for scene recognition using places database.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.D. Lawrence, and K.Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  27}, pages 487--495. Curran Associates, Inc., 2014.
 
 \bibitem{zhou2014multi}
 Tianyi Zhou and Dacheng Tao.

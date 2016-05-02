@@ -1,5 +1,14 @@
-\chapter{Transfer}
+\chapter{Learning Single Source Categories}
+In this chapter, we study the problem that transfer the knowledge from a single source to recognize single source self-defined categories. As we mentioned in Chapter \ref{sec:intro}, we defined two kinds of self-defined categories: single-source and multi-source self-defined categories. We first introduce our strategy to handle single source categories and the multi-source can be solved using the similar strategy.
+
+To deal with this problem, we firstly propose a data argumentation strategy for single source category. We use the transfer parameters to control the amount of knowledge transferred from the source. To estimate the transfer parameters, we propose a novel objective function that be solved effectively and avoid negative transfer. With extensive experiments on the public benchmark MNIST, we empirically show that our method can effectively transfer the knowledge from a single source and avoid negative transfer while other benchmark transfer methods suffer.
+
+\hl{The rest of this chapter is organized as follow:}
 \section{Issues in Transfer Learning}
 \input{transfer/gama_works.tex}
-\section{Related Work}
+\section{Related Work}\label{sec:single:rl}
 \input{transfer/others.tex}
+\section{Linear Combination Strategy}\label{sec:single:comb}
+\input{transfer/linearcom.tex}
+\section{Cross-Validation Error for LS-SVM}
+\input{transfer/cross.tex}

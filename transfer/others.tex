@@ -14,7 +14,7 @@ The primal Lagrangian for this optimization problem given the unconstrained mini
 \end{equation}
 
 Where $\alpha = [ \alpha_1,...,\alpha_l]^T $ is the vector of Lagrange multipliers. The solution to minimise this problem is give by:
-\begin{equation}
+\begin{equation}\label{eq:single:orgmatrix}
   \left[ {\begin{array}{*{20}{c}}
 {K  + \frac{1}{C}{\rm I}}\\
 1^T
@@ -51,6 +51,7 @@ y\\
 \end{equation}
 \subsection{ASVM \& PMT-SVM}
 Adaptive SVM (ASVM) is the first work using LS-SVM for transfer learning for vision related tasks \cite{yang2007adapting}. The goal of ASVM is to minimize the distance between the target hyperplane $w$ and source one $w'$ incorporating with the transfer parameter $\gamma$. The objective function is defined as follow:
+
 \begin{equation}\label{eq:gama:asvm}
 \begin{aligned}
 \min \qquad& L_{ASVM} = \frac{1}{2}{\left\| w - \gamma w' \right\|^2} + \frac{C}{2}\sum\limits_{i = 1}^l {{\varepsilon_i ^2}}\\
@@ -59,11 +60,13 @@ Adaptive SVM (ASVM) is the first work using LS-SVM for transfer learning for vis
 \end{equation}
 
 Here, $\gamma$ controls the amount of transfer regularization. Intuitively, the regularization term of ASVM is like a spring between $w$ and $\gamma w'$. Equivalently, assume ${\left\| {w'} \right\|^2}=1$ and the regularization term can be expended as:
+
 \begin{equation*}
 {\left\| {w - \gamma w'} \right\|^2} = {\left\| w \right\|^2} - 2\gamma \left\| w \right\|\cos \theta  + {\gamma ^2}
 \end{equation*}
 Where $\theta$ is the angel between $w$ and $w'$. However, the term $-\gamma \left\| w \right\|\cos \theta$ also encourages $||w||$
 to be larger (as this reduces the cost) which prevents margin maximization. Thus $\gamma$, which defines the amount of transfer regularization, becomes a tradeoff parameter between margin maximization and knowledge transfer.
+
 \begin{figure}
 \centering
 \includegraphics[scale=.6]{transfer/fig/pmt-svm.png}
@@ -71,6 +74,7 @@ to be larger (as this reduces the cost) which prevents margin maximization. Thus
 \end{figure}
 
 Based on this, Projective Model Transfer SVM (PMT-SVM) is proposed to solve the transfer problem by optimizing the following objective function \cite{aytar2011tabula}:
+
 \begin{equation}\label{eq:gama:pmt}
 \begin{aligned}
 \min \qquad& {L_{PMT}} = \frac{1}{2}{\left\| w \right\|^2} + \gamma {\left\| {Pw'} \right\|^2} + \frac{C}{2}\sum\limits_{i = 1}^l {\varepsilon _i^2} \\
@@ -85,6 +89,7 @@ squared norm of the projection of the $w$ onto the source hyperplane (see Figure
 In summary, both ASVM and PMT-SVM are designed to answer the question: how to transfer by solving some convex objective function. However, they both require a pre-defined parameter $\gamma$, which controls the amount of the knowledge to be transfered, to complete the objective function. In most cases, this parameter can only be set according to the background knowledge. Also, both methods can only adopt the knowledge from single source model which limits the their performance. 
 \subsection{Multi-KT}
 To learning from many sources, Multi Model Knowledge Transfer (Multi-KT) is proposed to reply on multiple sources by assigning different weight for each of them \cite{tommasi2014learning}. Similar to the objective function \eqref{eq:gama:asvm}, its objective function is defined as follow: 
+
 \begin{equation}\label{eq:gama:multi}
 \begin{aligned}
 \min \qquad& {L_{Multi - KT}} = \frac{1}{2}{\left\| {w - \sum\limits_k {{\beta _k}} {{w'}_k}} \right\|^2} + \frac{C}{2}\sum\limits_{i = 1}^l {{\zeta _i}\varepsilon _i^2}  \\
@@ -92,6 +97,7 @@ To learning from many sources, Multi Model Knowledge Transfer (Multi-KT) is prop
 \end{aligned}
 \end{equation}
 Here, $\beta_k$ is the weight assigned for the $k$th source model and $\zeta _i$ is defined as:
+
 \begin{equation*}
 {\zeta _i} = \left\{ {\begin{array}{*{20}{c}}
 {\frac{N}{{2{N^ + }}}}&{{\text{if }}{y_i} =1}\\
@@ -125,6 +131,7 @@ Here $|x|_+=max(x,0)$. Intuitively, if $\beta$ is properly set, ${y_i}{{\hat y}_
 MULticlass Transfer Incremental LEarning (MULTIpLE) focuses on adding a new class to a existing $N$ class source problem while preserving the performance on the old classes \cite{kuzborskij2013n}. To preserving the overall performance of the classifier among $N+1$ classes, MULTIpLE contains two parts: incremental learning for existing $N$ classes and transfer learning for the new class.
 
 For the existing $N$ classes, MULTIpLE uses the similar strategy as ASVM, setting the transfer parameter $\gamma$ to 1. For the new class, it adopts the strategy of Multi-KT, combining knowledge from existing $N$-class models. As a result, the objective function for the hyperplanes in MULTIpLE is defined as:
+
 \begin{equation}
 \begin{aligned}
 \text{min}\qquad {} & L_{MULTIpLE}=\frac{1}{2}\sum\limits_{n = 1}^N {{{\left\| {{w_n} - {{w'}_n}} \right\|}^2}}  + \frac{1}{2}{\left\| {{w_{N + 1}} - \sum\limits_{k = 1}^N {w{'_k}{\beta _k}} } \right\|^2}+ \frac{C}{2}\sum\limits_{n = 1}^{N + 1} {\sum\limits_{i = 1}^l {\varepsilon _{i,n}^2} }  \\

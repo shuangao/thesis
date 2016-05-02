@@ -3,6 +3,21 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Feature extraction using SIFT.\relax }}{4}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces General Scheme of Auto Encoders. L1 is the input layer, possibly raw-pixel intensities. L2 is the compressed learned latent representation and L3 is the reconstruction of the given L1 layer from L2 layer. AutoEncoders tries to minimize the difference between L1 and L3 layers with some sparsity constraint.\relax }}{5}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces The architecture of ALEXNET (adapted from \cite {krizhevsky2012imagenet}).\relax }}{5}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Different nutrition facts between the burgers in McDonald and home-made.\relax }}{8}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Multi-source category case: an okapi can be roughly described as the combination of a body of a horse, legs of the zebra and a head of giraffe.\relax }}{9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces One-vs-Rest strategy for multi-class scenario. A three classes problem can be decomposed into 3 binary classification sub-problems.\relax }}{13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Support Vector Machine\relax }}{16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Different sparating hyperplanes}}}{16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Max-Margin hyperplanes}}}{16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Slack variables for soft-margin SVM\relax }}{17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The hyperplane of SVM with RBF kernel for non-linear separable data.\relax }}{18}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Apart from the standard machine learning, transfer learning can leverage the information from an additional source: knoweldge from one or more related tasks.\relax }}{20}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Two steps for parameter transfer learning. In the first step multi-source and single source combination are usually used to generate the regularazation term. The hyperplane for the transfer model can be obtained by either minimizing training error or cross-validation error on the target training data.\relax }}{22}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Positive transfer VS Negative transfer.\relax }}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A graphical representation of linear combination. The score from the source model can be considered as an auxiliary feature and the transfer parameter controls the value of the auxiliary feature.\relax }}{33}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An illustration of 5-fold cross-validation\relax }}{38}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

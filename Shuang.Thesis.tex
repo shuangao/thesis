@@ -24,6 +24,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[byname]{smartref}
+\usepackage{multirow}
 %\usepackage{hyperref} %comment out for hardcopy
 \usepackage{txfonts}
 \usepackage{lscape}
@@ -36,6 +37,7 @@
 \usepackage{algorithmic}
 \usepackage{color,soul}
 \usepackage{epstopdf}
+\usepackage{subfig}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -45,6 +47,7 @@
 %\newtheorem{theorem}{Theorem}
 %\newtheorem{corollary}{Corollary}
 %\newtheorem{lemma}{Lemma}
+%\newtheorem{definition}{Theorem}
 
 
 \makeatletter
@@ -397,7 +400,8 @@ This is a really silly abstract.
 %% "\chapter{ChapterName}".  Note that using "\include" instead of    %%
 %% "\input" makes each chapter start on a new page.                   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{introduction/total}
+\include{introduction/total}\label{sec:intro}
+\include{relatedwork/total}
 \include{transfer/total}
 %\include{cnn/total}
 
