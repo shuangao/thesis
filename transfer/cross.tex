@@ -4,7 +4,7 @@ In this section, we introduce the cross-validation estimation for LS-SVM. As we 
 To estimate the transfer parameter, we adopt cross-validation for parameter estimation. Cross-validation is widely used for parameter estimation. Suppose we have a model with one or more unknown parameters, and a data set to which the model can be fit (the dataset). The fitting process optimizes the model parameters to make the model fit the data as well as possible. On the other hand, we have to make sure that this model have the generalization ability, i.e. it can also work well on other independent validation dataset. Otherwise, the model is overfitted to the training data set. However, in practical problem we may not be able to get another independent data set except for the original dataset. Therefore, we have to manually create the validation set by selecting some of the data from the original dataset and use them for evaluation. One round of cross-validation involves partitioning a sample of data into complementary subsets, performing the analysis on one subset (called the training set), and validating the analysis on the other subset (called the validation set or testing set). By repeating these process several rounds with different partitions, we can significant reduce the variability of our estimation using the average results over the rounds.
 \begin{figure}
 	\centering
-	\includegraphics[scale=.4]{transfer/fig/cv.png}
+	\includegraphics[scale=.5]{transfer/fig/cv.png}
 	\caption{An illustration of 5-fold cross-validation}
 \end{figure}
 There are several different types of cross-validation methods due to their partition strategies. K-fold cross-validation is the most popular type among them. In k-fold cross-validation, the original dataset is randomly partitioned into k equal sized subsamples. K-fold cross-validation is performed in K rounds and in each round, each one of the K partition is used exactly once as the validation set and the rest partitions are used as the training set. 
@@ -16,8 +16,8 @@ In our work, we also employ cross-validation for parameter estimation. Here we s
 	Assume that $D^{(n)} = \{(x_i,y_i)|i=1,...,n\}$ is a subset of $D$ and $D\backslash D^{(n)}$ is the complement of $D^{(n)}$ in $D$. 
 	Let $\left[\alpha_1,...,\alpha_n\right]$ be the corresponding $n$ rows of $\alpha$ in Eq. \eqref{eq:single:orgmatrix} and $S_n$, $s$ and $S_{(l - n + 1)}$ represent the square blocks of matrix:
 	
-	\begin{equation*}
-	\left[ {\begin{array}{c|c}
+	\begin{equation}\label{eq:single:kernel}
+	\mathcal{S}=\left[ {\begin{array}{c|c}
 		{{S_{n }}} &s\\ \hline
 		{{s^T}}&{{S_{(l - n + 1)}}}
 		\end{array}} \right] =\left[ {\begin{array}{*{20}{c}}
@@ -27,7 +27,7 @@ In our work, we also employ cross-validation for parameter estimation. Here we s
 		1\\
 		0
 		\end{array}} \right]
-	\end{equation*}
+	\end{equation}
 	The unbiased leave out error of a LS-SVM trained from $D\backslash D^{(n)}$ on $D^{(n)}$ can be estimated as:
 	
 	\begin{equation*}\label{eq:single:nout}
@@ -36,9 +36,13 @@ In our work, we also employ cross-validation for parameter estimation. Here we s
 \end{theorem}
 We show the proof in Appendix \ref{app:cross}. This remarkable result allows cross-validation to be used while only fitting the model once to all available data.
 
+\subsection{Leave-one-out Cross-validation for estimation}
 Therefore, we have a convenient solution to estimate the unbiased cross-validation error. However, to perform a cross-validation in practice, decide the partition strategy. Suppose we have $l$ examples in the original data and we want to perform a K-fold cross-validation on it. Thus we have $\mathbf{C^{l/K}_l}$ possible combinations. This means larger K leads to less computation time. Moreover, larger K means less bias towards overestimating the true expected error (as training folds will be closer to the total dataset). When we set $K=l$, we perform $l$-fold cross-validation, i.e. leave-one-out cross-validation (LOO-CV). Vapnik et al. \cite{vapnik2000bounds} show that LOO-CV can provide an almost unbiased estimation error. Previous work also show that transfer learning on the small target training set can be benefit from LOO-CV to better estimate the transfer parameters as well as prevent negative transfer \cite{kuzborskij2013stability}. Due to the reasons above, in this thesis, we use LOO-CV to estimate the transfer parameters to optimize our transfer model.
 
-According to Theorem \ref{th:single:cv}, the LOO-CV error for LS-SVM can be represent as:
-\begin{equation}
-	ERR_{loo}=\frac{1}{l}\sum_{i}^{l}
+According to Theorem \ref{th:single:cv}, the LOO-CV error for example $x_i$ can be represented as:
+\begin{equation}\label{eq:single:looesti}
+	y_i-\hat{y}_i=\frac{\alpha_i}{\mathcal{S}^{-1}_{ii}}
 \end{equation}
+Where $\mathcal{S}^{-1}$ is the inverse matrix of $\mathcal{S}$ in Eq. \eqref{eq:single:kernel} and $\mathcal{S}^{-1}_{ii}$ is the $i$th diagonal matrix of $\mathcal{S}^{-1}$. 
+
+To summarize this section, we show that we can calculate the cross-validation error for LS-SVM in a closed form which is an very effective approach to estimate the transfer parameters. Due to the advantages of LOO-CV, such as computational efficiency and alleviation of negative transfer, we choose LOO-CV as our cross-validation strategy. In the next section, we use the LOO-CV error as an estimation to obtain a multi-class loss for SVM model. 

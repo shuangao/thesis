@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.20)  2 MAY 2016 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.20)  5 MAY 2016 16:18
 entering extended mode
 **Shuang.Thesis.tex
 (Shuang.Thesis.tex
@@ -390,6 +390,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\stmaryrd.sty"
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
 Defining \sgetchapterval ...
 Defining \schapterref ...
 Defining \srefchapterref ...
@@ -420,43 +426,43 @@ LaTeX Warning: Label `eq:gama:multib' multiply defined.
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
 ) (appendix/appendixa.aux))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 346.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 346
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 347.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 347
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 346
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 347.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 347.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 347
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 346
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 347.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 347
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 346.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 347.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 347.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 346.
+LaTeX Font Info:    ... okay on input line 347.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 347.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
@@ -480,76 +486,84 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+txmia on input line 359.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 360.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 359.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 360.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsya.fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 359.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 360.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsyb.fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 359.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 360.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 359.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 360.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 360.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omstxr.fd"
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 359.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 360.
  [1
 
 {C:/Users/aoshuang/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (40.69499pt too wide) in paragraph at lines 361--361
+Overfull \hbox (40.69499pt too wide) in paragraph at lines 362--362
 [][]   [] 
  []
 
 
-Overfull \hbox (40.69499pt too wide) in paragraph at lines 361--361
+Overfull \hbox (40.69499pt too wide) in paragraph at lines 362--362
 [][]   [] 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
 
  []
 
 [3] [4] (Shuang.Thesis.toc [5])
 \tf@toc=\write3
- [6] (Shuang.Thesis.lof)
+ [6] (Shuang.Thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
 \tf@lof=\write4
- [7] (Shuang.Thesis.lot)
+
+[8] (Shuang.Thesis.lot)
 \tf@lot=\write5
-[8] (Shuang.Thesis.app)
+ [9] (Shuang.Thesis.app)
 \tf@app=\write6
- [9] (introduction/total.tex
+ [10] (introduction/total.tex
 Chapter 1.
 [1
 
 
 ] (introduction/overview.tex
-<introduction/fig/IRflow.png, id=38, 499.11469pt x 286.82156pt>
+<introduction/fig/IRflow.png, id=42, 499.11469pt x 286.82156pt>
 File: introduction/fig/IRflow.png Graphic file (type png)
 
 <use introduction/fig/IRflow.png>
 Package pdftex.def Info: introduction/fig/IRflow.png used on input line 6.
 (pdftex.def)             Requested size: 399.29228pt x 229.45755pt.
  [2 <./introduction/fig/IRflow.png>]
-<introduction/fig/sift.jpg, id=43, 595.22375pt x 300.12125pt>
+<introduction/fig/sift.jpg, id=47, 595.22375pt x 300.12125pt>
 File: introduction/fig/sift.jpg Graphic file (type jpg)
 
 <use introduction/fig/sift.jpg>
@@ -559,7 +573,7 @@ Package pdftex.def Info: introduction/fig/sift.jpg used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<introduction/fig/sparsecoding.png, id=44, 689.57625pt x 767.86874pt>
+<introduction/fig/sparsecoding.png, id=48, 689.57625pt x 767.86874pt>
 File: introduction/fig/sparsecoding.png Graphic file (type png)
 
 <use introduction/fig/sparsecoding.png>
@@ -567,7 +581,7 @@ Package pdftex.def Info: introduction/fig/sparsecoding.png used on input line 3
 5.
 (pdftex.def)             Requested size: 206.87447pt x 230.3624pt.
  [3]
-<introduction/fig/alexnet.png, id=48, 1606.0pt x 539.01375pt>
+<introduction/fig/alexnet.png, id=53, 1606.0pt x 539.01375pt>
 File: introduction/fig/alexnet.png Graphic file (type png)
 
 <use introduction/fig/alexnet.png>
@@ -582,14 +596,14 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 52.
 [4 <./introduction/fig/sift.jpg>] [5 <./introduction/fig/sparsecoding.png (PNG 
 copy)> <./introduction/fig/alexnet.png>] [6]) (introduction/senario.tex
-[7] <introduction/fig/scenario.jpg, id=64, 652.68843pt x 255.20343pt>
+[7] <introduction/fig/scenario.jpg, id=67, 652.68843pt x 255.20343pt>
 File: introduction/fig/scenario.jpg Graphic file (type jpg)
 
 <use introduction/fig/scenario.jpg>
 Package pdftex.def Info: introduction/fig/scenario.jpg used on input line 9.
 (pdftex.def)             Requested size: 391.61609pt x 153.12323pt.
  [8 <./introduction/fig/scenario.jpg>]
-<introduction/fig/multiple.jpg, id=68, 757.32938pt x 367.3725pt>
+<introduction/fig/multiple.jpg, id=71, 757.32938pt x 367.3725pt>
 File: introduction/fig/multiple.jpg Graphic file (type jpg)
 
 <use introduction/fig/multiple.jpg>
@@ -608,40 +622,40 @@ Chapter 2.
 
 
 ]
-<relatedwork/fig/ovsa.png, id=82, 423.0204pt x 344.0052pt>
+<relatedwork/fig/ovsa.png, id=85, 423.0204pt x 344.0052pt>
 File: relatedwork/fig/ovsa.png Graphic file (type png)
 
 <use relatedwork/fig/ovsa.png>
 Package pdftex.def Info: relatedwork/fig/ovsa.png used on input line 13.
-(pdftex.def)             Requested size: 296.11226pt x 240.80199pt.
+(pdftex.def)             Requested size: 338.41678pt x 275.20453pt.
  [13 <./relatedwork/fig/ovsa.png>]
 Overfull \hbox (17.40172pt too wide) in paragraph at lines 44--46
 \OT1/txr/m/n/12 Here $\OML/txmi/m/it/12 w[]; w[]; :::; w[]$ \OT1/txr/m/n/12 are
  the pa-ram-e-ters of the soft-max clas-si-fier model. The term $[]$
  []
 
-[14] [15] <relatedwork/fig/svm2.png, id=94, 513.92pt x 444.66125pt>
+[14] [15] <relatedwork/fig/svm2.png, id=98, 513.92pt x 444.66125pt>
 File: relatedwork/fig/svm2.png Graphic file (type png)
 
 <use relatedwork/fig/svm2.png>
 Package pdftex.def Info: relatedwork/fig/svm2.png used on input line 85.
 (pdftex.def)             Requested size: 203.258pt x 175.86656pt.
 
-<relatedwork/fig/svm1.png, id=95, 72.27pt x 71.3064pt>
+<relatedwork/fig/svm1.png, id=99, 72.27pt x 71.3064pt>
 File: relatedwork/fig/svm1.png Graphic file (type png)
 
 <use relatedwork/fig/svm1.png>
 Package pdftex.def Info: relatedwork/fig/svm1.png used on input line 86.
 (pdftex.def)             Requested size: 180.67224pt x 178.2731pt.
 
-<relatedwork/fig/slack.png, id=96, 186.09525pt x 169.23225pt>
+<relatedwork/fig/slack.png, id=100, 186.09525pt x 169.23225pt>
 File: relatedwork/fig/slack.png Graphic file (type png)
 
 <use relatedwork/fig/slack.png>
 Package pdftex.def Info: relatedwork/fig/slack.png used on input line 104.
 (pdftex.def)             Requested size: 223.31316pt x 203.07768pt.
  [16 <./relatedwork/fig/svm2.png> <./relatedwork/fig/svm1.png>] <relatedwork/fi
-g/non-linear2.png, id=103, 449.68pt x 337.26pt>
+g/non-linear2.png, id=106, 449.68pt x 337.26pt>
 File: relatedwork/fig/non-linear2.png Graphic file (type png)
 
 <use relatedwork/fig/non-linear2.png>
@@ -650,7 +664,7 @@ Package pdftex.def Info: relatedwork/fig/non-linear2.png used on input line 121
 (pdftex.def)             Requested size: 361.35136pt x 271.02286pt.
  [17 <./relatedwork/fig/slack.png>]
 [18 <./relatedwork/fig/non-linear2.png>]) (relatedwork/transfer.tex
-<relatedwork/fig/transfer.png, id=112, 488.57532pt x 235.63031pt>
+<relatedwork/fig/transfer.png, id=115, 488.57532pt x 235.63031pt>
 File: relatedwork/fig/transfer.png Graphic file (type png)
 
 <use relatedwork/fig/transfer.png>
@@ -662,14 +676,14 @@ Overfull \hbox (25.52452pt too wide) in paragraph at lines 15--25
  []
 
 [20 <./relatedwork/fig/transfer.png>]
-<relatedwork/fig/parameters.png, id=120, 399.894pt x 207.174pt>
+<relatedwork/fig/parameters.png, id=123, 399.894pt x 207.174pt>
 File: relatedwork/fig/parameters.png Graphic file (type png)
 
 <use relatedwork/fig/parameters.png>
 Package pdftex.def Info: relatedwork/fig/parameters.png used on input line 57.
 (pdftex.def)             Requested size: 399.893pt x 207.17348pt.
  [21] [22 <./relatedwork/fig/parameters.png>] <relatedwork/fig/negative.png, id
-=129, 353.06906pt x 268.75406pt>
+=132, 353.06906pt x 268.75406pt>
 File: relatedwork/fig/negative.png Graphic file (type png)
 
 <use relatedwork/fig/negative.png>
@@ -685,7 +699,7 @@ Chapter 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-[28] <transfer/fig/pmt-svm.png, id=149, 356.83313pt x 245.41687pt>
+[28] <transfer/fig/pmt-svm.png, id=152, 356.83313pt x 245.41687pt>
 File: transfer/fig/pmt-svm.png Graphic file (type png)
 
 <use transfer/fig/pmt-svm.png>
@@ -695,19 +709,31 @@ Package pdftex.def Info: transfer/fig/pmt-svm.png used on input line 72.
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
  [29 <./transfer/fig/pmt-svm.png>] [30]) [31] (transfer/linearcom.tex [32]
-<transfer/fig/argumentation.png, id=163, 524.1984pt x 326.1786pt>
+<transfer/fig/argumentation.png, id=166, 524.1984pt x 326.1786pt>
 File: transfer/fig/argumentation.png Graphic file (type png)
 
 <use transfer/fig/argumentation.png>
 Package pdftex.def Info: transfer/fig/argumentation.png used on input line 30.
-(pdftex.def)             Requested size: 314.52145pt x 195.70866pt.
+(pdftex.def)             Requested size: 366.93637pt x 228.32346pt.
  [33 <./transfer/fig/argumentation.png>]
-Overfull \hbox (2.24704pt too wide) in paragraph at lines 67--90
+<transfer/fig/dataarg.png, id=172, 498.1812pt x 382.0674pt>
+File: transfer/fig/dataarg.png Graphic file (type png)
+
+<use transfer/fig/dataarg.png>
+Package pdftex.def Info: transfer/fig/dataarg.png used on input line 46.
+(pdftex.def)             Requested size: 298.91103pt x 229.2422pt.
+
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 82.
+
+
+Overfull \hbox (2.24704pt too wide) in paragraph at lines 73--96
  [][][][][] 
  []
 
-[34] [35]
-Overfull \hbox (10.96129pt too wide) in paragraph at lines 128--130
+[34] [35 <./transfer/fig/dataarg.png>] [36]
+Overfull \hbox (10.96129pt too wide) in paragraph at lines 131--133
 \OT1/txr/m/n/12 Let $\OT1/txr/bx/n/12 W \OT1/txr/m/n/12 = [\OML/txmi/m/it/12 w[
 ]; w[]; :::; w[]\OT1/txr/m/n/12 ]$, $[] = [\OML/txmi/m/it/12 w[]; w[]; :::; w[]
 \OT1/txr/m/n/12 ]$ and $\OML/txmi/m/it/12 D\OT1/txr/m/n/12 (\OML/txmi/m/it/12 
@@ -715,52 +741,68 @@ Overfull \hbox (10.96129pt too wide) in paragraph at lines 128--130
 /n/12 (\OML/txmi/m/it/12 []; []; :::; []\OT1/txr/m/n/12 )$.
  []
 
-) (transfer/cross.tex [36]
-<transfer/fig/cv.png, id=181, 401.61472pt x 553.38171pt>
+) (transfer/cross.tex <transfer/fig/cv.png, id=186, 401.61472pt x 553.38171pt>
 File: transfer/fig/cv.png Graphic file (type png)
 
 <use transfer/fig/cv.png>
 Package pdftex.def Info: transfer/fig/cv.png used on input line 7.
-(pdftex.def)             Requested size: 160.64304pt x 221.34875pt.
- [37] [38 <./transfer/fig/cv.png>])) [39]
+(pdftex.def)             Requested size: 200.80685pt x 276.69017pt.
+ [37]
+Underfull \vbox (badness 5490) has occurred while \output is active []
+
+ [38 <./transfer/fig/cv.png>] [39]) (transfer/multiclass.tex
+<transfer/fig/losscmp.png, id=198, 452.4403pt x 268.75406pt>
+File: transfer/fig/losscmp.png Graphic file (type png)
+
+<use transfer/fig/losscmp.png>
+Package pdftex.def Info: transfer/fig/losscmp.png used on input line 6.
+(pdftex.def)             Requested size: 316.70605pt x 188.12656pt.
+ [40 <./transfer/fig/losscmp.png (PNG copy)>]
+<transfer/fig/svmloss.png, id=203, 812.28468pt x 265.74281pt>
+File: transfer/fig/svmloss.png Graphic file (type png)
+
+<use transfer/fig/svmloss.png>
+Package pdftex.def Info: transfer/fig/svmloss.png used on input line 27.
+(pdftex.def)             Requested size: 406.14134pt x 132.87108pt.
+ [41 <./transfer/fig/svmloss.png>])) [42]
 (Shuang.Thesis.bbl
 Missing character: There is no Ì in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no Ð in font txr!
 Missing character: There is no œ in font txr!
- [40
+ [43
 
 
-] [41]
+] [44]
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ” in font txr!
- [42] [43]
-Underfull \hbox (badness 1107) in paragraph at lines 294--299
+ [45] [46]
+Underfull \hbox (badness 1107) in paragraph at lines 300--305
 []\OT1/txr/m/n/12 Nitish Sri-vas-tava, Ge-of-frey Hin-ton, Alex Krizhevsky, Ily
 a Sutskever, and Rus-lan
  []
 
-[44] [45]) [46] (appendix/appendixa.tex
+[47] [48]) [49] (appendix/appendixa.tex
 Appendix A.
 (appendix/gama_nega.tex
 
-LaTeX Warning: Reference `eq:train_loss' on page 47 undefined on input line 2.
+LaTeX Warning: Reference `eq:train_loss' on page 50 undefined on input line 2.
 
 
-LaTeX Warning: Reference `eq:dual' on page 47 undefined on input line 13.
+LaTeX Warning: Reference `eq:dual' on page 50 undefined on input line 13.
 
-[47
+[50
 
 
 ]
 
-LaTeX Warning: Reference `eq:dual' on page 48 undefined on input line 28.
+LaTeX Warning: Reference `eq:dual' on page 51 undefined on input line 28.
 
-) (appendix/crossproof.tex [48] [49]) [50]
+) (appendix/crossproof.tex [51] [52]) [53]
 Appendix B.
 (appendix/MNIST1.tex
-<appendix/tables/MNIST_Rate_0_class_1.jpg, id=227, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_1.jpg, id=245, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_1.jpg>
@@ -768,7 +810,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_1.jpg used on input
  line 6.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_2.jpg, id=228, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_2.jpg, id=246, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_2.jpg>
@@ -776,7 +818,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_2.jpg used on input
  line 7.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_3.jpg, id=229, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_3.jpg, id=247, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_3.jpg>
@@ -784,7 +826,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_3.jpg used on input
  line 9.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_4.jpg, id=230, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_4.jpg, id=248, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_4.jpg>
@@ -792,7 +834,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_4.jpg used on input
  line 10.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_5.jpg, id=231, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_5.jpg, id=249, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_5.jpg>
@@ -800,7 +842,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_5.jpg used on input
  line 17.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_6.jpg, id=232, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_6.jpg, id=250, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_6.jpg>
@@ -808,7 +850,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_6.jpg used on input
  line 18.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_7.jpg, id=233, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_7.jpg, id=251, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_7.jpg>
@@ -816,7 +858,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_7.jpg used on input
  line 20.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_8.jpg, id=234, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_8.jpg, id=252, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_8.jpg>
@@ -824,7 +866,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_8.jpg used on input
  line 21.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_9.jpg, id=235, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_9.jpg, id=253, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_9.jpg>
@@ -832,7 +874,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_9.jpg used on input
  line 23.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_10.jpg, id=236, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_10.jpg, id=254, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_10.jpg>
@@ -843,15 +885,15 @@ t line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51
+[54
 
  <./appendix/tables/MNIST_Rate_0_class_1.jpg> <./appendix/tables/MNIST_Rate_0_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_0_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_0_class_4.jpg>] [52 <./appendix/tables/MNIST_Rate_0_class_5.jpg> <./app
+ST_Rate_0_class_4.jpg>] [55 <./appendix/tables/MNIST_Rate_0_class_5.jpg> <./app
 endix/tables/MNIST_Rate_0_class_6.jpg> <./appendix/tables/MNIST_Rate_0_class_7.
 jpg> <./appendix/tables/MNIST_Rate_0_class_8.jpg> <./appendix/tables/MNIST_Rate
 _0_class_9.jpg> <./appendix/tables/MNIST_Rate_0_class_10.jpg>]
-<appendix/tables/MNIST_Rate_3_class_1.jpg, id=244, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_1.jpg, id=261, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_1.jpg>
@@ -859,7 +901,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_1.jpg used on input
  line 36.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_2.jpg, id=245, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_2.jpg, id=262, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_2.jpg>
@@ -867,7 +909,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_2.jpg used on input
  line 37.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_3.jpg, id=246, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_3.jpg, id=263, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_3.jpg>
@@ -875,7 +917,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_3.jpg used on input
  line 39.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_4.jpg, id=247, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_4.jpg, id=264, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_4.jpg>
@@ -883,7 +925,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_4.jpg used on input
  line 40.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_5.jpg, id=248, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_5.jpg, id=265, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_5.jpg>
@@ -891,7 +933,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_5.jpg used on input
  line 47.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_6.jpg, id=249, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_6.jpg, id=266, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_6.jpg>
@@ -899,7 +941,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_6.jpg used on input
  line 48.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_7.jpg, id=250, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_7.jpg, id=267, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_7.jpg>
@@ -907,7 +949,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_7.jpg used on input
  line 50.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_8.jpg, id=251, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_8.jpg, id=268, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_8.jpg>
@@ -915,7 +957,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_8.jpg used on input
  line 51.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_9.jpg, id=252, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_9.jpg, id=269, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_9.jpg>
@@ -923,7 +965,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_9.jpg used on input
  line 53.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_10.jpg, id=253, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_10.jpg, id=270, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_10.jpg>
@@ -934,15 +976,15 @@ t line 54.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53
+[56
 
  <./appendix/tables/MNIST_Rate_3_class_1.jpg> <./appendix/tables/MNIST_Rate_3_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_3_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_3_class_4.jpg>] [54 <./appendix/tables/MNIST_Rate_3_class_5.jpg> <./app
+ST_Rate_3_class_4.jpg>] [57 <./appendix/tables/MNIST_Rate_3_class_5.jpg> <./app
 endix/tables/MNIST_Rate_3_class_6.jpg> <./appendix/tables/MNIST_Rate_3_class_7.
 jpg> <./appendix/tables/MNIST_Rate_3_class_8.jpg> <./appendix/tables/MNIST_Rate
 _3_class_9.jpg> <./appendix/tables/MNIST_Rate_3_class_10.jpg>]
-<appendix/tables/MNIST_Rate_5_class_1.jpg, id=260, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_1.jpg, id=278, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_1.jpg>
@@ -950,7 +992,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_1.jpg used on input
  line 66.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_2.jpg, id=261, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_2.jpg, id=279, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_2.jpg>
@@ -958,7 +1000,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_2.jpg used on input
  line 67.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_3.jpg, id=262, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_3.jpg, id=280, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_3.jpg>
@@ -966,7 +1008,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_3.jpg used on input
  line 69.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_4.jpg, id=263, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_4.jpg, id=281, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_4.jpg>
@@ -974,7 +1016,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_4.jpg used on input
  line 70.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_5.jpg, id=264, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_5.jpg, id=282, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_5.jpg>
@@ -982,7 +1024,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_5.jpg used on input
  line 77.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_6.jpg, id=265, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_6.jpg, id=283, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_6.jpg>
@@ -990,7 +1032,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_6.jpg used on input
  line 78.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_7.jpg, id=266, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_7.jpg, id=284, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_7.jpg>
@@ -998,7 +1040,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_7.jpg used on input
  line 80.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_8.jpg, id=267, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_8.jpg, id=285, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_8.jpg>
@@ -1006,7 +1048,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_8.jpg used on input
  line 81.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_9.jpg, id=268, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_9.jpg, id=286, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_9.jpg>
@@ -1014,7 +1056,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_9.jpg used on input
  line 83.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_10.jpg, id=269, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_10.jpg, id=287, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_10.jpg>
@@ -1025,19 +1067,22 @@ t line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [55
+)) [58
 
  <./appendix/tables/MNIST_Rate_5_class_1.jpg> <./appendix/tables/MNIST_Rate_5_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_5_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_5_class_4.jpg>] [56 <./appendix/tables/MNIST_Rate_5_class_5.jpg> <./app
+ST_Rate_5_class_4.jpg>] [59 <./appendix/tables/MNIST_Rate_5_class_5.jpg> <./app
 endix/tables/MNIST_Rate_5_class_6.jpg> <./appendix/tables/MNIST_Rate_5_class_7.
 jpg> <./appendix/tables/MNIST_Rate_5_class_8.jpg> <./appendix/tables/MNIST_Rate
-_5_class_9.jpg> <./appendix/tables/MNIST_Rate_5_class_10.jpg>] [57
+_5_class_9.jpg> <./appendix/tables/MNIST_Rate_5_class_10.jpg>] [60
 
 
 ]
 (Shuang.Thesis.aux (introduction/total.aux) (relatedwork/total.aux)
 (transfer/total.aux) (appendix/appendixa.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -1046,11 +1091,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5927 strings out of 493673
- 90818 string characters out of 3141520
- 265830 words of memory out of 3000000
- 8998 multiletter control sequences out of 15000+200000
- 63106 words of font info for 156 fonts, out of 3000000 for 9000
+ 6110 strings out of 493673
+ 93572 string characters out of 3141520
+ 266453 words of memory out of 3000000
+ 9163 multiletter control sequences out of 15000+200000
+ 64534 words of font info for 163 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,22n,49p,1346b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
@@ -1058,16 +1103,17 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxbmi.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/txfonts/rtxsc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/txfonts/txbsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/txfonts/txex.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts
-/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Shuang.Thesis.pdf (66 pages, 4195373 bytes).
+ts/type1/public/hoekwater/stmary10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/txfonts/txbsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/txfonts/txex.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
+xfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t
+xsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Shuang.Thesis.pdf (70 pages, 4265590 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
+ 341 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

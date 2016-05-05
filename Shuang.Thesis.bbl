@@ -83,6 +83,12 @@ Koby Crammer and Yoram Singer.
   machines.
 \newblock {\em The Journal of Machine Learning Research}, 2:265--292, 2002.
 
+\bibitem{crammer2002learnability}
+Koby Crammer and Yoram Singer.
+\newblock On the learnability and design of output codes for multiclass
+  problems.
+\newblock {\em Machine learning}, 47(2-3):201--233, 2002.
+
 \bibitem{cristianini2000introduction}
 Nello Cristianini and John Shawe-Taylor.
 \newblock {\em An introduction to support vector machines and other

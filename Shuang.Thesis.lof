@@ -18,6 +18,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{29}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces A graphical representation of linear combination. The score from the source model can be considered as an auxiliary feature and the transfer parameter controls the value of the auxiliary feature.\relax }}{33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces An illustration of 5-fold cross-validation\relax }}{38}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Adding an related auxiliary feature can improve the performacne of the classifier while unrelated one can decrease the performance and lead to negative transfer. \relax }}{35}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An illustration of 5-fold cross-validation\relax }}{38}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Loss function comparision for $\epsilon _{multi}$ and $\epsilon _{H}$\relax }}{40}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the margin bound for a single example in 3 scenarios. The cirles denote different confidences and the correct label is ploted in dark grey. The height of each lable is the confidence score. In the left figure,$\epsilon (x)=0$. In the middle figure, even though the confidence of the correct label is the largest, it fails to be larger by 1 than the confidence of the runner-up and have a small loss. In the right figure, the confidence of the correct label is not the largest one and have a very large loss.\relax }}{41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

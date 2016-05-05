@@ -27,7 +27,7 @@ To leverage the knowledge from the source model $f'$, we propose a method where 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=.6]{transfer/fig/argumentation.png}
+	\includegraphics[scale=.7]{transfer/fig/argumentation.png}
 	\caption{A graphical representation of linear combination. The score from the source model can be considered as an auxiliary feature and the transfer parameter controls the value of the auxiliary feature.}\label{fig:single:arg}
 \end{figure}
 Where $\gamma$ is called the transfer parameter $\gamma$ that controls the amount of the knowledge transferred from the source model $f'$. 
@@ -40,6 +40,12 @@ Another advantage is flexibility. By using the transfer parameter to control the
 	\item When the source and target tasks are positive correlated, i.e. for a positive example $x_p$ and a negative example $x_n$, we have $f'(x_p)>f'(x_n)$, we expect the transfer parameter to be positive. Therefore, the positive and negative examples are more distinct and can be better distinguished by the hyperplane.
 	\item  For the same reason above, we expect the transfer parameter to be negative if the two tasks are negative correlated.
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=.6]{transfer/fig/dataarg.png}
+	\caption{Adding an related auxiliary feature can improve the performacne of the classifier while unrelated one can decrease the performance and lead to negative transfer. }\label{fig:single:dataarg}
+\end{figure}
 
 Therefore, let $\tilde{x} = (x,x)$ and $\tilde{w} = (w,\gamma w')$.
 With the LS-SVM setting, our transfer problem can be solved by solving the following optimization problem with argument data:
@@ -106,17 +112,14 @@ The optimal solution can be found by satisfying the following condition:
 Let $X=\left[x_1,x_2,...,x_l\right]$ and $Y=[y_1,y_2,...,y_l]$, Eq \eqref{eq:single:lssvm-deriv} can be written in the following compact format:
 
 \begin{equation}\label{eq:single:matrixsolve}
-	\left[\begin{array}{cccc}
-	\mathbf{I}&0&0&-X^T\\
-	0&0&0&-Y^T\\
-	0&0&C\mathbf{I}&-I\\
-	X&Y&I&0
-	\end{array}\right]
-	\left[\begin{array}{c}w-\gamma w'\\b\\e\\\alpha
-	\end{array}\right]	= \left[\begin{array}{c}0\\0\\0\\\mathbf{1}
+	\left[\begin{array}{cc}
+	XX^T+\frac{\mathbf{I}}{C}&\mathbf{1}\\
+	\mathbf{1}^T&0
+	\end{array}\right]\left[\begin{array}{c} \mathbf{\alpha}\\b
+	\end{array}\right] = \left[\begin{array}{c} Y\\0
 	\end{array}\right]
 \end{equation} 
-where $\mathbf{I}$ is an identity matrix and $\mathbf{1}$ is a column  vector whose elements are 1. 
+where $\mathbf{1}$ is a column  vector whose elements are 1. 
 
 In real applications, when we have $n$ single source categories and their corresponding source model $f'_1(x),f'_2(x),...,f_n(x)$, their loss function can be represented as:
 
@@ -128,18 +131,26 @@ In real applications, when we have $n$ single source categories and their corres
 \end{equation}
 Let $\mathbf{W} = [w_1,w_2,...,w_n]$, $\mathbf{W'} = [w'_1,w'_2,...,w'_n]$ and $D(\gamma)$ be the diagonal matrix $diag(\gamma_1,\gamma_2,...,\gamma_n)$. The corresponding solution for problem \eqref{eq:single:unionreg} is:
 
-\begin{equation}
-\left[\begin{array}{cccc}
-\mathbf{I}&0&0&-X^T\\
-0&0&0&-Y^T\\
-0&0&C\mathbf{I}&-I\\
-X&Y&I&0
-\end{array}\right]
-\left[\begin{array}{c}\mathbf{W}- D(\mathbf{\gamma}) \mathbf{W'}\\b\\e\\\alpha
-\end{array}\right]	= \left[\begin{array}{c}0\\0\\0\\\mathbf{1}
+\begin{equation}\label{eq:single:multisolu}
+\left[\begin{array}{cc}
+XX^T+\frac{\mathbf{I}}{C}&\mathbf{1}\\
+\mathbf{1}^T&0
+\end{array}\right]\left[\begin{array}{c} \mathbf{\alpha}\\b
+\end{array}\right]+\left[\begin{array}{c}
+D(\gamma)X(W')^T\\0
+\end{array}\right] = \left[\begin{array}{c} Y\\0
 \end{array}\right]
 \end{equation} 
- We can see that Eq. \eqref{eq:single:unionreg} can be solved by directly once the transfer parameters $\gamma=\{\gamma_i|i=1,...,n\}$ is determined.
+Here $Y = [y_{ij}|i=1,..,l; j=1,...,n]$ is the encoded label matrix where for each example $(x_i,y_i)$:
+\begin{equation}\label{eq:single:labelmatrix}
+	y_{ij}=
+	\begin{cases}
+	1 & \text{if } y_i=j\\
+	-1 &\text{otherwise}
+	\end{cases}
+\end{equation}
+We can see that Eq. \eqref{eq:single:unionreg} can be solved by directly once the transfer parameters $\gamma=\{\gamma_i|i=1,...,n\}$ is determined.
 
+To summarize this section, we propose a strategy which uses linear combination to combine the knowledge of the source model and the knowledge from the target dataset. We show that this linear combination strategy can be considered as a data argumentation approach and thus, the transfer learning problem becomes a traditional machine learning problem. Moreover, we show that by setting different values of the transfer parameters, we can control the amount of the knowledge from the source model effectively. In the next section, we show that we can estimate the cross-validation error of the LS-SVM in a closed form.
 
 
