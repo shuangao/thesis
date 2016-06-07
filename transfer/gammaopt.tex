@@ -1,0 +1,52 @@
+In last section, we introduced the multi-class LOO-CV loss. We can see that it is a function of the transfer parameter. Therefore, in this section, we propose a novel objective function based on the multi-class LOO-CV loss. We use sub-gradient descent to optimize this objective function to get the optimal solution. 
+
+As we discussed in the last section, the optimal transfer parameter is the one that minimize the LOO-CV error. We can see that the multi-class LOO-CV loss is an extension of binary hinge loss and therefore, it is convex. We propose the following objective function based on the multi-class LOO-CV loss:
+
+\begin{equation}\label{eq:single:opti}
+\begin{aligned}
+& \textbf{min}
+& & L(\gamma)=\frac{{{\lambda }}}{2}\sum\limits_{n = 1}^N {{{\left\| {{\gamma _n}} \right\|}^2}}  + \sum\limits_{i = 1}^l {{\epsilon_{i} }}   \\
+& \textbf{s.t.}
+& & 1 - {\varepsilon _{n{y_i}}} + {\hat y_{in}}\left( {\gamma  } \right) - {\hat y_{i{y_i}}}\left( {\gamma } \right) \le {{\epsilon_{i} }};\\
+& & &\lambda \ge 0
+\end{aligned}
+\end{equation}
+Besides the multi-class LOO-CV loss, we add an extra L2 regularization term in objective function \eqref{eq:single:opti}. Compared to other methods such as \cite{tommasi2010safety} and \cite{kuzborskij2013n}, which optimize the multi-class loss directly with certain constraint for the transfer parameters, the L2 regularization term has the following advantages:
+\begin{itemize}
+	\item The regularization term can limit the value of the transfer parameter. Our objective function try to make a balance between the knowledge transferred from the source and the LOO-CV error made on the target data. For example, if increase the amount of the source knowledge can improve the performance of our model, we can expect a decrease on the LOO-CV loss. However, because we the LOO-CV error is estimated from a small dataset, it is more likely to prune to overfitting. Overfitting on a small dataset would lead to poor generalization ability. As a result, it would lead to decreased performance. In \cite{kuzborskij2013stability}, it shows that the upper bound of the generalization error of a transfer model can be written as:
+	\begin{equation}
+		Err \leq Err_{loo}+\mathcal{O}(||\gamma||^2)
+	\end{equation}
+	Therefore, limit the value of the transfer parameter can improve the generalization ability of our transfer model.
+	\item Because of the L2 regularization term, our objective function is a strongly convex function. Due to its strong convexity, we can use sub-gradient descent \cite{boyd2004convex} to search for the optimal transfer parameter. We show that we can find the $\epsilon$-accurate solution by using only $\mathcal{O}\left(\frac{\ln \epsilon}{\epsilon}\right)$ iterations. In each iteration, we only have to solve 
+\end{itemize}
+\begin{theorem}[Converge Property]\label{th:single:converg}
+	Let $L(\gamma)$ be a $\lambda$-strongly convex function in \eqref{eq:single:opti} and $\gamma^*$ be its optimal solution. Let $\gamma_1,...,\gamma_{T+1}$ be a sequence such that $\gamma_1 \in B$ and for $t>1$, we have $\gamma_{t+1} = \gamma_t - \eta_t \Delta_t$ , where $\Delta_t$ is the sub-gradient of $L(\gamma_t)$ and $\eta_t = 1/(\lambda t)$. Assume we have $||\Delta_t|| \leq G$ for all $t$. Then we have:
+	
+	\begin{equation}
+	L(\gamma_{T+1}) \leq L(\gamma^*)+\frac{G^2(1+\ln (T))}{2\lambda T}
+	\end{equation}
+\end{theorem}
+We show the detail proof in Appendix \ref{app:converg}.
+
+By adding a dual set of variables, one for each constraint, we get the Lagrangian of the optimization problem \eqref{eq:single:opti}:
+\begin{equation}\label{eq:single:dual}
+\begin{aligned}
+\textbf{max}\qquad {}& L\left( {\gamma ,\epsilon ,\eta } \right) =\frac{{{\lambda }}}{2}\sum\limits_{n = 1}^N {{{\left\| {{\gamma _n}} \right\|}^2}}  + \sum\limits_{i = 1}^l {{\epsilon _i}} \\
+&+ \sum\limits_{i,n} {{\eta _{i,n}}\left[ {1 - {\varepsilon _{n{y_i}}} + {{\hat Y}_{in}}\left( {\gamma  } \right) - {{\hat Y}_{i{y_i}}}\left( {\gamma } \right) - {\epsilon _i}} \right]}  \\
+\textbf{s.t.} \qquad {} & \forall i,n \quad {} {\eta _{i,n}} \ge 0
+\end{aligned}
+\end{equation}
+The sub-gradient of can be written as:
+
+\begin{equation*}
+{\Delta _\gamma }=\begin{cases}
+\boldsymbol{0}&{y_i}=n\\
+\\
+\left[ {0,..,\frac{{\alpha ''}_{in}}{\mathcal{S} _{ii}^{ - 1}},.., - \frac{{\alpha ''}_{i{y_i}}}{\mathcal{S} _{ii}^{ - 1}},..,0} \right]&{y_i},n = 1,...N\\
+\end{cases}
+\end{equation*}
+We call this algorithm Safety MultI-class  Transfer Learning (SMITLe) and show the algorithm details in Alg. \ref{alg:1}. 
+\input{transfer/agl1.tex}
+
+In summary, in this section, we proposed a novel objective function based on LOO-CV error. By adding the L2 regularization terms we show that we can use sub-gradient descent to find the $\epsilon$-accurate solution by using only $\mathcal{O}\left(\frac{\ln \epsilon}{\epsilon}\right)$ iterations. In the next section, we show some empirical results on the benchmark dataset.

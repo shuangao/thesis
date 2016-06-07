@@ -1,0 +1,71 @@
+\textbf{Theorem \ref{th:single:converg}}
+	\textit{Let $L(\gamma)$ be a $\lambda$-strongly convex function in \eqref{eq:single:opti} and $\gamma^*$ be its optimal solution.Let $\gamma_1,...,\gamma_{T+1}$ be a sequence such that $\gamma_1 \in B$ and for $t>1$, we have $\gamma_{t+1} = \gamma_t - \eta_t \Delta_t$ , where $\Delta_t$ is the sub-gradient of $L(\gamma_t)$ and $\eta_t = 1/(\lambda t)$. Assume we have $||\Delta_t|| \leq G$ for all $t$. Then we have:}
+	
+	\begin{equation}
+	L(\gamma_{T+1}) \leq L(\gamma^*)+\frac{G^2(1+\ln (T))}{2\lambda T}
+	\end{equation}
+
+\begin{proof}
+	As $L(\gamma)$ is strongly convex and $\Delta_t$ is in its sub-gradient set at $\gamma_t$, according to the definition of $\lambda$-strong convexity \cite{rockafellar2015convex}, the following inequality holds:
+	
+	\begin{equation}\label{eq:app:strong}
+		\left\langle {\gamma_t - \gamma^*,\Delta_t} \right\rangle \geq L(\gamma_t)-L(\gamma^*)+\frac{\lambda}{2}||\gamma_t - \gamma^*||^2
+	\end{equation} 
+	For the term $\left\langle {\gamma_t - \gamma^*,\Delta_y} \right\rangle$, it can be written as:
+	
+	\begin{equation} \label{eq:app:inner}
+	\begin{aligned}
+	\left\langle {\gamma_t - \gamma^*,\Delta_t} \right\rangle &= \left\langle {\gamma_t - \frac{1}{2}\eta_t\Delta_t + \frac{1}{2}\eta_t\Delta_t- \gamma^*,\Delta_t} \right\rangle\\
+	&=\frac{1}{2}\left\langle {\left[ {\left( {{\gamma _t} - {\eta _t}{\Delta _t}} \right) - {\gamma ^*}} \right] + \left( {{\gamma _t} - {\gamma ^*}} \right) + {\eta _t}{\Delta _t},{\Delta _t}} \right\rangle \\
+	&= \frac{1}{2}\left\langle {\left( {{\gamma _{t + 1}} - {\gamma ^*}} \right) + \left( {{\gamma _t} - {\gamma ^*}} \right),{\Delta _t}} \right\rangle  + \frac{1}{2}{\eta _t}\Delta _t^2\\
+	&=\frac{1}{2}\left\langle {{\gamma _{t + 1}} + {\gamma _t} - 2{\gamma ^*},{\Delta _t}} \right\rangle  + \frac{1}{2}{\eta _t}\Delta _t^2
+	\end{aligned}
+	\end{equation}
+	
+	Then we have:
+	\begin{equation}\label{eq:app:squrediff}
+	\begin{aligned}
+	||\gamma_t-\gamma^*||^2-||\gamma_{t+1}-\gamma^*||^2 &= ( {{\gamma _t} - {\gamma _{t + 1}}})  ({{\gamma _t} + {\gamma _{t + 1}} - 2{\gamma ^*}}) \\
+	&=\left\langle {{\gamma _{t + 1}} + {\gamma _t} - 2{\gamma ^*},{\eta_t\Delta _t}} \right\rangle
+	\end{aligned}
+	\end{equation}
+	Using the assumption $||\Delta_t|| \leq G$, we can rearrange \eqref{eq:app:strong} and plug \eqref{eq:app:inner} and \eqref{eq:app:squrediff} into it, we have:
+	
+	\begin{equation}\label{eq:app:it_diff}
+	\begin{aligned}
+	{Diff}_t = L(\gamma_t)-L(\gamma^*) &\leq \frac{{||{\gamma _t} - {\gamma ^*}|{|^2} - ||{\gamma _{t + 1}} - {\gamma ^*}|{|^2}}}{{2{\eta _t}}} - \frac{\lambda }{2}||{\gamma _t} - {\gamma ^*}|{|^2} + \frac{1}{2}{\eta _t}\Delta _t^2 \\
+	&\leq \frac{{||{\gamma _t} - {\gamma ^*}|{|^2} - ||{\gamma _{t + 1}} - {\gamma ^*}|{|^2}}}{{2{\eta _t}}} - \frac{\lambda }{2}||{\gamma _t} - {\gamma ^*}|{|^2} + \frac{1}{2}{\eta _t} G^2\\
+	&=\frac{\lambda (t-1)}{2}{||{\gamma _t} - {\gamma ^*}||^2}- \frac{\lambda t}{2}{||{\gamma _{t+1}} - {\gamma ^*}||^2}+\frac{1}{2}{\eta _t} G^2
+	\end{aligned}
+	\end{equation}
+	
+	Due to the strong convexity, for each pair of $L(\gamma_t)$ and $L(\gamma_{t+1})$ for $t=1,...,T$, according to \eqref{eq:app:strong}, we have:
+	
+	\begin{equation}
+	\begin{aligned}
+	L({\gamma _{t + 1}}) - L({\gamma _t}) &\le \left\langle {{\gamma _{t + 1}} - {\gamma _t},{\Delta _t}} \right\rangle  - \frac{\lambda }{2}||{\gamma _{t + 1}} - \gamma_t |{|^2} \\
+	&=  - \eta_t\Delta _t^2 (1-\frac{1}{2t}) \leq 0
+	\end{aligned}
+	\end{equation}
+	Therefore, we have the following sequence $L(\gamma^*) \leq L(\gamma_T) \leq L(\gamma_{T-1}) \leq...\leq L(\gamma_1)$. 
+	For the sequence $Diff_t$ for $t=1,...,T$, we have:
+	
+	\begin{equation} \label{eq:app:difsum}
+	\sum_{t=1}^{T} Diff_t =  \sum_{t=1}^{T}L(\gamma_t)-TL(\gamma^*) \geq T\left[L(\gamma_T)-L(\gamma^*)\right]
+	\end{equation}
+	
+	Next, we show that 
+	
+	\begin{equation}
+	\begin{aligned}
+	\sum_{t=1}^{T} Diff_t &=\sum_{t=1}^{T}\left\{\frac{\lambda (t-1)}{2}{||{\gamma _t} - {\gamma ^*}||^2}- \frac{\lambda t}{2}{||{\gamma _{t+1}} - {\gamma ^*}||^2}+\frac{1}{2}{\eta _t} G^2\right\} \\
+	&=-\frac{\lambda T}{2}{||{\gamma _{T+1}-\gamma^*}||^2} + \frac{G^2}{2 \lambda}\sum_{t=1}^{T} \frac{1}{t}\\
+	&\leq \frac{G^2}{2 \lambda}\sum_{t=1}^{T} \frac{1}{t} \leq \frac{G^2}{2 \lambda}(1+\ln(T))
+	\end{aligned}
+	\end{equation}
+	
+	Combining \eqref{eq:app:difsum} and rearranging the result, we have:
+	\begin{equation*}
+	L(\gamma_{T+1}) \leq L(\gamma^*)+\frac{G^2(1+\ln (T))}{2\lambda T}
+	\end{equation*}
+\end{proof}

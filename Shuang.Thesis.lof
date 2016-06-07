@@ -17,10 +17,19 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Positive transfer VS Negative transfer.\relax }}{24}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A graphical representation of linear combination. The score from the source model can be considered as an auxiliary feature and the transfer parameter controls the value of the auxiliary feature.\relax }}{33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Adding an related auxiliary feature can improve the performacne of the classifier while unrelated one can decrease the performance and lead to negative transfer. \relax }}{35}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces An illustration of 5-fold cross-validation\relax }}{38}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Loss function comparision for $\epsilon _{multi}$ and $\epsilon _{H}$\relax }}{40}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the margin bound for a single example in 3 scenarios. The cirles denote different confidences and the correct label is ploted in dark grey. The height of each lable is the confidence score. In the left figure,$\epsilon (x)=0$. In the middle figure, even though the confidence of the correct label is the largest, it fails to be larger by 1 than the confidence of the runner-up and have a small loss. In the right figure, the confidence of the correct label is not the largest one and have a very large loss.\relax }}{41}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A graphical representation of linear argumentation. The score from the source model can be considered as an auxiliary feature and the transfer parameter controls the value of the auxiliary feature. For linear classifiers, it can be considered as a linear combination of the decision from the source model and target data (see \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 3.15\hbox {}\unskip \@@italiccorr )}}).\relax }}{34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Suppose the original data is one dimensional and we use the blue line to denote the optimal decision surfce of a linear model (the upper figure). By adding an related auxiliary feature, we can improve the performacne of the classifier (the bottom-left figure) while unrelated one can decrease the performance and lead to negative transfer (the bottom-right figure). \relax }}{36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An illustration of 5-fold cross-validation\relax }}{40}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Loss function comparision for multi-class hinge loss $\epsilon _{multi}$ and classical zero-one loss $\epsilon _{H}$\relax }}{42}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the margin bound for a single example in 3 scenarios. The cirles denote different confidences and the correct label is ploted in dark grey. The height of each lable is the confidence score. In the left figure,$\epsilon (x)=0$. In the middle figure, even though the confidence of the correct label is the largest, it fails to be larger by 1 than the confidence of the runner-up and have a small loss. In the right figure, the confidence of the correct label is not the largest one and have a very large loss.\relax }}{43}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Some examples of MNIST \& USPS.\relax }}{47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MNIST}}}{47}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USPS}}}{47}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of our training procedure. The data is splitted into 3 sets: a source training set, a small target training set and a large test set. Salt \& pepper noise is added into the source training set in order to generate different source models.\relax }}{48}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Images with different level of noise rate. By adding more slat\&pepper noise, the images become less clear.\relax }}{49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Noise Rate = 0 }}}{49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Noise Rate = 0.3}}}{49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Noise Rate = 0.5}}}{49}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Noise Rate = 0.8}}}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

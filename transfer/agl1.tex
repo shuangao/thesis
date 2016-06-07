@@ -1,0 +1,22 @@
+\begin{algorithm}\label{alg:1}
+       \caption{SMITLe}\label{alg:1}
+        \begin{algorithmic}[1]
+            \REQUIRE $\lambda, \mathcal{S},\alpha',\alpha'',T$,
+            \ENSURE $\gamma=\left\{\gamma^1,...,\gamma^n\right\}$
+            \STATE $\gamma^0 \leftarrow 1$
+            \FOR {$t=1$ to $T$}
+                \STATE $\hat Y \leftarrow Y - {\left( {\mathcal{S} \circ I} \right)^{ - 1}}\left( \alpha' - \alpha''D(\gamma) \right)$
+                \STATE ${\Delta _\gamma }=0, {\Delta _\beta }=0$
+                \FOR {$i=1$ to $l$}
+                	\STATE ${\Delta _\gamma }\leftarrow {\Delta _\gamma }+\lambda_1\gamma$ 
+                	\FOR {$r=1$ to $N+1$}
+	                    \STATE $l_{ir} = 1 - {\varepsilon _{{y_i}r}} + {\hat Y_{ir}} - {\hat Y_{i{y_i}}}$
+	                    \IF{$l_{ir}>0$}
+	                            \STATE $\Delta _\gamma^{{y_i}} \leftarrow \Delta _\gamma^{{y_i}} - \frac{{{\alpha''_{i{y_i}}}}}{{{\mathcal{S}^{-1}_{ii}}}}$%
+	                    \ENDIF
+	                 \ENDFOR %class ends   
+                \ENDFOR %examples ends
+                \STATE $\gamma^t  \leftarrow \gamma^{(t-1)}  - \frac{{{\Delta _\gamma }}}{{\lambda\times {t} }}$
+             \ENDFOR %iteration ends
+        \end{algorithmic}
+\end{algorithm}

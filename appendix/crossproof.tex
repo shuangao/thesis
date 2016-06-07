@@ -1,5 +1,5 @@
-\begin{theorem}[An extension of \cite{cawley2006leave}]
-	Given a dataset $D=\{(x_i,y_i)|i=1,...,l\}$, the solution of a LS-SVM on $D$ can be written as:
+\textbf{Theorem \ref{th:single:cv}}
+\textit{	Given a dataset $D=\{(x_i,y_i)|i=1,...,l\}$, the solution of a LS-SVM on $D$ can be written as:}
 	
 	\begin{equation}\label{eq:app:orgmatrix}
 	\left[ {\begin{array}{*{20}{c}}
@@ -16,12 +16,12 @@
 	0
 	\end{array} \right]
 	\end{equation}
-	Assume that $D^{(n)} = \{(x_i,y_i)|i=1,...,n\}$ is a subset of $D$ and $D\backslash D^{(n)}$ is the complement of $D^{(n)}$ in $D$ , The unbiased leave out error of a LS-SVM trained from $D\backslash D^{(n)}$ on $D^{(n)}$ can be estimated as:
+	\textit{Assume that $D^{(n)} = \{(x_i,y_i)|i=1,...,n\}$ is a subset of $D$ and $D\backslash D^{(n)}$ is the complement of $D^{(n)}$ in $D$ , The unbiased leave out error of a LS-SVM trained from $D\backslash D^{(n)}$ on $D^{(n)}$ can be estimated as:}
 	
 	\begin{equation*}%\label{eq:nout}
 	ERR_{leave-out} = \left( {{S_n} - sS_{(l - n + 1)}^{ - 1}{s^T}} \right){\left[ {{\alpha _1},...,{\alpha _n}} \right]^T}
 	\end{equation*}
-	Where $\left[\alpha_1,...,\alpha_n\right]$ is the first $n$ rows of $\alpha$ in \eqref{eq:app:orgmatrix}. $S_n$, $s$ and $S_{(l - n + 1)}$ are the square blocks of matrix:
+	\textit{Where $\left[\alpha_1,...,\alpha_n\right]$ is the first $n$ rows of $\alpha$ in \eqref{eq:app:orgmatrix}. $S_n$, $s$ and $S_{(l - n + 1)}$ are the square blocks of matrix:}
 	
 	\begin{equation*}
 	\left[ {\begin{array}{c|c}
@@ -35,7 +35,7 @@
 		0
 		\end{array}} \right]
 	\end{equation*}
-\end{theorem}
+
 \begin{proof}
 	Following the result of Eq. \eqref{eq:app:orgmatrix} and noticing that the matrix of the left hand in Eq. \eqref{eq:app:orgmatrix} is symmetrical, it can be written as follow:
 	

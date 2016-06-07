@@ -3,6 +3,8 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Relationship between traditional machine learning and different transfer learning settings\relax }}{20}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Various settings of transfer learning\relax }}{21}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces \texthl {Notations used in this chapter}\relax }}{36}
+\contentsline {table}{\numberline {3.1}{\ignorespaces \texthl {Notations used in this chapter}\relax }}{37}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Data distribution of MNIST subset\relax }}{47}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Setups for our experiment on two datasets\relax }}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

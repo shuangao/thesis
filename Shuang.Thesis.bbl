@@ -57,6 +57,11 @@ Stephen Boyd and Lieven Vandenberghe.
 \newblock {\em Convex Optimization}.
 \newblock Cambridge University Press, New York, NY, USA, 2004.
 
+\bibitem{boyd2004convex}
+Stephen Boyd and Lieven Vandenberghe.
+\newblock {\em Convex optimization}.
+\newblock Cambridge university press, 2004.
+
 \bibitem{cawley2006leave}
 Gavin~C Cawley.
 \newblock Leave-one-out cross-validation based model selection criteria for
@@ -155,6 +160,12 @@ Cho-Jui Hsieh, Kai-Wei Chang, Chih-Jen Lin, S~Sathiya Keerthi, and
 \newblock In {\em Proceedings of the 25th international conference on Machine
   learning}, pages 408--415. ACM, 2008.
 
+\bibitem{hull1994database}
+Jonathan~J Hull.
+\newblock A database for handwritten text recognition research.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 16(5):550--554, 1994.
+
 \bibitem{jiang2007instance}
 Jing Jiang and ChengXiang Zhai.
 \newblock Instance weighting for domain adaptation in nlp.
@@ -212,6 +223,11 @@ Yann LeCun, Bernhard Boser, John~S Denker, Donnie Henderson, Richard~E Howard,
   Wayne Hubbard, and Lawrence~D Jackel.
 \newblock Backpropagation applied to handwritten zip code recognition.
 \newblock {\em Neural computation}, 1(4):541--551, 1989.
+
+\bibitem{lecun1998gradient}
+Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, 86(11):2278--2324, 1998.
 
 \bibitem{liao2005logistic}
 Xuejun Liao, Ya~Xue, and Lawrence Carin.
@@ -278,6 +294,11 @@ John Platt et~al.
 Ryan Rifkin and Aldebaro Klautau.
 \newblock In defense of one-vs-all classification.
 \newblock {\em The Journal of Machine Learning Research}, 5:101--141, 2004.
+
+\bibitem{rockafellar2015convex}
+Ralph~Tyrell Rockafellar.
+\newblock {\em Convex analysis}.
+\newblock Princeton university press, 2015.
 
 \bibitem{rosenstein2005transfer}
 Michael~T Rosenstein, Zvika Marx, Leslie~Pack Kaelbling, and Thomas~G

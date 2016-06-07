@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.20)  5 MAY 2016 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.20)  30 MAY 2016 16:33
 entering extended mode
 **Shuang.Thesis.tex
 (Shuang.Thesis.tex
@@ -396,16 +396,18 @@ Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
+\c@defi=\count122
+
 Defining \sgetchapterval ...
 Defining \schapterref ...
 Defining \srefchapterref ...
 Defining \chapterref ...
-\c@theorem=\count122
-\c@myappendices=\count123
+\c@theorem=\count123
+\c@myappendices=\count124
 \cftbeforemyappendicesskip=\skip90
 \cftmyappendicesindent=\skip91
 \cftmyappendicesnumwidth=\skip92
-\c@appdepth=\count124
+\c@appdepth=\count125
 \cftbeforeapptitleskip=\skip93
 \cftafterapptitleskip=\skip94
 (Shuang.Thesis.aux (introduction/total.aux) (relatedwork/total.aux)
@@ -424,6 +426,33 @@ LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
+
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 ) (appendix/appendixa.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 347.
@@ -470,16 +499,16 @@ File: ot1txr.fd 2000/12/15 v3.1
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
+\scratchcounter=\count126
 \scratchdimen=\dimen128
 \scratchbox=\box30
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count128
+\MPscratchCnt=\count129
 \MPscratchDim=\dimen129
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks31
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -538,32 +567,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--368
 
  []
 
-[3] [4] (Shuang.Thesis.toc [5])
+[3] [4] (Shuang.Thesis.toc [5] [6])
 \tf@toc=\write3
- [6] (Shuang.Thesis.lof
+ [7] (Shuang.Thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7])
+ [8])
 \tf@lof=\write4
 
-[8] (Shuang.Thesis.lot)
+[9] (Shuang.Thesis.lot)
 \tf@lot=\write5
- [9] (Shuang.Thesis.app)
+ [10] (Shuang.Thesis.app)
 \tf@app=\write6
- [10] (introduction/total.tex
+ [11] (introduction/total.tex
 Chapter 1.
 [1
 
 
 ] (introduction/overview.tex
-<introduction/fig/IRflow.png, id=42, 499.11469pt x 286.82156pt>
+<introduction/fig/IRflow.png, id=45, 499.11469pt x 286.82156pt>
 File: introduction/fig/IRflow.png Graphic file (type png)
 
 <use introduction/fig/IRflow.png>
 Package pdftex.def Info: introduction/fig/IRflow.png used on input line 6.
 (pdftex.def)             Requested size: 399.29228pt x 229.45755pt.
  [2 <./introduction/fig/IRflow.png>]
-<introduction/fig/sift.jpg, id=47, 595.22375pt x 300.12125pt>
+<introduction/fig/sift.jpg, id=51, 595.22375pt x 300.12125pt>
 File: introduction/fig/sift.jpg Graphic file (type jpg)
 
 <use introduction/fig/sift.jpg>
@@ -573,7 +602,7 @@ Package pdftex.def Info: introduction/fig/sift.jpg used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<introduction/fig/sparsecoding.png, id=48, 689.57625pt x 767.86874pt>
+<introduction/fig/sparsecoding.png, id=52, 689.57625pt x 767.86874pt>
 File: introduction/fig/sparsecoding.png Graphic file (type png)
 
 <use introduction/fig/sparsecoding.png>
@@ -581,7 +610,7 @@ Package pdftex.def Info: introduction/fig/sparsecoding.png used on input line 3
 5.
 (pdftex.def)             Requested size: 206.87447pt x 230.3624pt.
  [3]
-<introduction/fig/alexnet.png, id=53, 1606.0pt x 539.01375pt>
+<introduction/fig/alexnet.png, id=56, 1606.0pt x 539.01375pt>
 File: introduction/fig/alexnet.png Graphic file (type png)
 
 <use introduction/fig/alexnet.png>
@@ -596,14 +625,14 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 52.
 [4 <./introduction/fig/sift.jpg>] [5 <./introduction/fig/sparsecoding.png (PNG 
 copy)> <./introduction/fig/alexnet.png>] [6]) (introduction/senario.tex
-[7] <introduction/fig/scenario.jpg, id=67, 652.68843pt x 255.20343pt>
+[7] <introduction/fig/scenario.jpg, id=70, 652.68843pt x 255.20343pt>
 File: introduction/fig/scenario.jpg Graphic file (type jpg)
 
 <use introduction/fig/scenario.jpg>
 Package pdftex.def Info: introduction/fig/scenario.jpg used on input line 9.
 (pdftex.def)             Requested size: 391.61609pt x 153.12323pt.
  [8 <./introduction/fig/scenario.jpg>]
-<introduction/fig/multiple.jpg, id=71, 757.32938pt x 367.3725pt>
+<introduction/fig/multiple.jpg, id=75, 757.32938pt x 367.3725pt>
 File: introduction/fig/multiple.jpg Graphic file (type jpg)
 
 <use introduction/fig/multiple.jpg>
@@ -622,7 +651,7 @@ Chapter 2.
 
 
 ]
-<relatedwork/fig/ovsa.png, id=85, 423.0204pt x 344.0052pt>
+<relatedwork/fig/ovsa.png, id=88, 423.0204pt x 344.0052pt>
 File: relatedwork/fig/ovsa.png Graphic file (type png)
 
 <use relatedwork/fig/ovsa.png>
@@ -634,28 +663,28 @@ Overfull \hbox (17.40172pt too wide) in paragraph at lines 44--46
  the pa-ram-e-ters of the soft-max clas-si-fier model. The term $[]$
  []
 
-[14] [15] <relatedwork/fig/svm2.png, id=98, 513.92pt x 444.66125pt>
+[14] [15] <relatedwork/fig/svm2.png, id=101, 513.92pt x 444.66125pt>
 File: relatedwork/fig/svm2.png Graphic file (type png)
 
 <use relatedwork/fig/svm2.png>
 Package pdftex.def Info: relatedwork/fig/svm2.png used on input line 85.
 (pdftex.def)             Requested size: 203.258pt x 175.86656pt.
 
-<relatedwork/fig/svm1.png, id=99, 72.27pt x 71.3064pt>
+<relatedwork/fig/svm1.png, id=102, 72.27pt x 71.3064pt>
 File: relatedwork/fig/svm1.png Graphic file (type png)
 
 <use relatedwork/fig/svm1.png>
 Package pdftex.def Info: relatedwork/fig/svm1.png used on input line 86.
 (pdftex.def)             Requested size: 180.67224pt x 178.2731pt.
 
-<relatedwork/fig/slack.png, id=100, 186.09525pt x 169.23225pt>
+<relatedwork/fig/slack.png, id=103, 186.09525pt x 169.23225pt>
 File: relatedwork/fig/slack.png Graphic file (type png)
 
 <use relatedwork/fig/slack.png>
 Package pdftex.def Info: relatedwork/fig/slack.png used on input line 104.
 (pdftex.def)             Requested size: 223.31316pt x 203.07768pt.
  [16 <./relatedwork/fig/svm2.png> <./relatedwork/fig/svm1.png>] <relatedwork/fi
-g/non-linear2.png, id=106, 449.68pt x 337.26pt>
+g/non-linear2.png, id=109, 449.68pt x 337.26pt>
 File: relatedwork/fig/non-linear2.png Graphic file (type png)
 
 <use relatedwork/fig/non-linear2.png>
@@ -664,7 +693,7 @@ Package pdftex.def Info: relatedwork/fig/non-linear2.png used on input line 121
 (pdftex.def)             Requested size: 361.35136pt x 271.02286pt.
  [17 <./relatedwork/fig/slack.png>]
 [18 <./relatedwork/fig/non-linear2.png>]) (relatedwork/transfer.tex
-<relatedwork/fig/transfer.png, id=115, 488.57532pt x 235.63031pt>
+<relatedwork/fig/transfer.png, id=118, 488.57532pt x 235.63031pt>
 File: relatedwork/fig/transfer.png Graphic file (type png)
 
 <use relatedwork/fig/transfer.png>
@@ -676,14 +705,14 @@ Overfull \hbox (25.52452pt too wide) in paragraph at lines 15--25
  []
 
 [20 <./relatedwork/fig/transfer.png>]
-<relatedwork/fig/parameters.png, id=123, 399.894pt x 207.174pt>
+<relatedwork/fig/parameters.png, id=127, 399.894pt x 207.174pt>
 File: relatedwork/fig/parameters.png Graphic file (type png)
 
 <use relatedwork/fig/parameters.png>
 Package pdftex.def Info: relatedwork/fig/parameters.png used on input line 57.
 (pdftex.def)             Requested size: 399.893pt x 207.17348pt.
  [21] [22 <./relatedwork/fig/parameters.png>] <relatedwork/fig/negative.png, id
-=132, 353.06906pt x 268.75406pt>
+=135, 353.06906pt x 268.75406pt>
 File: relatedwork/fig/negative.png Graphic file (type png)
 
 <use relatedwork/fig/negative.png>
@@ -699,7 +728,7 @@ Chapter 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-[28] <transfer/fig/pmt-svm.png, id=152, 356.83313pt x 245.41687pt>
+[28] <transfer/fig/pmt-svm.png, id=155, 356.83313pt x 245.41687pt>
 File: transfer/fig/pmt-svm.png Graphic file (type png)
 
 <use transfer/fig/pmt-svm.png>
@@ -708,32 +737,38 @@ Package pdftex.def Info: transfer/fig/pmt-svm.png used on input line 72.
 
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
- [29 <./transfer/fig/pmt-svm.png>] [30]) [31] (transfer/linearcom.tex [32]
-<transfer/fig/argumentation.png, id=166, 524.1984pt x 326.1786pt>
+ [29 <./transfer/fig/pmt-svm.png>] [30]) [31] (transfer/linearcom.tex [32] [33]
+
+<transfer/fig/argumentation.png, id=173, 677.8926pt x 502.0356pt>
 File: transfer/fig/argumentation.png Graphic file (type png)
 
 <use transfer/fig/argumentation.png>
-Package pdftex.def Info: transfer/fig/argumentation.png used on input line 30.
-(pdftex.def)             Requested size: 366.93637pt x 228.32346pt.
- [33 <./transfer/fig/argumentation.png>]
-<transfer/fig/dataarg.png, id=172, 498.1812pt x 382.0674pt>
+Package pdftex.def Info: transfer/fig/argumentation.png used on input line 37.
+(pdftex.def)             Requested size: 474.52159pt x 351.42253pt.
+
+Overfull \hbox (22.83409pt too wide) in paragraph at lines 37--38
+ [][] 
+ []
+
+[34 <./transfer/fig/argumentation.png>] [35]
+<transfer/fig/dataarg.png, id=181, 498.1812pt x 382.0674pt>
 File: transfer/fig/dataarg.png Graphic file (type png)
 
 <use transfer/fig/dataarg.png>
-Package pdftex.def Info: transfer/fig/dataarg.png used on input line 46.
-(pdftex.def)             Requested size: 298.91103pt x 229.2422pt.
-
+Package pdftex.def Info: transfer/fig/dataarg.png used on input line 69.
+(pdftex.def)             Requested size: 348.72446pt x 267.44534pt.
+ [36 <./transfer/fig/dataarg.png>]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 82.
+(Font)              using `U/stmry/m/n' instead on input line 108.
 
 
-Overfull \hbox (2.24704pt too wide) in paragraph at lines 73--96
+Overfull \hbox (2.24704pt too wide) in paragraph at lines 99--122
  [][][][][] 
  []
 
-[34] [35 <./transfer/fig/dataarg.png>] [36]
-Overfull \hbox (10.96129pt too wide) in paragraph at lines 131--133
+[37]
+Overfull \hbox (10.96129pt too wide) in paragraph at lines 157--159
 \OT1/txr/m/n/12 Let $\OT1/txr/bx/n/12 W \OT1/txr/m/n/12 = [\OML/txmi/m/it/12 w[
 ]; w[]; :::; w[]\OT1/txr/m/n/12 ]$, $[] = [\OML/txmi/m/it/12 w[]; w[]; :::; w[]
 \OT1/txr/m/n/12 ]$ and $\OML/txmi/m/it/12 D\OT1/txr/m/n/12 (\OML/txmi/m/it/12 
@@ -741,68 +776,127 @@ Overfull \hbox (10.96129pt too wide) in paragraph at lines 131--133
 /n/12 (\OML/txmi/m/it/12 []; []; :::; []\OT1/txr/m/n/12 )$.
  []
 
-) (transfer/cross.tex <transfer/fig/cv.png, id=186, 401.61472pt x 553.38171pt>
+[38]) (transfer/cross.tex
+<transfer/fig/cv.png, id=196, 401.61472pt x 553.38171pt>
 File: transfer/fig/cv.png Graphic file (type png)
 
 <use transfer/fig/cv.png>
 Package pdftex.def Info: transfer/fig/cv.png used on input line 7.
 (pdftex.def)             Requested size: 200.80685pt x 276.69017pt.
- [37]
-Underfull \vbox (badness 5490) has occurred while \output is active []
-
- [38 <./transfer/fig/cv.png>] [39]) (transfer/multiclass.tex
-<transfer/fig/losscmp.png, id=198, 452.4403pt x 268.75406pt>
+ [39] [40 <./transfer/fig/cv.png>])
+(transfer/multiclass.tex
+<transfer/fig/losscmp.png, id=204, 452.4403pt x 268.75406pt>
 File: transfer/fig/losscmp.png Graphic file (type png)
 
 <use transfer/fig/losscmp.png>
 Package pdftex.def Info: transfer/fig/losscmp.png used on input line 6.
 (pdftex.def)             Requested size: 316.70605pt x 188.12656pt.
- [40 <./transfer/fig/losscmp.png (PNG copy)>]
-<transfer/fig/svmloss.png, id=203, 812.28468pt x 265.74281pt>
+ [41]
+<transfer/fig/svmloss.png, id=208, 812.28468pt x 265.74281pt>
 File: transfer/fig/svmloss.png Graphic file (type png)
 
 <use transfer/fig/svmloss.png>
 Package pdftex.def Info: transfer/fig/svmloss.png used on input line 27.
 (pdftex.def)             Requested size: 406.14134pt x 132.87108pt.
- [41 <./transfer/fig/svmloss.png>])) [42]
+ [42 <./transfer/fig/losscmp.png (PNG copy)>]
+[43 <./transfer/fig/svmloss.png>]) (transfer/gammaopt.tex [44]
+(transfer/agl1.tex)) (transfer/exp.tex [45] [46]
+<transfer/fig/MNIST.png, id=226, 219.06844pt x 219.06844pt>
+File: transfer/fig/MNIST.png Graphic file (type png)
+
+<use transfer/fig/MNIST.png>
+Package pdftex.def Info: transfer/fig/MNIST.png used on input line 15.
+(pdftex.def)             Requested size: 197.15976pt x 197.15976pt.
+
+<transfer/fig/USPS.png, id=227, 265.74281pt x 220.57407pt>
+File: transfer/fig/USPS.png Graphic file (type png)
+
+<use transfer/fig/USPS.png>
+Package pdftex.def Info: transfer/fig/USPS.png used on input line 17.
+(pdftex.def)             Requested size: 239.1663pt x 198.51482pt.
+
+Overfull \hbox (8.63857pt too wide) in paragraph at lines 14--18
+ [][] 
+ []
+
+
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+ [47 <./transfer/fig/MNIST.png (PNG copy)> <./transfer/fig/USPS.png (PNG copy)>
+]
+<transfer/fig/split.png, id=231, 645.1302pt x 390.258pt>
+File: transfer/fig/split.png Graphic file (type png)
+
+<use transfer/fig/split.png>
+Package pdftex.def Info: transfer/fig/split.png used on input line 53.
+(pdftex.def)             Requested size: 451.58806pt x 273.17873pt.
+
+<transfer/fig/0.png, id=232, 528.47438pt x 57.21375pt>
+File: transfer/fig/0.png Graphic file (type png)
+
+<use transfer/fig/0.png>
+Package pdftex.def Info: transfer/fig/0.png used on input line 59.
+(pdftex.def)             Requested size: 369.92953pt x 40.04933pt.
+ <transfer/fig/1.png, id=233, 528.47438pt x 54.9553pt>
+File: transfer/fig/1.png Graphic file (type png)
+
+<use transfer/fig/1.png>
+Package pdftex.def Info: transfer/fig/1.png used on input line 60.
+(pdftex.def)             Requested size: 369.92953pt x 38.46843pt.
+
+<transfer/fig/2.png, id=234, 526.21594pt x 57.21375pt>
+File: transfer/fig/2.png Graphic file (type png)
+
+<use transfer/fig/2.png>
+Package pdftex.def Info: transfer/fig/2.png used on input line 61.
+(pdftex.def)             Requested size: 368.34865pt x 40.04933pt.
+
+<transfer/fig/3.png, id=235, 524.71031pt x 55.70813pt>
+File: transfer/fig/3.png Graphic file (type png)
+
+<use transfer/fig/3.png>
+Package pdftex.def Info: transfer/fig/3.png used on input line 62.
+(pdftex.def)             Requested size: 367.29471pt x 38.9954pt.
+)) [48 <./transfer/fig/split.png>] [49 <./transfer/fig/0.png> <./transfer/fig/1
+.png> <./transfer/fig/2.png> <./transfer/fig/3.png>]
 (Shuang.Thesis.bbl
 Missing character: There is no Ì in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no Ð in font txr!
 Missing character: There is no œ in font txr!
- [43
+ [50
 
 
-] [44]
+] [51]
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ” in font txr!
- [45] [46]
-Underfull \hbox (badness 1107) in paragraph at lines 300--305
+ [52] [53]
+Underfull \hbox (badness 1107) in paragraph at lines 321--326
 []\OT1/txr/m/n/12 Nitish Sri-vas-tava, Ge-of-frey Hin-ton, Alex Krizhevsky, Ily
 a Sutskever, and Rus-lan
  []
 
-[47] [48]) [49] (appendix/appendixa.tex
+[54] [55]) [56] (appendix/appendixa.tex
 Appendix A.
 (appendix/gama_nega.tex
 
-LaTeX Warning: Reference `eq:train_loss' on page 50 undefined on input line 2.
+LaTeX Warning: Reference `eq:train_loss' on page 57 undefined on input line 2.
 
 
-LaTeX Warning: Reference `eq:dual' on page 50 undefined on input line 13.
+LaTeX Warning: Reference `eq:dual' on page 57 undefined on input line 13.
 
-[50
+[57
 
 
 ]
 
-LaTeX Warning: Reference `eq:dual' on page 51 undefined on input line 28.
+LaTeX Warning: Reference `eq:dual' on page 58 undefined on input line 28.
 
-) (appendix/crossproof.tex [51] [52]) [53]
+) (appendix/crossproof.tex [58] [59]) (appendix/converge.tex [60]) [61]
 Appendix B.
 (appendix/MNIST1.tex
-<appendix/tables/MNIST_Rate_0_class_1.jpg, id=245, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_1.jpg, id=285, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_1.jpg>
@@ -810,7 +904,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_1.jpg used on input
  line 6.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_2.jpg, id=246, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_2.jpg, id=286, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_2.jpg>
@@ -818,7 +912,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_2.jpg used on input
  line 7.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_3.jpg, id=247, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_3.jpg, id=287, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_3.jpg>
@@ -826,7 +920,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_3.jpg used on input
  line 9.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_4.jpg, id=248, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_4.jpg, id=288, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_4.jpg>
@@ -834,7 +928,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_4.jpg used on input
  line 10.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_5.jpg, id=249, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_5.jpg, id=289, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_5.jpg>
@@ -842,7 +936,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_5.jpg used on input
  line 17.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_6.jpg, id=250, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_6.jpg, id=290, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_6.jpg>
@@ -850,7 +944,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_6.jpg used on input
  line 18.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_7.jpg, id=251, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_7.jpg, id=291, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_7.jpg>
@@ -858,7 +952,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_7.jpg used on input
  line 20.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_8.jpg, id=252, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_8.jpg, id=292, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_8.jpg>
@@ -866,7 +960,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_8.jpg used on input
  line 21.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_9.jpg, id=253, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_9.jpg, id=293, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_9.jpg>
@@ -874,7 +968,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_0_class_9.jpg used on input
  line 23.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_0_class_10.jpg, id=254, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_0_class_10.jpg, id=294, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_0_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_0_class_10.jpg>
@@ -885,15 +979,15 @@ t line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54
+[62
 
  <./appendix/tables/MNIST_Rate_0_class_1.jpg> <./appendix/tables/MNIST_Rate_0_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_0_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_0_class_4.jpg>] [55 <./appendix/tables/MNIST_Rate_0_class_5.jpg> <./app
+ST_Rate_0_class_4.jpg>] [63 <./appendix/tables/MNIST_Rate_0_class_5.jpg> <./app
 endix/tables/MNIST_Rate_0_class_6.jpg> <./appendix/tables/MNIST_Rate_0_class_7.
 jpg> <./appendix/tables/MNIST_Rate_0_class_8.jpg> <./appendix/tables/MNIST_Rate
 _0_class_9.jpg> <./appendix/tables/MNIST_Rate_0_class_10.jpg>]
-<appendix/tables/MNIST_Rate_3_class_1.jpg, id=261, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_1.jpg, id=302, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_1.jpg>
@@ -901,7 +995,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_1.jpg used on input
  line 36.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_2.jpg, id=262, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_2.jpg, id=303, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_2.jpg>
@@ -909,7 +1003,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_2.jpg used on input
  line 37.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_3.jpg, id=263, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_3.jpg, id=304, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_3.jpg>
@@ -917,7 +1011,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_3.jpg used on input
  line 39.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_4.jpg, id=264, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_4.jpg, id=305, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_4.jpg>
@@ -925,7 +1019,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_4.jpg used on input
  line 40.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_5.jpg, id=265, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_5.jpg, id=306, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_5.jpg>
@@ -933,7 +1027,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_5.jpg used on input
  line 47.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_6.jpg, id=266, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_6.jpg, id=307, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_6.jpg>
@@ -941,7 +1035,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_6.jpg used on input
  line 48.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_7.jpg, id=267, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_7.jpg, id=308, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_7.jpg>
@@ -949,7 +1043,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_7.jpg used on input
  line 50.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_8.jpg, id=268, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_8.jpg, id=309, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_8.jpg>
@@ -957,7 +1051,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_8.jpg used on input
  line 51.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_9.jpg, id=269, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_9.jpg, id=310, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_9.jpg>
@@ -965,7 +1059,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_3_class_9.jpg used on input
  line 53.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_3_class_10.jpg, id=270, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_3_class_10.jpg, id=311, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_3_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_3_class_10.jpg>
@@ -976,15 +1070,15 @@ t line 54.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56
+[64
 
  <./appendix/tables/MNIST_Rate_3_class_1.jpg> <./appendix/tables/MNIST_Rate_3_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_3_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_3_class_4.jpg>] [57 <./appendix/tables/MNIST_Rate_3_class_5.jpg> <./app
+ST_Rate_3_class_4.jpg>] [65 <./appendix/tables/MNIST_Rate_3_class_5.jpg> <./app
 endix/tables/MNIST_Rate_3_class_6.jpg> <./appendix/tables/MNIST_Rate_3_class_7.
 jpg> <./appendix/tables/MNIST_Rate_3_class_8.jpg> <./appendix/tables/MNIST_Rate
 _3_class_9.jpg> <./appendix/tables/MNIST_Rate_3_class_10.jpg>]
-<appendix/tables/MNIST_Rate_5_class_1.jpg, id=278, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_1.jpg, id=318, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_1.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_1.jpg>
@@ -992,7 +1086,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_1.jpg used on input
  line 66.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_2.jpg, id=279, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_2.jpg, id=319, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_2.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_2.jpg>
@@ -1000,7 +1094,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_2.jpg used on input
  line 67.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_3.jpg, id=280, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_3.jpg, id=320, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_3.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_3.jpg>
@@ -1008,7 +1102,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_3.jpg used on input
  line 69.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_4.jpg, id=281, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_4.jpg, id=321, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_4.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_4.jpg>
@@ -1016,7 +1110,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_4.jpg used on input
  line 70.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_5.jpg, id=282, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_5.jpg, id=322, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_5.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_5.jpg>
@@ -1024,7 +1118,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_5.jpg used on input
  line 77.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_6.jpg, id=283, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_6.jpg, id=323, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_6.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_6.jpg>
@@ -1032,7 +1126,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_6.jpg used on input
  line 78.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_7.jpg, id=284, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_7.jpg, id=324, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_7.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_7.jpg>
@@ -1040,7 +1134,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_7.jpg used on input
  line 80.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_8.jpg, id=285, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_8.jpg, id=325, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_8.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_8.jpg>
@@ -1048,7 +1142,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_8.jpg used on input
  line 81.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_9.jpg, id=286, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_9.jpg, id=326, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_9.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_9.jpg>
@@ -1056,7 +1150,7 @@ Package pdftex.def Info: appendix/tables/MNIST_Rate_5_class_9.jpg used on input
  line 83.
 (pdftex.def)             Requested size: 203.258pt x 152.44139pt.
 
-<appendix/tables/MNIST_Rate_5_class_10.jpg, id=287, 1204.5pt x 903.375pt>
+<appendix/tables/MNIST_Rate_5_class_10.jpg, id=327, 1204.5pt x 903.375pt>
 File: appendix/tables/MNIST_Rate_5_class_10.jpg Graphic file (type jpg)
 
 <use appendix/tables/MNIST_Rate_5_class_10.jpg>
@@ -1067,14 +1161,14 @@ t line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [58
+)) [66
 
  <./appendix/tables/MNIST_Rate_5_class_1.jpg> <./appendix/tables/MNIST_Rate_5_c
 lass_2.jpg> <./appendix/tables/MNIST_Rate_5_class_3.jpg> <./appendix/tables/MNI
-ST_Rate_5_class_4.jpg>] [59 <./appendix/tables/MNIST_Rate_5_class_5.jpg> <./app
+ST_Rate_5_class_4.jpg>] [67 <./appendix/tables/MNIST_Rate_5_class_5.jpg> <./app
 endix/tables/MNIST_Rate_5_class_6.jpg> <./appendix/tables/MNIST_Rate_5_class_7.
 jpg> <./appendix/tables/MNIST_Rate_5_class_8.jpg> <./appendix/tables/MNIST_Rate
-_5_class_9.jpg> <./appendix/tables/MNIST_Rate_5_class_10.jpg>] [60
+_5_class_9.jpg> <./appendix/tables/MNIST_Rate_5_class_10.jpg>] [68
 
 
 ]
@@ -1091,11 +1185,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6110 strings out of 493673
- 93572 string characters out of 3141520
- 266453 words of memory out of 3000000
- 9163 multiletter control sequences out of 15000+200000
- 64534 words of font info for 163 fonts, out of 3000000 for 9000
+ 6253 strings out of 493673
+ 95798 string characters out of 3141520
+ 268112 words of memory out of 3000000
+ 9288 multiletter control sequences out of 15000+200000
+ 65950 words of font info for 166 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,22n,49p,1346b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
@@ -1111,9 +1205,9 @@ xsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Shuang.Thesis.pdf (70 pages, 4265590 bytes).
+Output written on Shuang.Thesis.pdf (79 pages, 4636318 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
+ 383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
