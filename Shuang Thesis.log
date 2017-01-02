@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  1 DEC 2015 14:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  7 JUN 2016 11:09
 entering extended mode
-**Shuang*Thesis.tex
-("D:\LaTex_Files\My Thesis\Shuang Thesis.tex"
+**D:/LaTex_Files/thesis/Shuang*Thesis.tex
+("D:/LaTex_Files/thesis/Shuang Thesis.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -408,16 +408,43 @@ Defining \chapterref ...
 \c@appdepth=\count124
 \cftbeforeapptitleskip=\skip93
 \cftafterapptitleskip=\skip94
-("D:\LaTex_Files\My Thesis\Shuang Thesis.aux"
-("D:\LaTex_Files\My Thesis\transfer/total.aux"
+("D:\LaTex_Files\thesis\Shuang Thesis.aux"
+(D:\LaTex_Files\thesis\transfer/total.aux
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
-) ("D:\LaTex_Files\My Thesis\cnn/total.aux")
-("D:\LaTex_Files\My Thesis\appendix/appendixa.aux"))
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `alg:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `fig:single:split' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+) (D:\LaTex_Files\thesis\cnn/total.aux)
+(D:\LaTex_Files\thesis\appendix/appendixa.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 343.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 343
 .
@@ -526,13 +553,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--364
 
  []
 
-[3] [4] ("D:\LaTex_Files\My Thesis\Shuang Thesis.toc" [5])
+[3] [4] ("D:\LaTex_Files\thesis\Shuang Thesis.toc" [5])
 \tf@toc=\write3
  [6]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.lof")
+("D:\LaTex_Files\thesis\Shuang Thesis.lof")
 \tf@lof=\write4
  [7]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.lot"
+("D:\LaTex_Files\thesis\Shuang Thesis.lot"
 Overfull \hbox (2.30612pt too wide) in paragraph at lines 7--7
  [][] []\OT1/txr/m/n/12 Cosine sim-i-lar-ity of the lay-ers be-tween fine-tuned
  mod-els and pre-trained model 
@@ -540,304 +567,59 @@ Overfull \hbox (2.30612pt too wide) in paragraph at lines 7--7
 
 )
 \tf@lot=\write5
- [8] ("D:\LaTex_Files\My Thesis\Shuang Thesis.app")
+ [8] ("D:\LaTex_Files\thesis\Shuang Thesis.app")
 \tf@app=\write6
  [9]
-("D:\LaTex_Files\My Thesis\transfer/total.tex"
+(D:\LaTex_Files\thesis\transfer/total.tex
 Chapter 1.
-("D:\LaTex_Files\My Thesis\transfer/gama_works.tex" [1
+
+LaTeX Warning: Reference `sec:intro' on page 1 undefined on input line 2.
+
+(D:\LaTex_Files\thesis\transfer/gama_works.tex [1
 
 
 ])
-("D:\LaTex_Files\My Thesis\transfer/others.tex" [2]
-<transfer/fig/pmt-svm.png, id=42, 356.83313pt x 245.41687pt>
+(D:\LaTex_Files\thesis\transfer/others.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3] <transfer/fig/pmt-svm.png, id=47, 356.83313pt x 245.41687pt>
 File: transfer/fig/pmt-svm.png Graphic file (type png)
 
 <use transfer/fig/pmt-svm.png>
-Package pdftex.def Info: transfer/fig/pmt-svm.png used on input line 69.
+Package pdftex.def Info: transfer/fig/pmt-svm.png used on input line 72.
 (pdftex.def)             Requested size: 214.10152pt x 147.25125pt.
- [3] [4 <D:/LaTex_Files/My Thesis/transfer/fig/pmt-svm.png>] [5])) [6] ("D:\LaT
-ex_Files\My Thesis\cnn/total.tex"
-Chapter 2.
-("D:\LaTex_Files\My Thesis\cnn/bg.tex" [7
 
+Underfull \vbox (badness 5817) has occurred while \output is active []
 
+ [4 <D:/LaTex_Files/thesis/transfer/fig/pmt-svm.png>] [5]) [6]
+(D:\LaTex_Files\thesis\transfer/linearcom.tex
 
-]
-Underfull \vbox (badness 4096) has occurred while \output is active []
+! LaTeX Error: Environment defi undefined.
 
- [8])
-("D:\LaTex_Files\My Thesis\cnn/layers.tex"
-<cnn/fig/conv.png, id=67, 729.47531pt x 390.70969pt>
-File: cnn/fig/conv.png Graphic file (type png)
- <use cnn/fig/conv.png>
-Package pdftex.def Info: cnn/fig/conv.png used on input line 12.
-(pdftex.def)             Requested size: 437.68855pt x 234.42761pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{defi}
+                 \label{single:hdivergence}
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.7 \begin{defi}
+                 \label{single:hdivergence}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[9] <cnn/fig/pool.png, id=72, 535.2497pt x 274.02374pt>
-File: cnn/fig/pool.png Graphic file (type png)
- <use cnn/fig/pool.png>
-Package pdftex.def Info: cnn/fig/pool.png used on input line 25.
-(pdftex.def)             Requested size: 428.20033pt x 219.21928pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <D:/LaTex_Files/My Thesis/cnn/fig/conv.png>]
-<cnn/fig/net.png, id=77, 241.65282pt x 257.46187pt>
-File: cnn/fig/net.png Graphic file (type png)
- <use cnn/fig/net.png>
-Package pdftex.def Info: cnn/fig/net.png used on input line 47.
-(pdftex.def)             Requested size: 135.50761pt x 144.378pt.
-
-<cnn/fig/dropnet.png, id=78, 250.68657pt x 259.7203pt>
-File: cnn/fig/dropnet.png Graphic file (type png)
-
-<use cnn/fig/dropnet.png>
-Package pdftex.def Info: cnn/fig/dropnet.png used on input line 48.
-(pdftex.def)             Requested size: 135.50761pt x 140.39746pt.
-) [11 <D:/LaTex_Files/My Thesis/cnn/fig/pool.png>]
-("D:\LaTex_Files\My Thesis\cnn/expsetup.tex" [12 <D:/LaTex_Files/My Thesis/cnn/
-fig/net.png> <D:/LaTex_Files/My Thesis/cnn/fig/dropnet.png>]
-<cnn/fig/inception.pdf, id=85, 572.1375pt x 279.0425pt>
-File: cnn/fig/inception.pdf Graphic file (type pdf)
-
-<use cnn/fig/inception.pdf>
-Package pdftex.def Info: cnn/fig/inception.pdf used on input line 17.
-(pdftex.def)             Requested size: 400.49352pt x 195.3284pt.
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 24.
- [13 <D:/LaTex_Files/My Thesis/cnn/fig/inception.pdf>] [14] <cnn/fig/crop00.png
-, id=100, 256.96pt x 256.96pt>
-File: cnn/fig/crop00.png Graphic file (type png)
-
-<use cnn/fig/crop00.png>
-Package pdftex.def Info: cnn/fig/crop00.png used on input line 42.
-(pdftex.def)             Requested size: 97.56052pt x 97.55954pt.
-
-<cnn/fig/crop4.png, id=101, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop4.png Graphic file (type png)
- <use cnn/fig/crop4.png>
-Package pdftex.def Info: cnn/fig/crop4.png used on input line 43.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop9.png, id=102, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop9.png Graphic file (type png)
- <use cnn/fig/crop9.png>
-Package pdftex.def Info: cnn/fig/crop9.png used on input line 44.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop0.png, id=103, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop0.png Graphic file (type png)
- <use cnn/fig/crop0.png>
-Package pdftex.def Info: cnn/fig/crop0.png used on input line 47.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop5.png, id=104, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop5.png Graphic file (type png)
- <use cnn/fig/crop5.png>
-Package pdftex.def Info: cnn/fig/crop5.png used on input line 48.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop1.png, id=105, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop1.png Graphic file (type png)
- <use cnn/fig/crop1.png>
-Package pdftex.def Info: cnn/fig/crop1.png used on input line 48.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop6.png, id=106, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop6.png Graphic file (type png)
- <use cnn/fig/crop6.png>
-Package pdftex.def Info: cnn/fig/crop6.png used on input line 49.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop2.png, id=107, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop2.png Graphic file (type png)
- <use cnn/fig/crop2.png>
-Package pdftex.def Info: cnn/fig/crop2.png used on input line 51.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop7.png, id=108, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop7.png Graphic file (type png)
- <use cnn/fig/crop7.png>
-Package pdftex.def Info: cnn/fig/crop7.png used on input line 52.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop3.png, id=109, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop3.png Graphic file (type png)
- <use cnn/fig/crop3.png>
-Package pdftex.def Info: cnn/fig/crop3.png used on input line 52.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-<cnn/fig/crop8.png, id=110, 227.85126pt x 227.85126pt>
-File: cnn/fig/crop8.png Graphic file (type png)
- <use cnn/fig/crop8.png>
-Package pdftex.def Info: cnn/fig/crop8.png used on input line 53.
-(pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
- [15 <D:/LaTex_Files/My Thesis/cnn/fig/crop00.png (PNG copy)> <D:/LaTex_Files/M
-y Thesis/cnn/fig/crop4.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop9.
-png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop0.png (PNG copy)> <D:/LaT
-ex_Files/My Thesis/cnn/fig/crop5.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/
-fig/crop1.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop6.png (PNG copy
-)> <D:/LaTex_Files/My Thesis/cnn/fig/crop2.png (PNG copy)> <D:/LaTex_Files/My T
-hesis/cnn/fig/crop7.png (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop3.png
- (PNG copy)> <D:/LaTex_Files/My Thesis/cnn/fig/crop8.png (PNG copy)>]
-<cnn/fig/org.png, id=114, 578.16pt x 431.4519pt>
-File: cnn/fig/org.png Graphic file (type png)
- <use cnn/fig/org.png>
-Package pdftex.def Info: cnn/fig/org.png used on input line 70.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/red.png, id=115, 578.16pt x 431.4519pt>
-File: cnn/fig/red.png Graphic file (type png)
- <use cnn/fig/red.png>
-Package pdftex.def Info: cnn/fig/red.png used on input line 71.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/green.png, id=116, 578.16pt x 431.4519pt>
-File: cnn/fig/green.png Graphic file (type png)
- <use cnn/fig/green.png>
-Package pdftex.def Info: cnn/fig/green.png used on input line 72.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/blue.png, id=117, 578.16pt x 431.4519pt>
-File: cnn/fig/blue.png Graphic file (type png)
- <use cnn/fig/blue.png>
-Package pdftex.def Info: cnn/fig/blue.png used on input line 73.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/rgb.png, id=118, 578.16pt x 431.4519pt>
-File: cnn/fig/rgb.png Graphic file (type png)
- <use cnn/fig/rgb.png>
-Package pdftex.def Info: cnn/fig/rgb.png used on input line 74.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/v1.png, id=119, 578.16pt x 431.4519pt>
-File: cnn/fig/v1.png Graphic file (type png)
- <use cnn/fig/v1.png>
-Package pdftex.def Info: cnn/fig/v1.png used on input line 75.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/v2.png, id=120, 578.16pt x 431.4519pt>
-File: cnn/fig/v2.png Graphic file (type png)
- <use cnn/fig/v2.png>
-Package pdftex.def Info: cnn/fig/v2.png used on input line 76.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s1.png, id=121, 578.16pt x 431.4519pt>
-File: cnn/fig/s1.png Graphic file (type png)
- <use cnn/fig/s1.png>
-Package pdftex.def Info: cnn/fig/s1.png used on input line 77.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s2.png, id=122, 578.16pt x 431.4519pt>
-File: cnn/fig/s2.png Graphic file (type png)
- <use cnn/fig/s2.png>
-Package pdftex.def Info: cnn/fig/s2.png used on input line 78.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s4.png, id=123, 578.16pt x 431.4519pt>
-File: cnn/fig/s4.png Graphic file (type png)
- <use cnn/fig/s4.png>
-Package pdftex.def Info: cnn/fig/s4.png used on input line 79.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/s3.png, id=124, 578.16pt x 431.4519pt>
-File: cnn/fig/s3.png Graphic file (type png)
- <use cnn/fig/s3.png>
-Package pdftex.def Info: cnn/fig/s3.png used on input line 80.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-
-<cnn/fig/rota.png, id=125, 578.16pt x 431.4519pt>
-File: cnn/fig/rota.png Graphic file (type png)
- <use cnn/fig/rota.png>
-Package pdftex.def Info: cnn/fig/rota.png used on input line 81.
-(pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
-)
-("D:\LaTex_Files\My Thesis\cnn/discuss.tex"
-<cnn/fig/sashimi.png, id=126, 727.96968pt x 319.1925pt>
-File: cnn/fig/sashimi.png Graphic file (type png)
-
-<use cnn/fig/sashimi.png>
-Package pdftex.def Info: cnn/fig/sashimi.png used on input line 50.
-(pdftex.def)             Requested size: 363.98395pt x 159.59586pt.
- [16] [17 <D:/LaTex_Files/My Thesis/cnn/fig/org.png> <D:/LaTex_Files/My Thesis/
-cnn/fig/red.png> <D:/LaTex_Files/My Thesis/cnn/fig/green.png> <D:/LaTex_Files/M
-y Thesis/cnn/fig/blue.png> <D:/LaTex_Files/My Thesis/cnn/fig/rgb.png> <D:/LaTex
-_Files/My Thesis/cnn/fig/v1.png> <D:/LaTex_Files/My Thesis/cnn/fig/v2.png> <D:/
-LaTex_Files/My Thesis/cnn/fig/s1.png> <D:/LaTex_Files/My Thesis/cnn/fig/s2.png>
- <D:/LaTex_Files/My Thesis/cnn/fig/s4.png> <D:/LaTex_Files/My Thesis/cnn/fig/s3
-.png> <D:/LaTex_Files/My Thesis/cnn/fig/rota.png>]
-[18 <D:/LaTex_Files/My Thesis/cnn/fig/sashimi.png>] [19] [20]
-Underfull \vbox (badness 1178) has occurred while \output is active []
-
- [21]))
-[22] ("D:\LaTex_Files\My Thesis\Shuang Thesis.bbl" [23
-
-
-]
-Missing character: There is no Ê in font txr!
-Missing character: There is no ¹ in font txr!
- [24] [25]
-Underfull \hbox (badness 1107) in paragraph at lines 253--258
-[]\OT1/txr/m/n/12 Nitish Sri-vas-tava, Ge-of-frey Hin-ton, Alex Krizhevsky, Ily
-a Sutskever, and Rus-lan
- []
-
-[26] [27]) [28] ("D:\LaTex_Files\My Thesis\appendix/appendixa.tex"
-Appendix A.
-("D:\LaTex_Files\My Thesis\appendix/gama_nega.tex"
-
-LaTeX Warning: Reference `eq:train_loss' on page 29 undefined on input line 2.
-
-
-LaTeX Warning: Reference `eq:dual' on page 29 undefined on input line 13.
-
-[29
-
-
-]
-
-LaTeX Warning: Reference `eq:dual' on page 30 undefined on input line 28.
-
-) [30] ("D:\LaTex_Files\My Thesis\cnn/googlenet.tex") [31]) [32
-
-
-
-
-]
-("D:\LaTex_Files\My Thesis\Shuang Thesis.aux"
-("D:\LaTex_Files\My Thesis\transfer/total.aux")
-("D:\LaTex_Files\My Thesis\cnn/total.aux")
-("D:\LaTex_Files\My Thesis\appendix/appendixa.aux"))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 5681 strings out of 493921
- 80634 string characters out of 3152883
- 249980 words of memory out of 3000000
- 8748 multiletter control sequences out of 15000+200000
- 53903 words of font info for 128 fonts, out of 3000000 for 9000
+ 5601 strings out of 493921
+ 78860 string characters out of 3152883
+ 252748 words of memory out of 3000000
+ 8731 multiletter control sequences out of 15000+200000
+ 47373 words of font info for 113 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,22n,52p,1868b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/MiKTeX 2.9/fonts/type1/pub
-lic/txfonts/rtxb.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><D:/Mi
-KTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><D:/MiKTeX 2.9/fonts/type1/public/
-txfonts/rtxsc.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><D:/MiKTeX
- 2.9/fonts/type1/public/txfonts/txsy.pfb><D:/MiKTeX 2.9/fonts/type1/public/txfo
-nts/txsyc.pfb><D:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/MiKTeX 2.9/fo
-nts/type1/urw/times/utmr8a.pfb><D:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on "Shuang Thesis.pdf" (41 pages, 10159166 bytes).
-PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 44i,22n,42p,949b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

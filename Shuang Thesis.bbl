@@ -17,6 +17,12 @@ Pierre Baldi and Yves Chauvin.
 \newblock Neural networks for fingerprint recognition.
 \newblock {\em Neural Computation}, 5(3):402--418, 1993.
 
+\bibitem{ben2010theory}
+Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and
+  Jennifer~Wortman Vaughan.
+\newblock A theory of learning from different domains.
+\newblock {\em Machine learning}, 79(1-2):151--175, 2010.
+
 \bibitem{bossard2014food}
 Lukas Bossard, Matthieu Guillaumin, and Luc Van~Gool.
 \newblock Food-101--mining discriminative components with random forests.
@@ -32,6 +38,11 @@ Y-Lan Boureau, Jean Ponce, and Yann LeCun.
 Stephen Boyd and Lieven Vandenberghe.
 \newblock {\em Convex Optimization}.
 \newblock Cambridge University Press, New York, NY, USA, 2004.
+
+\bibitem{boyd2004convex}
+Stephen Boyd and Lieven Vandenberghe.
+\newblock {\em Convex optimization}.
+\newblock Cambridge university press, 2004.
 
 \bibitem{cawley2006leave}
 Gavin~C Cawley.
@@ -64,6 +75,12 @@ Koby Crammer and Yoram Singer.
 \newblock On the algorithmic implementation of multiclass kernel-based vector
   machines.
 \newblock {\em The Journal of Machine Learning Research}, 2:265--292, 2002.
+
+\bibitem{crammer2002learnability}
+Koby Crammer and Yoram Singer.
+\newblock On the learnability and design of output codes for multiclass
+  problems.
+\newblock {\em Machine learning}, 47(2-3):201--233, 2002.
 
 \bibitem{davis2009deep}
 Jesse Davis and Pedro Domingos.
@@ -102,6 +119,12 @@ Judy Hoffman, Eric Tzeng, Jeff Donahue, Yangqing Jia, Kate Saenko, and Trevor
   Darrell.
 \newblock One-shot adaptation of supervised deep convolutional models.
 \newblock {\em arXiv preprint arXiv:1312.6204}, 2013.
+
+\bibitem{hull1994database}
+Jonathan~J Hull.
+\newblock A database for handwritten text recognition research.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 16(5):550--554, 1994.
 
 \bibitem{ikeda1976sequential}
 Saburo Ikeda, Mikiko Ochiai, and Yoshikazu Sawaragi.
@@ -142,6 +165,12 @@ Yoshiyuki Kawano and Keiji Yanai.
 \newblock In {\em Proceedings of the ACM International Conference on
   Multimedia}, MM '14, pages 761--762, New York, NY, USA, 2014. ACM.
 
+\bibitem{kifer2004detecting}
+Daniel Kifer, Shai Ben-David, and Johannes Gehrke.
+\newblock Detecting change in data streams.
+\newblock In {\em Proceedings of the Thirtieth international conference on Very
+  large data bases-Volume 30}, pages 180--191. VLDB Endowment, 2004.
+
 \bibitem{kondo2008multi}
 Tadashi Kondo and Junji Ueno.
 \newblock Multi-layered gmdh-type neural network self-selecting optimum neural
@@ -155,6 +184,12 @@ Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   1097--1105, 2012.
+
+\bibitem{kuzborskij2013stability}
+Ilja Kuzborskij and Francesco Orabona.
+\newblock Stability and hypothesis transfer learning.
+\newblock In {\em Proceedings of the 30th International Conference on Machine
+  Learning}, pages 942--950, 2013.
 
 \bibitem{kuzborskij2013n}
 Ilja Kuzborskij, Francesco Orabona, and Barbara Caputo.
@@ -223,6 +258,11 @@ Sinno~Jialin Pan and Qiang Yang.
 \newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
   22(10):1345--1359, 2010.
 
+\bibitem{rockafellar2015convex}
+Ralph~Tyrell Rockafellar.
+\newblock {\em Convex analysis}.
+\newblock Princeton university press, 2015.
+
 \bibitem{rosenblatt1958perceptron}
 Frank Rosenblatt.
 \newblock The perceptron: a probabilistic model for information storage and
@@ -281,11 +321,10 @@ Tatiana Tommasi, Francesco Orabona, and Barbara Caputo.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 36(5):928--941, 2014.
 
-\bibitem{vincent2008extracting}
-Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol.
-\newblock Extracting and composing robust features with denoising autoencoders.
-\newblock In {\em Proceedings of the 25th international conference on Machine
-  learning}, pages 1096--1103. ACM, 2008.
+\bibitem{vapnik2000bounds}
+Vladimir Vapnik and Olivier Chapelle.
+\newblock Bounds on error expectation for support vector machines.
+\newblock {\em Neural computation}, 12(9):2013--2036, 2000.
 
 \bibitem{wang2014active}
 Xuezhi Wang, Tzu-Kuo Huang, and Jeff Schneider.
