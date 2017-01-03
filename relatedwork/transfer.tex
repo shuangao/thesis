@@ -39,6 +39,7 @@ Transfer learning can be categorized into 3 sub-settings: \textit{inductive tran
 	\end{tabular}%
 	\label{tab:related:transfersetting}%
 \end{table}%
+
 \subsection{Inductive Transfer Learning}
 In inductive transfer learning, we try to utilize the knowledge from the source task to help learning the target task. Here we give a formal definition of inductive transfer learning \cite{pan2010survey}:
 \begin{definition}{\textbf{(Inductive Transfer Learning)}}
@@ -65,8 +66,13 @@ Parameter transfer assumes that there should be some parameters or prior distrib
 	Rosenstein et al. \cite{rosenstein2005transfer} use hierarchical Bayesian method to estimate the posterior distribution for all the parameters and the overall model can decide the similarities of the source and target tasks. 
 \end{itemize}
 
+\subsection{Fine-tuning the Deep Net}
 
-\subsection{Avoid Negative Transfer}
+\subsection{Hypothesis Transfer Learning}
+\input{relatedwork/hypothesis}
+
+
+\subsection{Special Issues in Avoiding Negative Transfer}
 In transfer learning, for a given target task, the performance of a transfer method depends on two aspects: the quality of the source task and the transfer ability of the transfer algorithm. The quality of the source task refers to how the source and target tasks are related. If there exists a strong relationship between the source and target, with a proper transfer method, the performance in the target task can be significantly improved. However, if the source and target tasks are not sufficiently related, despite of the transfer ability of the transfer algorithm, the performance in the target task may fail to be improved or even decrease. In transfer learning, negative transfer refers to the degraded performance compare to a method without using any knowledge from the source \cite{pan2010survey}. 
 For example, we can use a teacher-student diagram to illustrate the procedure of transfer learning. The student (target model) would like to learn the new knowledge (target task) with the assistance of a teacher (source knowledge). If the teacher can provide helpful knowledge (related knowledge), the student can learn the new knowledge very quickly (positive transfer). If the teacher can only provide useless knowledge, the student could not learn the new knowledge effectively or even get confused (negative transfer).
 

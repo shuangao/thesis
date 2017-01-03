@@ -144,27 +144,28 @@ The unique structure of the Inception module guarantees that the sparse outputs 
 \subsection{Learning across the datasets}
 From the previous experiments we can see that pre-training on the ImageNet dataset can improve the performance of the deep convolutional neural network on our specific area. In this part, we will discuss the generalization ability within the food recognition problem.  Zhou et al. trained AlexNet for Scene Recognition across two datasets with identical categories \cite{NIPS2014_Zhou}. But for more complex situation, such as two similar datasets with a little overlapped categories, we are very interested in exploring whether deep CNN can still successfully handle. Therefore, we conduct the following experiment to stimulate a more challenging real world problem: transferring the knowledge from the fine-tuned Food-101 model to a target set, Food-256 dataset. To make the experiment more practical, we limit the number of samples per category from Food-256 for training, because if we want to build a our own model using deep CNN for a specific task, the resource is always limited and it is exhausted to collect hundreds of labeled images for each category.
 
+\begin{table*}[htbp]
+	\centering
+	\begin{tabular}{|c|cc|cc|}
+		\hline
+		& \multicolumn{2}{c|}{AlexNet} & \multicolumn{2}{c|}{GoogLeNet} \\
+		\hline
+		instances per class & ImageNet  & Food101\_ft    &  ImageNet  & Food101\_ft \\ \hline
+		20    & 68.80  & {75.12} & 74.54 & {77.77} \\
+		30    & 73.15 & {77.02} & 79.21 & {81.06} \\
+		40    & 76.04 & {80.23} & 81.76 & {83.52} \\
+		50    & 78.90  & {81.66} & 84.22 & {85.84} \\
+		all    & 85.59 &  {87.21} & {90.66 }&   {90.65}     \\
+		\hline
+	\end{tabular}%
+	\caption{Top5 Accuracy for transferring from Food101 to subset of Food256 in percent}
+	\label{tab:cross}%
+\end{table*}%
+
 The Food-101 and Food-256 datasets share about 46 categories of food even though the images in the same category may vary across these two datasets. The types of food in Food-101 are mainly western style while most types of food in Food-256 are typical Asian foods. We compare the top-5 accuracy trained from different size of subset for Food-256 on different pre-trained model and the results are shown in Table \ref{tab:cross}.
 %The ImageNet columns denote  the pre-trained model trained only on ImageNet images and the Food101\_ft columns denote the pre-trained model trained on ImageNet images and then fine-tuned on Food-101.
 The ImageNet columns denote using the model pre-trained from ImageNet dataset as the pre-trained model and Food101\_ft columns denote using the fine-tuned Food-101 model (the same one in Table \ref{tab:ft}) as the pre-trained model.
 
 From the result of Table \ref{tab:cross} we can see that, with this further transfer learning, both CNNs can achieve around 95\% of the accuracy trained on full dataset while just utilizing about half of them (50 per class, 12800 of 25361 images). This indicates that when there is not enough labeled data, with its strong generalization ability, deep CNN trained from general task can still achieve satisfying result and perform even better when an additional relevant dataset is involved. This encouraging result may attract more people to use deep CNN for their specific task and continue to explore the potential of the existing architecture as well as designing new ones.
 
-\begin{table*}[htbp]
-  \centering
-  \caption{Top5 Accuracy for transferring from Food101 to subset of Food256 in percent}
-    \begin{tabular}{|c|cc|cc|}
-    \hline
-          & \multicolumn{2}{c|}{AlexNet} & \multicolumn{2}{c|}{GoogLeNet} \\
-    \hline
-    instances per class & ImageNet  & Food101\_ft    &  ImageNet  & Food101\_ft \\ \hline
-    20    & 68.80  & {75.12} & 74.54 & {77.77} \\
-    30    & 73.15 & {77.02} & 79.21 & {81.06} \\
-    40    & 76.04 & {80.23} & 81.76 & {83.52} \\
-    50    & 78.90  & {81.66} & 84.22 & {85.84} \\
-    all    & 85.59 &  {87.21} & {90.66 }&   {90.65}     \\
-    \hline
-    \end{tabular}%
-  \label{tab:cross}%
-\end{table*}%
 

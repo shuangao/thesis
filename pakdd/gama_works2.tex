@@ -1,0 +1,17 @@
+As we focus on the model transfer approach under the HTL setting, in this section, we review some important methods using this approach.
+A model transfer approach assumes that the parameters of the model for the source task can be transferred to the target task. Two types of learning methods are generally used for model knowledge transfer, generative probabilistic method and max margin method.
+ 
+%Previous work \cite{davis2009deep,wang2014active,zhou2014multi} has used the generative probabilistic method. 
+Generative probabilistic method can predict the target domain by combining the source distribution to generate a posterior distribution. Li et al \cite{fei2006one} used Bayesian transfer
+learning approach to learn the common prior for object recognition. 
+Davis et al.\cite{davis2009deep} used an approach based on a form of second-order Markov logic to compensate for the domain shift.
+Wang et al.\cite{wang2014active} proposed a method to change the marginal and conditional distributions smoothly to transfer the knowledge between tasks. 
+
+Alternatively, max margin methods try to use the hyperplane parameter to transfer the knowledge between source and target domains.
+Yang et al.\cite{yang2007cross} proposed Adaptive SVMs transferring parameters by incorporating the auxiliary classifier trained from the source domain. 
+In addition to Yang's work, Ayatar et al.\cite{aytar2011tabula} proposed PMT-SVM that can determine the transfer regularizer automatically according to the target data. 
+Tommasi et al.\cite{tommasi2014learning} proposed Multi-KT that can utilize the parameters from multiple source models for the target classes .
+Kuzborskij et al.\cite{kuzborskij2013n} proposed a similar method to learn new categories by leveraging the known source models.
+Luo et al.\cite{jie2011multiclass} proposed MKTL and used feature augmentation method to leverage the source model.
+
+Our work corresponds to the context above. In this paper, we propose EMTLe based on the model transfer approach. Specifically, we focus on how to exploit the knowledge from the predictions of the source models.

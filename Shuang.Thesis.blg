@@ -1,9 +1,20 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Shuang.Thesis.aux
 A level-1 auxiliary file: introduction/total.aux
 A level-1 auxiliary file: relatedwork/total.aux
-A level-1 auxiliary file: transfer/total.aux
+A level-1 auxiliary file: cnn/total.aux
+A level-1 auxiliary file: pakdd/total.aux
+A level-1 auxiliary file: aaai/total.aux
 The style file: plain.bst
 A level-1 auxiliary file: appendix/appendixa.aux
 Database file #1: research.bib
+A bad cross reference---entry "KrizhevskyNIPS12"
+refers to entry "DBLP:conf/nips/2012", which doesn't exist
+Warning--I didn't find a database entry for "Pedregosa16"
+Warning--I didn't find a database entry for "maclaurin2015gradient"
+Warning--I didn't find a database entry for "DBLP:conf/nips/2012"
+Warning--empty booktitle in duan2012visual
+Warning--can't use both volume and number fields in duan2012visual
+Warning--there's a number but no volume in ikeda1976sequential
 Warning--empty journal in platt1998sequential
-(There was 1 warning)
+Warning--empty journal in rosenblatt1962principles
+(There was 1 error message)

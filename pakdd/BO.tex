@@ -1,0 +1,64 @@
+As we discussed before, the transfer parameter in Eq. \eqref{eq:low_opt} is a hyperparameter that cannot be solved directly. 
+Here we use bi-level optimization (\textbf{BO})\cite{Pedregosa16}, a popular method that is used in hyperparameter optimization to estimate the transfer parameter. In BO, the low-level optimization problem is to learn the target model and the high-level problem is another cross-validation (CV) hyperparameter optimization problem corresponding to the model learned at the low-level.
+%In this paper, we use the leave-one-out cross-validation (LOOCV) in the high-level optimization problem. Previous research \cite{kuzborskij2013stability} suggests that LOOCV can increase the robustness of the estimated hyperparameter especially on small dataset. 
+Suppose we use K-fold CV on the high-level problem. For the $i$-th fold CV, the target set $D$ is split into training set $D_i^{tr}$ and validation set $D_i^{val}$. The transfer parameter can be optimized with the following BO function:
+\begin{equation}\label{eq:BO}
+\begin{aligned}
+\text{High level}\qquad&\beta=\underset{\beta}{\arg \min}\sum_i^K\mathcal{L}(f^{i}(\beta)|D_i^{val})\\
+\text{Low level}\qquad&f^{i}(\beta)=\underset{f \in \mathcal{F}}{\arg \min}\ell\left(f+\beta f'|D_i^{tr},\beta\right) 
+\end{aligned}
+\end{equation} 
+Here, $\ell(\cdot,\cdot)$ and $\mathcal{L}(\cdot,\cdot)$ are our low-level and high-level objective functions respectively. We can use any convex loss functions in Eq.\eqref{eq:BO} for optimization (e.g. SVM objective function). In this paper, we use the leave-one-out cross-validation (\textbf{LOOCV}) in the high-level problem. Previous research \cite{kuzborskij2013stability} suggests that LOOCV can increase the robustness of the estimated hyperparameter especially on the small dataset.
+In previous studies\cite{maclaurin2015gradient,Pedregosa16}, BO is a non-convex problem and can only obtain the approximate solution. However, we will show that problem \eqref{eq:BO} is strongly convex and we are able to obtain its optimal solution. 
+\subsection{Low-level optimization problem}
+To better illustrate our learning scenario, we define our learning process as follows. Suppose we have $N$ visual categories and 
+can obtain $N$ source binary classifiers $f'=\{f'_1,...,f'_N\}$ from the source domain. We want to train a target function $f$ consisting of $N$ binary classifiers $f=\{f_1,...,f_N\}$ using the target training set $D$ and the source models $f'$.
+Specifically, in our BO problem Eq. \eqref{eq:BO}, for the low-level optimization, we consider the scenario where we have to train $N$ binary linear target models $f_i = w_ix+b_i$ so that for any $\{x_i,y_i\}_{i=1}^l \in D$, the adjusted result satisfies $f(x)+f'(x)\beta = y$. Let $D^{\backslash i} = D\backslash\{x_i,y_i\}$.
+Then, we use mean square loss in the low-level objective function to optimize each target model $f_n$ with any given transfer parameter $\beta$:
+\begin{equation}\label{eq:bo_low}
+\begin{aligned}
+\text{Low-level:}\quad&f^{\backslash i}(\beta) : \underset{w,b}{\min} \sum_n^N\frac{1}{2}||w_n||^2+\frac{C}{2}\sum_je^2_{jn}\\
+%\left(Y_{jn}-f_n(x_j)-\beta_n f_n'(x_j)\right)^2\\
+\text{s.t.} &\qquad f_n(x) = w_nx+b_n; \quad x_j \in D^{\backslash i}\\
+&\qquad e_{jn} = Y_{jn}-f_n(x_j)-\beta_n f_n'(x_j)
+\end{aligned}
+\end{equation}
+Here, $Y$ is an encoded matrix of $y$ using the one-hot strategy where $Y_{in} =1$ if $y_i=n$ and 0 otherwise.
+
+The reason why we use the objective function \eqref{eq:bo_low} is that it can provide an unbiased closed form Leave-one-out error estimation for each binary model $f_n$\cite{cawley2006leave}. As a result, the high-level problem becomes a convex problem and we are able to estimate our transfer parameter easier.
+
+Let $K(X,X)$ be the kernel matrix and $C$ be the penalty parameter in Eq.\eqref{eq:bo_low}. We have:
+\begin{equation}\label{eq:linear}
+\psi=\left[ 
+{K(X,X) + \frac{1}{C}{\rm{I}}} \right]
+\end{equation}
+Let $\psi^{-1}$ be the inverse of matrix $\psi$ and  $\psi_{ii}^{-1}$ is the $ith$ diagonal element of $\psi^{-1}$. $\hat{Y}_{in}$, the LOO estimation of binary model $f^{\backslash i}_n$ for sample $x_i$, can be written as\cite{cawley2006leave}:
+\begin{equation} \label{eq:loo}
+{\hat Y_{in}} = {Y_{in}} - \frac{{{\alpha _{in}}}}{{\psi_{ii}^{ - 1}}}\quad {\text{for}}\quad n = 1,...,N
+\end{equation}
+where the matrix $\boldsymbol{\alpha}=\{\alpha_{in}|i=1,...l;n=1,...,N\}$ can be calculated as:
+\begin{equation}
+\boldsymbol{\alpha} =\psi^{-1} Y - \psi^{-1} f'(X)diag(\boldsymbol{\beta})
+\end{equation}
+
+\subsection{High-level optimization problem} 
+For the high level optimization problem, we use multi-class hinge loss \cite{crammer2002algorithmic} with $\ell_2$ penalty in our objective function.
+\begin{equation}\label{eq:bo_high}
+\begin{aligned}
+\text{High-level:}\quad&\beta: \min \frac{{{\lambda}}}{2}\sum\limits_{n}^N {{{\left\| {{\beta _n}} \right\|}^2}}  +
+\sum_i\xi_i\\
+ %\sum\limits_{i,n}\left[ {1 - {\varepsilon _{n{y_i}}} + {{\hat Y}_{in}} - {{\hat Y}_{i{y_i}}} - {\xi _i}} \right]\\
+\text{s.t.} \qquad& 1 - {\varepsilon _{n{y_i}}} + {\hat Y_{in}} - {\hat Y_{i{y_i}}} \le {\xi_i}
+\end{aligned}
+\end{equation}
+Here, $\varepsilon _{n{y_i}}=1$ if $n=y_i$ otherwise 0.
+$\lambda$ is used to balance the $\ell_2$ penalty and our multi-class hinge loss. 
+Compared to the previous work \cite{kuzborskij2013n,tommasi2014learning} which uses the multi-class hinge loss without the $\ell_2$ penalty, there are two main advantages for our high-level objective function: 
+\begin{enumerate}
+	\item When the training set is small, our LOOCV estimation could have a large variance. It is important to add the $\ell_2$ penalty to {reduce the variance and improve the generalization ability of the estimated transfer parameter}.
+	\item It is clear that $\hat{Y}$ is a linear function w.r.t. $\beta$. With the $\ell_2$ penalty, the high-level optimization problem \eqref{eq:bo_high} becomes a strongly convex optimization problem w.r.t. the transfer parameter $\beta$.Therefore, we can obtain an $O({\log(t)}/{t})$ optimal solution with $t$ iterations using Algorithm \ref{alg:1} (see proof of Theorem \ref{th:1} in Appendix).
+\end{enumerate}
+
+
+
+\input{pakdd/agl1.tex} 
