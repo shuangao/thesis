@@ -1,16 +1,39 @@
-In this section, we discuss several major challenges that we may encounter when solving the learning self-defined category problem.
-To solve the learning self-defined category problem, there are the following major problems:
-\begin{enumerate}
-	\item What's the classifier and parameter we should use to train the model that can transfer the knowledge from the source data effectively?
-	\item How are the knowledges transferred from the source task to target one and control the amount of the knowledge that should be transferred? 
-	\item How to guarantee the result of transfer model? 
-\end{enumerate}
+In this section, we discuss the challenges that we may encounter when we can only access the source model. Then we demonstrate the learning scenarios and proposed solutions in this thesis.
 
-The first challenge is to determine the classifier we use for the source data as well as the target data. There are two criterion for us to choose the classifier: (1) This classifier should be popular and has been used in many tasks. We would expect our method to be general enough and can be applied to many different scenarios. (2) Because we can only access the trained source model, this source model should be able to restore as much information as its training data to make sure that there is enough knowledge to be leveraged for the transferred model.  
-%Therefore, in this thesis we choose \textbf{S}upport \textbf{V}ector \textbf{M}achines (SVM) as the classifier to train the source model as well as the target one. \cite{cristianini2000introduction}. SVM has been widely used in various of machine learning and image recognition tasks due to its performance and generalization ability. Another advantage of using SVM as the classifier is that a SVM model can provide as much information as its train data \hl{(we will discuss it later!!!!)}.
-Then we have to choose the parameters of the model to be used for transfer learning. As we discussed above, the parameter should be informative enough to represent the source data. 
-%In this thesis, we choose the hyperplane parameter $W$ of the SVM model as the transfer parameter.
+\subsection{Two Transfer Learning Scenarios}
+In this thesis, we mainly focus on two transfer learning scenarios: inductive transfer learning for new classes and domain adaptation. The definition of the two scenarios is as follows:
+\begin{definition}{\textbf{Inductive Transfer Learning}}\cite{pan2010survey}
+	Given a source domain $D_s$ and the source learning task $T_s$, a target domian $D_s$ and the target learning task $D_t$, inductive transfer learning aims to help improve the learning of the target task function $f_t(\cdot)$ in $D_t$ using the knowledge from $D_s$ and $D_s$ where $D_s \neq D_t$.
+\end{definition}
+\begin{definition}{\textbf{Domain Adaptation}}
+	Let $X$ be the input space and $Y$ be output space. Given the source domain $D_s$ and the target learning task $D_t$ with marginal distribution $P(X_s)$ and $P(X_t)$, we assume that $D_s$ and $D_t$ share the same conditional distribution $P(Y|X)$. The goal of Domain Adaptation is to learn the $P(X_t|Y_t)$ for the target task with the help of $D_s$.
+\end{definition}
+The major difference between the two transfer learning scenarios is that in inductive transfer learning, the source and target tasks are two different but related tasks while in domain adaptation, the source and target tasks are the same task but with different marginal distributions. 
 
-The second challenge of out problem is to determine the way of the knowledge transferred from source model to target one. To learn a new category by transfer learning, according to our human experience, we would firstly select several known categories that are similar to the new one and then describe the new category as a combination of these known ones (see figure \ref{fig:intro:multi}). It is worthy to note that despite of the knowledge from the source models, we will also extract some new knowledge from the examples of the new category. This indicates that how to combine those knowledge from learned categories (e.g. the parameters of the source models) and the knowledge from the new category is the key for our task. 
+\begin{figure}[h]
+	\centering
+	\subfloat[Domain Adaptation]{\includegraphics[scale=.4]{introduction/fig/da.png}}
+	\qquad
+	\subfloat[Inductive transfer learning the new class]{\includegraphics[scale=.33]{introduction/fig/ind.png}}
+	\caption{Difference between two transfer learning scenarios}\label{fig:intro:cmp}
+\end{figure}
 
-The last challenge is to guarantee the performance of our transfer method. A baseline criterion is that after leveraging the knowledge from the source model, the performance of the transfer model to distinguish the self-defined categories will be improved or at least won't get worse when there is little useful knowledge in the source model. This is an important criterion for transfer learning. We should always expect to leverage knowledge of the source model to help training the target model. However, inappropriately leveraging the knowledge of the source models would decrease the performance of the target model. For example, we could never expect to obtain a good model to distinguish apple and other fruits by relying too much on the knowledge of distinguishing human and animal.
+\subsection{Challenges}
+Despite for the general challenges in transfer learning, in our HTL settings, there are some new challenges to be solved in this thesis.
+
+The first challenge is what is the source knowledge when we are not able to access to the source data. When source data is accessible, the source knowledge is relatively explicit and we can easily obtain the source knowledge by either analyzing the source data distribution or make use of the source data to help training the target mode. The knowledge of the source domain is implicit and encoded in the source model using certain learning algorithms. How to effectively extract the source knowledge from the models is challenging.
+
+The second challenge is how we can use the source knowledge to help training the target model. As the source knowledge is implicit, how to combine it with the target domain to improve the performance of the target model is also important. We wish that the source knowledge extracted from the source model should be as general as possible so that it can fit different learning algorithms that are used to train the target model. 
+
+The last challenge is to guarantee the performance of our transfer method. 
+Humans appear to have mechanisms for deciding when to transfer information, selecting appropriate sources of knowledge, and determining the appropriate level of abstraction \cite{torrey2009transfer}. 
+A basic criterion for the knowledge transfer process is that leveraging the knowledge from the source model should not hurt the performance of the target model. Negative transfer \cite{pan2010survey} happens when the performance of target model degrades after receiving the knowledge from the source domain and how to avoid negative transfer is still an open question to all transfer learning researchers. The absence of the source data makes the situation more complicated.
+
+\subsection{Proposed Methods}
+There are 3 methods proposed in this thesis, one in inductive transfer learning for new classes and two methods in domain adaptation.
+
+In chapter \ref{sec:cnn}, we use the deep neural network to solve the transfer learning problem for food recognition. We use GoogLeNet trained from ImageNet of 1000 classes as our source model and two food databases as our target task, containing 101 classes and 265 classes respectively. We use the parameters in the original GoogLeNet as a prior and fine-tune it on our target task to achieve the improved performance.
+
+In chapter \ref{sec:pakdd}, we extend the previous methods in HTL which are limited to using SVMs as the source model and propose a novel method \textbf{Effective Multi-class Transfer Learning} (EMTLe) for supervised domain adaptation. We use the output of the source model as the auxiliary bias to adjust the target model. Therefore, EMTLe can leverage the source model from any source classifier that can generate predict class probability.
+
+In chapter \ref{sec:aaai}, we investigate the problem of semi-supervised domain adaptation and propose a novel framework \textbf{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively transfer the knowledge from the source model under the semi-supervised domain adaptation scenario. 

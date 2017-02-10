@@ -1,6 +1,13 @@
 As we discussed before, the transfer parameter in Eq. \eqref{eq:low_opt} is a hyperparameter that cannot be solved directly. 
 Here we use bi-level optimization (\textbf{BO})\cite{Pedregosa16}, a popular method that is used in hyperparameter optimization to estimate the transfer parameter. In BO, the low-level optimization problem is to learn the target model and the high-level problem is another cross-validation (CV) hyperparameter optimization problem corresponding to the model learned at the low-level.
-%In this paper, we use the leave-one-out cross-validation (LOOCV) in the high-level optimization problem. Previous research \cite{kuzborskij2013stability} suggests that LOOCV can increase the robustness of the estimated hyperparameter especially on small dataset. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.7]{pakdd/fig/bo.png}
+	\caption{Bi-level Optimization problem for EMTLe.}% $f'$ is a group of binary classifiers $\{f'_1,...,f'_4\}$ for each class and for each source model $f'_n$, we use the weight $\beta_n$ to control the knowledge transferred from this model.}
+	\label{fig:pakdd:bo}
+\end{figure}
+
 Suppose we use K-fold CV on the high-level problem. For the $i$-th fold CV, the target set $D$ is split into training set $D_i^{tr}$ and validation set $D_i^{val}$. The transfer parameter can be optimized with the following BO function:
 \begin{equation}\label{eq:BO}
 \begin{aligned}

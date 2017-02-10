@@ -15,9 +15,9 @@ Another important operation of preprecess is segmentation according to the objec
 The result of preprocess has great impact on the final result of the recognition. Clear and noise free images can make the feature extraction more effective and significantly improve the final classification accuracy.
 
 \subsection{Feature Extraction}
- Feature extraction is a type of dimensionality reduction that efficiently represents interesting parts of an image as a compact feature vector. The feature vector is then used for either training the classifier or recognition. Therefore, feature extraction is the most important part for image recognition. The quality of the features extracted from a image have great impact on the recognition result. There are two major streams for feature extraction: one is the hand engineered method and the other one is representation learning method.
+ Feature extraction is a type of dimensionality reduction that efficiently represents interesting parts of an image as a compact feature vector. The feature vector is then used for either training the classifier or recognition. Therefore, feature extraction is the most important part for image recognition. The quality of the features extracted from a image have great impact on the recognition result. There are two major streams for feature extraction: the hand engineered method and representation learning method.
 \subsubsection{Hand Engineered Feature}
-Hand engineered features are low level and local features.
+Hand engineered features are typically low level and local features.
 Low level features are extracted according to some optical properties of an image. These features are low level / local features. There is a widely agreement that local features are an efficient tool for object representation due to their robustness with respect to occlusion and geometrical transformations \cite{van2006coloring}. Common low level hand engineered features include Histogram of Oriented Gradients (HOG) \cite{dalal2005histograms}, Scale Invariant Feature Transform (SIFT) \cite{lowe1999object}, Speeded Up Robust Features (SURF) \cite{bay2006surf}, Local Binary Patterns (LBP) \cite{ojala2002multiresolution}, and color histograms \cite{birchfield1998elliptical}. Feature descriptors obtain from these low level features refer to a pattern or distinct structure found in an image, such as a point, edge, or small image patch. They are usually associated with an image patch that differs from its immediate surroundings by texture, color, or intensity. What the feature actually represents does not matter, just that it is distinct from its surroundings.
 \begin{figure}[h]
 	\centering
@@ -46,12 +46,10 @@ Convolutional Neural Networks (CNN) is the most popular deep learning model for 
 	\caption{The architecture of ALEXNET (adapted from \cite{krizhevsky2012imagenet}).}\label{fig:intro:alex}
 \end{figure}
 
-
-
-\subsubsection{Classification}
+\subsection{Classification}
 After extracting feature representation from the images, a classifier should be used to train a recognition model as well as for predicting the new coming images. A supervised model is always used for training the recognition model. Discriminative classifier such as Support Vector Machine (SVM) is widely used as the classifier for recognition \cite{cristianini2000introduction}. As we mentioned before, in order to capture different variances of the images for one category, the size of the feature representation for a image is usually very large. In order to avoid overfitting, the size of the training set should be at least the same size of the size of the feature representation as well. Some classifiers such as Bayesian method or decision tree require to consider the correlations between each feature and the class labels and suffer from the large feature dimension. However, Discriminative model are more convenient for training and can be effectively optimized with stochastic gradient descent which is suitable for very large training set \cite{bottou2010large}.
 
-
+In this thesis, we focus on how to transfer the knowledge from the source domain to the target domain. The methods proposed for VTL are mainly focus on the stage of classification, i.e. how to build classifier to leverage the source knowledge when we can only visit the source model.
 
 
 

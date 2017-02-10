@@ -1,22 +1,23 @@
-In our scenario, we have to face the problem of image recognition. Due to the large dimension of the feature representation for each image as well as the size of training image, manual classification is hopeless. As we mentioned in Section \ref{sec:intro:over}, there should always be a recognition model to distinguish the objects from different categories automatically trained by supervised learning. 
+In our scenario, we have to face the problem of image recognition. Due to the large dimension of the feature representation for each image as well as the size of training image, manual classification is hopeless. As we mentioned in Section \ref{sec:intro:over}, a recognition model is used to distinguish the objects from different categories automatically trained by supervised learning. In this section, we introduce the classifiers we used in this thesis.
 
-In supervised image recognition, we train a recognition model from a set of training images along with their labels provided. The labels are predefined in a category space. Thus, the task of image recognition is to classify each image as one predefined category. If there are only two categories, this recognition task is called binary classification. For the task recognizing the objects from more than two categories, the recognition task is called multi-class recognition \cite{aytar2011tabula} \cite{krizhevsky2012imagenet}.  
+\subsection{Binary Classification and Multi-class Classification}
 
-Here, we give a formal definition of the scenario of binary classification and for multi-class scenario, we can decompose the multi-class learning task into a set of binary scenarios by training a binary classifier for each class, e.g. One-VS-Rest strategy (see figure \ref{fig:related:ovsa})\cite{rifkin2004defense} \cite{tsoumakas2006multi}.
+In image recognition, we train a recognition model from a set of training images along with their labels provided. The labels are predefined in a category space. Thus, the task of image recognition is to classify each image as one predefined category. If there are only two categories, this recognition task is called binary classification. For the task recognizing the objects from more than two categories, the recognition task is called multi-class classification \cite{aytar2011tabula} \cite{krizhevsky2012imagenet}.  
+
+Here, we give a formal definition of the scenario for binary and multi-class classification. Generally, we can decompose the multi-class learning task into a set of binary scenarios by training a binary classifier for each class, e.g. One-VS-Rest strategy (see figure \ref{fig:related:ovsa})\cite{rifkin2004defense} \cite{tsoumakas2006multi}.
 
 The binary scenario for classification can be defined as follow: given a dataset from domain $\mathcal{X} \times \mathcal{Y}$ where $\mathcal{X}$ is the input feature representation and $\mathcal{Y}$ is the binary label set $\{1,-1\}$ (for some classifier, $\{1,0\}$ is also used). We usually use the label $1$ to denote the examples belong to one certain category and -1 to denote examples not belong to that category. 
 We assume that the training image set $D_{train}=\{(x_i,y_i)\} \subset \mathcal{X} \times \mathcal{Y}$ and the test image set $D_{test}=\{(x^t_i,y^t_i)\}\subset \mathcal{X} \times \mathcal{Y}$ are given and separated from each other. Each pair $(x_i,y_i)$ denotes the input feature representation $x_i$ and its corresponding label $y_i$ for the $i$\textit{th} image in the both set. Our goal of the classification problem is to learn a decision function $f:\mathcal{X} \rightarrow \mathcal{Y}$ from the training set $D_{train}$ such that $f$ can achieve good performance on both $D_{train}$ and $D_{test}$. 
 
-\hl{In the next subsection, we first review.....}
 \begin{figure}
 	\centering
 	\includegraphics[scale=.8]{relatedwork/fig/ovsa.png}
 	\caption{One-vs-Rest strategy for multi-class scenario. A three classes problem can be decomposed into 3 binary classification sub-problems.}\label{fig:related:ovsa}
 \end{figure}
-\subsection{Linear Method: Softmax Classifier}
-\hl{In this subsection, we will introduce a widely used linear classifier softmax classifier. Linear classifier is commonly used as the classification model for image recognition. A linear classifier achieves this by making a classification decision based on the value of a linear combination of the input feature representations of a image. A linear classifier consists of two parts: a score function and a loss function. The score function maps the input data into the class scores and the loss function that quantifies the agreement between the predicted scores and the ground truth labels. Linear classifier often work very well when the number of dimensions of the input is large. Therefore, it is widely used as the classifier for image recognition.} 
+\subsection{Softmax Classifier}
+In this subsection, we will introduce a widely used linear classifier \textbf{Softmax classifier} in image recognition. Linear classifier is commonly used as the classification model for image recognition. Linear classifier achieves this by making a classification decision based on the value of a linear combination of the input feature representations of a image. A linear classifier consists of two parts: a score function and a loss function. The score function maps the input data into the class scores and the loss function that quantifies the agreement between the predicted scores and the ground truth labels. Linear classifier often works very well when the number of dimensions of the input is large. Therefore, it is widely used as the classifier for image recognition, especially as the classifier for Convolutional Nueral Networks \cite{lecun1989backpropagation}. 
 
-Softmax classifier is widely used for image classification especially on Neural Networks and Convolutional Neural Networks \cite{lecun1989backpropagation}.
+Typically, Softmax classifier is widely used for multi-class image classification.
 Softmax classifier (also called multinomial logistic regression) is a generational form of logistic regression for the multi-class scenario. As logistic regression can only handle the binary classification scenario, Softmax classifier adapts the one-vs-rest strategy where several logistic regression models are trained for each class. 
 
 Given a training set $\{(x_1,y_1),(x_2,y_2),...,(x_m,y_m)\}$, we assume the label $y_i \in \{1,0\}$ and the input feature $x_i \in \mathcal{R}^n$. For each binary logistic regression model, The score function takes the form:
@@ -28,7 +29,7 @@ and the parameters $w$ are optimized to minimize the following loss function:
 	l(w) =  - [\sum\limits_{i = 1}^m {{y_i}\log {f_w}({x_i}) + (1 - {y_i})} \log (1 - {f_w}({x_i}))]\label{eq:logistic:loss}
 \end{equation}
 
-For softmax classifier, it is used to handle the multi-class classification problem and suppose there are $N$ classes. Therefore, $y$ can take from $N$ different values $\{1,2,3,...,N\}$ instead of just two. For a given test example $x$, the score function estimate the probability $P(y=n|x)$ for each value of $n = 1,2,3,...,N$, i.e. estimate the probability that each score assigns the input $x$ to the $N$ classes associated to the $N$ different possible values. Thus, the score function will output a $N$-dimensional vector providing $N$ estimated probabilities whose sum of elements is 1. The $N$ dimensional output of the score function can be generated according to the following form:
+For Softmax classifier, it is used to handle the multi-class classification problem and suppose there are $N$ classes. Therefore, $y$ can take from $N$ different values $\{1,2,3,...,N\}$ instead of just two. For a given test example $x$, the score function estimate the probability $P(y=n|x)$ for each value of $n = 1,2,3,...,N$, i.e. estimate the probability that each score assigns the input $x$ to the $N$ classes associated to the $N$ different possible values. Thus, the score function will output a $N$-dimensional vector providing $N$ estimated probabilities whose sum of elements is 1. The $N$ dimensional output of the score function can be generated according to the following form:
 \begin{equation}
 {f_w}\left( x \right) = \left[ \begin{array}{l}
 P\left( {y = 1|x;w} \right)\\
@@ -42,9 +43,9 @@ P\left( {y = n|x;w} \right)
 \exp \left( {{w^{(N)T}}x} \right)
 \end{array} \right]
 \end{equation}
-Here $w^{(1)T},w^{({2})T},...,w^{({N})T}$ are the parameters of the softmax classifier model. The term $\frac{1}{{\sum\nolimits_{j = 1}^N {\exp \left( {{w^{(j)T}}x} \right)} }}$ is called the normalization term so that the $N$ distributions sum to 1.
+Here $w^{(1)T},w^{({2})T},...,w^{({N})T}$ are the parameters of the Softmax classifier model. The term $\frac{1}{{\sum\nolimits_{j = 1}^N {\exp \left( {{w^{(j)T}}x} \right)} }}$ is called the normalization term so that the $N$ distributions sum to 1.
 
-To optimize the parameters $w^{(1)T},w^{({2})T},...,w^{({N})T}$, the cross-entropy loss used for the softmax classifier is defined as:
+To optimize the parameters $w^{(1)T},w^{({2})T},...,w^{({N})T}$, the cross-entropy loss used for the Softmax classifier is defined as:
 \begin{equation}
 J(w) =  - \left[ {\sum\limits_{i = 1}^l {\sum\limits_{k = 1}^N {\ell\left\{ {{y_i} = k} \right\}\log \frac{{\exp \left( {{w^{(k)T}}x_i} \right)}}{{\sum\nolimits_{j = 1}^N {\exp \left( {{w^{(j)T}}x_i} \right)} }}} } } \right] \label{eq:softmax:loss}
 \end{equation}
@@ -62,8 +63,8 @@ The minimum of $J(w)$ can be obtained by gradient descent method while taking th
 \nabla J({w^{(n)}}) =  - \sum\limits_{i = 1}^l {\left[ {{x_i}\left( {\ell \left\{ {{y_i} = n} \right\} - \frac{{\exp \left( {{w^{(k)T}}x_i} \right)}}{{\sum\nolimits_{j = 1}^N {\exp \left( {{w^{(j)T}}x_i} \right)} }}} \right)} \right]} 
 \end{equation}
 
-\subsection{Kernel Method: Support Vector Machines}
-In this subsection, we will review another widely used discriminant classifier, Support Vector Machine (SVM) \cite{cristianini2000introduction}. SVM is another classifier that has been adoptive in many image recognition tasks \cite{coates2011analysis} \cite{schuldt2004recognizing} \cite{yang2009linear}. In this thesis, we also use a classifier based on SVM. We will give a detailed description of SVM. 
+\subsection{Support Vector Machines}
+In this subsection, we will review another widely used discriminant classifier, \textbf{Support Vector Machine} (SVM) \cite{cristianini2000introduction}. SVM is another classifier that has been adoptive in many image recognition tasks \cite{coates2011analysis} \cite{schuldt2004recognizing} \cite{yang2009linear}. In this thesis, we also use a classifier based on SVM. We will give a detailed description of SVM. 
 
 As we mentioned before, the linear classifier consists of two parts: the score function and loss function. SVM classifier can be divided into two categories based on their score function: linear SVM that uses a linear discriminant function and kernel SVM that uses kernel function. Kernel SVM can be considered as a extension version of linear SVM where kernels are used for calculate the scores of the inputs. Another difference for between linear and kernel SVM is linear SVM can be solved on the primal problem while kernel SVM is mostly optimized on its dual \cite{cristianini2000introduction} \cite{shalev2011pegasos}.
 
@@ -152,4 +153,3 @@ There are several advantages of using SVM as the classifier:
 	\item \textbf{Unique solution.} The objective function of SVM is  convex. Compared to other methods, such as Neural Networks, which are non-convex and have many local minima, SVM can deliver a unique solution for any given training set and can be solved with efficient methods, like sub-SGD \cite{shalev2011pegasos} or SMO \cite{platt1998sequential}. 
 \end{itemize}
 
-To summarize, in this section, we have briefly reviewed 2 types of classifier for image recognition, namely softmax classifier and SVM. Softmax classifier is typically used as the last layer of deep neural network. SVM is a more general method method for classification task. Moreover, The generalization ability of SVM classifier can reduce the bias from the training data. Therefore, in our work, we choose SVM as our classifier for image recognition.

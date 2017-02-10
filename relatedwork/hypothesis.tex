@@ -1,6 +1,6 @@
 In this part, We will introduce the framework of \textbf{Hypothesis Transfer Learning} (HTL). HTL is proposed to effective utilize the source knowledge, especially the source model, while we are not able to visiting the source data. We first introduce the basic principle of LS-SVM. Based on LS-SVM, several transfer methods are introduced, including A-SVM, PMT-SVM, Multi-KT and MULTIpLe. In these methods, the first two can only adopt the knowledge from single source model and the rest can adopt the knowledge from multiple ones.
 
-\textbf{LS-SVM Classifier}
+\subsubsection{LS-SVM Classifier}
 
 Least Square SVM is proposed is least squares versions of support vector machines (SVM), which are a set of related supervised learning methods that analyze data and recognize patterns \cite{suykens1999least}. By replacing the hinge loss in classical SVM with L2 loss, LS-SVM classifier is obtained by reformulating the minimization problem as: 
 \begin{equation}\label{eq:gama:lssvm}
@@ -52,7 +52,7 @@ y\\
 \end{array} \right]
 \end{equation}
 
-\textbf{ASVM \& PMT-SVM}
+\subsubsection{ASVM \& PMT-SVM}
 
 Adaptive SVM (ASVM) is the first work using LS-SVM for transfer learning for vision related tasks \cite{yang2007adapting}. The goal of ASVM is to minimize the distance between the target hyperplane $w$ and source one $w'$ incorporating with the transfer parameter $\gamma$. The objective function is defined as follow:
 
@@ -69,7 +69,7 @@ Here, $\gamma$ controls the amount of transfer regularization. Intuitively, the 
 {\left\| {w - \gamma w'} \right\|^2} = {\left\| w \right\|^2} - 2\gamma \left\| w \right\|\cos \theta  + {\gamma ^2}
 \end{equation*}
 Where $\theta$ is the angel between $w$ and $w'$. However, the term $-\gamma \left\| w \right\|\cos \theta$ also encourages $||w||$
-to be larger (as this reduces the cost) which prevents margin maximization. Thus $\gamma$, which defines the amount of transfer regularization, becomes a tradeoff parameter between margin maximization and knowledge transfer.
+to be larger (as this reduces the cost) which prevents margin maximization. Thus $\gamma$, which defines the amount of transfer regularization, becomes a trade-off parameter between margin maximization and knowledge transfer.
 
 \begin{figure}
 \centering
@@ -131,7 +131,7 @@ To estimate $\beta$, a loss function, similar to hinge loss, is defined as:
 
 Here $|x|_+=max(x,0)$. Intuitively, if $\beta$ is properly set, ${y_i}{{\hat y}_i}$ should be positive for each $i$. However, focusing only on the sign of those quantities would result in a non-convex formulation with many local minima. By adding the $|\cdot|_+$ function, formula \eqref{eq:gama:multib} becomes convex and can be solved by gradient descent method.
 
-\textbf{MULTIpLE}
+\subsubsection{MULTIpLE}
 
 MULticlass Transfer Incremental LEarning (MULTIpLE) focuses on adding a new class to a existing $N$ class source problem while preserving the performance on the old classes \cite{kuzborskij2013n}. To preserving the overall performance of the classifier among $N+1$ classes, MULTIpLE contains two parts: incremental learning for existing $N$ classes and transfer learning for the new class.
 
@@ -155,3 +155,5 @@ Similar like Multi-KT, MULTIpLE uses LOO error in \eqref{eq:gama:loo} to estimat
 \end{aligned}
 \end{equation}
 We can find the optimal $\beta$ with projected subgradient descent \cite{BoydCO}. 
+
+These previous methods provided an approach to transfer the knowledge under the HTL setting. The previous methods try to use the hyperplane parameter as the transferable knowledge and thus limited to leverage the source knowledge from SVMs. In chapter \ref{sec:pakdd} of this thesis, we extend their methods and propose a novel method EMTLe under the HTL setting which can leverage the knowledge from more types of source models. 

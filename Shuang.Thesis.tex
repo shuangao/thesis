@@ -20,6 +20,7 @@
 %%  - \super{...}    supervisor
 %%  - \firstname, \middlename, \lastname... there is additional documentation by the actual fields, so I'll leave it at that
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{4}
 \usepackage{appendix}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -223,7 +224,7 @@
 %\renewcommand{\author}[1]{\ifx\empty#1\else\gdef\@author{#1}\fi} 
 \newcommand{\authorname}{{\firstname} {\middlename} {\lastname}}
 \newcommand{\titl}{Visual Transfer Learning in the Absence of the Source Data}
-\newcommand{\spinetitle}{Plib}%only if the above is more than 60 characters
+\newcommand{\spinetitle}{}%only if the above is more than 60 characters
 \newcommand{\thesisformat}{Monograph} %or Integrated Article
 \newcommand{\gyear}{\number\year}
 \newcommand{\makecoauthor}{
@@ -376,7 +377,9 @@ Image recognition has become one of the most popular topics in machine learning.
 In visual transfer learning, the majority of existing methods assume that the source data is freely available and use the source data to measure the discrepancy between the source and target task to help the transfer process. However, in many real applications, source data are often a subject of legal, technical and contractual constraints between data owners and data customers. Beyond privacy and disclosure obligations, customers are often reluctant to share their data. When operating customer care, collected data may include information on recent technical problems which is a highly sensitive topic that companies are not willing to share. This scenario is often called Hypothesis Transfer Learning (HTL) where the source data is absent. Therefore, these previous methods cannot be applied to many real visual transfer learning problems.
 
 In this thesis, we investigate the visual transfer learning problem under the scenario where the source data is absent. Instead of using the source data to measure the discrepancy, we use the source model as the proxy to transfer the knowledge from the source task to the target task. Compared to the original source data, the well-trained source model is usually freely accessible in many tasks and contains equivalent source knowledge as well. Specifically, in this thesis, we investigate the visual transfer learning in both supervised (in chapter 3 \& 4) and semi-supervised learning scenario (in chapter 5).
+
 In chapter 3, we investigate the problem of fine-tuning the deep CNN to learn new food categories using the large ImageNet database as our source. We show that by fine-tuning the parameters of the source model with our target food dataset, we can achieve better performance compared to those previous methods.
+
 In chapter 4, we investigate the visual domain adaptation problem under the setting of Hypothesis Transfer Learning. We propose EMTLe that can effectively transfer the knowledge when the size of the target set is small.  Specifically, EMTLe can effectively transfer the knowledge using the outputs of the source models as the auxiliary bias to adjust the prediction in the target task. Experiment results show that EMTLe can outperform other baselines under the setting of HTL.
 
 In chapter 5, we investigate the semi-supervised domain adaptation scenario under the setting of HTL and propose our framework GDSDA. Specifically, we show that GDSDA can effectively transfer the knowledge using the unlabeled data. Then we propose GDSDA-SVM which uses SVMs as the base classifier in GDSDA. We show that GDSDA-SVM can determine the imitation parameter in GDSDA autonomously. Compared to previous methods, whose imitation parameter can only be determined by either brutal force search or background knowledge, GDSDA-SVM is more effective in real applications.
@@ -413,11 +416,12 @@ To conclude, the main contribution of is that we investigate the visual transfer
 %% "\chapter{ChapterName}".  Note that using "\include" instead of    %%
 %% "\input" makes each chapter start on a new page.                   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{introduction/total}\label{sec:intro}
-\include{relatedwork/total}
-\include{cnn/total}
+%\include{introduction/total}
+%\include{relatedwork/total}
+%\include{cnn/total}
 \include{pakdd/total}
-\include{aaai/total}
+%\include{aaai/total}
+\include{conclusion}
 
 
 

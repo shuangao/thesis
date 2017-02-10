@@ -1,12 +1,16 @@
-\chapter{Learning Food Recognition Model with Deep Representation}
+\chapter{Learning Food Recognition Model with Deep Representation}\label{sec:cnn}
 
 \section{Introduction}
-%\input{cnn/bg}
+\input{cnn/bg}
 
-\section{CNN layers:conv/pool/norm etc}
+\section{Tuning the Deep CNNs}
+\input{cnn/ft}
+
+\section{Layers in Deep CNN}
 \input{cnn/layers}
 \section{Datasets}
 \input{cnn/expsetup}
 \section{Experimental Discuss}
 \input{cnn/discuss.tex}
 \section{Summary}
+In this chapter, we show that fine-tuning GoogLeNet on two food databases can effectively transfer the knowledge from the general image recognition task to some specific recognition tasks. Without using any information of the source data, fine-tuning the deep CNNs on the target data shows impressive results. By comparing the changes of the parameters in each layers, we found that the high-level features can be easily changed while most low-level features are kept in fine-tuning.

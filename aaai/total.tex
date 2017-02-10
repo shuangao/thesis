@@ -1,5 +1,12 @@
-\chapter{Fast Generalized Distillation for Semi-supervised Domain Adaptation}
+\chapter{Fast Generalized Distillation for Semi-supervised Domain Adaptation}\label{sec:aaai}
 \section{Introduction}
+Domain adaptation can be used in many real applications, which addresses the problem of learning a target domain with the help of a different but related source domain. 
+In real applications, it can be very expensive to obtain sufficient labeled examples while there are abundant unlabeled ones. 
+\textit{Semi-supervised domain adaptation} (SDA) tries to exploit the knowledge from the source domain and use a certain amount of unlabeled examples and a few labeled ones from the target domain to learn a target model. Typically, the labeled examples in the target domain are too few to construct a good classifier alone. Therefore, an important issue in SDA is how to effectively utilize the unlabeled examples.
+
+he previous work in SDA requires access to the source data to measure the data distribution mismatch between the source and target domain\cite{duan2009domain,Donahue_2013_CVPR,daume2010frustratingly,yao2015semi}. It is difficult to apply these methods in some real applications where we are not able to access the source data. In this chapter, we try to use the framework of \textit{Generalized Distillation} (\textbf{GD})\cite{lopez2015unifying} to solve the SDA problem. We try to explore these two questions: (1) Why GD can solve the SDA problem? (2) How can we improve its effectiveness when we apply GD to real SDA applications?
+
+To answer these two questions, in this paper, we first propose a new paradigm, called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}), to solve the SDA problem. We show that, with GDSDA the knowledge of the source models can be effectively transferred to the target domain using the unlabeled data. Then we propose a novel imitation parameter estimation method for GDSDA, called GDSDA-SVM for real SDA problems. Experimental results show that GDSDA-SVM can effectively find the optimal imitation parameter and achieve competitive performance compared to methods using brutal force search but with faster speed. 
 
 \section{Previous Work}\label{sec:aaai:work}
 As we use GD to solve SDA problem, we introduce related work in both GD and SDA areas.
@@ -197,7 +204,7 @@ The derivative can be written as:
 		\ENDFOR
 	\end{algorithmic}	
 \end{algorithm}
-We describe GDSDA-SVM in Algorithm \ref{alg:svm}. As the optimization problem \eqref{eq:loo_loss} is strongly convex, it is easy to prove that Algorithm \ref{alg:lambda} can converge to the optimal $\lambda$ with the rate of $O(\log(t)/t)$ where $t$ is the optimization iteration. Due to the space limit, we are not able to provide the proof here. 
+We describe GDSDA-SVM in Algorithm \ref{alg:svm}. As the optimization problem \eqref{eq:loo_loss} is strongly convex, it is easy to prove that Algorithm \ref{alg:lambda} can converge to the optimal $\lambda$ with the rate of $O(\log(t)/t)$ where $t$ is the optimization iteration (see Appendix \ref{app:converg}).
 
 \section{Experiments}\label{sec:aaai:exp}
 In this section, we show the empirical performance of our algorithm GDSDA-SVM on the Office benchmark dataset. Specifically, we provide the empirical results under two transfer scenarios: single source and multi-source transfer scenarios for GDSDA-SVM.
@@ -205,7 +212,7 @@ In this section, we show the empirical performance of our algorithm GDSDA-SVM on
 \textbf{Dataset:}
 We use the domain adaptation benchmark dataset Office as our experiment dataset. 
 There are 3 subsets in Office dataset, Webcam (795 examples), Amazon (2817 examples) and DSLR (498 examples), sharing 31 classes. We denote them as W, A and D respectively. In our experiments, we use DSLR and Webcam as the source domains and Amazon as the target domain.
-We use the features extracted from Alexnet \cite{KrizhevskyNIPS12} FC7 as the input feature for both source and target domain. The source models are trained with multi-layer perception (MLP) on the whole source dataset. 
+We use the features extracted from Alexnet \cite{krizhevsky2012imagenet} FC7 as the input feature for both source and target domain. The source models are trained with multi-layer perception (MLP) on the whole source dataset. 
 
 \subsection{Single Source for Office datasets}
 In this experiment, we compare our algorithm under the scenario where the source model is trained from a single source dataset. Specifically, we have two groups of experiments, transferring from Webcam to Amazon and from DSLR to Amazon. As we mentioned, there are significantly fewer labeled examples than unlabeled ones in real SDA applications.
@@ -247,6 +254,6 @@ We use the similar settings as our single source experiment and perform 2 groups
 From the results, we can see that, given 2 source models, SVM\_Multi can outperform any single source model trained with GDSDA. This indicates GDSDA-SVM can still exploit the knowledge even in the complex multi-source scenario. Even though SVM\_Multi performs slightly worse than the best result found by brutal force search in some experiments, considering their time consumption (GDSDA-SVM is around 30 times faster than brutal force search), SVM\_Multi still has its advantage in real applications.
 
 \section{Summary}\label{sec:aaai:con}
-In this paper, we propose a novel framework called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively leverage the knowledge from the source domain for SDA problem without accessing to the source data. To make GDSDA more effective in real applications, we proposed our method called GDSDA-SVM and show that GDSDA-SVM can effectively determine the imitation parameter for GDSDA. 
+In this chapter, we propose a novel framework called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively leverage the knowledge from the source domain for SDA problem without accessing to the source data. To make GDSDA more effective in real applications, we proposed our method called GDSDA-SVM and show that GDSDA-SVM can effectively determine the imitation parameter for GDSDA. 
 In our future work, we plan to use a more advanced hyperparameter optimization method, which can optimize the imitation parameter $\lambda$ and the temperature $T$ in GDSDA simultaneously, and expect
 further performance improvement 

@@ -1,0 +1,10 @@
+\chapter{Conclusion}
+Large object recognition task can be effectively solved with deep CNNs, but learning from a small size of data is still challenging. Transfer learning becomes a popular way to solve the small data regime by leveraging knowledge from learned tasks. 
+In this thesis, we investigate the visual transfer learning problem in two scenarios under the setting where the source data is absent. Transfer learning under this setting is common and investigating the transfer learning problem in the absence of the source data is meaningful for the practical problems. The main contributions of this thesis are as follows:
+\begin{itemize}
+	\item We first investigated the problem of fine-tuning the deep CNNs for food recognition tasks. We compared the performances of two CNNs architectures and found that GoogLeNet is more suitable as the pre-trained model for transfer learning.
+	\item In chapter \ref{sec:pakdd}, we investigated the supervised domain adaption problem under the HTL setting. We proposed EMTLe that can leverage the knowledge from the source model. Compared to previous methods, EMTLe can better leverage the source knowledge and achieve improved performance.
+	\item In chapter \ref{sec:aaai}, we proposed a framework called GDSDA for semi-supervised domain adaptation, which can leverage the knowledge from the source model in the semi-supervised learning scenario. To make GDSDA more practical, we then proposed GDSDA-SVM as an example that uses SVM as the classifier in GDSDA. Experimental results show that GDSDA can effectively leverage the source knowledge for for semi-supervised domain adaptation problem. 
+\end{itemize}
+
+Visual transfer learning in the absence of the source data is challenging and practical for many real problems. How to better leverage the knowledge from the source data and void negative transfer at the same time is still an open question. In this thesis, we provided a few methods for this problem. Further work can 
