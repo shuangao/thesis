@@ -1,6 +1,16 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Shuang.Thesis.aux
+A level-1 auxiliary file: introduction/total.aux
+A level-1 auxiliary file: relatedwork/total.aux
+A level-1 auxiliary file: cnn/total.aux
 A level-1 auxiliary file: pakdd/total.aux
+A level-1 auxiliary file: aaai/total.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: plain.bst
 A level-1 auxiliary file: appendix/appendixa.aux
 Database file #1: research.bib
+Warning--empty booktitle in duan2012visual
+Warning--can't use both volume and number fields in duan2012visual
+Warning--there's a number but no volume in ikeda1976sequential
+Warning--empty journal in platt1998sequential
+Warning--empty journal in rosenblatt1962principles
+(There were 5 warnings)

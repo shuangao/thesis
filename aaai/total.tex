@@ -4,9 +4,9 @@ Domain adaptation can be used in many real applications, which addresses the pro
 In real applications, it can be very expensive to obtain sufficient labeled examples while there are abundant unlabeled ones. 
 \textit{Semi-supervised domain adaptation} (SDA) tries to exploit the knowledge from the source domain and use a certain amount of unlabeled examples and a few labeled ones from the target domain to learn a target model. Typically, the labeled examples in the target domain are too few to construct a good classifier alone. Therefore, an important issue in SDA is how to effectively utilize the unlabeled examples.
 
-he previous work in SDA requires access to the source data to measure the data distribution mismatch between the source and target domain\cite{duan2009domain,Donahue_2013_CVPR,daume2010frustratingly,yao2015semi}. It is difficult to apply these methods in some real applications where we are not able to access the source data. In this chapter, we try to use the framework of \textit{Generalized Distillation} (\textbf{GD})\cite{lopez2015unifying} to solve the SDA problem. We try to explore these two questions: (1) Why GD can solve the SDA problem? (2) How can we improve its effectiveness when we apply GD to real SDA applications?
+The previous work in SDA requires access to the source data to measure the data distribution mismatch between the source and target domain\cite{duan2009domain,Donahue_2013_CVPR,daume2010frustratingly,yao2015semi}. It is difficult to apply these methods in some real applications where we are not able to access the source data. In this chapter, we try to use the framework of \textit{Generalized Distillation} (\textbf{GD})\cite{lopez2015unifying} to solve the SDA problem. We try to explore these two questions: (1) Why GD can solve the SDA problem? (2) How can we improve its effectiveness when we apply GD to real SDA applications?
 
-To answer these two questions, in this paper, we first propose a new paradigm, called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}), to solve the SDA problem. We show that, with GDSDA the knowledge of the source models can be effectively transferred to the target domain using the unlabeled data. Then we propose a novel imitation parameter estimation method for GDSDA, called GDSDA-SVM for real SDA problems. Experimental results show that GDSDA-SVM can effectively find the optimal imitation parameter and achieve competitive performance compared to methods using brutal force search but with faster speed. 
+To answer these two questions, in this chapter, we first propose a new paradigm, called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}), to solve the SDA problem. We show that, with GDSDA the knowledge of the source models can be effectively transferred to the target domain using the unlabeled data. Then we propose a novel imitation parameter estimation method for GDSDA, called GDSDA-SVM for real SDA problems. Experimental results show that GDSDA-SVM can effectively find the optimal imitation parameter and achieve competitive performance compared to methods using brutal force search but with faster speed. 
 
 \section{Previous Work}\label{sec:aaai:work}
 As we use GD to solve SDA problem, we introduce related work in both GD and SDA areas.
@@ -68,6 +68,16 @@ f_t(\lambda)=&\underset{f_t \in \mathcal{F}}{\arg \min}\frac{1}{L}\sum_{i=1}^{L}
 \text{s.t.} & \qquad \sum_i\lambda_i=1
 \end{aligned}
 \end{equation}
+
+In Figure \ref{fig:aaai:explain} we show an example of how to use GDSDA to train the target model when there is one source model available. The distilled label consists two parts: the label information from the source model and from the ground truth. For each part, we use the imitation parameters to reweigh them. As long as we can find the good imitation parameters, we can successfully label all data and therefore, can build a target model from the target data.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=.7]{aaai/figure/explain.png}
+	\caption{An example of using GDSDA to generate distilled labels for the target data. Here the imitation parameters for source and true labels are 0.8 and 0.2 respectively.}\label{fig:aaai:explain}
+\end{figure}
+
+
 Compared to other studies on SDA where each example of the source domain was used, by either re-weighting \cite{Donahue_2013_CVPR,duan2012visual} or augmentation \cite{daume2010frustratingly}, GDSDA only requires the trained model from the source domain to generate the soft labels. Considering that it is more convenient to access the source model than each of the examples of the source domain, GDSDA can be more useful than those previous methods. For example, if we want to use ImageNet \cite{imagenet_cvpr09} as the source domain, it is almost impossible to access each of the millions of examples while there are many well trained models publicly available online that can be used for GDSDA. Also, GDSDA is able to handle the multi-class scenario while previous methods, such as SHFA\cite{duan2012learning} only solved the binary classification problem of SDA. Moreover, GDSDA is compatible with any type of source model that is able to output the soft label (i.e., the class probabilities).
 
 \subsection{Why does GDSDA work}
@@ -78,10 +88,10 @@ In this section, we demonstrate the scenarios where GDSDA can work. Before we pr
 
 According to the ERM principle\cite{vapnik1999overview}, a simple model has better generalization ability than the complex one, if they both have the same training error.
 As long as the target model $f_t$ can achieve similar training error to that of the source model $f^*$ on the target domain, considering the fact that the VC dimension of $f_t$ is smaller than $f^*$, we can expect that the target model has better generalization ability. This process can be achieved by letting the target model mimick the output of the source model on the training data.
-It is worthy to notice that in this process, the target model only has to mimick the output of the source model (soft label) without considering the hard labels of the examples. In another word, GDSDA provide an effective way to utilize the unlabeled data.
+It is worthy to notice that in this process, the target model only has to mimick the output of the source model (soft label) without considering the true labels of the examples. In another word, GDSDA provide an effective way to utilize the unlabeled data.
 
 Arguably, because of the domain shift, the source model is biased towards the source domain when we apply it to the target task. However, as suggested in \cite{hinton2015distilling}, we can use labeled data from the target domain to compensate for the domain shift and achieve a better performance on the target task with Eq. \eqref{eq:GDDA_abs}. Specifically, we use the imitation parameter $\lambda$ to control the relative importance between the soft label and the hard label, which in turn reflects the similarity between the source and target tasks. 
-For example, in Figure \ref{fig:GDSDA}, when we set $\lambda_2=0$, we actually ignore the knowledge from source domain 1.
+For example, in Figure \ref{fig:aaai:explain}, when we set $\lambda_1=0$, we actually ignore the knowledge from source model and thus can avoid negative transfer if we notice the source knowledge may hurt the transfer process.
 As a result, GDSDA can compensate for the domain shift under the setting of SDA (for more details, please see the experiment section).
 
 \subsection{Key parameter: the imitation parameter}\label{sec:aaai:key}
@@ -254,6 +264,7 @@ We use the similar settings as our single source experiment and perform 2 groups
 From the results, we can see that, given 2 source models, SVM\_Multi can outperform any single source model trained with GDSDA. This indicates GDSDA-SVM can still exploit the knowledge even in the complex multi-source scenario. Even though SVM\_Multi performs slightly worse than the best result found by brutal force search in some experiments, considering their time consumption (GDSDA-SVM is around 30 times faster than brutal force search), SVM\_Multi still has its advantage in real applications.
 
 \section{Summary}\label{sec:aaai:con}
-In this chapter, we propose a novel framework called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively leverage the knowledge from the source domain for SDA problem without accessing to the source data. To make GDSDA more effective in real applications, we proposed our method called GDSDA-SVM and show that GDSDA-SVM can effectively determine the imitation parameter for GDSDA. 
+In this chapter, we propose a novel framework called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively leverage the knowledge from the source domain for SDA problem without accessing to the source data. 
+To make GDSDA more effective in real applications, we proposed our method called GDSDA-SVM and show that GDSDA-SVM can effectively determine the imitation parameter for GDSDA. 
 In our future work, we plan to use a more advanced hyperparameter optimization method, which can optimize the imitation parameter $\lambda$ and the temperature $T$ in GDSDA simultaneously, and expect
-further performance improvement 
+further performance improvement. 
