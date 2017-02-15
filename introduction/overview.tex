@@ -1,5 +1,5 @@
 In this section, we review the major procedures for image recognition. 
-The procedure of the image recognition method consists of three parts: image preprocess, feature extraction and classification.
+A general image recognition method consists of three parts: image preprocess, feature extraction and classification.
 
 \begin{figure}
 	\centering
@@ -7,7 +7,8 @@ The procedure of the image recognition method consists of three parts: image pre
 	\caption{Major procedure for image recognition.}\label{fig:intro:irflow}
 \end{figure}
 \subsection{Preprocess}
-After receiving the raw data of a image from the sensor, preprocess generates a new image from the source image. This new image is similar to the source image, but differs from it considering certain apsects, e.g. the new image has smoother edge, better contrast and less noise. 
+The digital camera can capture the optical property of an object through its optical sensor and generate raw digital data.
+After receiving the raw data of a image from the sensor, preprocess is to generate a new image from the source image. This new image is similar to the source image, but differs from it considering certain apsects, e.g. the new image has smoother edge, better contrast and less noise. 
 Here, some \textit{pixel operations} and \textit{local operations} are used to improve the contrast and remove the noise.  
 
 Another important operation of preprecess is segmentation according to the object, i.e. finding the region of interest. Images used for recognition should be aligned, making the target object appear in the central of the image and remove those irrelevant area.
@@ -28,8 +29,8 @@ These low level features can be used directly for recognition. However, since th
 
 \subsubsection{Representation Learning}
 Representation learning is mainly described by Deep Learning 
-algorithms or Auto Encoders. The ideas is to learn a group of filters that are able to discern one category of images from the another category with some supervised or unsupervised algorithm. 
-Learning representation from an image can start from either low level features (Auto Encoders) or raw pixels of an image (Deep Learning).
+algorithms\cite{krizhevsky2012imagenet} or Auto Encoders\cite{bengio2007scaling}. The ideas is to learn a group of filters that are able to capture various kinds of features to discern one category of images from the another category with some supervised or unsupervised algorithm. Typically in representation learning, features are learned hierarchically from low-level features to high level ones. 
+Learning representation from an image can start from either low level features (Auto Encoders) or raw pixels of an image (Deep Learning). It is generally considered that learning the good feature representations is the most important part in image recognition.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.3]{introduction/fig/sparsecoding.png}
@@ -39,7 +40,7 @@ Learning representation from an image can start from either low level features (
 \textbf{Auto Encoders} are widely used to combine different types of low level feature. The outputs of the Auto Encoders are some latent representations. These latent representations are learned from the given images that have lowest possible reconstruction error. Even though the high level representations from Auto Encoders are learned by minimizing the reconstruction errors, they are still not robust enough to handle all kinds of variance of the objects.
 
 \textbf{Deep Learning} is the most popular approach for learning representations. It has been widely used for all kinds of image recognition tasks and achieved the state-of-the-art performance on some large scale image recognition tasks, such as ILSVRC and The PASCAL Visual Object Classes Challenge (PASCAL VOC). 
-Convolutional Neural Networks (CNN) is the most popular deep learning model for the image recognition tasks. The first deep CNN that had great success on image recognition is the LeNet proposed by Y.LeCan in 1989 \cite{lecun1989backpropagation}. Backpropagation was applied to Convolutional Neural networks with adaptive connections. This combination, incorporating with Max-Pooling and speeding up on graphics cards has become an important part for  many modern, competition-winning, feedforward, visual Deep Learners. 
+Convolutional Neural Networks (CNN) is the most popular deep learning model for the image recognition tasks. The first deep CNN that had great success on image recognition is the LeNet proposed by Y.LeCan in 1989 \cite{lecun1989backpropagation}. Backpropagation was applied to Convolutional Neural networks with adaptive connections. This combination, incorporating with Max-Pooling and speeding up on graphics cards has become an important part for  many modern, competition-winning, feedforward, visual Deep Learners. Deep CNNs have been widely used as the feature extractor for all kinds of images recognition tasks and proven to be the most powerful method for feature extraction.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.3]{introduction/fig/alexnet.png}
