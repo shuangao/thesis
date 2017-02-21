@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{agrawal2014analyzing}
 Pulkit Agrawal, Ross Girshick, and Jitendra Malik.
@@ -24,6 +24,12 @@ Yusuf Aytar and Andrew Zisserman.
 \newblock In {\em Computer Vision (ICCV), 2011 IEEE International Conference
   on}, pages 2252--2259. IEEE, 2011.
 
+\bibitem{ba2014deep}
+Jimmy Ba and Rich Caruana.
+\newblock Do deep nets really need to be deep?
+\newblock In {\em Advances in neural information processing systems}, pages
+  2654--2662, 2014.
+
 \bibitem{bakker2003task}
 Bart Bakker and Tom Heskes.
 \newblock Task clustering and gating for bayesian multitask learning.
@@ -45,6 +51,12 @@ Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and
 \newblock A theory of learning from different domains.
 \newblock {\em Machine learning}, 79(1-2):151--175, 2010.
 
+\bibitem{ben2007analysis}
+Shai Ben-David, John Blitzer, Koby Crammer, Fernando Pereira, et~al.
+\newblock Analysis of representations for domain adaptation.
+\newblock {\em Advances in neural information processing systems}, 19:137,
+  2007.
+
 \bibitem{bengio2007scaling}
 Yoshua Bengio and Yann LeCun.
 \newblock Scaling learning algorithms towards ai.
@@ -62,11 +74,22 @@ Stan Birchfield.
 \newblock In {\em Computer Vision and Pattern Recognition, 1998. Proceedings.
   1998 IEEE Computer Society Conference on}, pages 232--237. IEEE, 1998.
 
+\bibitem{bossard2014food}
+Lukas Bossard, Matthieu Guillaumin, and Luc Van~Gool.
+\newblock Food-101--mining discriminative components with random forests.
+\newblock In {\em Computer Vision--ECCV 2014}, pages 446--461. Springer, 2014.
+
 \bibitem{bottou2010large}
 L{\'e}on Bottou.
 \newblock Large-scale machine learning with stochastic gradient descent.
 \newblock In {\em Proceedings of COMPSTAT'2010}, pages 177--186. Springer,
   2010.
+
+\bibitem{boureau2010theoretical}
+Y-Lan Boureau, Jean Ponce, and Yann LeCun.
+\newblock A theoretical analysis of feature pooling in visual recognition.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 111--118, 2010.
 
 \bibitem{BoydCO}
 Stephen Boyd and Lieven Vandenberghe.
@@ -135,6 +158,32 @@ Hal Daum{\'e}~III.
 \newblock Frustratingly easy domain adaptation.
 \newblock {\em arXiv preprint arXiv:0907.1815}, 2009.
 
+\bibitem{daume2010frustratingly}
+Hal Daum{\'e}~III, Abhishek Kumar, and Avishek Saha.
+\newblock Frustratingly easy semi-supervised domain adaptation.
+\newblock In {\em Proceedings of the 2010 Workshop on Domain Adaptation for
+  Natural Language Processing}, pages 53--59. Association for Computational
+  Linguistics, 2010.
+
+\bibitem{imagenet_cvpr09}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei.
+\newblock {ImageNet: A Large-Scale Hierarchical Image Database}.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2009.
+
+\bibitem{denton2015deep}
+Emily~L Denton, Soumith Chintala, Rob Fergus, et~al.
+\newblock Deep generative image models using a￼ laplacian pyramid of
+  adversarial networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1486--1494, 2015.
+
+\bibitem{Donahue_2013_CVPR}
+Jeff Donahue, Judy Hoffman, Erik Rodner, Kate Saenko, and Trevor Darrell.
+\newblock Semi-supervised domain adaptation with instance constraints.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2013.
+
 \bibitem{duan2009domain}
 Lixin Duan, Ivor~W Tsang, Dong Xu, and Tat-Seng Chua.
 \newblock Domain adaptation from multiple sources via auxiliary classifiers.
@@ -147,6 +196,11 @@ Lixin Duan, Dong Xu, and Ivor~W. Tsang.
 \newblock In {\em Proceedings of the International Conference on Machine
   Learning}, pages 711--718, Edinburgh, Scotland, 2012. Omnipress.
 
+\bibitem{duan2012visual}
+Lixin Duan, Dong Xu, Ivor Wai-Hung Tsang, and Jiebo Luo.
+\newblock Visual event recognition in videos by learning from web data.
+\newblock volume~34, pages 1667--1680. IEEE, 2012.
+
 \bibitem{evgeniou2007multi}
 A~Evgeniou and Massimiliano Pontil.
 \newblock Multi-task feature learning.
@@ -157,6 +211,11 @@ Theodoros Evgeniou and Massimiliano Pontil.
 \newblock Regularized multi--task learning.
 \newblock In {\em Proceedings of the tenth ACM SIGKDD international conference
   on Knowledge discovery and data mining}, pages 109--117. ACM, 2004.
+
+\bibitem{fan2008liblinear}
+Rong-En Fan, Kai-Wei Chang, Cho-Jui Hsieh, Xiang-Rui Wang, and Chih-Jen Lin.
+\newblock Liblinear: A library for large linear classification.
+\newblock {\em Journal of machine learning research}, 9(Aug):1871--1874, 2008.
 
 \bibitem{farabet2013learning}
 Clement Farabet, Camille Couprie, Laurent Najman, and Yann LeCun.
@@ -182,6 +241,13 @@ Kunihiko Fukushima.
   of pattern recognition unaffected by shift in position.
 \newblock {\em Biological cybernetics}, 36(4):193--202, 1980.
 
+\bibitem{glorot2010understanding}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em International conference on artificial intelligence and
+  statistics}, pages 249--256, 2010.
+
 \bibitem{Gupta_2016_CVPR}
 Saurabh Gupta, Judy Hoffman, and Jitendra Malik.
 \newblock Cross modal distillation for supervision transfer.
@@ -192,6 +258,13 @@ Saurabh Gupta, Judy Hoffman, and Jitendra Malik.
 Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
 \newblock Distilling the knowledge in a neural network.
 \newblock {\em NIPS Deep Learning and Representation Learning Workshop}, 2014.
+
+\bibitem{hinton2012improving}
+Geoffrey~E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and
+  Ruslan~R Salakhutdinov.
+\newblock Improving neural networks by preventing co-adaptation of feature
+  detectors.
+\newblock {\em arXiv preprint arXiv:1207.0580}, 2012.
 
 \bibitem{hoffman2013one}
 Judy Hoffman, Eric Tzeng, Jeff Donahue, Yangqing Jia, Kate Saenko, and Trevor
@@ -218,6 +291,19 @@ Alexey~Grigorʹevich Ivakhnenko and Valentin~Grigor{\'e}vich Lapa.
 \newblock {\em Cybernetic predicting devices}.
 \newblock CCM Information Corporation, 1965.
 
+\bibitem{jarrett2009best}
+Kevin Jarrett, Koray Kavukcuoglu, Marc'Aurelio Ranzato, and Yann LeCun.
+\newblock What is the best multi-stage architecture for object recognition?
+\newblock In {\em Computer Vision, 2009 IEEE 12th International Conference on},
+  pages 2146--2153. IEEE, 2009.
+
+\bibitem{jia2014caffe}
+Yangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross
+  Girshick, Sergio Guadarrama, and Trevor Darrell.
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock In {\em Proceedings of the ACM International Conference on
+  Multimedia}, pages 675--678. ACM, 2014.
+
 \bibitem{jiang2007instance}
 Jing Jiang and ChengXiang Zhai.
 \newblock Instance weighting for domain adaptation in nlp.
@@ -235,6 +321,20 @@ S{\o}ren Johansen and Katarina Juselius.
   applications to the demand for money.
 \newblock {\em Oxford Bulletin of Economics and statistics}, 52(2):169--210,
   1990.
+
+\bibitem{kawano14c}
+Y.~Kawano and K.~Yanai.
+\newblock Automatic expansion of a food image dataset leveraging existing
+  categories with domain adaptation.
+\newblock In {\em Proc. of ECCV Workshop on Transferring and Adapting Source
+  Knowledge in Computer Vision (TASK-CV)}, 2014.
+
+\bibitem{Kawano:2014}
+Yoshiyuki Kawano and Keiji Yanai.
+\newblock Foodcam-256: A large-scale real-time mobile food recognitionsystem
+  employing high-dimensional features and compression of classifier weights.
+\newblock In {\em Proceedings of the ACM International Conference on
+  Multimedia}, MM '14, pages 761--762, New York, NY, USA, 2014. ACM.
 
 \bibitem{keerthi2003asymptotic}
 S~Sathiya Keerthi and Chih-Jen Lin.
@@ -302,6 +402,16 @@ Joseph~Jaewhan Lim.
   detection}.
 \newblock PhD thesis, Massachusetts Institute of Technology, 2012.
 
+\bibitem{linNiN}
+Min Lin, Qiang Chen, and Shuicheng Yan.
+\newblock Network in network.
+\newblock {\em CoRR}, abs/1312.4400, 2013.
+
+\bibitem{lopez2015unifying}
+D.~Lopez-Paz, B.~Sch{\"o}lkopf, L.~Bottou, and V.~Vapnik.
+\newblock Unifying distillation and privileged information.
+\newblock In {\em International Conference on Learning Representations}, 2016.
+
 \bibitem{lowe1999object}
 David~G Lowe.
 \newblock Object recognition from local scale-invariant features.
@@ -318,6 +428,13 @@ Ping Luo, Zhenyao Zhu, Ziwei Liu, Xiaogang Wang, and Xiaoou Tang.
 \newblock Face model compression by distilling knowledge from neurons.
 \newblock In {\em Thirtieth AAAI Conference on Artificial Intelligence}, 2016.
 
+\bibitem{maclaurin2015gradient}
+Dougal Maclaurin, David Duvenaud, and Ryan~P Adams.
+\newblock Gradient-based hyperparameter optimization through reversible
+  learning.
+\newblock In {\em Proceedings of the 32nd International Conference on Machine
+  Learning}, 2015.
+
 \bibitem{malmaud2015s}
 Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew
   Rabinovich, and Kevin Murphy.
@@ -332,6 +449,19 @@ Christopher~Poultney Marc'Aurelio~Ranzato, Sumit Chopra, and Yann Lecun.
 \newblock In {\em ADVANCES IN NEURAL INFORMATION PROCESSING SYSTEMS (NIPS
   2006}. Citeseer, 2006.
 
+\bibitem{Motiian_2016_CVPR}
+Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
+\newblock Information bottleneck learning using privileged information for
+  visual recognition.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2016.
+
+\bibitem{nair2010rectified}
+Vinod Nair and Geoffrey~E Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 807--814, 2010.
+
 \bibitem{ojala2002multiresolution}
 Timo Ojala, Matti Pietik{\"a}inen, and Topi M{\"a}enp{\"a}{\"a}.
 \newblock Multiresolution gray-scale and rotation invariant texture
@@ -344,6 +474,13 @@ Sinno~Jialin Pan and Qiang Yang.
 \newblock A survey on transfer learning.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
   22(10):1345--1359, 2010.
+
+\bibitem{Pedregosa16}
+Fabian Pedregosa.
+\newblock Hyperparameter optimization with approximate gradient.
+\newblock In {\em Proceedings of the 33nd International Conference on Machine
+  Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016}, pages
+  737--746, 2016.
 
 \bibitem{platt1998sequential}
 John Platt et~al.
@@ -360,6 +497,13 @@ Ryan Rifkin and Aldebaro Klautau.
 Ralph~Tyrell Rockafellar.
 \newblock {\em Convex analysis}.
 \newblock Princeton university press, 2015.
+
+\bibitem{romero2014fitnets}
+Adriana Romero, Nicolas Ballas, Samira~Ebrahimi Kahou, Antoine Chassang, Carlo
+  Gatta, and Yoshua Bengio.
+\newblock Fitnets: Hints for thin deep nets.
+\newblock In {\em In Proceedings of International Conference on Learning
+  Representations}, 2015.
 
 \bibitem{rosenblatt1958perceptron}
 Frank Rosenblatt.
@@ -394,10 +538,28 @@ Shai Shalev-Shwartz, Yoram Singer, Nathan Srebro, and Andrew Cotter.
 \newblock Pegasos: Primal estimated sub-gradient solver for svm.
 \newblock {\em Mathematical programming}, 127(1):3--30, 2011.
 
+\bibitem{Sharmanska_2013_ICCV}
+Viktoriia Sharmanska, Novi Quadrianto, and Christoph~H. Lampert.
+\newblock Learning to rank using privileged information.
+\newblock In {\em The IEEE International Conference on Computer Vision (ICCV)},
+  2013.
+
 \bibitem{simonyan2014very}
 Karen Simonyan and Andrew Zisserman.
 \newblock Very deep convolutional networks for large-scale image recognition.
 \newblock {\em CoRR}, abs/1409.1556, 2014.
+
+\bibitem{singh2012unsupervised}
+Saurabh Singh, Abhinav Gupta, and Alexei~A Efros.
+\newblock Unsupervised discovery of mid-level discriminative patches.
+\newblock In {\em Computer Vision--ECCV 2012}, pages 73--86. Springer, 2012.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock {\em The Journal of Machine Learning Research}, 15(1):1929--1958,
+  2014.
 
 \bibitem{suykens1999least}
 Johan~AK Suykens and Joos Vandewalle.
@@ -467,6 +629,12 @@ Joost Van De~Weijer and Cordelia Schmid.
 \newblock Coloring local feature extraction.
 \newblock In {\em Computer Vision--ECCV 2006}, pages 334--348. Springer, 2006.
 
+\bibitem{vapnik2015learning}
+Vladimir Vapnik and Rauf Izmailov.
+\newblock Learning using privileged information: Similarity control and
+  knowledge transfer.
+\newblock {\em Journal of Machine Learning Research}, 16:2023--2049, 2015.
+
 \bibitem{vapnik1999overview}
 Vladimir~N Vapnik.
 \newblock An overview of statistical learning theory.
@@ -501,6 +669,13 @@ Jun Yang, Rong Yan, and Alexander~G Hauptmann.
 \newblock Cross-domain video concept detection using adaptive svms.
 \newblock In {\em Proceedings of the 15th international conference on
   Multimedia}, pages 188--197. ACM, 2007.
+
+\bibitem{yao2015semi}
+Ting Yao, Yingwei Pan, Chong-Wah Ngo, Houqiang Li, and Tao Mei.
+\newblock Semi-supervised domain adaptation with subspace learning for visual
+  recognition.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 2142--2150, 2015.
 
 \bibitem{yosinski2014transferable}
 Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson.

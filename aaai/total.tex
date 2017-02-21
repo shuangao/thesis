@@ -8,6 +8,8 @@ The previous work in SDA requires access to the source data to measure the data 
 
 To answer these two questions, in this chapter, we first propose a new paradigm, called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}), to solve the SDA problem. We show that, with GDSDA the knowledge of the source models can be effectively transferred to the target domain using the unlabeled data. Then we propose a novel imitation parameter estimation method for GDSDA, called GDSDA-SVM for real SDA problems. Experimental results show that GDSDA-SVM can effectively find the optimal imitation parameter and achieve competitive performance compared to methods using brutal force search but with faster speed. 
 
+This work has been published in \textit{Thirtieth-First AAAI Conference on Artificial Intelligence, AAAI 2017}.
+
 \section{Previous Work}\label{sec:aaai:work}
 As we use GD to solve SDA problem, we introduce related work in both GD and SDA areas.
 
@@ -73,7 +75,7 @@ In Figure \ref{fig:aaai:explain} we show an example of how to use GDSDA to train
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=.7]{aaai/figure/explain.png}
+	\includegraphics[scale=.8]{aaai/figure/explain.png}
 	\caption{An example of using GDSDA to generate distilled labels for the target data. Here the imitation parameters for source and true labels are 0.8 and 0.2 respectively.}\label{fig:aaai:explain}
 \end{figure}
 
@@ -86,16 +88,21 @@ In this section, we demonstrate the scenarios where GDSDA can work. Before we pr
 \textbf{Assumption of Distillation:} The capacity (or VC dimension) of the target model $f_t$ is smaller than the capacity of source model $f^*$. This assumption is inherited from distillation \cite{lopez2015unifying}.
 \textbf{Assumption of the source model:} The source model $f^*$ should work better than a target model $f'_t$ trained only with the hard labels. This assumption is common, especially in SDA where the labeled examples are often too few to build a good target model. For example, when we only have one labeled example from each class in the target training set, it is reasonable to assume that the source model trained from another domain can perform better than the model trained only with the target training data on the target task. Based on these two assumptions, we will show that GDSDA can effectively leverage the source model and transfer the knowledge between different domains under the SDA setting.
 
-According to the ERM principle\cite{vapnik1999overview}, a simple model has better generalization ability than the complex one, if they both have the same training error.
-As long as the target model $f_t$ can achieve similar training error to that of the source model $f^*$ on the target domain, considering the fact that the VC dimension of $f_t$ is smaller than $f^*$, we can expect that the target model has better generalization ability. This process can be achieved by letting the target model mimick the output of the source model on the training data.
-It is worthy to notice that in this process, the target model only has to mimick the output of the source model (soft label) without considering the true labels of the examples. In another word, GDSDA provide an effective way to utilize the unlabeled data.
+In GDSDA, we actually have two steps to get improved performance through knowledge transfer: \textit{Unsupervised distillation} and \textit{Label fusion with target label}.
+\begin{itemize}
+	\item \textbf{Distillation with unlabeled data}. According to the ERM principle\cite{vapnik1999overview}, a simple model has better generalization ability than the complex one, if they both have the same training error.
+	As long as the target model $f_t$ can achieve similar training error to that of the source model $f^*$ on the target domain, considering the fact that the VC dimension of $f_t$ is smaller than $f^*$, we can expect that the target model has better generalization ability. This process can be achieved by letting the target model mimick the output of the source model on the training data. Here, we call the output of the source model ``\textbf{soft label}".
+	It is worthy to notice that in this process, the target model only has to mimick the soft label without considering the true labels of the examples. In another word, GDSDA provide an effective way to utilize the unlabeled data.
+	\item \textbf{Label fusion with target label}. Arguably, because of the domain shift, the source model is biased towards the source domain when we apply it to the target task. However, as suggested in \cite{hinton2015distilling}, we can use labeled information from the target domain to compensate for the domain shift and achieve a better performance on the target task with Eq. \eqref{eq:GDDA_abs}. Specifically, we use the imitation parameter $\lambda$ to control the relative importance between the soft label and the hard label, which in turn reflects the similarity between the source and target tasks. 
+	For example, in Figure \ref{fig:aaai:explain}, when we set $\lambda_1=0$, we actually ignore the knowledge from source model and thus can avoid negative transfer if we notice the source knowledge may hurt the transfer process.
+	As a result, GDSDA can compensate for the domain shift under the setting of SDA (for more details, please see the experiment section).
+\end{itemize}
 
-Arguably, because of the domain shift, the source model is biased towards the source domain when we apply it to the target task. However, as suggested in \cite{hinton2015distilling}, we can use labeled data from the target domain to compensate for the domain shift and achieve a better performance on the target task with Eq. \eqref{eq:GDDA_abs}. Specifically, we use the imitation parameter $\lambda$ to control the relative importance between the soft label and the hard label, which in turn reflects the similarity between the source and target tasks. 
-For example, in Figure \ref{fig:aaai:explain}, when we set $\lambda_1=0$, we actually ignore the knowledge from source model and thus can avoid negative transfer if we notice the source knowledge may hurt the transfer process.
-As a result, GDSDA can compensate for the domain shift under the setting of SDA (for more details, please see the experiment section).
+
+
 
 \subsection{Key parameter: the imitation parameter}\label{sec:aaai:key}
-From the above analysis, we can see that GDSDA can effectively transfer the knowledge from the source to the target domain. In this section, we demonstrate that the imitation parameter can greatly affect the performance of the target model.
+From the analysis above, we can see that in each of the step, the target model can get improved performance through a simple but effective method. However, in the label fusion part, an important issue is to determine the value(s) of the imitation parameter. As we show before, the imitation parameter balance the importance of the source and target knowledge which is essential in GDSDA. In this section, we demonstrate that the imitation parameter can greatly affect the performance of the target model.
 
 In GDSDA, we must decide the values of 2 parameters, the temperature $T$ and the imitation parameter $\lambda$. The temperature $T$ controls the smoothness of the soft label and the imitation parameter $\lambda$ controls how much knowledge can be transferred from the source model. Previous work has addressed the importance of knowledge control in domain adaptation \cite{duan2012learning,duan2012visual}. Without carefully controlling the amount of knowledge transferred from the source domain, the target model may suffer from degraded performance or even negative transfer \cite{pan2010survey}.
 How to choose the imitation parameter is crucial for GDSDA. In previous work, however, the imitation parameter was determined by either a brute force search \cite{lopez2015unifying} or background knowledge \cite{Tzeng_2015_ICCV}. Meanwhile, in real applications, it is common that  multiple source domains can be exploited. As suggested by \cite{tommasi2014learning}, learning from multiple related sources simultaneously can significantly improve the performance of the target model. However, these previous methods become more difficult to apply when there are multiple sources and imitation parameters to be determined.
@@ -151,7 +158,7 @@ According to  \cite{cawley2006leave}, the Leave-one-out (LOO) estimation of the 
 
 Now for any given $\lambda$, we have found an efficient way to estimate the LOO prediction of each binary target model for example $\textbf{x}_j$. In the following section, we will introduce how to find the optimal $\lambda_i$ for each of the source models. 
 \subsection{Cross-entropy loss for imitation parameter estimation}
-From the previous section, we have already found an effective solution to estimate the output of the SVM. The optimal imitation parameters can be found by solving the following optimization problem:
+From the previous section, we have already found an effective solution to estimate the output of the SVM. The optimal imitation parameters can be found by solving the following optimization problem\footnote{In Eq.\eqref{eq:loo_loss}, it is reasonable to use a hyperparameter $\beta$ to regularize $\lambda_i$, i.e. $\frac{\beta}{2}\sum_i^M||\lambda_i||^2$. Empirically, we found that $\beta=1$ can achieve good results in our experiment and ignore this hyperparameter $\beta$ here.}:
 \begin{equation}\label{eq:loo_loss}
 \begin{aligned}
 \min \quad& L_c\left(\lambda\right)=\frac{1}{2}\sum_i^M||\lambda_i||^2+\frac{1}{L}\sum_{j,n}\ell\left(y_{in},\hat{y}_{jn}\left(\lambda\right)\right)\\
