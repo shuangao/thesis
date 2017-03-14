@@ -2,7 +2,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Major procedure for image recognition.\relax }}{3}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Feature extraction using SIFT.\relax }}{4}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces General Scheme of Auto Encoders. L1 is the input layer, possibly raw-pixel intensities. L2 is the compressed learned latent representation and L3 is the reconstruction of the given L1 layer from L2 layer. AutoEncoders tries to minimize the difference between L1 and L3 layers with some sparsity constraint.\relax }}{5}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The architecture of ALEXNET (adapted from \cite {krizhevsky2012imagenet}).\relax }}{6}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The architecture of ALEXNET (adopted from \cite {krizhevsky2012imagenet}).\relax }}{6}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces An intuitive description for human to learn new concept: an okapi can be roughly described as the combination of a body of a horse, legs of the zebra and a head of giraffe.\relax }}{7}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Feature transformation. Transform the data in different domains into a augmented feature space.\relax }}{9}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Difference between two transfer learning scenarios\relax }}{11}
@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite {aytar2011tabula}).\relax }}{32}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of feature augmentation in MKTL. $f_i'$ is the output of the $i$-th source model and $\beta _{in}$ is the hyperparameter (need to be estimated) to weigh the augmented feature. $\phi _n(x)$ is augmented feature for the $n$-th binary model.\relax }}{38}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Demonstration of using the source class probability as the auxiliary bias to adjust the output of the target model. The source task is to distinguish the 4 pop cans while the target one is to distinguish the 4 pop bottles\relax }}{40}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Demonstration of using the source class probability as the auxiliary bias to adjust the output of the target model. The source task is to distinguish the 4 pop cans while the target one is to distinguish the 4 pop bottles\relax }}{39}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Bi-level Optimization problem for EMTLe.\relax }}{41}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Recognition accuracy for HTL domain adaptation from a single source (Part1). 5 different sizes of target training sets are used in each group of experiments. A, D, W and C denote the 4 subsets in Table 3.1\hbox {} respectively.\relax }}{47}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {A$\rightarrow $D}}}{47}
@@ -44,34 +44,35 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of Generalized Distillation training process.\relax }}{52}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of GDSDA training process and our ``fake label" strategy.\relax }}{53}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of using GDSDA to generate distilled labels for the target data. Here the imitation parameters for source and true labels are 0.8 and 0.2 respectively.\relax }}{55}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces D+W$\rightarrow $A, Multi-source results comparison.\relax }}{62}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Experiment results on DSLR$\rightarrow $Amazon and Webcam$\rightarrow $Amazon when there are just one labeled examples per class. The X-axis denotes the imitation parameter of the hard label (i.e. $\lambda _1$ in Fig 4.2\hbox {}) and the corresponding imitation parameter of the soft label is set to $1-\lambda _1$. \relax }}{64}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D $\rightarrow $ A, 10 unlabeled }}}{64}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D $\rightarrow $ A, 15 unlabeled }}}{64}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {D $\rightarrow $ A, 20 unlabeled }}}{64}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {W $\rightarrow $ A, 10 unlabeled }}}{64}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {W $\rightarrow $ A, 15 unlabeled }}}{64}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {W $\rightarrow $ A, 20 unlabeled }}}{64}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of using GDSDA to generate distilled labels for the target data.\relax }}{55}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces D+W$\rightarrow $A, Multi-source results comparison.\relax }}{61}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Experiment results on DSLR$\rightarrow $Amazon and Webcam$\rightarrow $Amazon when there are just one labeled examples per class. The X-axis denotes the imitation parameter of the hard label (i.e. $\lambda _1$ in Fig 4.2\hbox {}) and the corresponding imitation parameter of the soft label is set to $1-\lambda _1$. \relax }}{63}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D $\rightarrow $ A, 10 unlabeled }}}{63}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D $\rightarrow $ A, 15 unlabeled }}}{63}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {D $\rightarrow $ A, 20 unlabeled }}}{63}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {W $\rightarrow $ A, 10 unlabeled }}}{63}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {W $\rightarrow $ A, 15 unlabeled }}}{63}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {W $\rightarrow $ A, 20 unlabeled }}}{63}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Convolution operation with $3\times 3$ kernel, stride 1 and padding 1. $\otimes $ denotes the convolutional operator.\relax }}{67}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces $2\times 2$ pooling layer with stride 2 and padding 0.\relax }}{68}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Demonstration of Fine-tuning from ImageNet 1000 classes to Food-101 datasets.\relax }}{65}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Convolution operation with $3\times 3$ kernel, stride 1 and padding 1. $\otimes $ denotes the convolutional operator.\relax }}{67}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $2\times 2$ pooling layer with stride 2 and padding 0.\relax }}{68}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces { Standard Neural Net }}}{69}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {After Dropout}}}{69}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Inception Module. $n\times n$ stands for size $n$ receptive field, $n\times n\_reduce$ stands for the $1\times 1$ convolutional layer before the $n\times n$ convolution layer and $pool\_proj$ is another $1\times 1$ convolutional layer after the MAX pooling layer. The output layer concatenates all its input layers.\relax }}{71}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Crop area from original image\relax }}{73}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{73}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Center}}}{73}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Center mirror}}}{73}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Up-left}}}{73}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Up-left mirror}}}{73}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Up-right}}}{73}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Up-right mirror}}}{73}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Bottom-left}}}{73}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Bottom-left mirror}}}{73}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Bottom-right}}}{73}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Bottom-right mirror}}}{73}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Different data argumentation methods\relax }}{74}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Inception Module. $n\times n$ stands for size $n$ receptive field, $n\times n\_reduce$ stands for the $1\times 1$ convolutional layer before the $n\times n$ convolution layer and $pool\_proj$ is another $1\times 1$ convolutional layer after the MAX pooling layer. The output layer concatenates all its input layers.\relax }}{70}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Crop area from original image\relax }}{72}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{72}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Center}}}{72}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Center mirror}}}{72}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Up-left}}}{72}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Up-left mirror}}}{72}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Up-right}}}{72}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Up-right mirror}}}{72}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Bottom-left}}}{72}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Bottom-left mirror}}}{72}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Bottom-right}}}{72}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Bottom-right mirror}}}{72}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Different data argumentation methods\relax }}{74}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{74}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Red casting}}}{74}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Green casting}}}{74}
@@ -84,7 +85,7 @@
 \contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Vertical stretch}}}{74}
 \contentsline {subfigure}{\numberline {(k)}{\ignorespaces {More vertical stretch}}}{74}
 \contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Rotation}}}{74}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Visualization of some feature maps of different GoogLeNet models in different layers for the same input image. 64 feature maps of each layer are shown. Conv1 is the first convolutional layer and Inception\_5b is the last convolutional layer. \relax }}{76}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Visualization of some feature maps of different GoogLeNet models in different layers for the same input image. 64 feature maps of each layer are shown. Conv1 is the first convolutional layer and Inception\_5b is the last convolutional layer. \relax }}{76}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

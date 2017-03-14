@@ -28,7 +28,7 @@ As previously mentioned, GDSDA is a paradigm using generalized distillation for 
 	\includegraphics[scale=.6]{aaai/figure/GD.png}
 	\caption{Illustration of Generalized Distillation training process.}
 \end{figure}
-\subsection{An overview of Generalized Distillation and GDSDA}
+\subsection{An Overview of Generalized Distillation and GDSDA}
 \textit{Distillation} \cite{hinton2015distilling} and \textit{Learning Using Privileged Information} (LUPI) \cite{vapnik2015learning} are two paradigms that enable machines to learn from other machines. Both methods address the problem of how to build a student model that can learn from the advanced teacher models. Recently, \cite{lopez2015unifying} proposed a framework called \textit{generalized distillation} that unifies both methods and show that it can be applied in many scenarios.
 
 In GD, the training data can be represented as a collection of the triples:
@@ -75,8 +75,8 @@ In Figure \ref{fig:aaai:explain} we show an example of how to use GDSDA to train
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=.8]{aaai/figure/explain.png}
-	\caption{An example of using GDSDA to generate distilled labels for the target data. Here the imitation parameters for source and true labels are 0.8 and 0.2 respectively.}\label{fig:aaai:explain}
+	\includegraphics[scale=.6]{aaai/figure/explain.png}
+	\caption{An example of using GDSDA to generate distilled labels for the target data.}\label{fig:aaai:explain}
 \end{figure}
 
 
@@ -101,7 +101,7 @@ In GDSDA, we actually have two steps to get improved performance through knowled
 
 
 
-\subsection{Key parameter: the imitation parameter}\label{sec:aaai:key}
+\subsection{Key Parameter: the Imitation Parameter}\label{sec:aaai:key}
 From the analysis above, we can see that in each of the step, the target model can get improved performance through a simple but effective method. However, in the label fusion part, an important issue is to determine the value(s) of the imitation parameter. As we show before, the imitation parameter balance the importance of the source and target knowledge which is essential in GDSDA. In this section, we demonstrate that the imitation parameter can greatly affect the performance of the target model.
 
 In GDSDA, we must decide the values of 2 parameters, the temperature $T$ and the imitation parameter $\lambda$. The temperature $T$ controls the smoothness of the soft label and the imitation parameter $\lambda$ controls how much knowledge can be transferred from the source model. Previous work has addressed the importance of knowledge control in domain adaptation \cite{duan2012learning,duan2012visual}. Without carefully controlling the amount of knowledge transferred from the source domain, the target model may suffer from degraded performance or even negative transfer \cite{pan2010survey}.
@@ -110,7 +110,7 @@ For these reasons, it is ideal to find an approach that can determine the imitat
 
 \section{GDSDA-SVM}\label{sec:aaai:svm}
 As previously mentioned, it is important to find an approach that can effectively determine the imitation parameter. In this section, we propose our method GDSDA-SVM which uses SVM as the base classifier and can effectively estimate the imitation parameter by minimizing the cross-validation error on the target domain.
-\subsection{Distillation with multiple sources}
+\subsection{Distillation with Multiple Sources}
 As suggested in \cite{vapnik2015learning}, the optimal imitation parameter should be the one that can minimize the training error on the target domain. Based on that, we propose our method GDSDA-SVM which can effectively estimate the imitation parameter.
 
 Instead of using hinge loss in our GDSDA-SVM, we use Mean Squared Error (MSE) as our loss function for the following two reasons: (1) several recently studies \cite{ba2014deep,luo2016face,romero2014fitnets,urban2016deep} show that MSE is also an efficient measurement for the target model to mimick the output of the source model. (2) MSE can provide a closed form cross-validation error estimation which allows us to estimate the imitation parameter effectively. 
@@ -157,7 +157,7 @@ According to  \cite{cawley2006leave}, the Leave-one-out (LOO) estimation of the 
 \end{equation}
 
 Now for any given $\lambda$, we have found an efficient way to estimate the LOO prediction of each binary target model for example $\textbf{x}_j$. In the following section, we will introduce how to find the optimal $\lambda_i$ for each of the source models. 
-\subsection{Cross-entropy loss for imitation parameter estimation}
+\subsection{Cross-entropy Loss for Imitation Parameter Estimation}
 From the previous section, we have already found an effective solution to estimate the output of the SVM. The optimal imitation parameters can be found by solving the following optimization problem\footnote{In Eq.\eqref{eq:loo_loss}, it is reasonable to use a hyperparameter $\beta$ to regularize $\lambda_i$, i.e. $\frac{\beta}{2}\sum_i^M||\lambda_i||^2$. Empirically, we found that $\beta=1$ can achieve good results in our experiment and ignore this hyperparameter $\beta$ here.}:
 \begin{equation}\label{eq:loo_loss}
 \begin{aligned}
@@ -195,7 +195,7 @@ The derivative can be written as:
 		\STATE Generate new label $Y_{new}=\sum_i\lambda_iS_i$
 		\STATE Calculate $\eta = \Omega^{-1}Y_{new}$
 		\STATE Calculate $w_n = \sum_j \eta_{jn}x_j$
-	\end{algorithmic}	
+	\end{algorithmic}    
 \end{algorithm}
 \begin{algorithm}[t]
 	\caption{$\lambda$ Optimization}\label{alg:lambda}
@@ -217,9 +217,9 @@ The derivative can be written as:
 		\ENDFOR
 		\STATE $\Delta_{\lambda} =\Delta_{\lambda}/L$, $\lambda = \lambda - \frac{1}{it}(\Delta_{\lambda}+\lambda)$
 		\STATE $\lambda = \lambda / \sum\lambda_i$
-		%	    \State 
+		%        \State 
 		\ENDFOR
-	\end{algorithmic}	
+	\end{algorithmic}    
 \end{algorithm}
 We describe GDSDA-SVM in Algorithm \ref{alg:svm}. As the optimization problem \eqref{eq:loo_loss} is strongly convex, it is easy to prove that Algorithm \ref{alg:lambda} can converge to the optimal $\lambda$ with the rate of $O(\log(t)/t)$ where $t$ is the optimization iteration (see Appendix \ref{app:converg}).
 
@@ -273,5 +273,5 @@ From the results, we can see that, given 2 source models, SVM\_Multi can outperf
 \section{Summary}\label{sec:aaai:con}
 In this chapter, we propose a novel framework called \textit{Generalized Distillation Semi-supervised Domain Adaptation} (GDSDA) that can effectively leverage the knowledge from the source domain for SDA problem without accessing to the source data. 
 To make GDSDA more effective in real applications, we proposed our method called GDSDA-SVM and show that GDSDA-SVM can effectively determine the imitation parameter for GDSDA. 
-In our future work, we plan to use a more advanced hyperparameter optimization method, which can optimize the imitation parameter $\lambda$ and the temperature $T$ in GDSDA simultaneously, and expect
+In our future work, we plan to use a more advanced hyperparameter optimization method, which can optimize the imitation parameter $\lambda$ and the temperature $T$ in GDSDA simultaneously and expect
 further performance improvement. 

@@ -1,6 +1,6 @@
 In this section, we show empirical results of our algorithm for different transferring situations on two image benchmark datasets: Office and Caltech.
 \subsection{Dataset \& Baseline methods}
-Office contains 31 classes from 3 subsets (Amazon,Dslr and Webcam) and Caltech contains 256 classes. We select 13 shared classes from two datasets\footnote{13 classes include: backpack, bike, helmet, bottle, calculator, headphone, keyboard, laptop, monitor, mouse, mug, phone and projector}. The input features of all examples are extracted using AlexNet\cite{krizhevsky2012imagenet}.
+Office contains 31 classes from 3 subsets (Amazon, Dslr and Webcam) and Caltech contains 256 classes. We select 13 shared classes from two datasets\footnote{13 classes include: backpack, bike, helmet, bottle, calculator, headphone, keyboard, laptop, monitor, mouse, mug, phone and projector}. The input features of all examples are extracted using AlexNet\cite{krizhevsky2012imagenet}.
 %Because the two subsets Dslr and Webcam are relatively small and don't have data for testing, we only use them as the source domain.
 \begin{table}[htbp]
 	\centering
@@ -18,9 +18,9 @@ Office contains 31 classes from 3 subsets (Amazon,Dslr and Webcam) and Caltech c
 	\end{tabular}%
 	\label{tab:class_info}%
 \end{table}%
-We compare our algorithm EMTLe with two kinds of baselines. The first one is the methods without leveraging any source knowledge (no transfer baselines), including two methods. \textbf{No transfer:} SVMs trained only on target data. Any transfer algorithm that performs worse than it suffers from negative transfer. \textbf{Batch:} We combine the source and target data, assuming that we have full access to all data, to train the SVMs. The result of the Batch method is expected to outperform other methods under the HTL setting as it can access the source data. The second kind of baseline consists of two previous transfer methods in HTL, \textbf{MKTL\cite{jie2011multiclass}} and \textbf{Multi-KT\cite{tommasi2014learning}}. Similar to EMTLe, both of them use the LOOCV method to estimate the relatedness of the source model and target domain, but they use their own convex objective function without the $\ell_2$ penalty terms. We use linear kernel for all methods in all our experiments.
+We compare our algorithm EMTLe with two kinds of baselines. The first one is the methods without leveraging any source knowledge (no transfer baselines), including two methods. \textbf{No transfer:} SVMs trained only on target data. Any transfer algorithm that performs worse than it suffers from negative transfer. \textbf{Batch:} We combine the source and target data, assuming that we have full access to all data, to train the SVMs. The result of the Batch method is expected to outperform other methods under the HTL setting as it can access the source data. The second kind of baseline consists of two previous transfer methods in HTL, \textbf{MKTL\cite{jie2011multiclass}} and \textbf{Multi-KT\cite{tommasi2014learning}}. Similar to EMTLe, both of them use the LOOCV method to estimate the relatedness of the source model and target domain, but they use their convex objective function without the $\ell_2$ penalty terms. We use linear kernel for all methods in all our experiments.
 \subsection{Transfer from Single Source Domain}
-In this subsection, following the experiment protocol in \cite{jie2011multiclass,tommasi2014learning} for fair comparison, we perform 12 groups of experiments under the setting of HTL. 
+In this subsection, following the experiment protocol in \cite{jie2011multiclass,tommasi2014learning} for a fair comparison, we perform 12 groups of experiments under the setting of HTL. 
 For each experiment, one of the 4 (sub)datasets is selected as the source, while another dataset is used as the target. We evaluate the performance of EMTLe when all source models are of the same type. As Multi-KT can only leverage knowledge when the source model is SVM, All source models are trained with linear SVMs.
 The size of each target dataset is varied from 1 to 5 to see how EMTLe and other baselines behave under the extremely small dataset. We use a heuristic way to set the value of $\lambda$ in Eq. \eqref{eq:bo_high}:
 \begin{equation}
@@ -31,7 +31,7 @@ We perform each experiment 10 times and report the average result in Figure \ref
 \input{pakdd/figs.tex}
 
 \subsection{Transfer from Multiple Source Domains}
-As we mentioned, EMTLe can exploit knowledge from different types of source classifiers which could greatly extend our choice of the source domain under the HTL setting. In this subsection we show that EMTLe can successfully transfer the knowledge from two different types of source classifiers. Meanwhile, MKTL and ``No Transfer" are used as our baseline. 
+As we mentioned, EMTLe can exploit knowledge from different types of source classifiers which could greatly extend our choice of the source domain under the HTL setting. In this subsection, we show that EMTLe can successfully transfer the knowledge from two different types of source classifiers. Meanwhile, MKTL and ``No Transfer" are used as our baseline. 
 
 In this experiment, we assume that there is no single source domain that can cover all 13 classes in our target domain and we have to select source models from different source domains. Specifically, the 13 classes are selected from two different domains separately (6 from DSLR and 7 from Webcam) according to Table \ref{tab:class_gen}. Similar to our previous experiment configurations, we only use Caltech and Amazon as the target domains. We show the experiment results in Figure \ref{fig:exp2}.
 % Table generated by Excel2LaTeX from sheet 'Sheet1'

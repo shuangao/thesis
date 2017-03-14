@@ -1,3 +1,4 @@
+
 In our scenario, we have to face the problem of image recognition. Due to the large dimension of the feature representation for each image as well as the size of training image, manual classification is hopeless. As we mentioned in Section \ref{sec:intro:over}, a recognition model is used to distinguish the objects from different categories automatically trained by supervised learning. In this section, we introduce the classifiers we used in this thesis.
 
 \subsection{Binary Classification and Multi-class Classification}
@@ -22,11 +23,11 @@ Softmax classifier (also called multinomial logistic regression) is a generation
 
 Given a training set $\{(x_1,y_1),(x_2,y_2),...,(x_m,y_m)\}$, we assume the label $y_i \in \{1,0\}$ and the input feature $x_i \in \mathcal{R}^n$. For each binary logistic regression model, The score function takes the form:
 \begin{equation}
-	{f_w}(x) = \frac{1}{{1 + \exp ( - {w^T}x)}}
+{f_w}(x) = \frac{1}{{1 + \exp ( - {w^T}x)}}
 \end{equation}
 and the parameters $w$ are optimized to minimize the following loss function:
 \begin{equation}
-	l(w) =  - [\sum\limits_{i = 1}^m {{y_i}\log {f_w}({x_i}) + (1 - {y_i})} \log (1 - {f_w}({x_i}))]\label{eq:logistic:loss}
+l(w) =  - [\sum\limits_{i = 1}^m {{y_i}\log {f_w}({x_i}) + (1 - {y_i})} \log (1 - {f_w}({x_i}))]\label{eq:logistic:loss}
 \end{equation}
 
 For Softmax classifier, it is used to handle the multi-class classification problem and suppose there are $N$ classes. Therefore, $y$ can take from $N$ different values $\{1,2,3,...,N\}$ instead of just two. For a given test example $x$, the score function estimate the probability $P(y=n|x)$ for each value of $n = 1,2,3,...,N$, i.e. estimate the probability that each score assigns the input $x$ to the $N$ classes associated to the $N$ different possible values. Thus, the score function will output a $N$-dimensional vector providing $N$ estimated probabilities whose sum of elements is 1. The $N$ dimensional output of the score function can be generated according to the following form:
@@ -108,11 +109,11 @@ The value of slack variable is 0 if the example $x_i$ lies on the correct side o
 
 Therefore, to find the parameters of hyperplane, i.e. weight vector $w$ and bias $b$, soft-margin SVM minimize the following loss function:
 \begin{equation}\label{eq:related:softsvm}
-	\begin{aligned}
-	\min \qquad &  \frac{\lambda}{2}||w||^2+\frac{1}{n}\sum_{i}^{n}\xi_i\\
-	\text{s.t.}\qquad & y_i(w^Tx_i+b) \geq 1-\xi_i \\
-	& \xi_i \geq 0 	\quad \text{for all } 1\leq i \leq n
-	\end{aligned}
+\begin{aligned}
+\min \qquad &  \frac{\lambda}{2}||w||^2+\frac{1}{n}\sum_{i}^{n}\xi_i\\
+\text{s.t.}\qquad & y_i(w^Tx_i+b) \geq 1-\xi_i \\
+& \xi_i \geq 0     \quad \text{for all } 1\leq i \leq n
+\end{aligned}
 \end{equation}
 The objective function is called primal of SVM. A stochastic sub-gradient descent can be used to find the optimal solution for eq. \eqref{eq:related:softsvm} effectively \cite{shalev2011pegasos}. 
 \subsubsection{Kernel SVM}
@@ -126,23 +127,23 @@ Linear soft-margin SVM works well when number of features is larger than number 
 The idea of kernel was first introduced into pattern recognition by Aizerman \textit{et. al.} \cite{aizerman1964probability}. When the size of the training examples are significantly larger than the dimension of the input features and the distribution become more complex, these data can not be easily separated by a straight line in the feature space.
 Instead of obtaining the optimal hyperspace in the input feature space, kernel SVM tries to map the inputs into a high-dimensional feature spaces and find the optimal hyperplane in the high-dimensional feature spaces. Given a feature space mapping $\phi(x)$, the score function for kernel SVM can be re-written as:
 \begin{equation}\label{eq:relation:kernel}
-	f(x) = w^T\phi(x)+b
+f(x) = w^T\phi(x)+b
 \end{equation}
 From eq \eqref{eq:relation:kernel} we can see that, when we take the identity mapping $\phi(x) = x$, the kernel SVM becomes a linear SVM. Therefore, the linear SVM can be considered as a special case of kernel SVM where identity mapping is used as the kernel. The loss function of kernel SVM is almost identical to eq. \eqref{eq:related:softsvm} except for replacing the term $x$ with $\phi(x)$: 
 \begin{equation}\label{eq:related:primal}
 \begin{aligned}
 \min \qquad &  \frac{\lambda}{2}||w||^2+\frac{1}{n}\sum_{i}^{n}\xi_i\\
 \text{s.t.}\qquad & y_i(w^T\phi(x)_i+b) \geq 1-\xi_i \quad \\
-& \xi_i \geq 0 	\quad \text{for all } 1\leq i \leq n
+& \xi_i \geq 0     \quad \text{for all } 1\leq i \leq n
 \end{aligned}
 \end{equation}
 By introducing the Lagrangian term to the primal \eqref{eq:related:primal} and some transformation, we obtain the dual of kernel SVM function:
 \begin{equation} \label{eq:related:dual}
-	\begin{aligned}
-	\max \qquad& \sum_{i}^{n}\alpha_i-\sum\limits_i^n {\sum\limits_j^n {{y_i}{y_j}{\alpha _i}} } {\alpha _j}\phi ({x_i})\phi ({x_j})\\
-	\text{s.t.} \qquad & 0 \leq \alpha_i \leq \frac{1}{\lambda}\\
-	& \sum_{i}^{n}y_i\alpha_i=0 \quad \text{for all } 1\leq i \leq n
-	\end{aligned}
+\begin{aligned}
+\max \qquad& \sum_{i}^{n}\alpha_i-\sum\limits_i^n {\sum\limits_j^n {{y_i}{y_j}{\alpha _i}} } {\alpha _j}\phi ({x_i})\phi ({x_j})\\
+\text{s.t.} \qquad & 0 \leq \alpha_i \leq \frac{1}{\lambda}\\
+& \sum_{i}^{n}y_i\alpha_i=0 \quad \text{for all } 1\leq i \leq n
+\end{aligned}
 \end{equation}
 We can obtain the solution of \eqref{eq:related:dual} by Sequential Minimal Optimization (SMO) \cite{platt1998sequential} or Dual Coordinate Descent \cite{hsieh2008dual}.
 

@@ -1,4 +1,4 @@
-In this part, We will introduce the framework of \textbf{Hypothesis Transfer Learning} (HTL). HTL is proposed to effective utilize the source knowledge, especially the source model, while we are not able to visiting the source data. We first introduce the basic principle of LS-SVM. Based on LS-SVM, several transfer methods are introduced, including A-SVM, PMT-SVM, Multi-KT and MULTIpLe. In these methods, the first two can only adopt the knowledge from single source model and the rest can adopt the knowledge from multiple ones.
+In this part, We will introduce the framework of \textbf{Hypothesis Transfer Learning} (HTL). HTL is proposed to effective utilize the source knowledge, especially the source model, while we are not able to visit the source data. We first introduce the basic principle of LS-SVM. Based on LS-SVM, several transfer methods are introduced, including A-SVM, PMT-SVM, Multi-KT and MULTIpLe. In these methods, the first two can only adopt the knowledge from single source model and the rest can adopt the knowledge from multiple ones.
 
 \subsubsection{LS-SVM Classifier}
 
@@ -12,21 +12,21 @@ Least Square SVM is proposed is least squares versions of support vector machine
 
 The primal Lagrangian for this optimization problem given the unconstrained minimization problem can be written as:
 \begin{equation}\label{sq:gama:lsprime}
-  L\left( {w,b,\alpha ,\varepsilon } \right) = \frac{1}{2}{\left\| w \right\|^2} + \frac{C}{2}\sum\limits_{i = 1}^l {{\varepsilon _i}^2}  - \sum\limits_{i = 1}^l {{\alpha _i}\left\{ {w{x_i} + b + {\varepsilon _i} - {y_i}} \right\}}
+L\left( {w,b,\alpha ,\varepsilon } \right) = \frac{1}{2}{\left\| w \right\|^2} + \frac{C}{2}\sum\limits_{i = 1}^l {{\varepsilon _i}^2}  - \sum\limits_{i = 1}^l {{\alpha _i}\left\{ {w{x_i} + b + {\varepsilon _i} - {y_i}} \right\}}
 \end{equation}
 
 Where $\alpha = [ \alpha_1,...,\alpha_l]^T $ is the vector of Lagrange multipliers. The solution to minimise this problem is give by:
 \begin{equation}\label{eq:single:orgmatrix}
-  \left[ {\begin{array}{*{20}{c}}
-{K  + \frac{1}{C}{\rm I}}\\
-1^T
-\end{array}\begin{array}{*{20}{c}}
-1\\
-0
-\end{array}} \right]\left[ {\begin{array}{*{20}{c}}
-\alpha \\
-b
-\end{array}} \right] = \left[ \begin{array}{l}
+\left[ {\begin{array}{*{20}{c}}
+	{K  + \frac{1}{C}{\rm I}}\\
+	1^T
+	\end{array}\begin{array}{*{20}{c}}
+	1\\
+	0
+	\end{array}} \right]\left[ {\begin{array}{*{20}{c}}
+	\alpha \\
+	b
+	\end{array}} \right] = \left[ \begin{array}{l}
 y\\
 0
 \end{array} \right]
@@ -34,19 +34,19 @@ y\\
 Where $K \in R^{l \times l},K_{i,j}=x_i \times x_j^T$. $I$ is the identity matrix and $\mathbf{1}$ is a column vector with all its elements equal to 1. With:
 \begin{equation}\label{eq:gama:psi}
 \psi^{-1} = \left[ {\begin{array}{*{20}{c}}
-{K  + \frac{1}{C}{\rm I}}\\
-1^T
-\end{array}\begin{array}{*{20}{c}}
-1\\
-0
-\end{array}} \right]^{-1}
+	{K  + \frac{1}{C}{\rm I}}\\
+	1^T
+	\end{array}\begin{array}{*{20}{c}}
+	1\\
+	0
+	\end{array}} \right]^{-1}
 \end{equation}
 Problem \eqref{sq:gama:lsprime} can be solved by:
 \begin{equation}
 \left[ {\begin{array}{*{20}{c}}
-\alpha \\
-b
-\end{array}} \right] = \psi^{-1}\left[ \begin{array}{l}
+	\alpha \\
+	b
+	\end{array}} \right] = \psi^{-1}\left[ \begin{array}{l}
 y\\
 0
 \end{array} \right]
@@ -72,9 +72,9 @@ Where $\theta$ is the angel between $w$ and $w'$. However, the term $-\gamma \le
 to be larger (as this reduces the cost) which prevents margin maximization. Thus $\gamma$, which defines the amount of transfer regularization, becomes a trade-off parameter between margin maximization and knowledge transfer.
 
 \begin{figure}
-\centering
-\includegraphics[scale=.6]{transfer/fig/pmt-svm.png}
-\caption{Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite{aytar2011tabula}).}\label{fig:gama:pmt}
+	\centering
+	\includegraphics[scale=.6]{transfer/fig/pmt-svm.png}
+	\caption{Projecting $w$ to $w'$ in PMT-SVM (adapted from \cite{aytar2011tabula}).}\label{fig:gama:pmt}
 \end{figure}
 
 Based on this, Projective Model Transfer SVM (PMT-SVM) is proposed to solve the transfer problem by optimizing the following objective function \cite{aytar2011tabula}:
@@ -104,9 +104,9 @@ Here, $\beta_k$ is the weight assigned for the $k$th source model and $\zeta _i$
 
 \begin{equation*}
 {\zeta _i} = \left\{ {\begin{array}{*{20}{c}}
-{\frac{N}{{2{N^ + }}}}&{{\text{if }}{y_i} =1}\\
-{\frac{N}{{2{N^ - }}}}&{{\text{if }}{y_i} =- 1}
-\end{array}} \right.
+	{\frac{N}{{2{N^ + }}}}&{{\text{if }}{y_i} =1}\\
+	{\frac{N}{{2{N^ - }}}}&{{\text{if }}{y_i} =- 1}
+	\end{array}} \right.
 \end{equation*}
 where $N^+$ and $N^-$ are number of positive and negative examples respectively and $N$ is the total number of examples. 
 
@@ -133,7 +133,7 @@ Here $|x|_+=max(x,0)$. Intuitively, if $\beta$ is properly set, ${y_i}{{\hat y}_
 
 \subsubsection{MULTIpLE}
 
-MULticlass Transfer Incremental LEarning (MULTIpLE) focuses on adding a new class to a existing $N$ class source problem while preserving the performance on the old classes \cite{kuzborskij2013n}. To preserving the overall performance of the classifier among $N+1$ classes, MULTIpLE contains two parts: incremental learning for existing $N$ classes and transfer learning for the new class.
+MULticlass Transfer Incremental LEarning (MULTIpLE) focuses on adding a new class to an existing $N$ class source problem while preserving the performance on the old classes \cite{kuzborskij2013n}. To preserving the overall performance of the classifier among $N+1$ classes, MULTIpLE contains two parts: incremental learning for existing $N$ classes and transfer learning for the new class.
 
 For the existing $N$ classes, MULTIpLE uses the similar strategy as ASVM, setting the transfer parameter $\gamma$ to 1. For the new class, it adopts the strategy of Multi-KT, combining knowledge from existing $N$-class models. As a result, the objective function for the hyperplanes in MULTIpLE is defined as:
 
@@ -148,9 +148,9 @@ Similar like Multi-KT, MULTIpLE uses LOO error in \eqref{eq:gama:loo} to estimat
 \begin{equation}\label{eq:gama:multib}
 \begin{aligned}
 \text{min} \qquad& {\cal L}\left( {\beta ,i} \right) = \left\{ {\begin{array}{*{20}{c}}
-{\mathop {\max }\limits_{n \ne {y_i}} {{\left| {1 - {{\hat Y}_{in}}\left( \beta  \right) - {{\hat Y}_{i{y_i}}}\left( \beta  \right)} \right|}_ + }}&{{:y_i} \ne N + 1}\\
-{\left| {1 - {{\hat Y}_{in}}\left( \beta  \right) - {{\hat Y}_{i{y_i}}}\left( \beta  \right)} \right|}&{{:y_i} = N + 1}
-\end{array}} \right.  \\
+	{\mathop {\max }\limits_{n \ne {y_i}} {{\left| {1 - {{\hat Y}_{in}}\left( \beta  \right) - {{\hat Y}_{i{y_i}}}\left( \beta  \right)} \right|}_ + }}&{{:y_i} \ne N + 1}\\
+	{\left| {1 - {{\hat Y}_{in}}\left( \beta  \right) - {{\hat Y}_{i{y_i}}}\left( \beta  \right)} \right|}&{{:y_i} = N + 1}
+	\end{array}} \right.  \\
 \text{s.t.} \qquad& \left\| \beta  \right\| \le 1
 \end{aligned}
 \end{equation}

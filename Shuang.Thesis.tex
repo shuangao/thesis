@@ -57,18 +57,18 @@
 \numberwithin{figure}{chapter}
 \newenvironment{acknowledgements}%
 {\clearemptydoublepage
- \begin{center}
-  \section*{Acknowledgements}
- \end{center}
- \begingroup
+	\begin{center}
+		\section*{Acknowledgements}
+	\end{center}
+	\begingroup
 }{\newpage\endgroup}
 
 \newenvironment{dedication}%
 {\clearemptydoublepage 
- \begin{center}
-  \section*{Dedication}
- \end{center}
- \begingroup
+	\begin{center}
+		\section*{Dedication}
+	\end{center}
+	\begingroup
 }{\newpage\endgroup}
 
 \newenvironment{preliminary}%
@@ -82,18 +82,18 @@
 \newtheorem{corollary}[theorem]{Corollary}
 
 \newenvironment{proof}[1][Proof]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 \newenvironment{definition}[1][Definition]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 \newenvironment{example}[1][Example]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 \newenvironment{remark}[1][Remark]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 
 \newcommand{\qed}{\nobreak \ifvmode \relax \else
-      \ifdim\lastskip<1.5em \hskip-\lastskip
-      \hskip1.5em plus0em minus0.5em \fi \nobreak
-      \vrule height0.75em width0.5em depth0.25em\fi}
+	\ifdim\lastskip<1.5em \hskip-\lastskip
+	\hskip1.5em plus0em minus0.5em \fi \nobreak
+	\vrule height0.75em width0.5em depth0.25em\fi}
 
 % Default values for title page.
 
@@ -106,26 +106,26 @@
 %% Define the "thesis" page style.
 \if@twoside % If two-sided printing.
 \def\ps@thesis{\let\@mkboth\markboth
-   \def\@oddfoot{}
-   \let\@evenfoot\@oddfoot
-   \def\@oddhead{
-      {\sc\rightmark} \hfil \rm\thepage
-      }
-   \def\@evenhead{
-      \rm\thepage \hfil {\sc\leftmark}
-      }
-   \def\chaptermark##1{\markboth{\ifnum \c@secnumdepth >\m@ne
-      Chapter\ \thechapter. \ \fi ##1}{}}
-   \def\sectionmark##1{\markright{\ifnum \c@secnumdepth >\z@
-      \thesection. \ \fi ##1}}}
+	\def\@oddfoot{}
+	\let\@evenfoot\@oddfoot
+	\def\@oddhead{
+		{\sc\rightmark} \hfil \rm\thepage
+	}
+	\def\@evenhead{
+		\rm\thepage \hfil {\sc\leftmark}
+	}
+	\def\chaptermark##1{\markboth{\ifnum \c@secnumdepth >\m@ne
+			Chapter\ \thechapter. \ \fi ##1}{}}
+	\def\sectionmark##1{\markright{\ifnum \c@secnumdepth >\z@
+			\thesection. \ \fi ##1}}}
 \else % If one-sided printing.
 \def\ps@thesis{\let\@mkboth\markboth
-   \def\@oddfoot{}
-   \def\@oddhead{
-      {\sc\rightmark} \hfil \rm\thepage
-      }
-   \def\chaptermark##1{\markright{\ifnum \c@secnumdepth >\m@ne
-      Chapter\ \thechapter. \ \fi ##1}}}
+	\def\@oddfoot{}
+	\def\@oddhead{
+		{\sc\rightmark} \hfil \rm\thepage
+	}
+	\def\chaptermark##1{\markright{\ifnum \c@secnumdepth >\m@ne
+			Chapter\ \thechapter. \ \fi ##1}}}
 \fi
 
 \pagestyle{thesis}
@@ -151,57 +151,57 @@
 \def\normalspacing{1.25} % default line spacing
 
 \newcommand\isco[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \\\underline{Co-Supervisor:}\vspace{0.35in}\\\dots\dots\dots\dots\dots\dots\dots\\{#1}\\
-  \fi
+	\fi
 }
 
 \newcommand\isjoint[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \\\underline{Joint Supervisor:}\vspace{0.35in}\\\dots\dots\dots\dots\dots\dots\dots\\{#1}\\
-  \fi
+	\fi
 }
 
 \newcommand\isalt[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \\\underline{Alternate Supervisor:}\vspace{0.35in}\\\dots\dots\dots\dots\dots\dots\dots\\{#1}\\
-  \fi
+	\fi
 }
 
 \newcommand\isdefinedsig[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \\ \dots\dots\dots\dots\dots\dots\dots\\{#1}\\
-  \fi
+	\fi
 }
 \newcommand\isdefinedspinetitle[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else (Spine title: #1)\\
-  \fi
+	\fi
 }
 \newcommand\coauthor[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \newpage \Large Co-Authorship Statement\normalsize\\\indent\\#1\\
-  \fi
+	\fi
 }
 
 \newcommand\acknowlege[1]{%
-  \edef\@tempa{#1}%
-  \def\@tempb{}%
-  \ifx\@tempa\@tempb
+	\edef\@tempa{#1}%
+	\def\@tempb{}%
+	\ifx\@tempa\@tempb
 	\else \newpage \Large Acknowlegements\normalsize\\\indent\\#1\newpage
-  \fi
+	\fi
 }
 
 %\renewcommand{\appendixtocname}{\Huge \textbf{List of Appendices} \normalsize}
@@ -210,12 +210,12 @@
 \newcommand{\superj}{} %joint supervisor, if there is one, leave blank if not (lbin)... only one of the three.
 \newcommand{\superc}{} %co-supervisor, if there is one, leave blank if not (lbin)
 \newcommand{\supera}{} %alternate supervisor, if there is one, leave blank if not (lbin)
-\newcommand{\sco}{Dr. W. J. Braun}  %member of supervisory committee
-\newcommand{\sct}{Dr. A. Bing}  %other member of supervisory committee (lbin)
-\newcommand{\examo}{Dr. Q. Ring}  %examining committee (up to four, if less leave blank)
-\newcommand{\examt}{Dr. W. Fing}
-\newcommand{\examth}{Dr. G. Hing}
-\newcommand{\examf}{}
+\newcommand{\sco}{}  %member of supervisory committee
+\newcommand{\sct}{}  %other member of supervisory committee (lbin)
+\newcommand{\examo}{Dr. Huajie Zhang}  %examining committee (up to four, if less leave blank)
+\newcommand{\examt}{Dr. Dan Lizotte}
+\newcommand{\examth}{Dr. Olga Veksler}
+\newcommand{\examf}{Dr. Luiz Fernando}
 \newcommand{\department}{Computer Science}
 \newcommand{\degree}{Doctor of Philosophy}
 \newcommand{\firstname}{Shuang}
@@ -228,261 +228,261 @@
 \newcommand{\thesisformat}{Monograph} %or Integrated Article
 \newcommand{\gyear}{\number\year}
 \newcommand{\makecoauthor}{
-%Type information about coauthorship here/
-I would like to acknowlege my imaginary friend, Jummi for doing all the work. 
+	%Type information about coauthorship here/
+	I would like to acknowlege my imaginary friend, Jummi for doing all the work. 
 }
 \newcommand{\makeacknowlege} {
-%Type in acknowlegements here % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-Firstly, I would like to thank my advisor Prof Charles X. Ling for his patience and insightful guidance. He was always eager
-to discuss new ideas at any time help me understand the research and inspired me to thinking critically for the topic I was working on.
-
-Thanks are also given to my colleagues: Yan Luo, Xiao Li, Bin Gu, Chang Liu, Robin Liu and Jun Wang for their collaboration and valuable discussions. Many thanks to Xiang Li. We worked together with many ideas and he is very helpful in many details of the papers we published together.
-
-The Last gratitude is given to my families: my parents Dingan Ao and Liwen Yang, and my wife Jinglang Hu. Without their encouragements and supports, I am not able to pursuing my PhD degree in Western and finish this dissertation.
-
-My research is supported by NSERC Grants and scholarship from the University’s the
-School of Graduate Studies. This thesis would not have been possible without the generous
-resources provided by the Department of Computer Science.
+	%Type in acknowlegements here % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	Firstly, I would like to thank my advisor Prof Charles X. Ling for his patience and insightful guidance. He was always eager
+	to discuss new ideas at any time help me understand the research and inspired me to thinking critically for the topic I was working on.
+	
+	Thanks are also given to my colleagues: Yan Luo, Xiao Li, Bin Gu, Chang Liu, Robin Liu and Jun Wang for their collaboration and valuable discussions. Many thanks to Xiang Li. We worked together with many ideas and he is very helpful in many details of the papers we published together.
+	
+	The Last gratitude is given to my families: my parents Dingan Ao and Liwen Yang, and my wife Jinglang Hu. Without their encouragements and supports, I am not able to pursuing my PhD degree in Western and finish this dissertation.
+	
+	My research is supported by NSERC Grants and scholarship from the University’s the
+	School of Graduate Studies. This thesis would not have been possible without the generous
+	resources provided by the Department of Computer Science.
 }
 \newcommand{\listappendixname}{List of Appendices}
 \newlistof{myappendices}{app}{\listappendixname}
 \newcommand{\myappendices}[1]{%
-\addcontentsline{app}{myappendices}{#1}\par}
+	\addcontentsline{app}{myappendices}{#1}\par}
 
 \renewcommand{\maketitle}
 {\begin{titlepage}
-   \setcounter{page}{1}
-   %% Set the line spacing to 1 for the title page.
-   %\begin{spacing}{1} 
-   \begin{large}
-   \begin{center}
-      \mbox{}
-      \vfill
-      {\MakeUppercase{\titl}}\\
-      \isdefinedspinetitle{\spinetitle}
-      (Thesis format: \thesisformat)\\
-      \vfill
-      by \\
-      \vfill
-      {\firstname} \underline{\lastname}\\
-      \vfill
-      Graduate Program in {\department}\\
-      \vfill
-		A thesis submitted in partial fulfillment\\
-		of the requirements for the degree of\\
-		\degree\\
-		\vfill
-		The School of Graduate and Postdoctoral Studies\\
-		The University of Western Ontario\\
-		London, Ontario, Canada\\
-		\vfill
-      {\copyright} {\authorname} {\gyear}  \\
-      \vspace*{.2in}
-   \end{center}
-   \end{large}
-%   \end{spacing}
-   \end{titlepage}
-
+		\setcounter{page}{1}
+		%% Set the line spacing to 1 for the title page.
+		%\begin{spacing}{1} 
+		\begin{large}
+			\begin{center}
+				\mbox{}
+				\vfill
+				{\MakeUppercase{\titl}}\\
+				\isdefinedspinetitle{\spinetitle}
+				(Thesis format: \thesisformat)\\
+				\vfill
+				by \\
+				\vfill
+				{\firstname} \underline{\lastname}\\
+				\vfill
+				Graduate Program in {\department}\\
+				\vfill
+				A thesis submitted in partial fulfillment\\
+				of the requirements for the degree of\\
+				\degree\\
+				\vfill
+				The School of Graduate and Postdoctoral Studies\\
+				The University of Western Ontario\\
+				London, Ontario, Canada\\
+				\vfill
+				{\copyright} {\authorname} {\gyear}  \\
+				\vspace*{.2in}
+			\end{center}
+		\end{large}
+		%   \end{spacing}
+	\end{titlepage}
+	
 }%\maketitle
 
 \newcommand{\makecert}{
-   \setcounter{page}{2}
-\vfill
-\begin{center}
-\large
-THE UNIVERSITY OF WESTERN ONTARIO\\
-School of Graduate and Postdoctoral Studies\\
-\vfill
-\textbf{CERTIFICATE OF EXAMINATION}
-\end{center}
-
-\vfill
-\begin{table}[ht]
-\begin{minipage}[t]{0.5\linewidth} %tabular instead?
-\begin{tabular}{l}
-\underline{Supervisor:}\vspace{0.35in}
-\isdefinedsig{\super}
-\isco{\superc}
-\isjoint{\superj}
-\isalt{\supera}
-\\
-\underline{Supervisory Committee:}\vspace{0.35in}
-\isdefinedsig{\sco}\vspace{0.15in}
-\isdefinedsig{\sct}
-\end{tabular}
-\vfill
-\end{minipage}
-\hspace{0.5in}
-\begin{minipage}[t]{0.5\linewidth}
-\begin{tabular}{l}
-\underline{Examiners:} \\\vspace{.5cm}
-\isdefinedsig{\examo}\\
-\isdefinedsig{\examt}\\
-\isdefinedsig{\examth}\\
-\isdefinedsig{\examf}
-\end{tabular}
-\vfill
-\end{minipage}
-\vfill
-\end{table}
-\vfill
-\begin{center}
-The thesis by \\ \vfill
-\textbf{\firstname{} \middlename{} \underline{\lastname}}\\
-\vfill
-entitled:\\\vfill
-\textbf{\titl}\\\vfill
-is accepted in partial fulfillment of the \\
-requirements for the degree of\\
-\degree\\
-\end{center}
-\begin{table}[ht]
-\begin{minipage}[t]{0.5\linewidth}
-\begin{tabular}{l}
-\dots\dots\dots\dots\dots\\
-Date
-\end{tabular}
-\end{minipage}
-\hspace{0.5in}
-\begin{minipage}[t]{0.5\linewidth}
-\begin{tabular}{l}
-\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\\
-Chair of the Thesis Examination Board
-\end{tabular}
-\end{minipage}
-\end{table}
-
+	\setcounter{page}{2}
+	\vfill
+	\begin{center}
+		\large
+		THE UNIVERSITY OF WESTERN ONTARIO\\
+		School of Graduate and Postdoctoral Studies\\
+		\vfill
+		\textbf{CERTIFICATE OF EXAMINATION}
+	\end{center}
+	
+	\vfill
+	\begin{table}[ht]
+		\begin{minipage}[t]{0.5\linewidth} %tabular instead?
+			\begin{tabular}{l}
+				\underline{Supervisor:}\vspace{0.35in}
+				\isdefinedsig{\super}
+				\isco{\superc}
+				\isjoint{\superj}
+				\isalt{\supera}
+				\\
+				\underline{Supervisory Committee:}\vspace{0.35in}
+				\isdefinedsig{\sco}\vspace{0.15in}
+				\isdefinedsig{\sct}
+			\end{tabular}
+			\vfill
+		\end{minipage}
+		\hspace{0.5in}
+		\begin{minipage}[t]{0.5\linewidth}
+			\begin{tabular}{l}
+				\underline{Examiners:} \\\vspace{.5cm}
+				\isdefinedsig{\examo}\\
+				\isdefinedsig{\examt}\\
+				\isdefinedsig{\examth}\\
+				\isdefinedsig{\examf}
+			\end{tabular}
+			\vfill
+		\end{minipage}
+		\vfill
+	\end{table}
+	\vfill
+	\begin{center}
+		The thesis by \\ \vfill
+		\textbf{\firstname{} \middlename{} \underline{\lastname}}\\
+		\vfill
+		entitled:\\\vfill
+		\textbf{\titl}\\\vfill
+		is accepted in partial fulfillment of the \\
+		requirements for the degree of\\
+		\degree\\
+	\end{center}
+	\begin{table}[ht]
+		\begin{minipage}[t]{0.5\linewidth}
+			\begin{tabular}{l}
+				\dots\dots\dots\dots\dots\\
+				Date
+			\end{tabular}
+		\end{minipage}
+		\hspace{0.5in}
+		\begin{minipage}[t]{0.5\linewidth}
+			\begin{tabular}{l}
+				\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\\
+				Chair of the Thesis Examination Board
+			\end{tabular}
+		\end{minipage}
+	\end{table}
+	
 }
 
 \makeatother
 \begin{document}
-
-%% ***   NOTE   ***
-%% You should put all of your '\newcommand', '\newenvironment', and
-%% '\newtheorem's (in other words, all the global definitions that you
-%% will need throughout your thesis) in a separate file and use
-%% "\input{filename}" to input it here.
-
-
-%% This sets the page style and numbering for preliminary sections.
-\begin{preliminary}
-
-%% This generates the title page from the information given above.
-\maketitle
-\addcontentsline{toc}{chapter}{Certificate of Examination}
-\makecert
-\newpage
-%\addcontentsline{toc}{chapter}{Co-Authorship Statement}
-%\coauthor{\makecoauthor}  %comment this out if none
-%\newpage
-\addcontentsline{toc}{chapter}{Acknowlegements}
-\acknowlege{\makeacknowlege}	%as above
-
-\addcontentsline{toc}{chapter}{Abstract}
-\Large\begin{center}\textbf{Abstract}\end{center}\normalsize
-%%  ***  Put your Abstract here.   ***
-%% (150 words for M.Sc. and 350 words for Ph.D.)
-
-Image recognition has become one of the most popular topics in machine learning. With the development of deep Convolutional Neural Networks (CNN) and the help of the large scale labeled image database such as ImageNet, modern image recognition models can achieve competitive performance compared to human annotation in some general image recognition tasks. Many IT companies have adopted it to improve their visual related tasks. However, training these large scale deep neural networks requires thousands or even millions of labeled images, which is an obstacle when applying it to a specific visual task with limited training data. Visual transfer learning is proposed to solve this problem. Visual transfer learning aims at transferring the knowledge from a source visual task to a target visual task. Typically, the target task is related to the source task and the training data in the target task is relatively small.
-In visual transfer learning, the majority of existing methods assume that the source data is freely available and use the source data to measure the discrepancy between the source and target task to help the transfer process. However, in many real applications, source data are often a subject of legal, technical and contractual constraints between data owners and data customers. Beyond privacy and disclosure obligations, customers are often reluctant to share their data. When operating customer care, collected data may include information on recent technical problems which is a highly sensitive topic that companies are not willing to share. This scenario is often called Hypothesis Transfer Learning (HTL) where the source data is absent. Therefore, these previous methods cannot be applied to many real visual transfer learning problems.
-
-In this thesis, we investigate the visual transfer learning problem under the scenario where the source data is absent. Instead of using the source data to measure the discrepancy, we use the source model as the proxy to transfer the knowledge from the source task to the target task. Compared to the original source data, the well-trained source model is usually freely accessible in many tasks and contains equivalent source knowledge as well. Specifically, in this thesis, we investigate the visual transfer learning in two scenarios: domain adaptation and learning new categories. 
-
-In chapter 3, we investigate the visual domain adaptation problem under the setting of Hypothesis Transfer Learning. We propose EMTLe that can effectively transfer the knowledge when the size of the target set is small.  Specifically, EMTLe can effectively transfer the knowledge using the outputs of the source models as the auxiliary bias to adjust the prediction in the target task. Experiment results show that EMTLe can outperform other baselines under the setting of HTL.
-
-In chapter 4, we investigate the semi-supervised domain adaptation scenario under the setting of HTL and propose our framework GDSDA. Specifically, we show that GDSDA can effectively transfer the knowledge using the unlabeled data. Then we propose GDSDA-SVM which uses SVMs as the base classifier in GDSDA. We show that GDSDA-SVM can determine the imitation parameter in GDSDA autonomously. Compared to previous methods, whose imitation parameter can only be determined by either brutal force search or background knowledge, GDSDA-SVM is more effective in real applications.
-
-In chapter 5, we investigate the problem of fine-tuning the deep CNN to learn new food categories using the large ImageNet database as our source. We show that by fine-tuning the parameters of the source model with our target food dataset, we can achieve better performance compared to those previous methods.
-
-To conclude, the main contribution of is that we investigate the visual transfer learning problem under the HTL setting. We propose several methods to transfer the knowledge from the source task in supervised and semi-supervised learning scenarios. Extensive experiments results show that our methods can outperform previous work.
-
-
-\vfill
-\textbf{Keywords:} Visual Transfer Learning, Hypothesis Transfer Learning, Supervised Learning, Semi-supervised Learning
-
-\newpage
-\tableofcontents\newpage
-\newpage
-\addcontentsline{toc}{chapter}{List of Figures}
-\listoffigures
-\newpage
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables\newpage
-%\addcontentsline{toc}{chapter}{List of Appendices}
-%\listofmyappendices\newpage
-%\addcontentsline{toc}{chapter}{List of Abbreviations, Symbols, and Nomenclature}
-%\large List of Abbreviations, Symbols, and Nomenclature \normalsize
-%\newpage
-\end{preliminary}
-%% End of the preliminary sections: reset page style and numbering.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                    %%
-%%                    ***   I M P O R T A N T   ***                   %%
-%%                                                                    %%
-%% Put your Chapters here; the easiest way to do this is to keep each %%
-%% chapter in a separate file and \include all the files right here.  %%
-%% Note that each chapter file should start with the line             %%
-%% "\chapter{ChapterName}".  Note that using "\include" instead of    %%
-%% "\input" makes each chapter start on a new page.                   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{introduction/total}
-\include{relatedwork/total}
-\include{pakdd/total}
-\include{aaai/total}
-\include{cnn/total}
-\include{conclusion}
-
-
-
-%% This adds a line for the Bibliography in the Table of Contents.
-\addcontentsline{toc}{chapter}{Bibliography}
-%% ***   Set the bibliography style.   ***
-\bibliographystyle{plain} % (change according to your preference)
-%%% ***   Set the bibliography file.   ***
-\bibliography{research}{}
-%% ***   NOTE   ***
-%% If you don't use bibliography files, comment out the previous line
-%% and use \begin{thebibliography}...\end{thebibliography}.  (In that
-%% case, you should probably put the bibliography in a separate file
-%% and \include or \input it here).
-
-%Appendices.
-\begin{appendices}
-\include{appendix/appendixa}
-\end{appendices}
-
-%CV only relevant stuff... not full CV.
-\addcontentsline{toc}{chapter}{Curriculum Vitae}
-\chapter*{Curriculum Vitae}
-\begin{table}[ht]
-\begin{tabular}{ll}
-\textbf{Name:} & \firstname{} \lastname\\\\
-\textbf{Post-Secondary} &  University of Western Ontario\\
-\textbf{Education and}& London, ON\\
-\textbf{Degrees:}& 2012 - 2017 Ph.D.\\\\
-& China University of Geosciences (Wuhan)\\
-& Wuhan, Hubei, China\\
-& 2009 - 2012 M.Sc\\\\
-& China University of Geosciences (Wuhan)\\
-& Wuhan, Hubei, China\\
-& 2005 - 2009 B.Sc\\\\
-%\textbf{Honours and}& \\
-%\textbf{Awards:}& 2006-2007\\\\
-\textbf{Related Work}& Teaching Assistant\\
-\textbf{Experience:}& The University of Western Ontario\\
-& 2012 - 2017\\\\
-
-& Research Assistant\\
-& The University of Western Ontario\\
-& 2012 - 2017\\\\
-\end{tabular}
-\end{table}
-\subsubsection*{Publications:}
-\textbf{Ao, Shuang}, and Li, Xiang and Ling, Charles. "Fast Generalized Distillation for Semi-supervised Domain Adaptation." Thirtieth-First AAAI Conference on Artificial Intelligence, 2017.\\\\
-\textbf{Ao, Shuang}, and Li, Xiang and Ling, Charles. "Effective Multiclass Transfer For Hypothesis Transfer Learning." Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2017. (Accepted)\\\\
-\textbf{Ao, Shuang}, and Ling, Charles. "Adapting new categories for food recognition with deep representation." 2015 IEEE International Conference on Data Mining Workshop (ICDMW).\\\\
-Luo, Yan and Ling, Charles and \textbf{Ao, Shuang}. Mobile-based Food Classification For Type-2 Diabetes Using Nutrient and Textual Features. 2014 IEEE International Conference on Data Science and Advanced Analytics.
-
+	
+	%% ***   NOTE   ***
+	%% You should put all of your '\newcommand', '\newenvironment', and
+	%% '\newtheorem's (in other words, all the global definitions that you
+	%% will need throughout your thesis) in a separate file and use
+	%% "\input{filename}" to input it here.
+	
+	
+	%% This sets the page style and numbering for preliminary sections.
+	\begin{preliminary}
+		
+		%% This generates the title page from the information given above.
+		\maketitle
+		\addcontentsline{toc}{chapter}{Certificate of Examination}
+		\makecert
+		\newpage
+		%\addcontentsline{toc}{chapter}{Co-Authorship Statement}
+		%\coauthor{\makecoauthor}  %comment this out if none
+		%\newpage
+		\addcontentsline{toc}{chapter}{Acknowlegements}
+		\acknowlege{\makeacknowlege}    %as above
+		
+		\addcontentsline{toc}{chapter}{Abstract}
+		\Large\begin{center}\textbf{Abstract}\end{center}\normalsize
+		%%  ***  Put your Abstract here.   ***
+		%% (150 words for M.Sc. and 350 words for Ph.D.)
+		
+		Image recognition has become one of the most popular topics in machine learning. With the development of Deep Convolutional Neural Networks (CNN) and the help of the large scale labeled image database such as ImageNet, modern image recognition models can achieve competitive performance compared to human annotation in some general image recognition tasks. Many IT companies have adopted it to improve their visual related tasks. However, training these large scale deep neural networks requires thousands or even millions of labeled images, which is an obstacle when applying it to a specific visual task with limited training data. Visual transfer learning is proposed to solve this problem. Visual transfer learning aims at transferring the knowledge from a source visual task to a target visual task. Typically, the target task is related to the source task, and the training data in the target task is relatively small.
+		In visual transfer learning, the majority of existing methods assume that the source data is freely available and use the source data to measure the discrepancy between the source and target task to help the transfer process. However, in many real applications, source data are often a subject of legal, technical and contractual constraints between data owners and data customers. Beyond privacy and disclosure obligations, customers are often reluctant to share their data. When operating customer care, collected data may include information on recent technical problems which is a highly sensitive topic that companies are not willing to share. This scenario is often called Hypothesis Transfer Learning (\textbf{HTL}) where the source data is absent. Therefore, these previous methods cannot be applied to many real visual transfer learning problems.
+		
+		In this thesis, we investigate the visual transfer learning problem under HTL setting. Instead of using the source data to measure the discrepancy, we use the source model as the proxy to transfer the knowledge from the source task to the target task. Compared to the source data, the well-trained source model is usually freely accessible in many tasks and contains equivalent source knowledge as well. Specifically, in this thesis, we investigate the visual transfer learning in two scenarios: domain adaptation and learning new categories. In contrast to the previous methods in HTL, our methods can both leverage knowledge from more types of source models and achieve better transfer performance.
+		
+		In chapter 3, we investigate the visual domain adaptation problem under the setting of Hypothesis Transfer Learning. We propose Effective Multiclass Transfer Learning (\textbf{EMTLe}) that can effectively transfer the knowledge when the size of the target set is small.  Specifically, EMTLe can effectively transfer the knowledge using the outputs of the source models as the auxiliary bias to adjust the prediction in the target task. Experiment results show that EMTLe can outperform other baselines under the setting of HTL.
+		
+		In chapter 4, we investigate the semi-supervised domain adaptation scenario under the setting of HTL and propose our framework {Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}). Specifically, we show that GDSDA can effectively transfer the knowledge using the unlabeled data. We also demonstrate that the imitation parameter, the hyperparameter in GDSDA that balances the knowledge from source and target task, is important to the transfer performance. Then we propose GDSDA-SVM which uses SVMs as the base classifier in GDSDA. We show that GDSDA-SVM can determine the imitation parameter in GDSDA autonomously. Compared to previous methods, whose imitation parameter can only be determined by either brutal force search or background knowledge, GDSDA-SVM is more effective in real applications.
+		
+		In chapter 5, we investigate the problem of fine-tuning the deep CNN to learn new food categories using the large ImageNet database as our source. Without accessing to the source data, i.e. the ImageNet dataset, we show that by fine-tuning the parameters of the source model with our target food dataset, we can achieve better performance compared to those previous methods.
+		
+		To conclude, the main contribution of is that we investigate the visual transfer learning problem under the HTL setting. We propose several methods to transfer the knowledge from the source task in supervised and semi-supervised learning scenarios. Extensive experiments results show that without accessing to any source data, our methods can outperform previous work.
+		
+		
+		\vfill
+		\textbf{Keywords:} Visual Transfer Learning, Hypothesis Transfer Learning, Supervised Learning, Semi-supervised Learning
+		
+		\newpage
+		\tableofcontents\newpage
+		\newpage
+		\addcontentsline{toc}{chapter}{List of Figures}
+		\listoffigures
+		\newpage
+		\addcontentsline{toc}{chapter}{List of Tables}
+		\listoftables\newpage
+		%\addcontentsline{toc}{chapter}{List of Appendices}
+		%\listofmyappendices\newpage
+		%\addcontentsline{toc}{chapter}{List of Abbreviations, Symbols, and Nomenclature}
+		%\large List of Abbreviations, Symbols, and Nomenclature \normalsize
+		%\newpage
+	\end{preliminary}
+	%% End of the preliminary sections: reset page style and numbering.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%                                                                    %%
+	%%                    ***   I M P O R T A N T   ***                   %%
+	%%                                                                    %%
+	%% Put your Chapters here; the easiest way to do this is to keep each %%
+	%% chapter in a separate file and \include all the files right here.  %%
+	%% Note that each chapter file should start with the line             %%
+	%% "\chapter{ChapterName}".  Note that using "\include" instead of    %%
+	%% "\input" makes each chapter start on a new page.                   %%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\include{introduction/total}
+	\include{relatedwork/total}
+	\include{pakdd/total}
+	\include{aaai/total}
+	\include{cnn/total}
+	\include{conclusion}
+	
+	
+	
+	%% This adds a line for the Bibliography in the Table of Contents.
+	\addcontentsline{toc}{chapter}{Bibliography}
+	%% ***   Set the bibliography style.   ***
+	\bibliographystyle{plain} % (change according to your preference)
+	%%% ***   Set the bibliography file.   ***
+	\bibliography{research}{}
+	%% ***   NOTE   ***
+	%% If you don't use bibliography files, comment out the previous line
+	%% and use \begin{thebibliography}...\end{thebibliography}.  (In that
+	%% case, you should probably put the bibliography in a separate file
+	%% and \include or \input it here).
+	
+	%Appendices.
+	\begin{appendices}
+		\include{appendix/appendixa}
+	\end{appendices}
+	
+	%CV only relevant stuff... not full CV.
+	\addcontentsline{toc}{chapter}{Curriculum Vitae}
+	\chapter*{Curriculum Vitae}
+	\begin{table}[ht]
+		\begin{tabular}{ll}
+			\textbf{Name:} & \firstname{} \lastname\\\\
+			\textbf{Post-Secondary} &  University of Western Ontario\\
+			\textbf{Education and}& London, ON\\
+			\textbf{Degrees:}& 2012 - 2017 Ph.D.\\\\
+			& China University of Geosciences (Wuhan)\\
+			& Wuhan, Hubei, China\\
+			& 2009 - 2012 M.Sc\\\\
+			& China University of Geosciences (Wuhan)\\
+			& Wuhan, Hubei, China\\
+			& 2005 - 2009 B.Sc\\\\
+			%\textbf{Honours and}& \\
+			%\textbf{Awards:}& 2006-2007\\\\
+			\textbf{Related Work}& Teaching Assistant\\
+			\textbf{Experience:}& The University of Western Ontario\\
+			& 2012 - 2017\\\\
+			
+			& Research Assistant\\
+			& The University of Western Ontario\\
+			& 2012 - 2017\\\\
+		\end{tabular}
+	\end{table}
+	\subsubsection*{Publications:}
+	\textbf{Ao, Shuang}, and Li, Xiang and Ling, Charles. "Fast Generalized Distillation for Semi-supervised Domain Adaptation." Thirtieth-First AAAI Conference on Artificial Intelligence, 2017.\\\\
+	\textbf{Ao, Shuang}, and Li, Xiang and Ling, Charles. "Effective Multiclass Transfer For Hypothesis Transfer Learning." Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2017. (Accepted)\\\\
+	\textbf{Ao, Shuang}, and Ling, Charles. "Adapting new categories for food recognition with deep representation." 2015 IEEE International Conference on Data Mining Workshop (ICDMW).\\\\
+	Luo, Yan and Ling, Charles and \textbf{Ao, Shuang}. Mobile-based Food Classification For Type-2 Diabetes Using Nutrient and Textual Features. 2014 IEEE International Conference on Data Science and Advanced Analytics.
+	
 \end{document}
 

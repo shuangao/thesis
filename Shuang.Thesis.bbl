@@ -171,13 +171,6 @@ J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei.
 \newblock In {\em The IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR)}, 2009.
 
-\bibitem{denton2015deep}
-Emily~L Denton, Soumith Chintala, Rob Fergus, et~al.
-\newblock Deep generative image models using a￼ laplacian pyramid of
-  adversarial networks.
-\newblock In {\em Advances in neural information processing systems}, pages
-  1486--1494, 2015.
-
 \bibitem{Donahue_2013_CVPR}
 Jeff Donahue, Judy Hoffman, Erik Rodner, Kate Saenko, and Trevor Darrell.
 \newblock Semi-supervised domain adaptation with instance constraints.
@@ -371,6 +364,13 @@ Ilja Kuzborskij, Francesco Orabona, and Barbara Caputo.
 \newblock From n to n+ 1: Multiclass transfer incremental learning.
 \newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
   Conference on}, pages 3358--3365. IEEE, 2013.
+
+\bibitem{lazebnik2006beyond}
+Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em Computer vision and pattern recognition, 2006 IEEE computer
+  society conference on}, volume~2, pages 2169--2178. IEEE, 2006.
 
 \bibitem{le1990handwritten}
 B~Boser Le~Cun, John~S Denker, D~Henderson, Richard~E Howard, W~Hubbard, and

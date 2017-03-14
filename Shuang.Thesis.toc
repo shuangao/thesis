@@ -28,13 +28,13 @@
 \contentsline {subsubsection}{\numberline {2.1.3.2}Soft Margin SVM}{17}
 \contentsline {subsubsection}{\numberline {2.1.3.3}Kernel SVM}{18}
 \contentsline {subsection}{\numberline {2.1.4}Convolutional Neural Networks}{20}
-\contentsline {subsubsection}{\numberline {2.1.4.1}Early work with Convolutional Neural Networks}{20}
-\contentsline {subsubsection}{\numberline {2.1.4.2}Recent achievements with Convlutional Neural Networks}{21}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Early Work with Convolutional Neural Networks}{20}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Recent Achievements with Convlutional Neural Networks}{21}
 \contentsline {section}{\numberline {2.2}An Overview of Visual Transfer Learning}{22}
 \contentsline {subsection}{\numberline {2.2.1}Types of Transfer Learning from the Situations of Tasks}{23}
 \contentsline {subsection}{\numberline {2.2.2}Types of Transfer Learning from the Aspect of Source Knowledge}{24}
 \contentsline {subsection}{\numberline {2.2.3}Special Issues in Avoiding Negative Transfer}{26}
-\contentsline {section}{\numberline {2.3}Related Work in Absence of the Source Data}{28}
+\contentsline {section}{\numberline {2.3}Related Work in Hypothesis Transfer Learning}{28}
 \contentsline {subsection}{\numberline {2.3.1}Fine-tuning the Deep Net}{29}
 \contentsline {subsection}{\numberline {2.3.2}Hypothesis Transfer Learning with SVMs}{29}
 \contentsline {subsubsection}{\numberline {2.3.2.1}LS-SVM Classifier}{31}
@@ -45,7 +45,7 @@
 \contentsline {chapter}{\numberline {3}Effective Multiclass Transfer For Hypothesis Transfer Learning}{37}
 \contentsline {section}{\numberline {3.1}Introduction}{37}
 \contentsline {section}{\numberline {3.2}Using the Source Knowledge as the Auxiliary Bias}{38}
-\contentsline {section}{\numberline {3.3}Bi-level Optimization for Transfer Parameter Estimation}{39}
+\contentsline {section}{\numberline {3.3}Bi-level Optimization for Transfer Parameter Estimation}{40}
 \contentsline {subsection}{\numberline {3.3.1}Low-level optimization problem}{41}
 \contentsline {subsection}{\numberline {3.3.2}High-level optimization problem}{42}
 \contentsline {section}{\numberline {3.4}Experiments}{43}
@@ -57,30 +57,30 @@
 \contentsline {section}{\numberline {4.1}Introduction}{50}
 \contentsline {section}{\numberline {4.2}Previous Work}{51}
 \contentsline {section}{\numberline {4.3}Generalized Distillation for Semi-supervised Domain Adaptation}{52}
-\contentsline {subsection}{\numberline {4.3.1}An overview of Generalized Distillation and GDSDA}{52}
+\contentsline {subsection}{\numberline {4.3.1}An Overview of Generalized Distillation and GDSDA}{52}
 \contentsline {subsection}{\numberline {4.3.2}Why does GDSDA work}{54}
-\contentsline {subsection}{\numberline {4.3.3}Key parameter: the imitation parameter}{57}
+\contentsline {subsection}{\numberline {4.3.3}Key Parameter: the Imitation Parameter}{56}
 \contentsline {section}{\numberline {4.4}GDSDA-SVM}{57}
-\contentsline {subsection}{\numberline {4.4.1}Distillation with multiple sources}{57}
-\contentsline {subsection}{\numberline {4.4.2}Cross-entropy loss for imitation parameter estimation}{59}
-\contentsline {section}{\numberline {4.5}Experiments}{60}
+\contentsline {subsection}{\numberline {4.4.1}Distillation with Multiple Sources}{57}
+\contentsline {subsection}{\numberline {4.4.2}Cross-entropy Loss for Imitation Parameter Estimation}{58}
+\contentsline {section}{\numberline {4.5}Experiments}{59}
 \contentsline {subsection}{\numberline {4.5.1}Single Source for Office datasets}{60}
-\contentsline {subsection}{\numberline {4.5.2}Multi-Source for Office datasets}{62}
-\contentsline {section}{\numberline {4.6}Summary}{63}
-\contentsline {chapter}{\numberline {5}Learning Food Recognition Model with Deep Representation}{65}
-\contentsline {section}{\numberline {5.1}Introduction}{65}
-\contentsline {section}{\numberline {5.2}Tuning the Deep CNNs}{65}
+\contentsline {subsection}{\numberline {4.5.2}Multi-Source for Office datasets}{61}
+\contentsline {section}{\numberline {4.6}Summary}{62}
+\contentsline {chapter}{\numberline {5}Learning Food Recognition Model with Deep Representation}{64}
+\contentsline {section}{\numberline {5.1}Introduction}{64}
+\contentsline {section}{\numberline {5.2}Tuning the Deep CNNs}{64}
 \contentsline {section}{\numberline {5.3}Layers in Deep CNN}{66}
 \contentsline {subsection}{\numberline {5.3.1}Convolutional Layer}{66}
-\contentsline {subsection}{\numberline {5.3.2}Pooling Layer}{67}
-\contentsline {subsection}{\numberline {5.3.3}Fully Connected Layer}{68}
+\contentsline {subsection}{\numberline {5.3.2}Pooling Layer}{66}
+\contentsline {subsection}{\numberline {5.3.3}Fully Connected Layer}{67}
 \contentsline {subsubsection}{\numberline {5.3.3.1}Rectified Linear Units (ReLUs) for Activation}{68}
-\contentsline {subsubsection}{\numberline {5.3.3.2}DropOut}{69}
-\contentsline {section}{\numberline {5.4}Datasets}{70}
-\contentsline {subsection}{\numberline {5.4.1}Models}{70}
+\contentsline {subsubsection}{\numberline {5.3.3.2}DropOut}{68}
+\contentsline {section}{\numberline {5.4}Experiment Settings}{69}
+\contentsline {subsection}{\numberline {5.4.1}Models}{69}
 \contentsline {subsection}{\numberline {5.4.2}Food Datasets}{70}
-\contentsline {subsection}{\numberline {5.4.3}Data Argumentation}{72}
-\contentsline {section}{\numberline {5.5}Experimental Discuss}{72}
+\contentsline {subsection}{\numberline {5.4.3}Data Argumentation}{71}
+\contentsline {section}{\numberline {5.5}Discussion}{73}
 \contentsline {subsection}{\numberline {5.5.1}Pre-training and Fine-tuning}{75}
 \contentsline {subsection}{\numberline {5.5.2}Learning across the datasets}{77}
 \contentsline {section}{\numberline {5.6}Summary}{80}

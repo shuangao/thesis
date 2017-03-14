@@ -1,28 +1,28 @@
 In this section, we introduce some details about the two architectures and the food datasets used in our experiments.
 \subsection{Models}
-In this paper, AlexNet and GoogLeNet are their Caffe \cite{jia2014caffe} implementations and all the results for a specific CNN architecture are obtained from single model.
+In this paper, AlexNet and GoogLeNet are their Caffe \cite{jia2014caffe} implementations and all the results for a specific CNN architecture are obtained from a single model.
 
 \textbf{AlexNet}
- contains 5 layers followed by the auxiliary classifier which contains 2 fully connected layers (FC) and 1 softmax layer. Each of the first two layers can be subdivided into 3 components: convolutional layer with rectified linear units (ReLUs), local response normalization layer (LRN) and max pooling layer. Layer 3 and layer 4 contain just convolutional layer with ReLUs while layer 5 is similar to the first two layers except for the LRN. For each of the fully connected layer, 1 ReLUs and 1 dropout \cite{srivastava2014dropout} layer are followed.
+contains 5 layers followed by the auxiliary classifier which contains 2 fully connected layers (FC) and 1 softmax layer. Each of the first two layers can be subdivided into 3 components: convolutional layer with rectified linear units (ReLUs), local response normalization layer (LRN) and max pooling layer. Layer 3 and layer 4 contain just convolutional layer with ReLUs while layer 5 is similar to the first two layers except for the LRN. For each of the fully connected layer, 1 ReLUs and 1 dropout \cite{srivastava2014dropout} layer are followed.
 
- \textbf{GoogLeNet}
-  shows another trend of deep CNN architecture with lots of small receptive fields. There are 9 Inception modules in GoogLeNet and Figure \ref{incept} shows the architecture of a single inception module. Inspired by \cite{linNiN}, lots of $1\times 1$ convolutional layers are used for computational efficiency. Another interesting feature of GoogLeNet is that there are two extra auxiliary classifiers in intermediate layers. During the training procedure, the loss of these two classifiers are counted into the total loss with a discount weight 0.3, in addition with the loss of the classifier on top. More architecture details can be found from \cite{szegedy2014going}.
+\textbf{GoogLeNet}
+shows another trend of deep CNN architecture with lots of small receptive fields. There are 9 Inception modules in GoogLeNet and Figure \ref{incept} shows the architecture of a single inception module. Inspired by \cite{linNiN}, lots of $1\times 1$ convolutional layers are used for computational efficiency. Another interesting feature of GoogLeNet is that there are two extra auxiliary classifiers in intermediate layers. During the training procedure, the loss of these two classifiers is counted into the total loss with a discount weight 0.3, in addition to the loss of the classifier on top. More architecture details can be found from \cite{szegedy2014going}.
 %\begin{figure}
 %\centering
 %\includegraphics[scale=.11]{cnn/fig/g_v.pdf}\\
 %\end{figure}
 \begin{figure}
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[scale=.7]{cnn/fig/inception.pdf}\\
-  \caption{Inception Module. $n\times n$ stands for size $n$ receptive field, $n\times n\_reduce$ stands for the $1\times 1$ convolutional layer before the $n\times n$ convolution layer and $pool\_proj$ is another $1\times 1$ convolutional layer after the MAX pooling layer. The output layer concatenates all its input layers.}\label{incept}
+	\centering
+	% Requires \usepackage{graphicx}
+	\includegraphics[scale=.7]{cnn/fig/inception.pdf}\\
+	\caption{Inception Module. $n\times n$ stands for size $n$ receptive field, $n\times n\_reduce$ stands for the $1\times 1$ convolutional layer before the $n\times n$ convolution layer and $pool\_proj$ is another $1\times 1$ convolutional layer after the MAX pooling layer. The output layer concatenates all its input layers.}\label{incept}
 \end{figure}
 
 \subsection{Food Datasets}
 Besides ImageNet dataset, there are many popular benchmark datasets for image recognition such as Caltech dataset and CIFAR dataset, both of which contain hundreds of classes. However, in this paper, we try to focus on a more specific area, food classification. Compared to other recognition tasks, there are some properties of the food (dishes) which make the tasks become a real challenge:
 \begin{itemize}
-  \item Food doesn't have any distinctive spatial layout: for other tasks like scene recognition, we can always find some discriminative features such as buildings or trees, etc;
-  \item Food class is a small sub-category among all the categories in daily life, so the inter-class variation is relatively small; on the other hand, the contour of a food varies depending on many aspects such as the point of the view or even its components.
+	\item Food doesn't have any distinctive spatial layout: for other tasks like scene recognition, we can always find some discriminative features such as buildings or trees, etc;
+	\item Food class is a small sub-category among all the categories in daily life, so the inter-class variation is relatively small; on the other hand, the contour of food varies depending on many aspects such as the point of view or even its components.
 \end{itemize}
 These properties make food recognition catastrophic for some recognition algorithms. Therefore, the training these two architectures on the food recognition task can reveal some important aspects of themselves and help people better understand them. In this paper, we use two image datasets Food-256 \cite{kawano14c}\footnote{Dataset can be found http://foodcam.mobi/dataset.html} and Food-101 \cite{bossard2014food}\footnote{Dataset can be found http://www.vision.ee.ethz.ch/datasets\_extra/food-101}. It is worthy to mention that PFID dataset is also a big public image database for classification, but their images are collected in a laboratory condition which is considerably not applicable for real recognition task.
 
@@ -34,24 +34,24 @@ This dataset contains 101-class real-world food (dish) images which were taken a
 
 \subsection{Data Argumentation}
 In this section, we introduce some data argumentation methods in our work to enrich our training data. Previous work shows that with intensive argumentation for the training data, the performance of CNN model can be improved \cite{wu2015deep}. 
-Data argumentation is an efficient way to enrich the data. There are also some techniques that can applied to enlarge the dataset such as subsampling and mirroring. The original images are firstly resized to $256\times 256$ pixels. We crop the 4 corners and center for each image according to the input size of each model and flap the 5 cropped images to obtain 10 crops. For the testing set, the prediction of an image is the average prediction of the 10 crops (see Figure \ref{fig:cnn:crop}).
+Data argumentation is an efficient way to enrich the data. There are also some techniques that can apply to enlarge the dataset such as subsampling and mirroring. The original images are firstly resized to $256\times 256$ pixels. We crop the 4 corners and center for each image according to the input size of each model and flap the 5 cropped images to obtain 10 crops. For the testing set, the prediction of an image is the average prediction of the 10 crops (see Figure \ref{fig:cnn:crop}).
 
 \begin{figure}
 	\centering
 	\begin{tabular}{cccc}
-	\multicolumn{2}{c}{\subfloat[Original image]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop00.png}}}&
-	\subfloat[Center]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop4.png}}&
-	\subfloat[Center mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop9.png}}  
-		\\	
-	
-	\subfloat[Up-left]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop0.png}}&
-	\subfloat[Up-left mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop5.png}} & \subfloat[Up-right]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop1.png}}&
-	\subfloat[Up-right mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop6.png}}\\
-	
-	\subfloat[Bottom-left]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop2.png}}&
-	\subfloat[Bottom-left mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop7.png}} & \subfloat[Bottom-right]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop3.png}}&
-	\subfloat[Bottom-right mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop8.png}}\\
-
+		\multicolumn{2}{c}{\subfloat[Original image]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop00.png}}}&
+		\subfloat[Center]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop4.png}}&
+		\subfloat[Center mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop9.png}}  
+		\\    
+		
+		\subfloat[Up-left]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop0.png}}&
+		\subfloat[Up-left mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop5.png}} & \subfloat[Up-right]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop1.png}}&
+		\subfloat[Up-right mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop6.png}}\\
+		
+		\subfloat[Bottom-left]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop2.png}}&
+		\subfloat[Bottom-left mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop7.png}} & \subfloat[Bottom-right]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop3.png}}&
+		\subfloat[Bottom-right mirror]{    \includegraphics[width=0.15\textheight]{cnn/fig/crop8.png}}\\
+		
 	\end{tabular}
 	\caption{Crop area from original image}\label{fig:cnn:crop}
 \end{figure}
@@ -60,25 +60,39 @@ Before cropping subsamples from the original image, we also use other argumentat
 
 Compared to color shifting in \cite{krizhevsky2012imagenet}, we use color casting to alter the intensities of the RGB channels in training images. For each image, we firstly use a random boolean parameter to determine whether its R, G, and B channel should be changed. For any channel that should be changed, we add a random integer ranging from $[-20 , 20]$ to this specific channel. We also apply vignetting effect to the original image. In our implementation, we apply a 2D Gaussian kernel on the original image for vignetting. The two parameter $\sigma_x$ and $\sigma_y$ are randomly chosen from $[160,200)$. We also apply some geometric transformation such as stretching and rotation, on the original image for data argumentation. In summary, we enriched the data by 11 times, 3 times color shifting, 2 times vignetting, 4 times stretching and 1 time rotation and plus the original image.
 
-
-
-
-
+During the fine-tuning process, we initial the learning rate 0.01 and it decreases 90\% (times 0.1) every 10000 iterations. The detail training configuration is shown in Table \ref{tab:config}.
 
 \begin{figure}
-  \centering
-  \subfloat[Original image]{    \includegraphics[width=0.3\textwidth]{cnn/fig/org.png}  }
-  \subfloat[Red casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/red.png}  }
-  \subfloat[Green casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/green.png}  }\\
-  \subfloat[Blue casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/blue.png}  }
-  \subfloat[RGB casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/rgb.png}  }
-  \subfloat[Vignette]{    \includegraphics[width=0.3\textwidth]{cnn/fig/v1.png}  }\\
-  \subfloat[More vignette]{    \includegraphics[width=0.3\textwidth]{cnn/fig/v2.png}  }
-  \subfloat[Horizontal stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s1.png}  }
-  \subfloat[More horizontal stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s2.png}  }\\
-  \subfloat[Vertical stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s4.png}  }
-  \subfloat[More vertical stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s3.png}  }
-  \subfloat[Rotation]{    \includegraphics[width=0.3\textwidth]{cnn/fig/rota.png}  }\\
-
-  \caption{Different data argumentation methods}\label{fig:cnn:argu}
+	\centering
+	\subfloat[Original image]{    \includegraphics[width=0.3\textwidth]{cnn/fig/org.png}  }
+	\subfloat[Red casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/red.png}  }
+	\subfloat[Green casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/green.png}  }\\
+	\subfloat[Blue casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/blue.png}  }
+	\subfloat[RGB casting]{    \includegraphics[width=0.3\textwidth]{cnn/fig/rgb.png}  }
+	\subfloat[Vignette]{    \includegraphics[width=0.3\textwidth]{cnn/fig/v1.png}  }\\
+	\subfloat[More vignette]{    \includegraphics[width=0.3\textwidth]{cnn/fig/v2.png}  }
+	\subfloat[Horizontal stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s1.png}  }
+	\subfloat[More horizontal stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s2.png}  }\\
+	\subfloat[Vertical stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s4.png}  }
+	\subfloat[More vertical stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s3.png}  }
+	\subfloat[Rotation]{    \includegraphics[width=0.3\textwidth]{cnn/fig/rota.png}  }\\
+	
+	\caption{Different data argumentation methods}\label{fig:cnn:argu}
 \end{figure}
+
+
+%\subsection{Configuration}
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		Batch Size & 16 \\ \hline
+		Learning Rate& 0.01\\ \hline
+		Learning Rate Decay Policy& Drop 0.1 every 10000 iterations\\\hline
+		Drop Rate & 0.1\\\hline
+		Training Iteration& 100000\\\hline
+		Momentum & 0.9\\\hline
+		Weight Decay Rate& 0.0002\\\hline
+		\end{tabular}
+		\caption{Experimental configuration for GoogLeNet}\label{tab:config}
+	\end{table}

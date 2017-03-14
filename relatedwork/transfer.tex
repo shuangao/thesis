@@ -11,7 +11,7 @@ Traditional machine learning algorithms try to build the classifiers from a set 
 	\centering
 	\caption{Categories of our learning scenarios}
 	\begin{tabular}{|c|c|c|}
-	\hline
+		\hline
 		& Situation of Task     & Source Knowledge \\
 		\hline
 		Learning New Categories & Inductive Transfer & \multirow{2}[0]{*}{Parameter Transfer} \\
@@ -35,7 +35,7 @@ Transfer learning can be categorized into 3 sub-settings: \textbf{inductive tran
 		\multicolumn{2}{|c|}{Traditional machine learning} & the same & the same \\\hline
 		\multirow{3}{*}{Transfer learning} & \textbf{Inductive transfer learning} & the same & different but related \\\cline{2-4}
 		& Unsupervised transfer learning & different but related & different but related \\\cline{2-4}
-		& Transductive transfer learning & different but related & the same \\\hline	
+		& Transductive transfer learning & different but related & the same \\\hline    
 	\end{tabular}%
 	\label{tab:related:transfercmp}%
 \end{table}%
@@ -49,7 +49,7 @@ Transfer learning can be categorized into 3 sub-settings: \textbf{inductive tran
 		\hline
 		\multirow{2}[4]{*}{Inductive transfer learning} & self-taught learning & unlabeled & labeled \\\cline{2-4}
 		& multi-task learning & labeled & labeled \\\hline
-		 Transductive transfer learning& \textbf{domain adaptation}, Sample selection bias & labeled & labeled/unlabeled \\\hline
+		Transductive transfer learning& \textbf{domain adaptation}, Sample selection bias & labeled & labeled/unlabeled \\\hline
 		Unsupervised transfer learning &       & unlabeled & unlabeled \\
 		\hline
 	\end{tabular}%
@@ -102,10 +102,10 @@ Another important aspect that affect the learning performance is the transfer ab
 
 Here we can see that most of the previous approaches focus on measuring the similarity of the source and target tasks, i.e. try to assign the most related source tasks to the target one through various of metrics and use aggressive transfer algorithm to exploit the source knowledge. Just a few work \cite{kuzborskij2013stability} \cite{tommasi2010safety} addressed the problem that a sophisticated transfer algorithm should be designed to better exploit the source knowledge as well as avoid negative transfer. Therefore, in this thesis, we mainly focus on how to design a better transfer algorithm for transfer learning while certain source knowledge is assigned. 
 
-To summarize, in this section, we provided an overview of the categories of transfer learning from two different views. From the relationships of the tasks, our two transfer learning scenarios belong to inductive transfer and transductive transfer learning respectively. In this thesis, we assume that we are not able to access to the source data, therefore, from the aspect of source knowledge, we use parameter transfer for both scenarios. In this thesis, without visiting any source data, it is difficult to measure the relationship between the source and target tasks. Therefore, avoiding negative transfer is also an important part we have to consider. Finally, we reviewed some methods that tackle with negative transfer.
+To summarize, in this section, we provided an overview of the categories of transfer learning from two different views. From the relationships of the tasks, our two transfer learning scenarios belong to inductive transfer and transductive transfer learning respectively. In this thesis, we assume that we are not able to access to the source data, therefore, from the aspect of source knowledge, we use parameter transfer for both scenarios. In this thesis, without visiting any source data, it is difficult to measure the relationship between the source and target tasks. Therefore, avoiding negative transfer is also an important part we have to consider. Finally, we reviewed some methods that cab alleviate negative transfer.
 
-\section{Related Work in Absence of the Source Data}
-The main topic of this thesis is to investigate the problem of visual transfer learning in the absence of the source data. Therefore, in this section, we show some work related to this topic and this thesis. We first review some work in fine-tuning the deep neural networks for inductive transfer learning related to our work in chapter \ref{sec:cnn}. Then we discuss some methods in hypothesis transfer learning, which is related to our work in chapter \ref{sec:pakdd}. The related work in chapter \ref{sec:aaai} is reviewed at last.
+\section{Related Work in Hypothesis Transfer Learning}
+The main topic of this thesis is to investigate the problem of visual transfer learning under the HTL setting. Therefore, in this section, we show some work related to this topic and this thesis. We first review some work in fine-tuning the deep neural networks for inductive transfer learning related to our work in chapter \ref{sec:cnn}. Then we discuss some methods in hypothesis transfer learning, which is related to our work in chapter \ref{sec:pakdd}. The related work in chapter \ref{sec:aaai} is reviewed at last.
 
 \subsection{Fine-tuning the Deep Net}
 \input{relatedwork/ft-net}
@@ -115,6 +115,6 @@ The main topic of this thesis is to investigate the problem of visual transfer l
 
 \subsection{Distillation for Knowledge Transfer}
 \input{relatedwork/GD.tex}
- 
+
 
 

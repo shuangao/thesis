@@ -8,13 +8,14 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces The selected classes of the two source domains and the classifier type of the source model.\relax }}{45}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Top-5 Accuracy in percent on fine-tuned, ft-last and scratch model for two architectures\relax }}{75}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy compared to other method on Food-256 dataset in percent\relax }}{75}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Top-1 accuracy compared to other methods on Food-101 dataset in percent\relax }}{75}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Cosine similarity of the layers in inception modules between fine-tuned models and pre-trained model for GoogLeNet\relax }}{78}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Cosine similarity of the layers between fine-tuned models and pre-trained model for AlexNet\relax }}{78}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Sparsity of the output for each unit in GoogLeNet inception module for training data from Food101 in percent\relax }}{79}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Top5 Accuracy for transferring from Food101 to subset of Food256 in percent\relax }}{79}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Experimental configuration for GoogLeNet\relax }}{73}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Top-5 Accuracy in percent on fine-tuned, ft-last and scratch model for two architectures\relax }}{75}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Accuracy compared to other methods on Food-256 dataset in percent\relax }}{75}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Top-1 accuracy compared to other methods on Food-101 dataset in percent\relax }}{75}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Cosine similarity of the layers in Inception modules between fine-tuned models and pre-trained model for GoogLeNet\relax }}{78}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Cosine similarity of the layers between fine-tuned models and pre-trained model for AlexNet\relax }}{78}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Sparsity of the output for each unit in GoogLeNet inception module for training data from Food101 in percent\relax }}{79}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Top5 Accuracy for transferring from Food101 to subset of Food256 in percent\relax }}{79}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
