@@ -1,7 +1,7 @@
 A CNN consists of some convolutional and subsampling layers optionally followed by fully connected layers. In this part, we introduce the layers used in our work.
 \subsection{Convolutional Layer}
 Convolutional Layer is the core building block of a Convolutional Network, and its output volume can be interpreted as holding neurons arranged in a 3D volume.
-Natural images have the property of being "stationary" meaning that the statistics of one part of the image are the same as any other part. This suggests that the features that we learn at one part of the image can also be applied to other parts of the image, and we can use the same features at all locations.
+Natural images have the property of being "stationary" meaning that the statistics of one part of the image are the same as any other part. This suggests that the features that we learn at one part of the image can also be applied to other parts of the image, and we can use the same features at all locations. For example, some low-level features such as some special points or edges exist in many objects and can be used as the features for different types of objects.
 
 Formally, given some original $h\times w$ input images $I$, we can train a small autoencoder from $a \times b$ kernel matrix. Also, we have to set other hyperparameters, stride $s$ and padding $p$. Stride defines the number of pixels the kernel should be moved in each step around the image $I$ and padding defines the number of rows/columns padded to the height and width of the original input (see Figure \ref{fig:cnn:conv}). 
 Given a $a \times b$ kernel matrix $W^{(1)}$, bias $b^{(1)}$, padding $p$ and stride $s$, we can encode the original image $I$ as $f_{conv}=sigmod(W^{(1)}I_p+b^{(1)})$ for $I_p \in I$, giving us $f_{conv}$ (called feature map of $W^{(1)}$), a  $\left\lceil\frac{(h-a+2p)}{s}+1\right\rceil\times\left\lceil\frac{(w-b+2p)}{s}+1\right\rceil$ array of feature map. In general, for any specific input $I$ ($h \times w \times c$ array matrix) of a convolutional layer $L$, assuming we have $k$ such $a \times b \times c$ kernel matrix, its feature maps $f$ should be a $\left\lceil\frac{(h-a+2p)}{s}+1\right\rceil\times\left\lceil\frac{(w-b+2p)}{s}+1\right\rceil \times k$ array matrix with $f_{conv}^{(i)}=sigmod(W^{(i)}I_p+b^{(i)})$ for $I_p \in I$ and $i \in 1,\dots k$.
@@ -35,7 +35,7 @@ Rectified Linear Units can be considered as replacing each binary unit with sigm
 \end{equation}
 where $\sigma(x)$ is the sigmoid function. In practice, Rectified Linear Units use the function 
 \begin{equation}
-f(x) = \log (1 + {e^x}) \approx \max(x,0) 
+f(x) = \max(x,0)  \approx \log (1 + {e^x})
 \end{equation}\label{eq:cnn:relu}
 as the activation function for approximation \cite{jarrett2009best}. With $max$ function, the derivatives of the active ($x>0$) and inactive neurons are 1 and 0 respectively.  As a result, ReLUs can speed up the learning procedure greatly and improve the performance.
 \subsubsection{DropOut}
@@ -47,4 +47,5 @@ The key idea is to randomly drop units (along with their connections) from the n
 		\subfloat[ Standard Neural Net ]{    \includegraphics[width=0.3\textwidth]{cnn/fig/net.png}}&
 		\subfloat[After Dropout]{    \includegraphics[width=0.3\textwidth]{cnn/fig/dropnet.png}} \\
 	\end{tabular}
+	\caption{Dropout Layers. Adopted from Standford CS231n Convolutional Neural Networks for Visual Recognition}
 \end{figure}

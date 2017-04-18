@@ -1,93 +1,93 @@
-\contentsline {chapter}{Certificate of Examination}{ii}
-\contentsline {chapter}{Acknowlegements}{iii}
-\contentsline {chapter}{Abstract}{iv}
-\contentsline {chapter}{List of Figures}{x}
-\contentsline {chapter}{List of Tables}{xiii}
-\contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Overview for Image Recognition}{2}
-\contentsline {subsection}{\numberline {1.1.1}Preprocess}{2}
-\contentsline {subsection}{\numberline {1.1.2}Feature Extraction}{3}
-\contentsline {subsubsection}{\numberline {1.1.2.1}Hand Engineered Feature}{3}
-\contentsline {subsubsection}{\numberline {1.1.2.2}Representation Learning}{4}
-\contentsline {subsection}{\numberline {1.1.3}Classification}{6}
-\contentsline {section}{\numberline {1.2}Approaches in Visual Transfer Learning and the Limitations}{7}
-\contentsline {subsection}{\numberline {1.2.1}Intuition for Visual Transfer Learning}{7}
-\contentsline {subsection}{\numberline {1.2.2}Approaches for Visual Transfer Learning}{8}
-\contentsline {subsection}{\numberline {1.2.3}Limitation of Previous Methods}{9}
-\contentsline {section}{\numberline {1.3}Main Contribution}{10}
-\contentsline {subsection}{\numberline {1.3.1}Challenges}{10}
-\contentsline {subsection}{\numberline {1.3.2}Two Transfer Learning Scenarios}{11}
-\contentsline {subsection}{\numberline {1.3.3}Proposed Methods}{12}
-\contentsline {section}{\numberline {1.4}Summary}{12}
-\contentsline {chapter}{\numberline {2}Related Work}{13}
-\contentsline {section}{\numberline {2.1}Classifiers for Image Recognition}{13}
-\contentsline {subsection}{\numberline {2.1.1}Binary Classification and Multi-class Classification}{13}
-\contentsline {subsection}{\numberline {2.1.2}Softmax Classifier}{14}
-\contentsline {subsection}{\numberline {2.1.3}Support Vector Machines}{16}
-\contentsline {subsubsection}{\numberline {2.1.3.1}Hard Margin SVM}{17}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Soft Margin SVM}{17}
-\contentsline {subsubsection}{\numberline {2.1.3.3}Kernel SVM}{18}
-\contentsline {subsection}{\numberline {2.1.4}Convolutional Neural Networks}{20}
-\contentsline {subsubsection}{\numberline {2.1.4.1}Early Work with Convolutional Neural Networks}{20}
-\contentsline {subsubsection}{\numberline {2.1.4.2}Recent Achievements with Convlutional Neural Networks}{21}
-\contentsline {section}{\numberline {2.2}An Overview of Visual Transfer Learning}{22}
-\contentsline {subsection}{\numberline {2.2.1}Types of Transfer Learning from the Situations of Tasks}{23}
-\contentsline {subsection}{\numberline {2.2.2}Types of Transfer Learning from the Aspect of Source Knowledge}{24}
-\contentsline {subsection}{\numberline {2.2.3}Special Issues in Avoiding Negative Transfer}{26}
-\contentsline {section}{\numberline {2.3}Related Work in Hypothesis Transfer Learning}{28}
-\contentsline {subsection}{\numberline {2.3.1}Fine-tuning the Deep Net}{29}
-\contentsline {subsection}{\numberline {2.3.2}Hypothesis Transfer Learning with SVMs}{29}
-\contentsline {subsubsection}{\numberline {2.3.2.1}LS-SVM Classifier}{31}
-\contentsline {subsubsection}{\numberline {2.3.2.2}ASVM \& PMT-SVM}{31}
-\contentsline {subsubsection}{\numberline {2.3.2.3}MULTIpLE}{34}
-\contentsline {subsection}{\numberline {2.3.3}Distillation for Knowledge Transfer}{34}
-\contentsline {section}{\numberline {2.4}Summary}{36}
-\contentsline {chapter}{\numberline {3}Effective Multiclass Transfer For Hypothesis Transfer Learning}{37}
-\contentsline {section}{\numberline {3.1}Introduction}{37}
-\contentsline {section}{\numberline {3.2}Using the Source Knowledge as the Auxiliary Bias}{38}
-\contentsline {section}{\numberline {3.3}Bi-level Optimization for Transfer Parameter Estimation}{40}
-\contentsline {subsection}{\numberline {3.3.1}Low-level optimization problem}{41}
-\contentsline {subsection}{\numberline {3.3.2}High-level optimization problem}{42}
-\contentsline {section}{\numberline {3.4}Experiments}{43}
-\contentsline {subsection}{\numberline {3.4.1}Dataset \& Baseline methods}{43}
-\contentsline {subsection}{\numberline {3.4.2}Transfer from Single Source Domain}{44}
-\contentsline {subsection}{\numberline {3.4.3}Transfer from Multiple Source Domains}{45}
-\contentsline {section}{\numberline {3.5}Summary}{46}
-\contentsline {chapter}{\numberline {4}Fast Generalized Distillation for Semi-supervised Domain Adaptation}{50}
-\contentsline {section}{\numberline {4.1}Introduction}{50}
-\contentsline {section}{\numberline {4.2}Previous Work}{51}
-\contentsline {section}{\numberline {4.3}Generalized Distillation for Semi-supervised Domain Adaptation}{52}
-\contentsline {subsection}{\numberline {4.3.1}An Overview of Generalized Distillation and GDSDA}{52}
-\contentsline {subsection}{\numberline {4.3.2}Why does GDSDA work}{54}
-\contentsline {subsection}{\numberline {4.3.3}Key Parameter: the Imitation Parameter}{56}
-\contentsline {section}{\numberline {4.4}GDSDA-SVM}{57}
-\contentsline {subsection}{\numberline {4.4.1}Distillation with Multiple Sources}{57}
-\contentsline {subsection}{\numberline {4.4.2}Cross-entropy Loss for Imitation Parameter Estimation}{58}
-\contentsline {section}{\numberline {4.5}Experiments}{59}
-\contentsline {subsection}{\numberline {4.5.1}Single Source for Office datasets}{60}
-\contentsline {subsection}{\numberline {4.5.2}Multi-Source for Office datasets}{61}
-\contentsline {section}{\numberline {4.6}Summary}{62}
-\contentsline {chapter}{\numberline {5}Learning Food Recognition Model with Deep Representation}{64}
-\contentsline {section}{\numberline {5.1}Introduction}{64}
-\contentsline {section}{\numberline {5.2}Tuning the Deep CNNs}{64}
-\contentsline {section}{\numberline {5.3}Layers in Deep CNN}{66}
-\contentsline {subsection}{\numberline {5.3.1}Convolutional Layer}{66}
-\contentsline {subsection}{\numberline {5.3.2}Pooling Layer}{66}
-\contentsline {subsection}{\numberline {5.3.3}Fully Connected Layer}{67}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Rectified Linear Units (ReLUs) for Activation}{68}
-\contentsline {subsubsection}{\numberline {5.3.3.2}DropOut}{68}
-\contentsline {section}{\numberline {5.4}Experiment Settings}{69}
-\contentsline {subsection}{\numberline {5.4.1}Models}{69}
-\contentsline {subsection}{\numberline {5.4.2}Food Datasets}{70}
-\contentsline {subsection}{\numberline {5.4.3}Data Argumentation}{71}
-\contentsline {section}{\numberline {5.5}Discussion}{73}
-\contentsline {subsection}{\numberline {5.5.1}Pre-training and Fine-tuning}{75}
-\contentsline {subsection}{\numberline {5.5.2}Learning across the datasets}{77}
-\contentsline {section}{\numberline {5.6}Summary}{80}
-\contentsline {chapter}{\numberline {6}Conclusion}{81}
-\contentsline {chapter}{Bibliography}{83}
-\contentsline {chapter}{\numberline {A}Proofs of Theorems}{94}
-\contentsline {section}{\numberline {A.1}Closed-form Leave-out Error for LS-SVM}{94}
-\contentsline {section}{\numberline {A.2}Converage of EMTLe}{95}
-\contentsline {chapter}{\numberline {B}Configuration of GoogLeNet}{98}
-\contentsline {chapter}{Curriculum Vitae}{99}
+\contentsline {chapter}{Certificate of Examination}{ii}{Doc-Start}
+\contentsline {chapter}{Acknowlegements}{iii}{table.caption.2}
+\contentsline {chapter}{Abstract}{iv}{table.caption.2}
+\contentsline {chapter}{List of Figures}{x}{table.caption.2}
+\contentsline {chapter}{List of Tables}{xiii}{table.caption.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview for Image Recognition}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Preprocess}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Feature Extraction}{3}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Hand Engineered Feature}{3}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Representation Learning}{4}{subsubsection.1.1.2.2}
+\contentsline {subsection}{\numberline {1.1.3}Classification}{6}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Approaches in Visual Transfer Learning and the Limitations}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Intuition for Visual Transfer Learning}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Approaches for Visual Transfer Learning}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Limitation of Previous Methods}{9}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Main Contribution}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Challenges}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Two Transfer Learning Scenarios}{11}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Proposed Methods}{12}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Summary}{12}{section.1.4}
+\contentsline {chapter}{\numberline {2}Related Work}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Classifiers for Image Recognition}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Binary Classification and Multi-class Classification}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Softmax Classifier}{14}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Support Vector Machines}{16}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Hard Margin SVM}{17}{subsubsection.2.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Soft Margin SVM}{17}{subsubsection.2.1.3.2}
+\contentsline {subsubsection}{\numberline {2.1.3.3}Kernel SVM}{18}{subsubsection.2.1.3.3}
+\contentsline {subsection}{\numberline {2.1.4}Convolutional Neural Networks}{20}{subsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Early Work with Convolutional Neural Networks}{20}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Recent Achievements with Convolutional Neural Networks}{21}{subsubsection.2.1.4.2}
+\contentsline {section}{\numberline {2.2}An Overview of Visual Transfer Learning}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Types of Transfer Learning from the Situations of Tasks}{23}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Types of Transfer Learning from the Aspect of Source Knowledge}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Special Issues in Avoiding Negative Transfer}{26}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Related Work in Hypothesis Transfer Learning}{28}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Fine-tuning the Deep Net}{29}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Hypothesis Transfer Learning with SVMs}{29}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}LS-SVM Classifier}{31}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}ASVM \& PMT-SVM}{31}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}MULTIpLE}{34}{subsubsection.2.3.2.3}
+\contentsline {subsection}{\numberline {2.3.3}Distillation for Knowledge Transfer}{34}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Summary}{36}{section.2.4}
+\contentsline {chapter}{\numberline {3}Effective Multiclass Transfer For Hypothesis Transfer Learning}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Using the Source Knowledge as the Auxiliary Bias}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Bi-level Optimization for Transfer Parameter Estimation}{40}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Low-level optimization problem}{41}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}High-level optimization problem}{42}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Experiments}{43}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Dataset \& Baseline methods}{43}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Transfer from Single Source Domain}{44}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Transfer from Multiple Source Domains}{45}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Summary}{46}{section.3.5}
+\contentsline {chapter}{\numberline {4}Fast Generalized Distillation for Semi-supervised Domain Adaptation}{50}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Previous Work}{51}{section.4.2}
+\contentsline {section}{\numberline {4.3}Generalized Distillation for Semi-supervised Domain Adaptation}{52}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}An Overview of Generalized Distillation and GDSDA}{52}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Why does GDSDA work}{54}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Key Parameter: the Imitation Parameter}{56}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}GDSDA-SVM}{57}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Distillation with Multiple Sources}{57}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Cross-entropy Loss for Imitation Parameter Estimation}{58}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Experiments}{59}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Single Source for Office datasets}{60}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Multi-Source for Office datasets}{61}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Summary}{62}{section.4.6}
+\contentsline {chapter}{\numberline {5}Learning Food Recognition Model with Deep Representation}{64}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{64}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tuning the Deep CNNs}{64}{section.5.2}
+\contentsline {section}{\numberline {5.3}Layers in Deep CNN}{66}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Convolutional Layer}{66}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Pooling Layer}{66}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Fully Connected Layer}{67}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Rectified Linear Units (ReLUs) for Activation}{68}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}DropOut}{68}{subsubsection.5.3.3.2}
+\contentsline {section}{\numberline {5.4}Experiment Settings}{69}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Models}{69}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Food Datasets}{70}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Data Augmentation}{71}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Discussion}{73}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Pre-training and Fine-tuning}{75}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Learning across the datasets}{77}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Summary}{80}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.6}
+\contentsline {chapter}{Bibliography}{83}{chapter.6}
+\contentsline {chapter}{\numberline {A}Proofs of Theorems}{94}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Closed-form Leave-out Error for LS-SVM}{94}{section.a.A.1}
+\contentsline {section}{\numberline {A.2}Converage of EMTLe}{95}{section.a.A.2}
+\contentsline {chapter}{\numberline {B}Configuration of GoogLeNet}{98}{Appendix.a.B}
+\contentsline {chapter}{Curriculum Vitae}{99}{table.caption.52}

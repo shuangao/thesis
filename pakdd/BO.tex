@@ -16,7 +16,7 @@ Suppose we use K-fold CV on the high-level problem. For the $i$-th fold CV, the 
 \end{aligned}
 \end{equation} 
 Here, $\ell(\cdot,\cdot)$ and $\mathcal{L}(\cdot,\cdot)$ are our low-level and high-level objective functions respectively. We can use any convex loss functions in Eq.\eqref{eq:BO} for optimization (e.g. SVM objective function). In this paper, we use the leave-one-out cross-validation (\textbf{LOOCV}) in the high-level problem. Previous research \cite{kuzborskij2013stability} suggests that LOOCV can increase the robustness of the estimated hyperparameter especially on the small dataset.
-In previous studies\cite{maclaurin2015gradient,Pedregosa16}, BO is a non-convex problem and can only obtain the approximate solution. However, we will show that problem \eqref{eq:BO} is strongly convex and we are able to obtain its optimal solution. 
+In previous studies\cite{maclaurin2015gradient,Pedregosa16}, BO is a non-convex problem and can only obtain the local optimal solution. However, we will show that problem \eqref{eq:BO} is strongly convex and we are able to obtain its optimal solution. 
 \subsection{Low-level optimization problem}
 To better illustrate our learning scenario, we define our learning process as follows. Suppose we have $N$ visual categories and 
 can obtain $N$ source binary classifiers $f'=\{f'_1,...,f'_N\}$ from the source domain. We want to train a target function $f$ consisting of $N$ binary classifiers $f=\{f_1,...,f_N\}$ using the target training set $D$ and the source models $f'$.

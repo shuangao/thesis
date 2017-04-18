@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.8)  27 FEB 2017 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.8)  13 APR 2017 14:35
 entering extended mode
 **./Shuang.Thesis.tex
 (Shuang.Thesis.tex
@@ -399,22 +399,122 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 )
 \c@defi=\count122
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen128
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count125
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4735.
+\c@Hy@tempcnt=\count126
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen129
+\Fld@menulength=\count127
+\Field@Width=\dimen130
+\Fld@charsize=\dimen131
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
+\Hy@abspage=\count128
+\c@Item=\count129
+\c@Hfootnote=\count130
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+\Fld@listcount=\count131
+\c@bookmark@seq@number=\count132
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip90
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 60.
+
 Defining \sgetchapterval ...
 Defining \schapterref ...
 Defining \srefchapterref ...
 Defining \chapterref ...
-\c@theorem=\count123
-\c@myappendices=\count124
-\cftbeforemyappendicesskip=\skip90
-\cftmyappendicesindent=\skip91
-\cftmyappendicesnumwidth=\skip92
-\c@appdepth=\count125
-\cftbeforeapptitleskip=\skip93
-\cftafterapptitleskip=\skip94
+\c@theorem=\count133
+\c@myappendices=\count134
+\cftbeforemyappendicesskip=\skip91
+\cftmyappendicesindent=\skip92
+\cftmyappendicesnumwidth=\skip93
+\c@appdepth=\count135
+\cftbeforeapptitleskip=\skip94
+\cftafterapptitleskip=\skip95
 (Shuang.Thesis.aux (introduction/total.aux) (relatedwork/total.aux
-
-LaTeX Warning: Label `eq:gama:multib' multiply defined.
-
 
 LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
@@ -422,52 +522,48 @@ LaTeX Warning: Label `eq:gama:multib' multiply defined.
 
 LaTeX Warning: Label `alg:1' multiply defined.
 
-
-LaTeX Warning: Label `alg:1' multiply defined.
-
-
-LaTeX Warning: Label `alg:1' multiply defined.
-
 ) (aaai/total.aux) (cnn/total.aux) (conclusion.aux) (appendix/appendixa.aux))
 \openout1 = `Shuang.Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 358.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 358
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 364.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 364
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 358
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 364
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 358
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 364
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 358.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 364.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 358.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 364.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
@@ -475,66 +571,86 @@ File: ot1txr.fd 2000/12/15 v3.1
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen128
+\scratchcounter=\count136
+\scratchdimen=\dimen132
 \scratchbox=\box30
-\nofMPsegments=\count127
-\nofMParguments=\count128
+\nofMPsegments=\count137
+\nofMParguments=\count138
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen129
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen133
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks31
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+txmia on input line 371.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring ON on input line 364.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count142
+)
+LaTeX Info: Redefining \ref on input line 364.
+LaTeX Info: Redefining \pageref on input line 364.
+LaTeX Info: Redefining \nameref on input line 364.
+
+(Shuang.Thesis.out) (Shuang.Thesis.out)
+\@outlinefile=\write3
+\openout3 = `Shuang.Thesis.out'.
+
+LaTeX Font Info:    Try loading font information for U+txmia on input line 377.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 371.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 377.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxsya.fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 371.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 377.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxsyb.fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 371.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 377.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 371.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 377.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 371.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 377.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omstxr.fd"
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 371.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 377.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (40.69499pt too wide) in paragraph at lines 373--373
+Overfull \hbox (40.69499pt too wide) in paragraph at lines 379--379
 [][]   [] 
  []
 
 
-Overfull \hbox (40.69499pt too wide) in paragraph at lines 373--373
+Overfull \hbox (40.69499pt too wide) in paragraph at lines 379--379
 [][]   [] 
  []
 
@@ -543,29 +659,29 @@ Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ™ in font txr!
  [3] [4] [5] (Shuang.Thesis.toc [6] [7] [8])
-\tf@toc=\write3
-\openout3 = `Shuang.Thesis.toc'.
+\tf@toc=\write4
+\openout4 = `Shuang.Thesis.toc'.
 
  [9] (Shuang.Thesis.lof
 Underfull \vbox (badness 8151) has occurred while \output is active []
 
- [10])
-\tf@lof=\write4
-\openout4 = `Shuang.Thesis.lof'.
+ [10]
+Underfull \vbox (badness 3333) has occurred while \output is active []
+
+ [11])
+\tf@lof=\write5
+\openout5 = `Shuang.Thesis.lof'.
 
 
-Underfull \vbox (badness 2781) has occurred while \output is active []
-
- [11]
 [12] (Shuang.Thesis.lot
 Overfull \hbox (2.30612pt too wide) in paragraph at lines 16--16
- [][] []\OT1/txr/m/n/12 Cosine sim-i-lar-ity of the lay-ers be-tween fine-tuned
- mod-els and pre-trained model 
+ [][] [][][]\OT1/txr/m/n/12 Cosine sim-i-lar-ity of the lay-ers be-tween fine-t
+uned mod-els and pre-trained model 
  []
 
 )
-\tf@lot=\write5
-\openout5 = `Shuang.Thesis.lot'.
+\tf@lot=\write6
+\openout6 = `Shuang.Thesis.lot'.
 
  [13]
 \openout2 = `introduction/total.aux'.
@@ -576,21 +692,21 @@ Chapter 1.
 
 
 ] (introduction/overview.tex
-<introduction/fig/IRflow.png, id=53, 499.11469pt x 286.82156pt>
+<introduction/fig/IRflow.png, id=676, 499.11469pt x 286.82156pt>
 File: introduction/fig/IRflow.png Graphic file (type png)
 
 <use introduction/fig/IRflow.png>
 Package pdftex.def Info: introduction/fig/IRflow.png used on input line 6.
 (pdftex.def)             Requested size: 399.29228pt x 229.45755pt.
  [2]
-<introduction/fig/sift.jpg, id=58, 595.22375pt x 300.12125pt>
+<introduction/fig/sift.jpg, id=689, 595.22375pt x 300.12125pt>
 File: introduction/fig/sift.jpg Graphic file (type jpg)
 
 <use introduction/fig/sift.jpg>
 Package pdftex.def Info: introduction/fig/sift.jpg used on input line 25.
 (pdftex.def)             Requested size: 357.13701pt x 180.07413pt.
  [3 <./introduction/fig/IRflow.png>]
-<introduction/fig/sparsecoding.png, id=62, 689.57625pt x 767.86874pt>
+<introduction/fig/sparsecoding.png, id=698, 689.57625pt x 767.86874pt>
 File: introduction/fig/sparsecoding.png Graphic file (type png)
 
 <use introduction/fig/sparsecoding.png>
@@ -598,7 +714,7 @@ Package pdftex.def Info: introduction/fig/sparsecoding.png used on input line 3
 6.
 (pdftex.def)             Requested size: 206.87447pt x 230.3624pt.
  [4 <./introduction/fig/sift.jpg>]
-<introduction/fig/alexnet.png, id=66, 1606.0pt x 539.01375pt>
+<introduction/fig/alexnet.png, id=712, 1606.0pt x 539.01375pt>
 File: introduction/fig/alexnet.png Graphic file (type png)
 
 <use introduction/fig/alexnet.png>
@@ -617,7 +733,7 @@ x
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./introduction/fig/alexnet.png>]
-<introduction/fig/multiple.jpg, id=74, 757.32938pt x 367.3725pt>
+<introduction/fig/multiple.jpg, id=734, 757.32938pt x 367.3725pt>
 File: introduction/fig/multiple.jpg Graphic file (type jpg)
 
 <use introduction/fig/multiple.jpg>
@@ -632,7 +748,7 @@ Overfull \hbox (2.71364pt too wide) in paragraph at lines 7--8
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 18.
 
-<introduction/fig/transformation.png, id=78, 1452.17531pt x 325.215pt>
+<introduction/fig/transformation.png, id=745, 1452.17531pt x 325.215pt>
 File: introduction/fig/transformation.png Graphic file (type png)
 
 <use introduction/fig/transformation.png>
@@ -641,14 +757,14 @@ Package pdftex.def Info: introduction/fig/transformation.png used on input line
 (pdftex.def)             Requested size: 435.65596pt x 97.56525pt.
  [8]) [9 <./introduction/fig/transformation.png>] (introduction/limits.tex [10]
 
-<introduction/fig/da.png, id=90, 468.7914pt x 350.7504pt>
+<introduction/fig/da.png, id=773, 468.7914pt x 350.7504pt>
 File: introduction/fig/da.png Graphic file (type png)
 
 <use introduction/fig/da.png>
 Package pdftex.def Info: introduction/fig/da.png used on input line 28.
 (pdftex.def)             Requested size: 187.51323pt x 140.29767pt.
 
-<introduction/fig/ind.png, id=91, 542.9886pt x 429.7656pt>
+<introduction/fig/ind.png, id=774, 542.9886pt x 429.7656pt>
 File: introduction/fig/ind.png Graphic file (type png)
 
 <use introduction/fig/ind.png>
@@ -664,7 +780,7 @@ Chapter 2.
 
 
 ]
-<relatedwork/fig/ovsa.png, id=105, 423.0204pt x 344.0052pt>
+<relatedwork/fig/ovsa.png, id=805, 423.0204pt x 344.0052pt>
 File: relatedwork/fig/ovsa.png Graphic file (type png)
 
 <use relatedwork/fig/ovsa.png>
@@ -676,28 +792,28 @@ Overfull \hbox (19.40572pt too wide) in paragraph at lines 46--48
  the pa-ram-e-ters of the Soft-max clas-si-fier model. The term $[]$
  []
 
-[15] [16] <relatedwork/fig/svm2.png, id=117, 513.92pt x 444.66125pt>
+[15] [16] <relatedwork/fig/svm2.png, id=848, 513.92pt x 444.66125pt>
 File: relatedwork/fig/svm2.png Graphic file (type png)
 
 <use relatedwork/fig/svm2.png>
 Package pdftex.def Info: relatedwork/fig/svm2.png used on input line 87.
 (pdftex.def)             Requested size: 203.258pt x 175.86656pt.
 
-<relatedwork/fig/svm1.png, id=118, 72.27pt x 71.3064pt>
+<relatedwork/fig/svm1.png, id=849, 72.27pt x 71.3064pt>
 File: relatedwork/fig/svm1.png Graphic file (type png)
 
 <use relatedwork/fig/svm1.png>
 Package pdftex.def Info: relatedwork/fig/svm1.png used on input line 88.
 (pdftex.def)             Requested size: 180.67224pt x 178.2731pt.
 
-<relatedwork/fig/slack.png, id=119, 186.09525pt x 169.23225pt>
+<relatedwork/fig/slack.png, id=850, 186.09525pt x 169.23225pt>
 File: relatedwork/fig/slack.png Graphic file (type png)
 
 <use relatedwork/fig/slack.png>
 Package pdftex.def Info: relatedwork/fig/slack.png used on input line 106.
 (pdftex.def)             Requested size: 223.31316pt x 203.07768pt.
  [17 <./relatedwork/fig/svm2.png> <./relatedwork/fig/svm1.png>] <relatedwork/fi
-g/non-linear2.png, id=125, 449.68pt x 337.26pt>
+g/non-linear2.png, id=864, 449.68pt x 337.26pt>
 File: relatedwork/fig/non-linear2.png Graphic file (type png)
 
 <use relatedwork/fig/non-linear2.png>
@@ -709,7 +825,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19 <./relatedwork/fig/non-linear2.png>]) (relatedwork/cnn.tex [20] [21])
 (relatedwork/transfer.tex
-<relatedwork/fig/transfer.png, id=141, 488.57532pt x 235.63031pt>
+<relatedwork/fig/transfer.png, id=945, 488.57532pt x 235.63031pt>
 File: relatedwork/fig/transfer.png Graphic file (type png)
 
 <use relatedwork/fig/transfer.png>
@@ -717,16 +833,16 @@ Package pdftex.def Info: relatedwork/fig/transfer.png used on input line 3.
 (pdftex.def)             Requested size: 342.0004pt x 164.94008pt.
  [22]
 Overfull \hbox (25.52452pt too wide) in paragraph at lines 31--41
- [][][][][] 
+ [][][] 
  []
 
 
 Overfull \hbox (0.98752pt too wide) in paragraph at lines 46--57
- [][][][][] 
+ [][][] 
  []
 
 [23 <./relatedwork/fig/transfer.png>]
-<relatedwork/fig/parameters.png, id=148, 399.894pt x 207.174pt>
+<relatedwork/fig/parameters.png, id=971, 399.894pt x 207.174pt>
 File: relatedwork/fig/parameters.png Graphic file (type png)
 
 <use relatedwork/fig/parameters.png>
@@ -737,7 +853,7 @@ Underfull \vbox (badness 1189) has occurred while \output is active []
 
  [24]
 [25 <./relatedwork/fig/parameters.png>]
-<relatedwork/fig/negative.png, id=157, 353.06906pt x 268.75406pt>
+<relatedwork/fig/negative.png, id=1003, 353.06906pt x 268.75406pt>
 File: relatedwork/fig/negative.png Graphic file (type png)
 
 <use relatedwork/fig/negative.png>
@@ -745,14 +861,14 @@ Package pdftex.def Info: relatedwork/fig/negative.png used on input line 86.
 (pdftex.def)             Requested size: 247.14665pt x 188.12656pt.
  [26] [27 <./relatedwork/fig/negative.png>]
 [28] (relatedwork/ft-net.tex
-<relatedwork/fig/hierachy.png, id=167, 389.20406pt x 579.66562pt>
+<relatedwork/fig/hierachy.png, id=1044, 389.20406pt x 579.66562pt>
 File: relatedwork/fig/hierachy.png Graphic file (type png)
 
 <use relatedwork/fig/hierachy.png>
 Package pdftex.def Info: relatedwork/fig/hierachy.png used on input line 5.
 (pdftex.def)             Requested size: 272.44098pt x 405.76317pt.
 ) (relatedwork/hypothesis.tex [29] [30 <./relatedwork/fig/hierachy.png>] [31]
-<transfer/fig/pmt-svm.png, id=178, 356.83313pt x 245.41687pt>
+<transfer/fig/pmt-svm.png, id=1077, 356.83313pt x 245.41687pt>
 File: transfer/fig/pmt-svm.png Graphic file (type png)
 
 <use transfer/fig/pmt-svm.png>
@@ -769,20 +885,21 @@ Chapter 3.
 
 
 ] (pakdd/statement2.tex
-<pakdd/fig/mktl.png, id=199, 476.0184pt x 110.3322pt>
+<pakdd/fig/mktl.png, id=1156, 476.0184pt x 110.3322pt>
 File: pakdd/fig/mktl.png Graphic file (type png)
- <use pakdd/fig/mktl.png>
+
+<use pakdd/fig/mktl.png>
 Package pdftex.def Info: pakdd/fig/mktl.png used on input line 3.
 (pdftex.def)             Requested size: 285.61324pt x 66.19981pt.
 
-<pakdd/fig/explain.png, id=200, 665.8476pt x 483.2454pt>
+<pakdd/fig/explain.png, id=1158, 665.8476pt x 483.2454pt>
 File: pakdd/fig/explain.png Graphic file (type png)
 
 <use pakdd/fig/explain.png>
 Package pdftex.def Info: pakdd/fig/explain.png used on input line 12.
 (pdftex.def)             Requested size: 399.51163pt x 289.94948pt.
  [38 <./pakdd/fig/mktl.png>] [39 <./pakdd/fig/explain.png>]) (pakdd/BO.tex <pak
-dd/fig/bo.png, id=209, 345.4506pt x 317.988pt>
+dd/fig/bo.png, id=1179, 345.4506pt x 317.988pt>
 File: pakdd/fig/bo.png Graphic file (type png)
 
 <use pakdd/fig/bo.png>
@@ -797,99 +914,102 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 46.
 
-[42] (pakdd/agl1.tex)) (pakdd/gama_exp.tex [43] (pakdd/figs.tex
-<pakdd/fig/amazontodslr.png, id=225, 578.16pt x 433.62pt>
+[42] (pakdd/agl1.tex
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 2.
+)) (pakdd/gama_exp.tex [43] (pakdd/figs.tex
+<pakdd/fig/amazontodslr.png, id=1249, 578.16pt x 433.62pt>
 File: pakdd/fig/amazontodslr.png Graphic file (type png)
 
 <use pakdd/fig/amazontodslr.png>
 Package pdftex.def Info: pakdd/fig/amazontodslr.png used on input line 5.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/caltechtodslr.png, id=226, 578.16pt x 433.62pt>
+<pakdd/fig/caltechtodslr.png, id=1250, 578.16pt x 433.62pt>
 File: pakdd/fig/caltechtodslr.png Graphic file (type png)
 
 <use pakdd/fig/caltechtodslr.png>
 Package pdftex.def Info: pakdd/fig/caltechtodslr.png used on input line 8.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/webcamtodslr.png, id=227, 578.16pt x 433.62pt>
+<pakdd/fig/webcamtodslr.png, id=1251, 578.16pt x 433.62pt>
 File: pakdd/fig/webcamtodslr.png Graphic file (type png)
 
 <use pakdd/fig/webcamtodslr.png>
 Package pdftex.def Info: pakdd/fig/webcamtodslr.png used on input line 11.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/amazontowebcam.png, id=228, 578.16pt x 433.62pt>
+<pakdd/fig/amazontowebcam.png, id=1252, 578.16pt x 433.62pt>
 File: pakdd/fig/amazontowebcam.png Graphic file (type png)
 
 <use pakdd/fig/amazontowebcam.png>
 Package pdftex.def Info: pakdd/fig/amazontowebcam.png used on input line 14.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/caltechtowebcam.png, id=229, 578.16pt x 433.62pt>
+<pakdd/fig/caltechtowebcam.png, id=1253, 578.16pt x 433.62pt>
 File: pakdd/fig/caltechtowebcam.png Graphic file (type png)
 
 <use pakdd/fig/caltechtowebcam.png>
 Package pdftex.def Info: pakdd/fig/caltechtowebcam.png used on input line 17.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/dslrtowebcam.png, id=230, 578.16pt x 433.62pt>
+<pakdd/fig/dslrtowebcam.png, id=1254, 578.16pt x 433.62pt>
 File: pakdd/fig/dslrtowebcam.png Graphic file (type png)
 
 <use pakdd/fig/dslrtowebcam.png>
 Package pdftex.def Info: pakdd/fig/dslrtowebcam.png used on input line 20.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/caltechtoamazon.png, id=231, 578.16pt x 433.62pt>
+<pakdd/fig/caltechtoamazon.png, id=1257, 578.16pt x 433.62pt>
 File: pakdd/fig/caltechtoamazon.png Graphic file (type png)
 
 <use pakdd/fig/caltechtoamazon.png>
 Package pdftex.def Info: pakdd/fig/caltechtoamazon.png used on input line 30.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/dslrtoamazon.png, id=232, 578.16pt x 433.62pt>
+<pakdd/fig/dslrtoamazon.png, id=1258, 578.16pt x 433.62pt>
 File: pakdd/fig/dslrtoamazon.png Graphic file (type png)
 
 <use pakdd/fig/dslrtoamazon.png>
 Package pdftex.def Info: pakdd/fig/dslrtoamazon.png used on input line 33.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/webcamtoamazon.png, id=233, 578.16pt x 433.62pt>
+<pakdd/fig/webcamtoamazon.png, id=1259, 578.16pt x 433.62pt>
 File: pakdd/fig/webcamtoamazon.png Graphic file (type png)
 
 <use pakdd/fig/webcamtoamazon.png>
 Package pdftex.def Info: pakdd/fig/webcamtoamazon.png used on input line 36.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/amazontocaltech.png, id=234, 578.16pt x 433.62pt>
+<pakdd/fig/amazontocaltech.png, id=1260, 578.16pt x 433.62pt>
 File: pakdd/fig/amazontocaltech.png Graphic file (type png)
 
 <use pakdd/fig/amazontocaltech.png>
 Package pdftex.def Info: pakdd/fig/amazontocaltech.png used on input line 39.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/dslrtocaltech.png, id=235, 578.16pt x 433.62pt>
+<pakdd/fig/dslrtocaltech.png, id=1261, 578.16pt x 433.62pt>
 File: pakdd/fig/dslrtocaltech.png Graphic file (type png)
 
 <use pakdd/fig/dslrtocaltech.png>
 Package pdftex.def Info: pakdd/fig/dslrtocaltech.png used on input line 42.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 
-<pakdd/fig/webcamtocaltech.png, id=236, 578.16pt x 433.62pt>
+<pakdd/fig/webcamtocaltech.png, id=1262, 578.16pt x 433.62pt>
 File: pakdd/fig/webcamtocaltech.png Graphic file (type png)
 
 <use pakdd/fig/webcamtocaltech.png>
 Package pdftex.def Info: pakdd/fig/webcamtocaltech.png used on input line 45.
 (pdftex.def)             Requested size: 203.258pt x 152.43753pt.
 ) [44]
-<pakdd/fig/multi_amazon.png, id=240, 578.16pt x 433.62pt>
+<pakdd/fig/multi_amazon.png, id=1272, 578.16pt x 433.62pt>
 File: pakdd/fig/multi_amazon.png Graphic file (type png)
 
 <use pakdd/fig/multi_amazon.png>
 Package pdftex.def Info: pakdd/fig/multi_amazon.png used on input line 55.
 (pdftex.def)             Requested size: 225.84375pt x 169.38239pt.
 
-<pakdd/fig/multi_caltech.png, id=241, 578.16pt x 433.62pt>
+<pakdd/fig/multi_caltech.png, id=1273, 578.16pt x 433.62pt>
 File: pakdd/fig/multi_caltech.png Graphic file (type png)
 
 <use pakdd/fig/multi_caltech.png>
@@ -897,7 +1017,7 @@ Package pdftex.def Info: pakdd/fig/multi_caltech.png used on input line 58.
 (pdftex.def)             Requested size: 225.84375pt x 169.38239pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 55--58
- [][][] 
+ [][][][] 
  []
 
 
@@ -924,7 +1044,7 @@ Overfull \hbox (21.55948pt too wide) in paragraph at lines 24--24
 dap-
  []
 
-<aaai/figure/GD.png, id=275, 484.209pt x 163.812pt>
+<aaai/figure/GD.png, id=1345, 484.209pt x 163.812pt>
 File: aaai/figure/GD.png Graphic file (type png)
  <use aaai/figure/GD.png>
 Package pdftex.def Info: aaai/figure/GD.png used on input line 28.
@@ -940,14 +1060,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51]
 [52 <./aaai/figure/GD.png>]
-<aaai/figure/multi-GDDA.png, id=283, 622.9674pt x 357.9774pt>
+<aaai/figure/multi-GDDA.png, id=1362, 622.9674pt x 357.9774pt>
 File: aaai/figure/multi-GDDA.png Graphic file (type png)
 
 <use aaai/figure/multi-GDDA.png>
 Package pdftex.def Info: aaai/figure/multi-GDDA.png used on input line 55.
 (pdftex.def)             Requested size: 311.48294pt x 178.98825pt.
  [53 <./aaai/figure/multi-GDDA.png>]
-<aaai/figure/explain.png, id=288, 694.2738pt x 491.9178pt>
+<aaai/figure/explain.png, id=1374, 694.2738pt x 491.9178pt>
 File: aaai/figure/explain.png Graphic file (type png)
 
 <use aaai/figure/explain.png>
@@ -964,38 +1084,35 @@ ch-mark dataset Of-fice as our ex-per-i-ment dataset.
 Underfull \vbox (badness 2495) has occurred while \output is active []
 
  [60]
-<aaai/figure/cmp.png, id=313, 722.7pt x 289.08pt>
+<aaai/figure/cmp.png, id=1484, 722.7pt x 289.08pt>
 File: aaai/figure/cmp.png Graphic file (type png)
  <use aaai/figure/cmp.png>
 Package pdftex.def Info: aaai/figure/cmp.png used on input line 245.
 (pdftex.def)             Requested size: 361.3491pt x 144.53964pt.
 
-<aaai/figure/dslrtoamazonlabeled1unlabeled10.png, id=314, 578.16pt x 361.35pt>
+<aaai/figure/dslrtoamazonlabeled1unlabeled10.png, id=1485, 578.16pt x 361.35pt>
 File: aaai/figure/dslrtoamazonlabeled1unlabeled10.png Graphic file (type png)
-
 <use aaai/figure/dslrtoamazonlabeled1unlabeled10.png>
 Package pdftex.def Info: aaai/figure/dslrtoamazonlabeled1unlabeled10.png used o
 n input line 251.
 (pdftex.def)             Requested size: 203.258pt x 127.03128pt.
 
-<aaai/figure/dslrtoamazonlabeled1unlabeled15.png, id=315, 578.16pt x 361.35pt>
+<aaai/figure/dslrtoamazonlabeled1unlabeled15.png, id=1486, 578.16pt x 361.35pt>
 File: aaai/figure/dslrtoamazonlabeled1unlabeled15.png Graphic file (type png)
-
 <use aaai/figure/dslrtoamazonlabeled1unlabeled15.png>
 Package pdftex.def Info: aaai/figure/dslrtoamazonlabeled1unlabeled15.png used o
 n input line 252.
 (pdftex.def)             Requested size: 203.258pt x 127.03128pt.
 
-<aaai/figure/dslrtoamazonlabeled1unlabeled20.png, id=316, 578.16pt x 361.35pt>
+<aaai/figure/dslrtoamazonlabeled1unlabeled20.png, id=1487, 578.16pt x 361.35pt>
 File: aaai/figure/dslrtoamazonlabeled1unlabeled20.png Graphic file (type png)
-
 <use aaai/figure/dslrtoamazonlabeled1unlabeled20.png>
 Package pdftex.def Info: aaai/figure/dslrtoamazonlabeled1unlabeled20.png used o
 n input line 253.
 (pdftex.def)             Requested size: 203.258pt x 127.03128pt.
 
-<aaai/figure/webcamtoamazonlabeled1unlabeled10.png, id=317, 578.16pt x 361.35pt
->
+<aaai/figure/webcamtoamazonlabeled1unlabeled10.png, id=1488, 578.16pt x 361.35p
+t>
 File: aaai/figure/webcamtoamazonlabeled1unlabeled10.png Graphic file (type png)
 
  <use aaai/figure/webcamtoamazonlabeled1unlabeled10.png>
@@ -1003,8 +1120,8 @@ Package pdftex.def Info: aaai/figure/webcamtoamazonlabeled1unlabeled10.png used
  on input line 254.
 (pdftex.def)             Requested size: 203.258pt x 127.03128pt.
 
-<aaai/figure/webcamtoamazonlabeled1unlabeled15.png, id=318, 578.16pt x 361.35pt
->
+<aaai/figure/webcamtoamazonlabeled1unlabeled15.png, id=1489, 578.16pt x 361.35p
+t>
 File: aaai/figure/webcamtoamazonlabeled1unlabeled15.png Graphic file (type png)
 
  <use aaai/figure/webcamtoamazonlabeled1unlabeled15.png>
@@ -1012,8 +1129,8 @@ Package pdftex.def Info: aaai/figure/webcamtoamazonlabeled1unlabeled15.png used
  on input line 255.
 (pdftex.def)             Requested size: 203.258pt x 127.03128pt.
 
-<aaai/figure/webcamtoamazonlabeled1unlabeled20.png, id=319, 578.16pt x 361.35pt
->
+<aaai/figure/webcamtoamazonlabeled1unlabeled20.png, id=1490, 578.16pt x 361.35p
+t>
 File: aaai/figure/webcamtoamazonlabeled1unlabeled20.png Graphic file (type png)
 
  <use aaai/figure/webcamtoamazonlabeled1unlabeled20.png>
@@ -1034,40 +1151,40 @@ Chapter 5.
 
 
 ]
-<cnn/fig/ft.png, id=339, 694.7556pt x 430.7292pt>
+<cnn/fig/ft.png, id=1524, 694.7556pt x 430.7292pt>
 File: cnn/fig/ft.png Graphic file (type png)
  <use cnn/fig/ft.png>
 Package pdftex.def Info: cnn/fig/ft.png used on input line 14.
 (pdftex.def)             Requested size: 347.37694pt x 215.36407pt.
 )
 (cnn/layers.tex [65 <./cnn/fig/ft.png>]
-<cnn/fig/conv.png, id=344, 729.47531pt x 390.70969pt>
+<cnn/fig/conv.png, id=1536, 729.47531pt x 390.70969pt>
 File: cnn/fig/conv.png Graphic file (type png)
  <use cnn/fig/conv.png>
 Package pdftex.def Info: cnn/fig/conv.png used on input line 12.
 (pdftex.def)             Requested size: 437.68855pt x 234.42761pt.
 
-[66] <cnn/fig/pool.png, id=349, 535.2497pt x 274.02374pt>
+[66] <cnn/fig/pool.png, id=1547, 535.2497pt x 274.02374pt>
 File: cnn/fig/pool.png Graphic file (type png)
 
 <use cnn/fig/pool.png>
 Package pdftex.def Info: cnn/fig/pool.png used on input line 25.
 (pdftex.def)             Requested size: 428.20033pt x 219.21928pt.
  [67 <./cnn/fig/conv.png>]
-<cnn/fig/net.png, id=353, 241.65282pt x 257.46187pt>
+<cnn/fig/net.png, id=1557, 241.65282pt x 257.46187pt>
 File: cnn/fig/net.png Graphic file (type png)
  <use cnn/fig/net.png>
 Package pdftex.def Info: cnn/fig/net.png used on input line 47.
 (pdftex.def)             Requested size: 135.50761pt x 144.378pt.
 
-<cnn/fig/dropnet.png, id=354, 250.68657pt x 259.7203pt>
+<cnn/fig/dropnet.png, id=1558, 250.68657pt x 259.7203pt>
 File: cnn/fig/dropnet.png Graphic file (type png)
 
 <use cnn/fig/dropnet.png>
 Package pdftex.def Info: cnn/fig/dropnet.png used on input line 48.
 (pdftex.def)             Requested size: 135.50761pt x 140.39746pt.
 ) [68 <./cnn/fig/pool.png>] (cnn/expsetup.tex
-<cnn/fig/inception.pdf, id=358, 572.1375pt x 279.0425pt>
+<cnn/fig/inception.pdf, id=1573, 572.1375pt x 279.0425pt>
 File: cnn/fig/inception.pdf Graphic file (type pdf)
 
 <use cnn/fig/inception.pdf>
@@ -1075,157 +1192,163 @@ Package pdftex.def Info: cnn/fig/inception.pdf used on input line 17.
 (pdftex.def)             Requested size: 400.49352pt x 195.3284pt.
  [69 <./cnn/fig/net.png> <./cnn/fig/dropnet.png>]
 [70 <./cnn/fig/inception.pdf>]
-<cnn/fig/crop00.png, id=373, 256.96pt x 256.96pt>
+<cnn/fig/crop00.png, id=1601, 256.96pt x 256.96pt>
 File: cnn/fig/crop00.png Graphic file (type png)
  <use cnn/fig/crop00.png>
 Package pdftex.def Info: cnn/fig/crop00.png used on input line 42.
 (pdftex.def)             Requested size: 97.56052pt x 97.55954pt.
 
-<cnn/fig/crop4.png, id=374, 227.85126pt x 227.85126pt>
+<cnn/fig/crop4.png, id=1602, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop4.png Graphic file (type png)
- <use cnn/fig/crop4.png>
+
+<use cnn/fig/crop4.png>
 Package pdftex.def Info: cnn/fig/crop4.png used on input line 43.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop9.png, id=375, 227.85126pt x 227.85126pt>
+<cnn/fig/crop9.png, id=1603, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop9.png Graphic file (type png)
- <use cnn/fig/crop9.png>
+
+<use cnn/fig/crop9.png>
 Package pdftex.def Info: cnn/fig/crop9.png used on input line 44.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop0.png, id=376, 227.85126pt x 227.85126pt>
+<cnn/fig/crop0.png, id=1604, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop0.png Graphic file (type png)
- <use cnn/fig/crop0.png>
+
+<use cnn/fig/crop0.png>
 Package pdftex.def Info: cnn/fig/crop0.png used on input line 47.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop5.png, id=377, 227.85126pt x 227.85126pt>
+<cnn/fig/crop5.png, id=1605, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop5.png Graphic file (type png)
- <use cnn/fig/crop5.png>
+
+<use cnn/fig/crop5.png>
 Package pdftex.def Info: cnn/fig/crop5.png used on input line 48.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop1.png, id=378, 227.85126pt x 227.85126pt>
+<cnn/fig/crop1.png, id=1606, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop1.png Graphic file (type png)
- <use cnn/fig/crop1.png>
+
+<use cnn/fig/crop1.png>
 Package pdftex.def Info: cnn/fig/crop1.png used on input line 48.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop6.png, id=379, 227.85126pt x 227.85126pt>
+<cnn/fig/crop6.png, id=1607, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop6.png Graphic file (type png)
- <use cnn/fig/crop6.png>
+
+<use cnn/fig/crop6.png>
 Package pdftex.def Info: cnn/fig/crop6.png used on input line 49.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop2.png, id=380, 227.85126pt x 227.85126pt>
+<cnn/fig/crop2.png, id=1608, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop2.png Graphic file (type png)
- <use cnn/fig/crop2.png>
+
+<use cnn/fig/crop2.png>
 Package pdftex.def Info: cnn/fig/crop2.png used on input line 51.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop7.png, id=381, 227.85126pt x 227.85126pt>
+<cnn/fig/crop7.png, id=1609, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop7.png Graphic file (type png)
- <use cnn/fig/crop7.png>
+
+<use cnn/fig/crop7.png>
 Package pdftex.def Info: cnn/fig/crop7.png used on input line 52.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop3.png, id=382, 227.85126pt x 227.85126pt>
+<cnn/fig/crop3.png, id=1610, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop3.png Graphic file (type png)
- <use cnn/fig/crop3.png>
+
+<use cnn/fig/crop3.png>
 Package pdftex.def Info: cnn/fig/crop3.png used on input line 52.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
 
-<cnn/fig/crop8.png, id=383, 227.85126pt x 227.85126pt>
+<cnn/fig/crop8.png, id=1611, 227.85126pt x 227.85126pt>
 File: cnn/fig/crop8.png Graphic file (type png)
- <use cnn/fig/crop8.png>
+
+<use cnn/fig/crop8.png>
 Package pdftex.def Info: cnn/fig/crop8.png used on input line 53.
 (pdftex.def)             Requested size: 97.56052pt x 97.5604pt.
-
-[71] [72 <./cnn/fig/crop00.png (PNG copy)> <./cnn/fig/crop4.png (PNG copy)> <./
-cnn/fig/crop9.png (PNG copy)> <./cnn/fig/crop0.png (PNG copy)> <./cnn/fig/crop5
-.png (PNG copy)> <./cnn/fig/crop1.png (PNG copy)> <./cnn/fig/crop6.png (PNG cop
-y)> <./cnn/fig/crop2.png (PNG copy)> <./cnn/fig/crop7.png (PNG copy)> <./cnn/fi
-g/crop3.png (PNG copy)> <./cnn/fig/crop8.png (PNG copy)>]
-<cnn/fig/org.png, id=391, 578.16pt x 431.4519pt>
+ [71] [72 <./cnn/fig/crop00.png (PNG copy)> <./cnn/fig/crop4.png (PNG copy)> <.
+/cnn/fig/crop9.png (PNG copy)> <./cnn/fig/crop0.png (PNG copy)> <./cnn/fig/crop
+5.png (PNG copy)> <./cnn/fig/crop1.png (PNG copy)> <./cnn/fig/crop6.png (PNG co
+py)> <./cnn/fig/crop2.png (PNG copy)> <./cnn/fig/crop7.png (PNG copy)> <./cnn/f
+ig/crop3.png (PNG copy)> <./cnn/fig/crop8.png (PNG copy)>] <cnn/fig/org.png, id
+=1639, 578.16pt x 431.4519pt>
 File: cnn/fig/org.png Graphic file (type png)
  <use cnn/fig/org.png>
 Package pdftex.def Info: cnn/fig/org.png used on input line 67.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/red.png, id=392, 578.16pt x 431.4519pt>
+<cnn/fig/red.png, id=1640, 578.16pt x 431.4519pt>
 File: cnn/fig/red.png Graphic file (type png)
  <use cnn/fig/red.png>
 Package pdftex.def Info: cnn/fig/red.png used on input line 68.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/green.png, id=393, 578.16pt x 431.4519pt>
+<cnn/fig/green.png, id=1641, 578.16pt x 431.4519pt>
 File: cnn/fig/green.png Graphic file (type png)
  <use cnn/fig/green.png>
 Package pdftex.def Info: cnn/fig/green.png used on input line 69.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/blue.png, id=394, 578.16pt x 431.4519pt>
+<cnn/fig/blue.png, id=1642, 578.16pt x 431.4519pt>
 File: cnn/fig/blue.png Graphic file (type png)
  <use cnn/fig/blue.png>
 Package pdftex.def Info: cnn/fig/blue.png used on input line 70.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/rgb.png, id=395, 578.16pt x 431.4519pt>
+<cnn/fig/rgb.png, id=1643, 578.16pt x 431.4519pt>
 File: cnn/fig/rgb.png Graphic file (type png)
  <use cnn/fig/rgb.png>
 Package pdftex.def Info: cnn/fig/rgb.png used on input line 71.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/v1.png, id=396, 578.16pt x 431.4519pt>
+<cnn/fig/v1.png, id=1644, 578.16pt x 431.4519pt>
 File: cnn/fig/v1.png Graphic file (type png)
  <use cnn/fig/v1.png>
 Package pdftex.def Info: cnn/fig/v1.png used on input line 72.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/v2.png, id=397, 578.16pt x 431.4519pt>
+<cnn/fig/v2.png, id=1645, 578.16pt x 431.4519pt>
 File: cnn/fig/v2.png Graphic file (type png)
  <use cnn/fig/v2.png>
 Package pdftex.def Info: cnn/fig/v2.png used on input line 73.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/s1.png, id=398, 578.16pt x 431.4519pt>
+<cnn/fig/s1.png, id=1646, 578.16pt x 431.4519pt>
 File: cnn/fig/s1.png Graphic file (type png)
  <use cnn/fig/s1.png>
 Package pdftex.def Info: cnn/fig/s1.png used on input line 74.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/s2.png, id=399, 578.16pt x 431.4519pt>
+<cnn/fig/s2.png, id=1647, 578.16pt x 431.4519pt>
 File: cnn/fig/s2.png Graphic file (type png)
  <use cnn/fig/s2.png>
 Package pdftex.def Info: cnn/fig/s2.png used on input line 75.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/s4.png, id=400, 578.16pt x 431.4519pt>
+<cnn/fig/s4.png, id=1648, 578.16pt x 431.4519pt>
 File: cnn/fig/s4.png Graphic file (type png)
  <use cnn/fig/s4.png>
 Package pdftex.def Info: cnn/fig/s4.png used on input line 76.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/s3.png, id=401, 578.16pt x 431.4519pt>
+<cnn/fig/s3.png, id=1649, 578.16pt x 431.4519pt>
 File: cnn/fig/s3.png Graphic file (type png)
  <use cnn/fig/s3.png>
 Package pdftex.def Info: cnn/fig/s3.png used on input line 77.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 
-<cnn/fig/rota.png, id=402, 578.16pt x 431.4519pt>
+<cnn/fig/rota.png, id=1650, 578.16pt x 431.4519pt>
 File: cnn/fig/rota.png Graphic file (type png)
  <use cnn/fig/rota.png>
 Package pdftex.def Info: cnn/fig/rota.png used on input line 78.
 (pdftex.def)             Requested size: 135.50761pt x 101.12129pt.
 )
-(cnn/discuss.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73]
-[74 <./cnn/fig/org.png> <./cnn/fig/red.png> <./cnn/fig/green.png> <./cnn/fig/bl
-ue.png> <./cnn/fig/rgb.png> <./cnn/fig/v1.png> <./cnn/fig/v2.png> <./cnn/fig/s1
-.png> <./cnn/fig/s2.png> <./cnn/fig/s4.png> <./cnn/fig/s3.png> <./cnn/fig/rota.
-png>] <cnn/fig/sashimi.png, id=421, 727.96968pt x 319.1925pt>
+(cnn/discuss.tex [73] [74 <./cnn/fig/org.png> <./cnn/fig/red.png> <./cnn/fig/gr
+een.png> <./cnn/fig/blue.png> <./cnn/fig/rgb.png> <./cnn/fig/v1.png> <./cnn/fig
+/v2.png> <./cnn/fig/s1.png> <./cnn/fig/s2.png> <./cnn/fig/s4.png> <./cnn/fig/s3
+.png> <./cnn/fig/rota.png>]
+<cnn/fig/sashimi.png, id=1688, 727.96968pt x 319.1925pt>
 File: cnn/fig/sashimi.png Graphic file (type png)
 
 <use cnn/fig/sashimi.png>
@@ -1269,47 +1392,63 @@ Appendix A.
 Appendix B.
 (cnn/googlenet.tex
 Overfull \hbox (67.88246pt too wide) in paragraph at lines 6--30
- [][][][][] 
+ [][][] 
  []
 
 )) [98
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 482--486
+Underfull \hbox (badness 10000) in paragraph at lines 485--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--486
+Underfull \hbox (badness 10000) in paragraph at lines 485--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--486
+Underfull \hbox (badness 10000) in paragraph at lines 485--489
 
  []
 
 [99
 
 
-] [100] (Shuang.Thesis.aux (introduction/total.aux) (relatedwork/total.aux)
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 490.
+ [100]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 490.
+ (Shuang.Thesis.aux (introduction/total.aux) (relatedwork/total.aux)
 (pakdd/total.aux) (aaai/total.aux) (cnn/total.aux) (conclusion.aux)
 (appendix/appendixa.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 490.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 490.
+
+
+Package rerunfilecheck Warning: File `Shuang.Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Shuang.Thesis.out':
+(rerunfilecheck)             Before: FD2C64DEB3DFBEC9CA91CB394CAD26C0;7237
+(rerunfilecheck)             After:  032BCB0B20ED69E59C4F9F2B58C968E4;7238.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 490.
  ) 
 Here is how much of TeX's memory you used:
- 6559 strings out of 493334
- 97079 string characters out of 3139229
- 271128 words of memory out of 3000000
- 9718 multiletter control sequences out of 15000+200000
+ 10530 strings out of 493334
+ 157888 string characters out of 3139229
+ 361313 words of memory out of 3000000
+ 13113 multiletter control sequences out of 15000+200000
  69032 words of font info for 170 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,22n,54p,1889b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,22n,54p,1889b,768s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/txfonts/rtxb.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/txfonts/rtxbmi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
@@ -1320,9 +1459,9 @@ ublic/txfonts/rtxmi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts
 nts/type1/public/txfonts/txsyc.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Shuang.Thesis.pdf (113 pages, 14183578 bytes).
+Output written on Shuang.Thesis.pdf (113 pages, 14399378 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2002 PDF objects out of 2073 (max. 8388607)
+ 534 named destinations out of 1000 (max. 500000)
+ 1120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

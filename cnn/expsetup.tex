@@ -32,9 +32,9 @@ This is a relatively small dataset containing 256 kinds of foods and 31644 image
 \textbf{Food-101 Dataset.}
 This dataset contains 101-class real-world food (dish) images which were taken and labeled manually. The total number of images is 101,000 and there are exactly 1000 images for each class. Also, each class has been divided into training and testing set containing 750 images and 250 images respectively by its collector. The testing set is well cleaned manually while the training set is not well cleaned on purpose. This noisy training set is more similar to our real recognition situation and it is also a good way to see the effect of the noise on these two architectures.
 
-\subsection{Data Argumentation}
-In this section, we introduce some data argumentation methods in our work to enrich our training data. Previous work shows that with intensive argumentation for the training data, the performance of CNN model can be improved \cite{wu2015deep}. 
-Data argumentation is an efficient way to enrich the data. There are also some techniques that can apply to enlarge the dataset such as subsampling and mirroring. The original images are firstly resized to $256\times 256$ pixels. We crop the 4 corners and center for each image according to the input size of each model and flap the 5 cropped images to obtain 10 crops. For the testing set, the prediction of an image is the average prediction of the 10 crops (see Figure \ref{fig:cnn:crop}).
+\subsection{Data Augmentation}
+In this section, we introduce some data augmentation methods in our work to enrich our training data. Previous work shows that with intensive augmentation for the training data, the performance of CNN model can be improved \cite{wu2015deep}. 
+Data Augmentation is an efficient way to enrich the data. There are also some techniques that can apply to enlarge the dataset such as subsampling and mirroring. The original images are firstly resized to $256\times 256$ pixels. We crop the 4 corners and center for each image according to the input size of each model and flap the 5 cropped images to obtain 10 crops. For the testing set, the prediction of an image is the average prediction of the 10 crops (see Figure \ref{fig:cnn:crop}).
 
 \begin{figure}
 	\centering
@@ -56,9 +56,9 @@ Data argumentation is an efficient way to enrich the data. There are also some t
 	\caption{Crop area from original image}\label{fig:cnn:crop}
 \end{figure}
 
-Before cropping subsamples from the original image, we also use other argumentation methods such as color casting and vignette etc., to enrich our data and make our model less sensitive to lighting changes and other invariance (see Figure \ref{fig:cnn:argu}). 
+Before cropping subsamples from the original image, we also use other augmentation methods such as color casting and vignette etc., to enrich our data and make our model less sensitive to lighting changes and other invariance (see Figure \ref{fig:cnn:argu}). 
 
-Compared to color shifting in \cite{krizhevsky2012imagenet}, we use color casting to alter the intensities of the RGB channels in training images. For each image, we firstly use a random boolean parameter to determine whether its R, G, and B channel should be changed. For any channel that should be changed, we add a random integer ranging from $[-20 , 20]$ to this specific channel. We also apply vignetting effect to the original image. In our implementation, we apply a 2D Gaussian kernel on the original image for vignetting. The two parameter $\sigma_x$ and $\sigma_y$ are randomly chosen from $[160,200)$. We also apply some geometric transformation such as stretching and rotation, on the original image for data argumentation. In summary, we enriched the data by 11 times, 3 times color shifting, 2 times vignetting, 4 times stretching and 1 time rotation and plus the original image.
+Compared to color shifting in \cite{krizhevsky2012imagenet}, we use color casting to alter the intensities of the RGB channels in training images. For each image, we firstly use a random boolean parameter to determine whether its R, G, and B channel should be changed. For any channel that should be changed, we add a random integer ranging from $[-20 , 20]$ to this specific channel. We also apply vignetting effect to the original image. In our implementation, we apply a 2D Gaussian kernel on the original image for vignetting. The two parameter $\sigma_x$ and $\sigma_y$ are randomly chosen from $[160,200)$. We also apply some geometric transformation such as stretching and rotation, on the original image for data augmentation. In summary, we enriched the data by 11 times, 3 times color shifting, 2 times vignetting, 4 times stretching and 1 time rotation and plus the original image.
 
 During the fine-tuning process, we initial the learning rate 0.01 and it decreases 90\% (times 0.1) every 10000 iterations. The detail training configuration is shown in Table \ref{tab:config}.
 
@@ -77,7 +77,7 @@ During the fine-tuning process, we initial the learning rate 0.01 and it decreas
 	\subfloat[More vertical stretch]{    \includegraphics[width=0.3\textwidth]{cnn/fig/s3.png}  }
 	\subfloat[Rotation]{    \includegraphics[width=0.3\textwidth]{cnn/fig/rota.png}  }\\
 	
-	\caption{Different data argumentation methods}\label{fig:cnn:argu}
+	\caption{Different data augmentation methods}\label{fig:cnn:argu}
 \end{figure}
 
 

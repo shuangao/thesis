@@ -18,7 +18,7 @@ L\left( {w,b,\alpha ,\varepsilon } \right) = \frac{1}{2}{\left\| w \right\|^2} +
 Where $\alpha = [ \alpha_1,...,\alpha_l]^T $ is the vector of Lagrange multipliers. The solution to minimise this problem is give by:
 \begin{equation}\label{eq:single:orgmatrix}
 \left[ {\begin{array}{*{20}{c}}
-	{K  + \frac{1}{C}{\rm I}}\\
+	{K  + \frac{1}{C}{I}}\\
 	1^T
 	\end{array}\begin{array}{*{20}{c}}
 	1\\
@@ -68,7 +68,7 @@ Here, $\gamma$ controls the amount of transfer regularization. Intuitively, the 
 \begin{equation*}
 {\left\| {w - \gamma w'} \right\|^2} = {\left\| w \right\|^2} - 2\gamma \left\| w \right\|\cos \theta  + {\gamma ^2}
 \end{equation*}
-Where $\theta$ is the angel between $w$ and $w'$. However, the term $-\gamma \left\| w \right\|\cos \theta$ also encourages $||w||$
+Where $\theta$ is the angle between $w$ and $w'$. However, the term $-\gamma \left\| w \right\|\cos \theta$ also encourages $||w||$
 to be larger (as this reduces the cost) which prevents margin maximization. Thus $\gamma$, which defines the amount of transfer regularization, becomes a trade-off parameter between margin maximization and knowledge transfer.
 
 \begin{figure}

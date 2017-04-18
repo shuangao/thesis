@@ -51,7 +51,13 @@
 %\newtheorem{corollary}{Corollary}
 %\newtheorem{lemma}{Lemma}
 \newtheorem{defi}{Definition}
-
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
 
 \makeatletter
 \numberwithin{figure}{chapter}
@@ -390,7 +396,7 @@
 		
 		In chapter 3, we investigate the visual domain adaptation problem under the setting of Hypothesis Transfer Learning. We propose Effective Multiclass Transfer Learning (\textbf{EMTLe}) that can effectively transfer the knowledge when the size of the target set is small.  Specifically, EMTLe can effectively transfer the knowledge using the outputs of the source models as the auxiliary bias to adjust the prediction in the target task. Experiment results show that EMTLe can outperform other baselines under the setting of HTL.
 		
-		In chapter 4, we investigate the semi-supervised domain adaptation scenario under the setting of HTL and propose our framework {Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}). Specifically, we show that GDSDA can effectively transfer the knowledge using the unlabeled data. We also demonstrate that the imitation parameter, the hyperparameter in GDSDA that balances the knowledge from source and target task, is important to the transfer performance. Then we propose GDSDA-SVM which uses SVMs as the base classifier in GDSDA. We show that GDSDA-SVM can determine the imitation parameter in GDSDA autonomously. Compared to previous methods, whose imitation parameter can only be determined by either brutal force search or background knowledge, GDSDA-SVM is more effective in real applications.
+		In chapter 4, we investigate the semi-supervised domain adaptation scenario under the setting of HTL and propose our framework {Generalized Distillation Semi-supervised Domain Adaptation} (\textbf{GDSDA}). Specifically, we show that GDSDA can effectively transfer the knowledge using the unlabeled data. We also demonstrate that the imitation parameter, the hyperparameter in GDSDA that balances the knowledge from source and target task, is important to the transfer performance. Then we propose GDSDA-SVM which uses SVMs as the base classifier in GDSDA. We show that GDSDA-SVM can determine the imitation parameter in GDSDA autonomously. Compared to previous methods, whose imitation parameter can only be determined by either brute force search or background knowledge, GDSDA-SVM is more effective in real applications.
 		
 		In chapter 5, we investigate the problem of fine-tuning the deep CNN to learn new food categories using the large ImageNet database as our source. Without accessing to the source data, i.e. the ImageNet dataset, we show that by fine-tuning the parameters of the source model with our target food dataset, we can achieve better performance compared to those previous methods.
 		
@@ -461,9 +467,6 @@
 			\textbf{Post-Secondary} &  University of Western Ontario\\
 			\textbf{Education and}& London, ON\\
 			\textbf{Degrees:}& 2012 - 2017 Ph.D.\\\\
-			& China University of Geosciences (Wuhan)\\
-			& Wuhan, Hubei, China\\
-			& 2009 - 2012 M.Sc\\\\
 			& China University of Geosciences (Wuhan)\\
 			& Wuhan, Hubei, China\\
 			& 2005 - 2009 B.Sc\\\\
